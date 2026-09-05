@@ -1,29 +1,49 @@
 {
-  "date": "2026-09-06",
-  "updatedAt": "2026-09-06T07:00:00+09:00",
-  "headline": "세계 경제와 주식시장의 핵심 흐름을 출근 전 빠르게 확인하세요.",
+  "date": "2026-09-05",
+  "updatedAt": "2026-09-05T01:00:00+09:00",
+  "headline": "미국 고용지표와 금리·유가 흐름이 다음 주 시장의 핵심 변수입니다.",
   "stories": [
     {
       "level": "높음",
-      "tag": "GLOBAL",
-      "title": "뉴스 데이터 연결 준비 완료",
-      "summary": "이 카드는 실제 공개 뉴스가 연결되기 전까지 표시되는 샘플입니다.",
-      "why": "앞으로 최근 24시간 뉴스 중 시장 영향이 큰 사건을 중요도 순으로 표시합니다.",
-      "source": "https://www.reuters.com/"
+      "tag": "US ECONOMY",
+      "title": "미국 8월 비농업 고용 16만2천 명 증가",
+      "summary": "최근 보도에 따르면 미국 8월 고용은 16만2천 명 늘어 시장 예상보다 강했습니다.",
+      "why": "고용 강세가 지속되면 연준 금리 경로와 미국 국채금리에 영향을 줄 수 있습니다.",
+      "source": "https://www.wsj.com/economy/jobs/american-workers-have-slammed-the-brakes-on-switching-jobs-767c45d1"
+    },
+    {
+      "level": "높음",
+      "tag": "US MARKET",
+      "title": "S&P 500, 9월 4일 7,718.60으로 마감",
+      "summary": "S&P 500은 전일 대비 29.11포인트, 0.38% 하락했습니다.",
+      "why": "주식시장 방향과 금리·유가 변화를 함께 확인해야 합니다.",
+      "source": "https://www.wsj.com/market-data/quotes/index/SPX"
     },
     {
       "level": "중간",
-      "tag": "MARKETS",
-      "title": "시장 지표 데이터 연결 예정",
-      "summary": "주요 지수·금리·환율·원자재를 기준 시각과 함께 표시할 예정입니다.",
-      "why": "가격 변화와 뉴스의 관계를 구분해 확인할 수 있도록 구성합니다.",
-      "source": "https://finance.yahoo.com/"
+      "tag": "FX",
+      "title": "원·달러 환율 1,345.55원 마감",
+      "summary": "9월 4일 원·달러 환율은 1,345.55원으로 집계됐습니다.",
+      "why": "원화 강세는 국내 투자자의 해외자산 환산수익과 수출주에 영향을 줄 수 있습니다.",
+      "source": "https://www.wsj.com/market-data/quotes/fx/USDKRW"
     }
   ],
   "markets": [
-    {"label": "S&P 500", "value": "—"},
-    {"label": "NASDAQ", "value": "—"},
-    {"label": "원·달러", "value": "—"},
-    {"label": "WTI", "value": "—"}
+    {
+      "label": "S&P 500",
+      "value": "7,718.60"
+    },
+    {
+      "label": "NASDAQ",
+      "value": "26,587.90"
+    },
+    {
+      "label": "원·달러",
+      "value": "1,345.55"
+    },
+    {
+      "label": "WTI",
+      "value": "—"
+    }
   ]
 }
