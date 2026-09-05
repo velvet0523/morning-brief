@@ -14,7 +14,21 @@ export default function App() {
   }, []);
   React.useEffect(() => { loadData(); }, [loadData]);
   const stories = data?.stories || [];
+  const macroStories = stories.filter((story) => story.category === 'MACRO');
+  const industryStories = stories.filter((story) => story.category === 'INDUSTRY');
   const markets = data?.markets || ['S&P 500', 'NASDAQ', '원·달러', 'WTI'].map((label) => ({ label, value: '—' }));
+  const renderStories = (items) => items.map((story) => (
+    <View style={styles.card} key={story.tag + story.title}>
+      <View style={styles.row}>
+        <Text style={styles.tag}>{story.tag}</Text>
+        <Text style={styles.level}>{story.level}{story.importanceScore ? ' · ' + story.importanceScore + '점' : ''}</Text>
+      </View>
+      <Text style={styles.cardTitle}>{story.title}</Text>
+      <Text style={styles.body}>{story.summary}</Text>
+      <Text style={styles.why}>왜 중요한가 · {story.why}</Text>
+      <Text style={styles.source}>원문 출처 열기  ›</Text>
+    </View>
+  ));
   return (
     <View style={styles.screen}>
       <StatusBar style="light" />
@@ -27,16 +41,10 @@ export default function App() {
           <Text style={styles.heroText}>{data?.headline || '세계 경제와 주식시장의 핵심 흐름을 출근 전 빠르게 확인하세요.'}</Text>
           <Text style={styles.heroHint}>뉴스 수집·중요도 판단·요약 기능을 연결하는 중입니다.</Text>
         </View>
-        <Text style={styles.section}>핵심 뉴스</Text>
-        {stories.map((story) => (
-          <View style={styles.card} key={story.tag}>
-            <View style={styles.row}><Text style={styles.tag}>{story.tag}</Text><Text style={styles.level}>{story.level}</Text></View>
-            <Text style={styles.cardTitle}>{story.title}</Text>
-            <Text style={styles.body}>{story.summary}</Text>
-            <Text style={styles.why}>왜 중요한가 · 시장 영향과 새로움을 기준으로 선별합니다.</Text>
-            <Text style={styles.source}>원문 출처 열기  ›</Text>
-          </View>
-        ))}
+        <Text style={styles.section}>핵심 뉴스 · 매크로</Text>
+        {macroStories.length ? renderStories(macroStories) : <Text style={styles.empty}>선정 기준을 통과한 매크로 뉴스가 없습니다.</Text>}
+        <Text style={styles.section}>핵심 뉴스 · 산업</Text>
+        {industryStories.length ? renderStories(industryStories) : <Text style={styles.empty}>선정 기준을 통과한 산업 뉴스가 없습니다.</Text>}
         <Text style={styles.section}>시장 한눈에 보기</Text>
         <View style={styles.metrics}>
           {markets.map((item) => <View style={styles.metric} key={item.label}><Text style={styles.metricLabel}>{item.label}</Text><Text style={styles.metricValue}>{item.value}</Text></View>)}
@@ -70,5 +78,6 @@ const styles = StyleSheet.create({
   metric: { backgroundColor: '#151f31', borderRadius: 13, padding: 14, width: '47%' },
   metricLabel: { color: '#8fa3bd', fontSize: 12 },
   metricValue: { color: '#f5f7fb', fontSize: 20, fontWeight: '800', marginTop: 5 },
+  empty: { color: '#64748b', fontSize: 13, marginBottom: 4 },
   footer: { color: '#64748b', fontSize: 12, textAlign: 'center', marginTop: 28 },
 });
