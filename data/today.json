@@ -9,7 +9,9 @@
       "title": "미국 8월 고용, 예상보다 강한 증가",
       "summary": "미국 8월 비농업 고용이 16만2천 명 증가한 것으로 보도됐습니다. 단순 시장 마감이 아니라 향후 통화정책 판단에 영향을 줄 수 있는 경제지표입니다.",
       "why": "고용 강세가 이어지면 연준의 금리 결정과 국채금리 경로가 달라질 수 있습니다.",
-      "source": "https://www.wsj.com/economy/jobs/american-workers-have-slammed-the-brakes-on-switching-jobs-767c45d1"
+      "source": "https://www.wsj.com/economy/jobs/american-workers-have-slammed-the-brakes-on-switching-jobs-767c45d1",
+      "category": "MACRO",
+      "importanceScore": 82
     },
     {
       "level": "높음",
@@ -17,7 +19,9 @@
       "title": "미국·이란 긴장으로 유가와 인플레이션 우려 확대",
       "summary": "미국과 이란의 긴장이 높아지면서 원유 공급과 운송 차질 가능성이 시장 변수로 부각됐습니다.",
       "why": "유가 상승이 지속되면 물가와 중앙은행의 금리 경로, 정유·운송·항공 업종에 동시에 영향을 줄 수 있습니다.",
-      "source": "https://www.reuters.com/business/wall-st-futures-kick-off-september-under-pressure-yields-oil-prices-rise-2026-09-01/"
+      "source": "https://www.reuters.com/business/wall-st-futures-kick-off-september-under-pressure-yields-oil-prices-rise-2026-09-01/",
+      "category": "MACRO",
+      "importanceScore": 78
     }
   ],
   "markets": [
