@@ -1,18 +1,24 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { RefreshControl, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const DATA_URL = 'https://raw.githubusercontent.com/velvet0523/morning-brief/main/data/today.json';
 
 export default function App() {
   const [data, setData] = React.useState(null);
-  React.useEffect(() => { fetch(DATA_URL).then((r) => r.json()).then(setData).catch(() => {}); }, []);
+  const [refreshing, setRefreshing] = React.useState(false);
+  const loadData = React.useCallback(() => {
+    setRefreshing(true);
+    return fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' })
+      .then((r) => r.json()).then(setData).catch(() => {}).finally(() => setRefreshing(false));
+  }, []);
+  React.useEffect(() => { loadData(); }, [loadData]);
   const stories = data?.stories || [];
   const markets = data?.markets || ['S&P 500', 'NASDAQ', '원·달러', 'WTI'].map((label) => ({ label, value: '—' }));
   return (
     <View style={styles.screen}>
       <StatusBar style="light" />
-      <ScrollView contentContainerStyle={styles.container}>
+      <ScrollView contentContainerStyle={styles.container} refreshControl={<RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor="#62a8ff" />}>
         <Text style={styles.eyebrow}>MORNING BRIEF</Text>
         <Text style={styles.title}>아침 브리핑</Text>
         <Text style={styles.date}>{data?.date || '오늘'} · 한국시간</Text>
