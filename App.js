@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linking, Pressable, RefreshControl, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, RefreshControl, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 const DATA_URL = 'https://raw.githubusercontent.com/velvet0523/morning-brief/main/data/today.json';
@@ -8,6 +8,8 @@ export default function App() {
   const [data, setData] = React.useState(null);
   const [tab, setTab] = React.useState('NEWS');
   const [refreshing, setRefreshing] = React.useState(false);
+  const [newStock, setNewStock] = React.useState('');
+  const [addedStocks, setAddedStocks] = React.useState([]);
   const loadData = React.useCallback(() => {
     setRefreshing(true);
     return fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' })
@@ -24,6 +26,14 @@ export default function App() {
     { symbol: '000660.KS', name: 'SK하이닉스', change: '—', stance: '분석 예정', reason: '반도체·메모리 수급과 산업 뉴스의 영향을 표시합니다.' },
     { symbol: 'NVDA', name: 'NVIDIA', change: '—', stance: '분석 예정', reason: 'AI 인프라 투자와 공급망 뉴스의 영향을 표시합니다.' },
   ];
+
+  const visibleStocks = [...stocks, ...addedStocks];
+  const addStock = () => {
+    const symbol = newStock.trim().toUpperCase();
+    if (!symbol || visibleStocks.some((stock) => stock.symbol === symbol)) return;
+    setAddedStocks([...addedStocks, { symbol, name: symbol, change: '—', stance: '분석 예정', reason: '추가한 관심 종목입니다. 다음 브리핑부터 관련 뉴스와 주가 영향을 분석합니다.' }]);
+    setNewStock('');
+  };
 
   const renderStories = (items) => items.map((story) => (
     <View style={styles.card} key={story.tag + story.title}>
@@ -57,7 +67,8 @@ export default function App() {
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY'S STOCK IMPACT</Text><Text style={styles.heroText}>오늘 뉴스가 관심 종목에 미친 영향을 확인하세요.</Text><Text style={styles.heroHint}>주가 변화의 원인을 호재·악재·수급성 움직임으로 구분합니다.</Text></View>
               <Text style={styles.section}>관심 종목 분석</Text>
-              {stocks.map((stock) => <View style={styles.card} key={stock.symbol}><View style={styles.row}><Text style={styles.stockName}>{stock.name}</Text><Text style={styles.stockChange}>{stock.change}</Text></View><Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text><Text style={styles.body}>{stock.reason}</Text><Text style={styles.why}>분석 기준 · 관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text></View>)}
+              <View style={styles.addBox}><TextInput value={newStock} onChangeText={setNewStock} placeholder="티커 입력 (예: MU, 005930.KS)" placeholderTextColor="#64748b" style={styles.input} autoCapitalize="characters"/><Pressable onPress={addStock} style={styles.addButton}><Text style={styles.addButtonText}>추가</Text></Pressable></View>
+              {visibleStocks.map((stock) => <View style={styles.card} key={stock.symbol}><View style={styles.row}><Text style={styles.stockName}>{stock.name}</Text><Text style={styles.stockChange}>{stock.change}</Text></View><Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text><Text style={styles.body}>{stock.reason}</Text><Text style={styles.why}>분석 기준 · 관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text></View>)}
               <Text style={styles.footer}>관심 종목 목록은 다음 단계에서 네가 지정한 종목으로 교체합니다.</Text>
             </>
           )}
@@ -95,7 +106,11 @@ const styles = StyleSheet.create({
   metrics: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   metric: { backgroundColor: '#151f31', borderRadius: 13, padding: 14, width: '47%' },
   metricLabel: { color: '#8fa3bd', fontSize: 12 },
-  metricValue: { color: '#f5f7fb', fontSize: 20, fontWeight: '800', marginTop: 5 },
+  metricValue: { color: '#f5f7fb', fontSize: 17, fontWeight: '800', marginTop: 5 },
+  addBox: { flexDirection: 'row', alignItems: 'center', marginBottom: 12 },
+  input: { flex: 1, backgroundColor: '#151f31', color: '#f5f7fb', borderRadius: 12, paddingHorizontal: 14, paddingVertical: 12, borderWidth: 1, borderColor: '#22314a' },
+  addButton: { backgroundColor: '#2d78cf', borderRadius: 12, paddingHorizontal: 18, paddingVertical: 12, marginLeft: 8 },
+  addButtonText: { color: '#fff', fontWeight: '800' },
   stockName: { color: '#f5f7fb', fontSize: 19, fontWeight: '800' },
   stockChange: { color: '#f3c969', fontSize: 16, fontWeight: '800' },
   symbol: { color: '#7fb8f5', fontSize: 12, marginTop: 6 },
