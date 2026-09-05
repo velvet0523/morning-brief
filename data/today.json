@@ -69,5 +69,28 @@
       "label": "WTI",
       "value": "$91.22 · 9/4 마감"
     }
+  ],
+  "stocks": [
+    {
+      "symbol": "005930.KS",
+      "name": "삼성전자",
+      "change": "—",
+      "stance": "분석 예정",
+      "reason": "관심 종목 등록 테스트: 메모리·파운드리·AI 수요 뉴스와 주가 반응을 연결합니다."
+    },
+    {
+      "symbol": "000660.KS",
+      "name": "SK하이닉스",
+      "change": "—",
+      "stance": "분석 예정",
+      "reason": "HBM·DRAM·NAND 수급과 설비투자 뉴스가 주가에 미친 영향을 분석합니다."
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "change": "—",
+      "stance": "분석 예정",
+      "reason": "AI 인프라 투자와 GPU 공급망 관련 뉴스의 영향을 분석합니다."
+    }
   ]
 }
