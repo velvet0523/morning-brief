@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-06",
+  "updatedAt": "2026-09-06T07:00:00+09:00",
+  "headline": "세계 경제와 주식시장의 핵심 흐름을 출근 전 빠르게 확인하세요.",
+  "stories": [
+    {
+      "level": "높음",
+      "tag": "GLOBAL",
+      "title": "뉴스 데이터 연결 준비 완료",
+      "summary": "이 카드는 실제 공개 뉴스가 연결되기 전까지 표시되는 샘플입니다.",
+      "why": "앞으로 최근 24시간 뉴스 중 시장 영향이 큰 사건을 중요도 순으로 표시합니다.",
+      "source": "https://www.reuters.com/"
+    },
+    {
+      "level": "중간",
+      "tag": "MARKETS",
+      "title": "시장 지표 데이터 연결 예정",
+      "summary": "주요 지수·금리·환율·원자재를 기준 시각과 함께 표시할 예정입니다.",
+      "why": "가격 변화와 뉴스의 관계를 구분해 확인할 수 있도록 구성합니다.",
+      "source": "https://finance.yahoo.com/"
+    }
+  ],
+  "markets": [
+    {"label": "S&P 500", "value": "—"},
+    {"label": "NASDAQ", "value": "—"},
+    {"label": "원·달러", "value": "—"},
+    {"label": "WTI", "value": "—"}
+  ]
+}
