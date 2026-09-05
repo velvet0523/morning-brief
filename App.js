@@ -16,7 +16,7 @@ export default function App() {
   const stories = data?.stories || [];
   const macroStories = stories.filter((story) => story.category === 'MACRO');
   const industryStories = stories.filter((story) => story.category === 'INDUSTRY');
-  const markets = data?.markets || ['S&P 500', 'NASDAQ', '원·달러', 'WTI'].map((label) => ({ label, value: '—' }));
+  const markets = data?.markets || ['S&P 500', 'NASDAQ', 'KOSPI', '닛케이 225', '원·달러', 'WTI'].map((label) => ({ label, value: '—' }));
   const renderStories = (items) => items.map((story) => (
     <View style={styles.card} key={story.tag + story.title}>
       <View style={styles.row}>
