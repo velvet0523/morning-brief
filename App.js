@@ -50,7 +50,7 @@ export default function App() {
       <StatusBar style="light" />
       <View style={styles.body}>
         <ScrollView contentContainerStyle={styles.container} refreshControl={<RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor="#62a8ff" />}>
-          <Text style={styles.eyebrow}>MORNING BRIEF</Text>
+          <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>STOCK TABS V2</Text></View>
           <Text style={styles.title}>{tab === 'NEWS' ? '아침 브리핑' : '관심 종목'}</Text>
           <Text style={styles.date}>{data?.date || '오늘'} · 한국시간</Text>
           {tab === 'NEWS' ? (
@@ -86,8 +86,10 @@ export default function App() {
 const styles = StyleSheet.create({
   screen: { flex: 1, backgroundColor: '#0b1220' },
   body: { flex: 1 },
-  container: { padding: 22, paddingTop: 62, paddingBottom: 34 },
+  container: { padding: 22, paddingTop: 62, paddingBottom: 120 },
+  buildRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   eyebrow: { color: '#62a8ff', fontSize: 12, fontWeight: '700', letterSpacing: 2 },
+  build: { color: '#62a8ff', fontSize: 10, fontWeight: '800' },
   title: { color: '#f5f7fb', fontSize: 32, fontWeight: '800', marginTop: 8 },
   date: { color: '#94a3b8', marginTop: 6, fontSize: 13 },
   hero: { backgroundColor: '#14345a', borderRadius: 18, padding: 20, marginTop: 24 },
@@ -114,7 +116,7 @@ const styles = StyleSheet.create({
   stockName: { color: '#f5f7fb', fontSize: 19, fontWeight: '800' },
   stockChange: { color: '#f3c969', fontSize: 16, fontWeight: '800' },
   symbol: { color: '#7fb8f5', fontSize: 12, marginTop: 6 },
-  tabs: { flexDirection: 'row', backgroundColor: '#111a2b', borderTopWidth: 1, borderTopColor: '#22314a', paddingBottom: 8, paddingTop: 8 },
+  tabs: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 20, elevation: 20, flexDirection: 'row', backgroundColor: '#111a2b', borderTopWidth: 1, borderTopColor: '#22314a', paddingBottom: 14, paddingTop: 8 },
   tab: { flex: 1, alignItems: 'center', paddingVertical: 8, borderRadius: 10, marginHorizontal: 6 },
   activeTab: { backgroundColor: '#1b4778' },
   tabText: { color: '#94a3b8', fontSize: 14, fontWeight: '800', letterSpacing: 1 },
