@@ -46,6 +46,8 @@ const formatUpdatedAt = (value) => {
 };
 
 const calculateForwardPe = (valuation = {}) => {
+  const publishedForwardPe = Number(valuation.forwardPe);
+  if (Number.isFinite(publishedForwardPe) && publishedForwardPe > 0) return `${publishedForwardPe.toFixed(2)}배`;
   const price = Number(valuation.price);
   const forwardEps = Number(valuation.forwardEps);
   if (!Number.isFinite(price) || !Number.isFinite(forwardEps) || forwardEps <= 0) return '—';
@@ -120,7 +122,7 @@ const renderStock = () => {
             <div class="valuation-item"><span>12M Fwd PER</span><strong>${escapeHtml(calculateForwardPe(stock.valuation))}</strong></div>
           </div>
           <div class="valuation-basis">${escapeHtml(stock.valuation ? `${stock.valuation.basis} · ${stock.valuation.asOf}` : '다음 갱신에서 지표를 계산합니다.')}</div>
-          <div class="valuation-basis">${calculateForwardPe(stock.valuation) !== '—' ? `12개월 선행 컨센서스 · 예상 EPS ${escapeHtml(stock.valuation.forwardEpsLabel)} · ${escapeHtml(stock.valuation.forwardAsOf)}` : '12개월 예상 EPS가 없어 선행 PER을 표시하지 않습니다.'}</div>
+          <div class="valuation-basis">${calculateForwardPe(stock.valuation) !== '—' ? `12개월 선행 컨센서스 · ${escapeHtml(stock.valuation.forwardAsOf)}` : '선행 컨센서스가 없어 Forward PER을 표시하지 않습니다.'}</div>
           ${stock.valuation?.forwardSource ? `<a class="valuation-source" href="${safeUrl(stock.valuation.forwardSource)}" target="_blank" rel="noopener noreferrer">Forward PER 출처 열기&nbsp; ›</a>` : ''}
         </div>` : ''}
         <p class="summary">${escapeHtml(stock.reason)}</p>
