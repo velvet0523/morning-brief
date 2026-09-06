@@ -70,10 +70,14 @@ const renderNews = () => {
 const renderStock = () => {
   const fallback = [
     { symbol: '005930.KS', name: '삼성전자', change: '—', stance: '분석 예정', reason: '다음 종목 분석을 기다리고 있습니다.' },
-    { symbol: '000660.KS', name: 'SK하이닉스', change: '—', stance: '분석 예정', reason: '다음 종목 분석을 기다리고 있습니다.' },
+    { symbol: 'MU', name: 'Micron', change: '—', stance: '분석 예정', reason: '다음 종목 분석을 기다리고 있습니다.' },
     { symbol: 'NVDA', name: 'NVIDIA', change: '—', stance: '분석 예정', reason: '다음 종목 분석을 기다리고 있습니다.' },
+    { symbol: 'GOOGL', name: 'Alphabet (Google)', change: '—', stance: '분석 예정', reason: '다음 종목 분석을 기다리고 있습니다.' },
+    { symbol: 'MSFT', name: 'Microsoft', change: '—', stance: '분석 예정', reason: '다음 종목 분석을 기다리고 있습니다.' },
   ];
-  const stocks = [...(state.data?.stocks || fallback), ...state.addedStocks];
+  const officialStocks = state.data?.stocks || fallback;
+  const officialSymbols = new Set(officialStocks.map((stock) => stock.symbol));
+  const stocks = [...officialStocks, ...state.addedStocks.filter((stock) => !officialSymbols.has(stock.symbol))];
   return `
     ${state.showSearch ? '<form class="search-panel" id="stock-form"><input id="stock-input" aria-label="종목 티커" placeholder="티커 입력 (예: MU, 005930.KS)" autocomplete="off"><button type="submit">추가</button></form>' : ''}
     <section class="hero">
