@@ -40,6 +40,8 @@ const formatUpdatedAt = (value) => {
 };
 
 const calculateForwardPe = (valuation = {}) => {
+  const publishedForwardPe = Number(valuation.forwardPe);
+  if (Number.isFinite(publishedForwardPe) && publishedForwardPe > 0) return `${publishedForwardPe.toFixed(2)}배`;
   const price = Number(valuation.price);
   const forwardEps = Number(valuation.forwardEps);
   if (!Number.isFinite(price) || !Number.isFinite(forwardEps) || forwardEps <= 0) return '—';
@@ -72,7 +74,7 @@ function StockCard({ stock, updatedAt, styles }) {
             <View style={styles.valuationItem}><Text style={styles.valuationLabel}>12M Fwd PER</Text><Text style={styles.valuationValue}>{forwardPe}</Text></View>
           </View>
           <Text style={styles.valuationBasis}>{valuation.basis ? valuation.basis + ' · ' + valuation.asOf : '다음 갱신에서 지표를 계산합니다.'}</Text>
-          {forwardPe !== '—' ? <Text style={styles.valuationBasis}>12개월 선행 컨센서스 · 예상 EPS {valuation.forwardEpsLabel} · {valuation.forwardAsOf}</Text> : <Text style={styles.valuationBasis}>12개월 예상 EPS가 없어 선행 PER을 표시하지 않습니다.</Text>}
+          {forwardPe !== '—' ? <Text style={styles.valuationBasis}>12개월 선행 컨센서스 · {valuation.forwardAsOf}</Text> : <Text style={styles.valuationBasis}>선행 컨센서스가 없어 Forward PER을 표시하지 않습니다.</Text>}
           {valuation.forwardSource ? <Pressable onPress={() => Linking.openURL(valuation.forwardSource)}><Text style={styles.valuationSource}>Forward PER 출처 열기  ›</Text></Pressable> : null}
         </View>
       ) : null}
