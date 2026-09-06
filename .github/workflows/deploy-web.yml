@@ -1,4 +1,4 @@
-name: Deploy Expo web to GitHub Pages
+name: Deploy standalone web app to GitHub Pages
 
 on:
   push:
@@ -21,28 +21,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Set up Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Expo web
-        run: npm run build:web
-
-      - name: Disable Jekyll
-        run: touch dist/.nojekyll
+      - name: Add website icon
+        run: cp assets/favicon.png web/favicon.png
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload Pages artifact
+      - name: Upload standalone website
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist
+          path: web
 
   deploy:
     environment:
