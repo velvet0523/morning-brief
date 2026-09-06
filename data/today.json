@@ -1,6 +1,11 @@
 {
   "date": "2026-09-05",
   "updatedAt": "2026-09-06T09:10:00+09:00",
+  "newsUpdatedAt": "2026-09-06T09:10:00+09:00",
+  "analysisStatus": {
+    "usUpdatedAt": "2026-09-06T09:10:00+09:00",
+    "krUpdatedAt": "2026-09-06T09:10:00+09:00"
+  },
   "headline": "테스트 갱신: 고용 강세와 중동발 원유·운송 차질이 주요 변수입니다.",
   "flowAnalysis": {
     "title": "고용 강세와 원유 공급 위험이 ‘높은 금리 장기화’ 가능성을 함께 키우는 흐름",
@@ -116,7 +121,8 @@
           "impact": "중립"
         }
       ],
-      "source": "https://dividend.samsung.com/info.do"
+      "source": "https://dividend.samsung.com/info.do",
+      "analyzedAt": "2026-09-06T09:10:00+09:00"
     },
     {
       "symbol": "000660.KS",
@@ -141,7 +147,8 @@
           "impact": "상쇄"
         }
       ],
-      "source": "https://www.skhynix.com/ir/UI-FR-IR02/"
+      "source": "https://www.skhynix.com/ir/UI-FR-IR02/",
+      "analyzedAt": "2026-09-06T09:10:00+09:00"
     },
     {
       "symbol": "NVDA",
@@ -166,7 +173,8 @@
           "impact": "긍정"
         }
       ],
-      "source": "https://www.reuters.com/business/nvidia-buy-hugging-face-nearly-13-billion-big-bet-open-ai-models-2026-09-03/"
+      "source": "https://www.reuters.com/business/nvidia-buy-hugging-face-nearly-13-billion-big-bet-open-ai-models-2026-09-03/",
+      "analyzedAt": "2026-09-06T09:10:00+09:00"
     }
   ]
 }
