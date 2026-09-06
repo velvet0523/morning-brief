@@ -45,6 +45,13 @@ const formatUpdatedAt = (value) => {
   } catch { return value; }
 };
 
+const calculateForwardPe = (valuation = {}) => {
+  const price = Number(valuation.price);
+  const forwardEps = Number(valuation.forwardEps);
+  if (!Number.isFinite(price) || !Number.isFinite(forwardEps) || forwardEps <= 0) return '—';
+  return `${(price / forwardEps).toFixed(2)}배`;
+};
+
 const applyTheme = () => {
   document.documentElement.dataset.theme = state.theme;
   document.querySelector('meta[name="theme-color"]').content = state.theme === 'dark' ? '#0b1220' : '#f3f6fa';
@@ -110,8 +117,11 @@ const renderStock = () => {
             <div class="valuation-item"><span>PER</span><strong>${escapeHtml(stock.valuation?.pe || '—')}</strong></div>
             <div class="valuation-item"><span>PBR</span><strong>${escapeHtml(stock.valuation?.pbr || '—')}</strong></div>
             <div class="valuation-item"><span>EPS</span><strong>${escapeHtml(stock.valuation?.eps || '—')}</strong></div>
+            <div class="valuation-item"><span>12M Fwd PER</span><strong>${escapeHtml(calculateForwardPe(stock.valuation))}</strong></div>
           </div>
           <div class="valuation-basis">${escapeHtml(stock.valuation ? `${stock.valuation.basis} · ${stock.valuation.asOf}` : '다음 갱신에서 지표를 계산합니다.')}</div>
+          <div class="valuation-basis">${calculateForwardPe(stock.valuation) !== '—' ? `12개월 선행 컨센서스 · 예상 EPS ${escapeHtml(stock.valuation.forwardEpsLabel)} · ${escapeHtml(stock.valuation.forwardAsOf)}` : '12개월 예상 EPS가 없어 선행 PER을 표시하지 않습니다.'}</div>
+          ${stock.valuation?.forwardSource ? `<a class="valuation-source" href="${safeUrl(stock.valuation.forwardSource)}" target="_blank" rel="noopener noreferrer">Forward PER 출처 열기&nbsp; ›</a>` : ''}
         </div>` : ''}
         <p class="summary">${escapeHtml(stock.reason)}</p>
         <p class="why">관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</p>
