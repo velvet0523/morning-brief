@@ -179,7 +179,7 @@ export default function App() {
   return (
     <View style={styles.screen}>
       <StatusBar style={themeName === 'dark' ? 'light' : 'dark'} />
-      <View style={styles.body}>
+      <View style={styles.contentArea}>
         <ScrollView style={styles.scroll} refreshControl={Platform.OS === 'web' ? undefined : <RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
           <View style={styles.container}>
           <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>FLOW V3</Text></View>
@@ -271,7 +271,7 @@ const createStyles = (theme) => StyleSheet.create({
     backgroundColor: theme.background,
     ...(Platform.OS === 'web' ? { height: '100%', minHeight: 0 } : {}),
   },
-  body: { flex: 1, ...(Platform.OS === 'web' ? { minHeight: 0 } : {}) },
+  contentArea: { flex: 1, ...(Platform.OS === 'web' ? { minHeight: 0 } : {}) },
   scroll: {
     flex: 1,
     ...(Platform.OS === 'web' ? { minHeight: 0, WebkitOverflowScrolling: 'touch' } : {}),
