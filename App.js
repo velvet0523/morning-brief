@@ -180,7 +180,8 @@ export default function App() {
     <View style={styles.screen}>
       <StatusBar style={themeName === 'dark' ? 'light' : 'dark'} />
       <View style={styles.body}>
-        <ScrollView style={styles.scroll} contentContainerStyle={styles.container} refreshControl={Platform.OS === 'web' ? undefined : <RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
+        <ScrollView style={styles.scroll} refreshControl={Platform.OS === 'web' ? undefined : <RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
+          <View style={styles.container}>
           <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>FLOW V3</Text></View>
           <View style={styles.titleRow}>
             <Text style={styles.title}>{screenTitle}</Text>
@@ -252,6 +253,7 @@ export default function App() {
             </>
           )}
           <Text style={styles.footer}>데이터 기준 시각과 출처를 함께 표시합니다.</Text>
+          </View>
         </ScrollView>
       </View>
       <View style={styles.tabs}>
@@ -269,11 +271,10 @@ const createStyles = (theme) => StyleSheet.create({
     backgroundColor: theme.background,
     ...(Platform.OS === 'web' ? { height: '100%', minHeight: 0 } : {}),
   },
-  body: { flex: 1, minHeight: 0 },
+  body: { flex: 1, ...(Platform.OS === 'web' ? { minHeight: 0 } : {}) },
   scroll: {
     flex: 1,
-    minHeight: 0,
-    ...(Platform.OS === 'web' ? { WebkitOverflowScrolling: 'touch' } : {}),
+    ...(Platform.OS === 'web' ? { minHeight: 0, WebkitOverflowScrolling: 'touch' } : {}),
   },
   container: { width: '100%', maxWidth: 900, alignSelf: 'center', padding: 22, paddingTop: 62, paddingBottom: 120 },
   buildRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
