@@ -130,7 +130,7 @@ export default function App() {
     <View style={styles.screen}>
       <StatusBar style={themeName === 'dark' ? 'light' : 'dark'} />
       <View style={styles.body}>
-        <ScrollView contentContainerStyle={styles.container} refreshControl={<RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
+        <ScrollView style={styles.scroll} contentContainerStyle={styles.container} refreshControl={<RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
           <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>FLOW V3</Text></View>
           <View style={styles.titleRow}>
             <Text style={styles.title}>{screenTitle}</Text>
@@ -214,8 +214,16 @@ export default function App() {
 }
 
 const createStyles = (theme) => StyleSheet.create({
-  screen: { flex: 1, backgroundColor: theme.background },
-  body: { flex: 1 },
+  screen: {
+    flex: 1,
+    backgroundColor: theme.background,
+    ...(Platform.OS === 'web' ? { height: '100vh', minHeight: 0 } : {}),
+  },
+  body: { flex: 1, minHeight: 0 },
+  scroll: {
+    flex: 1,
+    ...(Platform.OS === 'web' ? { overflowY: 'auto', WebkitOverflowScrolling: 'touch' } : {}),
+  },
   container: { width: '100%', maxWidth: 900, alignSelf: 'center', padding: 22, paddingTop: 62, paddingBottom: 120 },
   buildRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   eyebrow: { color: theme.accent, fontSize: 12, fontWeight: '700', letterSpacing: 2 },
