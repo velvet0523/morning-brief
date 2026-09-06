@@ -1,6 +1,6 @@
 {
   "date": "2026-09-06",
-  "updatedAt": "2026-09-06T10:47:15+09:00",
+  "updatedAt": "2026-09-06T11:04:36+09:00",
   "newsUpdatedAt": "2026-09-06T09:56:47+09:00",
   "analysisStatus": {
     "usUpdatedAt": "2026-09-06T10:47:15+09:00",
@@ -142,7 +142,14 @@
         }
       ],
       "source": "https://en.yna.co.kr/view/AEN20260904008551320",
-      "analyzedAt": "2026-09-06T09:56:47+09:00"
+      "analyzedAt": "2026-09-06T09:56:47+09:00",
+      "valuation": {
+        "pe": "11.37배",
+        "pbr": "3.01배",
+        "eps": "₩22,476",
+        "basis": "TTM EPS · 최근 공시 BPS 기준",
+        "asOf": "2026-09-04"
+      }
     },
     {
       "symbol": "MU",
@@ -168,7 +175,14 @@
         }
       ],
       "source": "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",
-      "analyzedAt": "2026-09-06T10:47:15+09:00"
+      "analyzedAt": "2026-09-06T10:47:15+09:00",
+      "valuation": {
+        "pe": "23.02배",
+        "pbr": "11.40배",
+        "eps": "$44.17",
+        "basis": "TTM EPS · 최근 분기 BPS 기준",
+        "asOf": "2026-09-04"
+      }
     },
     {
       "symbol": "NVDA",
@@ -194,7 +208,14 @@
         }
       ],
       "source": "https://www.reuters.com/business/nvidia-buy-hugging-face-nearly-13-billion-big-bet-open-ai-models-2026-09-03/",
-      "analyzedAt": "2026-09-06T09:56:47+09:00"
+      "analyzedAt": "2026-09-06T09:56:47+09:00",
+      "valuation": {
+        "pe": "28.90배",
+        "pbr": "24.29배",
+        "eps": "$7.97",
+        "basis": "TTM EPS · 최근 분기 BPS 기준",
+        "asOf": "2026-09-04"
+      }
     },
     {
       "symbol": "GOOGL",
@@ -220,7 +241,14 @@
         }
       ],
       "source": "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",
-      "analyzedAt": "2026-09-06T10:47:15+09:00"
+      "analyzedAt": "2026-09-06T10:47:15+09:00",
+      "valuation": {
+        "pe": "17.00배",
+        "pbr": "8.56배",
+        "eps": "$19.91",
+        "basis": "TTM EPS · 최근 분기 BPS 기준",
+        "asOf": "2026-09-04"
+      }
     },
     {
       "symbol": "MSFT",
@@ -246,7 +274,14 @@
         }
       ],
       "source": "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",
-      "analyzedAt": "2026-09-06T10:47:15+09:00"
+      "analyzedAt": "2026-09-06T10:47:15+09:00",
+      "valuation": {
+        "pe": "29.74배",
+        "pbr": "8.39배",
+        "eps": "$16.80",
+        "basis": "TTM EPS · 최근 분기 BPS 기준",
+        "asOf": "2026-09-04"
+      }
     }
   ]
 }

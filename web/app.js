@@ -20,6 +20,7 @@ const state = {
   error: false,
   tab: 'NEWS',
   showSearch: false,
+  expandedStocks: new Set(),
   addedStocks: cleanedAddedStocks,
   theme: localStorage.getItem('morning-brief-theme') === 'light' ? 'light' : 'dark',
 };
@@ -98,10 +99,20 @@ const renderStock = () => {
     </section>
     <h2 class="section-title">관심 종목 분석</h2>
     ${stocks.map((stock) => `
-      <article class="card">
-        <div class="stock-heading"><div class="stock-name">${escapeHtml(stock.name)}</div><div class="stock-change">${escapeHtml(stock.change)}</div></div>
-        <div class="symbol">${escapeHtml(stock.symbol)} · ${escapeHtml(stock.stance)}</div>
-        <div class="analysis-time">분석 기준 · ${escapeHtml(formatUpdatedAt(stock.analyzedAt || state.data?.updatedAt))}</div>
+      <article class="card stock-card">
+        <button class="stock-toggle" type="button" data-stock-toggle="${escapeHtml(stock.symbol)}" aria-expanded="${state.expandedStocks.has(stock.symbol)}">
+          <div class="stock-heading"><div class="stock-name">${escapeHtml(stock.name)}</div><div class="stock-change">${escapeHtml(stock.change)}</div></div>
+          <div class="stock-meta"><span class="symbol">${escapeHtml(stock.symbol)} · ${escapeHtml(stock.stance)}</span><span class="stock-chevron">${state.expandedStocks.has(stock.symbol) ? '⌃' : '⌄'}</span></div>
+          <div class="analysis-time">분석 기준 · ${escapeHtml(formatUpdatedAt(stock.analyzedAt || state.data?.updatedAt))}</div>
+        </button>
+        ${state.expandedStocks.has(stock.symbol) ? `<div class="valuation-panel">
+          <div class="valuation-grid">
+            <div class="valuation-item"><span>PER</span><strong>${escapeHtml(stock.valuation?.pe || '—')}</strong></div>
+            <div class="valuation-item"><span>PBR</span><strong>${escapeHtml(stock.valuation?.pbr || '—')}</strong></div>
+            <div class="valuation-item"><span>EPS</span><strong>${escapeHtml(stock.valuation?.eps || '—')}</strong></div>
+          </div>
+          <div class="valuation-basis">${escapeHtml(stock.valuation ? `${stock.valuation.basis} · ${stock.valuation.asOf}` : '다음 갱신에서 지표를 계산합니다.')}</div>
+        </div>` : ''}
         <p class="summary">${escapeHtml(stock.reason)}</p>
         <p class="why">관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</p>
       </article>`).join('')}`;
@@ -167,6 +178,14 @@ document.addEventListener('click', (event) => {
   if (tab) { state.tab = tab.dataset.tab; state.showSearch = false; render(); window.scrollTo({ top: 0, behavior: 'instant' }); return; }
   if (event.target.closest('#news-refresh')) { window.open(CHAT_REFRESH_URL, '_blank', 'noopener,noreferrer'); return; }
   if (event.target.closest('#search-toggle')) { state.showSearch = !state.showSearch; render(); document.getElementById('stock-input')?.focus(); return; }
+  const stockToggle = event.target.closest('[data-stock-toggle]');
+  if (stockToggle) {
+    const symbol = stockToggle.dataset.stockToggle;
+    if (state.expandedStocks.has(symbol)) state.expandedStocks.delete(symbol);
+    else state.expandedStocks.add(symbol);
+    render();
+    return;
+  }
   if (event.target.closest('#retry')) { loadData(); return; }
   const theme = event.target.closest('[data-theme-choice]');
   if (theme) { state.theme = theme.dataset.themeChoice; localStorage.setItem('morning-brief-theme', state.theme); render(); }
