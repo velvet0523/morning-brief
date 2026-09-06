@@ -18,7 +18,17 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "experiments": {
+      "baseUrl": "/morning-brief"
     }
   }
 }
