@@ -54,6 +54,7 @@ export default function App() {
 
   const visibleStocks = [...stocks, ...addedStocks];
   const screenTitle = { NEWS: '아침 브리핑', STOCK: '관심 종목', FLOW: '뉴스 흐름' }[tab];
+  const headerUpdatedAt = tab === 'STOCK' ? data?.updatedAt : (data?.newsUpdatedAt || data?.updatedAt);
   const addStock = () => {
     const symbol = newStock.trim().toUpperCase();
     if (!symbol || visibleStocks.some((stock) => stock.symbol === symbol)) return;
@@ -94,7 +95,7 @@ export default function App() {
             {tab === 'STOCK' && <Pressable style={styles.searchIcon} onPress={() => setShowSearch(!showSearch)}><Text style={styles.searchIconText}>⌕</Text></Pressable>}
           </View>
           <Text style={styles.date}>{data?.date || '오늘'} · 한국시간</Text>
-          <Text style={styles.updatedAt}>최근 AI 분석 · {formatUpdatedAt(data?.updatedAt)}</Text>
+          <Text style={styles.updatedAt}>{tab === 'STOCK' ? '최근 데이터 반영' : '최근 AI 분석'} · {formatUpdatedAt(headerUpdatedAt)}</Text>
           {tab === 'STOCK' && showSearch && <View style={styles.topSearch}><TextInput value={newStock} onChangeText={setNewStock} placeholder="티커 입력 (예: MU, 005930.KS)" placeholderTextColor="#64748b" style={styles.input} autoCapitalize="characters" autoFocus/><Pressable onPress={addStock} style={styles.addButton}><Text style={styles.addButtonText}>추가</Text></Pressable></View>}
           {tab === 'NEWS' ? (
             <>
@@ -110,7 +111,7 @@ export default function App() {
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY'S STOCK IMPACT</Text><Text style={styles.heroText}>오늘 뉴스가 관심 종목에 미친 영향을 확인하세요.</Text><Text style={styles.heroHint}>주가 변화의 원인을 호재·악재·수급성 움직임으로 구분합니다.</Text></View>
               <Text style={styles.section}>관심 종목 분석</Text>
-              {visibleStocks.map((stock) => <View style={styles.card} key={stock.symbol}><View style={styles.row}><Text style={styles.stockName}>{stock.name}</Text><Text style={styles.stockChange}>{stock.change}</Text></View><Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text><Text style={styles.body}>{stock.reason}</Text><Text style={styles.why}>분석 기준 · 관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text></View>)}
+              {visibleStocks.map((stock) => <View style={styles.card} key={stock.symbol}><View style={styles.row}><Text style={styles.stockName}>{stock.name}</Text><Text style={styles.stockChange}>{stock.change}</Text></View><Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text><Text style={styles.stockTime}>분석 기준 · {formatUpdatedAt(stock.analyzedAt || data?.updatedAt)}</Text><Text style={styles.body}>{stock.reason}</Text><Text style={styles.why}>관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text></View>)}
               <Text style={styles.footer}>관심 종목 목록은 다음 단계에서 네가 지정한 종목으로 교체합니다.</Text>
             </>
           ) : (
@@ -197,6 +198,7 @@ const styles = StyleSheet.create({
   stockName: { color: '#f5f7fb', fontSize: 19, fontWeight: '800' },
   stockChange: { color: '#f3c969', fontSize: 16, fontWeight: '800' },
   symbol: { color: '#7fb8f5', fontSize: 12, marginTop: 6 },
+  stockTime: { color: '#64748b', fontSize: 10, marginTop: 4 },
   tabs: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 20, elevation: 20, flexDirection: 'row', backgroundColor: '#111a2b', borderTopWidth: 1, borderTopColor: '#22314a', paddingBottom: 14, paddingTop: 8 },
   tab: { flex: 1, alignItems: 'center', paddingVertical: 8, borderRadius: 10, marginHorizontal: 6 },
   activeTab: { backgroundColor: '#1b4778' },
