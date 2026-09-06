@@ -1,15 +1,26 @@
 'use strict';
 
-const DATA_URL = 'https://raw.githubusercontent.com/velvet0523/morning-brief/main/data/today.json';
+const DATA_URL = 'https://velvet0523.github.io/morning-brief/data/today.json';
 const CHAT_REFRESH_URL = 'https://chatgpt.com/c/6a9c3a18-ce08-83ee-b207-0ab2e8886f30';
 const app = document.getElementById('app');
+
+const OFFICIAL_STOCK_ALIASES = new Set([
+  '005930.KS', '삼성전자', 'MU', 'MICRON', '마이크론', 'NVDA', 'NVIDIA', '엔비디아',
+  'GOOGL', 'GOOG', 'GOOGLE', '구글', 'ALPHABET', '알파벳',
+  'MSFT', 'MICROSOFT', '마이크로소프트', '000660.KS', 'SK하이닉스',
+]);
+const storedStocks = JSON.parse(localStorage.getItem('morning-brief-stocks') || '[]');
+const cleanedAddedStocks = storedStocks.filter(
+  (stock) => !OFFICIAL_STOCK_ALIASES.has(String(stock.symbol || stock.name || '').trim().toUpperCase()),
+);
+localStorage.setItem('morning-brief-stocks', JSON.stringify(cleanedAddedStocks));
 
 const state = {
   data: null,
   error: false,
   tab: 'NEWS',
   showSearch: false,
-  addedStocks: JSON.parse(localStorage.getItem('morning-brief-stocks') || '[]'),
+  addedStocks: cleanedAddedStocks,
   theme: localStorage.getItem('morning-brief-theme') === 'light' ? 'light' : 'dark',
 };
 
