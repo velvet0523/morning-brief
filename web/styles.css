@@ -149,7 +149,7 @@ h1 { margin: 0; font-size: clamp(30px, 5vw, 42px); letter-spacing: -.04em; }
 
 .card-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .tag, .symbol { color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .7px; }
-.score, .stock-change { color: var(--warning); font-size: 13px; font-weight: 800; text-align: right; }
+.score { color: var(--warning); font-size: 13px; font-weight: 800; text-align: right; }
 .card h3 { margin: 13px 0 0; font-size: 19px; line-height: 1.45; letter-spacing: -.02em; }
 .summary { margin: 10px 0 0; color: var(--body); font-size: 15px; line-height: 1.62; }
 .why { margin: 13px 0 0; color: var(--secondary); font-size: 13px; line-height: 1.55; }
@@ -161,7 +161,9 @@ h1 { margin: 0; font-size: clamp(30px, 5vw, 42px); letter-spacing: -.04em; }
 .metric-label { color: var(--secondary); font-size: 13px; }
 .metric-value { margin-top: 7px; font-size: 19px; font-weight: 800; line-height: 1.35; }
 
-.stock-name { font-size: 21px; font-weight: 800; }
+.stock-heading { display: flex; flex-direction: column; align-items: flex-start; gap: 7px; min-width: 0; }
+.stock-name { max-width: 100%; overflow-wrap: anywhere; font-size: 21px; font-weight: 800; }
+.stock-change { width: 100%; color: var(--warning); font-size: 16px; font-weight: 800; line-height: 1.35; text-align: left; overflow-wrap: anywhere; }
 .symbol { margin-top: 7px; font-weight: 500; }
 .analysis-time { margin-top: 5px; color: var(--subdued); font-size: 11px; }
 
