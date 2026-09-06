@@ -5,6 +5,27 @@ import { StatusBar } from 'expo-status-bar';
 const DATA_URL = 'https://raw.githubusercontent.com/velvet0523/morning-brief/main/data/today.json';
 const CHAT_REFRESH_URL = 'https://chatgpt.com/c/6a9c3a18-ce08-83ee-b207-0ab2e8886f30';
 
+const THEMES = {
+  dark: {
+    background: '#0b1220', surface: '#151f31', surfaceAlt: '#111a2b', border: '#22314a',
+    divider: '#273750', hero: '#14345a', text: '#f5f7fb', body: '#c0cad9',
+    secondary: '#8fa3bd', muted: '#94a3b8', subdued: '#64748b', accent: '#62a8ff',
+    accentLight: '#8ec5ff', accentLabel: '#7fb8f5', activeSurface: '#1b4778',
+    onAccent: '#ffffff', heroHint: '#b8d7f7', heroBody: '#d6e7fa',
+    warning: '#f3c969', watchBackground: '#202238', watchText: '#d7dbea',
+    primaryButton: '#2d78cf',
+  },
+  light: {
+    background: '#f3f6fa', surface: '#ffffff', surfaceAlt: '#ffffff', border: '#d9e2ee',
+    divider: '#e3e9f1', hero: '#dcecff', text: '#142033', body: '#34445a',
+    secondary: '#5f7289', muted: '#60758e', subdued: '#7b8da3', accent: '#1769aa',
+    accentLight: '#1769aa', accentLabel: '#1769aa', activeSurface: '#1769aa',
+    onAccent: '#ffffff', heroHint: '#476b91', heroBody: '#294b70',
+    warning: '#9a6500', watchBackground: '#fff6dc', watchText: '#4a5568',
+    primaryButton: '#1769aa',
+  },
+};
+
 const formatUpdatedAt = (value) => {
   if (!value) return '아직 갱신 기록 없음';
   try {
@@ -23,6 +44,9 @@ export default function App() {
   const [newStock, setNewStock] = React.useState('');
   const [showSearch, setShowSearch] = React.useState(false);
   const [addedStocks, setAddedStocks] = React.useState([]);
+  const [themeName, setThemeName] = React.useState('dark');
+  const theme = THEMES[themeName];
+  const styles = React.useMemo(() => createStyles(theme), [theme]);
   const loadData = React.useCallback(() => {
     setRefreshing(true);
     return fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' })
@@ -85,9 +109,9 @@ export default function App() {
 
   return (
     <View style={styles.screen}>
-      <StatusBar style="light" />
+      <StatusBar style={themeName === 'dark' ? 'light' : 'dark'} />
       <View style={styles.body}>
-        <ScrollView contentContainerStyle={styles.container} refreshControl={<RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor="#62a8ff" />}>
+        <ScrollView contentContainerStyle={styles.container} refreshControl={<RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
           <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>FLOW V3</Text></View>
           <View style={styles.titleRow}>
             <Text style={styles.title}>{screenTitle}</Text>
@@ -96,7 +120,7 @@ export default function App() {
           </View>
           <Text style={styles.date}>{data?.date || '오늘'} · 한국시간</Text>
           <Text style={styles.updatedAt}>{tab === 'STOCK' ? '최근 데이터 반영' : '최근 AI 분석'} · {formatUpdatedAt(headerUpdatedAt)}</Text>
-          {tab === 'STOCK' && showSearch && <View style={styles.topSearch}><TextInput value={newStock} onChangeText={setNewStock} placeholder="티커 입력 (예: MU, 005930.KS)" placeholderTextColor="#64748b" style={styles.input} autoCapitalize="characters" autoFocus/><Pressable onPress={addStock} style={styles.addButton}><Text style={styles.addButtonText}>추가</Text></Pressable></View>}
+          {tab === 'STOCK' && showSearch && <View style={styles.topSearch}><TextInput value={newStock} onChangeText={setNewStock} placeholder="티커 입력 (예: MU, 005930.KS)" placeholderTextColor={theme.subdued} style={styles.input} autoCapitalize="characters" autoFocus/><Pressable onPress={addStock} style={styles.addButton}><Text style={styles.addButtonText}>추가</Text></Pressable></View>}
           {tab === 'NEWS' ? (
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY IN 3 LINES</Text><Text style={styles.heroText}>{data?.headline || '세계 경제와 주식시장의 핵심 흐름을 출근 전 빠르게 확인하세요.'}</Text><Text style={styles.heroHint}>AI가 중요도와 시장 영향을 분석한 브리핑입니다.</Text></View>
@@ -132,6 +156,30 @@ export default function App() {
               </View>
               <View style={styles.watchCard}><Text style={styles.watchLabel}>앞으로 볼 변수</Text><Text style={styles.watchText}>{flow.watch}</Text></View>
               <Text style={styles.flowCaution}>AI 해석이며, 확인된 사실과 추정 경로를 구분해 작성합니다.</Text>
+              <View style={styles.themeCard}>
+                <View>
+                  <Text style={styles.themeLabel}>화면 테마</Text>
+                  <Text style={styles.themeHint}>원하는 화면 밝기를 선택하세요.</Text>
+                </View>
+                <View style={styles.themeToggle}>
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityState={{ selected: themeName === 'light' }}
+                    style={[styles.themeOption, themeName === 'light' && styles.themeOptionActive]}
+                    onPress={() => setThemeName('light')}
+                  >
+                    <Text style={[styles.themeOptionText, themeName === 'light' && styles.themeOptionTextActive]}>☀ 일반</Text>
+                  </Pressable>
+                  <Pressable
+                    accessibilityRole="button"
+                    accessibilityState={{ selected: themeName === 'dark' }}
+                    style={[styles.themeOption, themeName === 'dark' && styles.themeOptionActive]}
+                    onPress={() => setThemeName('dark')}
+                  >
+                    <Text style={[styles.themeOptionText, themeName === 'dark' && styles.themeOptionTextActive]}>☾ 다크</Text>
+                  </Pressable>
+                </View>
+              </View>
             </>
           )}
           <Text style={styles.footer}>데이터 기준 시각과 출처를 함께 표시합니다.</Text>
@@ -146,65 +194,73 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: '#0b1220' },
+const createStyles = (theme) => StyleSheet.create({
+  screen: { flex: 1, backgroundColor: theme.background },
   body: { flex: 1 },
   container: { padding: 22, paddingTop: 62, paddingBottom: 120 },
   buildRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  eyebrow: { color: '#62a8ff', fontSize: 12, fontWeight: '700', letterSpacing: 2 },
-  build: { color: '#62a8ff', fontSize: 10, fontWeight: '800' },
+  eyebrow: { color: theme.accent, fontSize: 12, fontWeight: '700', letterSpacing: 2 },
+  build: { color: theme.accent, fontSize: 10, fontWeight: '800' },
   titleRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 },
-  title: { color: '#f5f7fb', fontSize: 32, fontWeight: '800' },
-  refreshButton: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#1b4778', borderRadius: 14, paddingHorizontal: 11, paddingVertical: 9 },
-  refreshIcon: { color: '#8ec5ff', fontSize: 18, fontWeight: '800', marginRight: 5 },
-  refreshText: { color: '#fff', fontSize: 12, fontWeight: '800' },
-  searchIcon: { width: 46, height: 46, borderRadius: 23, backgroundColor: '#1b4778', alignItems: 'center', justifyContent: 'center' },
-  searchIconText: { color: '#fff', fontSize: 31, fontWeight: '700', lineHeight: 34 },
-  date: { color: '#94a3b8', marginTop: 6, fontSize: 13 },
-  updatedAt: { color: '#64748b', marginTop: 4, fontSize: 11 },
-  hero: { backgroundColor: '#14345a', borderRadius: 18, padding: 20, marginTop: 24 },
-  heroLabel: { color: '#8ec5ff', fontSize: 11, fontWeight: '700', letterSpacing: 1.5 },
-  heroText: { color: '#fff', fontSize: 21, lineHeight: 29, fontWeight: '700', marginTop: 10 },
-  heroHint: { color: '#b8d7f7', fontSize: 12, marginTop: 14 },
+  title: { color: theme.text, fontSize: 32, fontWeight: '800' },
+  refreshButton: { flexDirection: 'row', alignItems: 'center', backgroundColor: theme.activeSurface, borderRadius: 14, paddingHorizontal: 11, paddingVertical: 9 },
+  refreshIcon: { color: theme.onAccent, fontSize: 18, fontWeight: '800', marginRight: 5 },
+  refreshText: { color: theme.onAccent, fontSize: 12, fontWeight: '800' },
+  searchIcon: { width: 46, height: 46, borderRadius: 23, backgroundColor: theme.activeSurface, alignItems: 'center', justifyContent: 'center' },
+  searchIconText: { color: theme.onAccent, fontSize: 31, fontWeight: '700', lineHeight: 34 },
+  date: { color: theme.muted, marginTop: 6, fontSize: 13 },
+  updatedAt: { color: theme.subdued, marginTop: 4, fontSize: 11 },
+  hero: { backgroundColor: theme.hero, borderRadius: 18, padding: 20, marginTop: 24 },
+  heroLabel: { color: theme.accentLight, fontSize: 11, fontWeight: '700', letterSpacing: 1.5 },
+  heroText: { color: theme.text, fontSize: 21, lineHeight: 29, fontWeight: '700', marginTop: 10 },
+  heroHint: { color: theme.heroHint, fontSize: 12, marginTop: 14 },
   flowHero: { paddingBottom: 18 },
-  flowTitle: { color: '#fff', fontSize: 19, lineHeight: 26, fontWeight: '800', marginTop: 9 },
-  flowOverview: { color: '#d6e7fa', fontSize: 13, lineHeight: 20, marginTop: 9 },
-  flowCard: { backgroundColor: '#151f31', borderRadius: 16, paddingHorizontal: 16, borderWidth: 1, borderColor: '#22314a' },
+  flowTitle: { color: theme.text, fontSize: 19, lineHeight: 26, fontWeight: '800', marginTop: 9 },
+  flowOverview: { color: theme.heroBody, fontSize: 13, lineHeight: 20, marginTop: 9 },
+  flowCard: { backgroundColor: theme.surface, borderRadius: 16, paddingHorizontal: 16, borderWidth: 1, borderColor: theme.border },
   flowLink: { paddingVertical: 13 },
-  flowDivider: { borderTopWidth: 1, borderTopColor: '#273750' },
-  flowPath: { color: '#8ec5ff', fontSize: 13, fontWeight: '800' },
-  flowExplanation: { color: '#c0cad9', fontSize: 12, lineHeight: 18, marginTop: 5 },
-  watchCard: { backgroundColor: '#202238', borderRadius: 14, padding: 14, marginTop: 12, borderLeftWidth: 3, borderLeftColor: '#f3c969' },
-  watchLabel: { color: '#f3c969', fontSize: 11, fontWeight: '800', letterSpacing: 0.5 },
-  watchText: { color: '#d7dbea', fontSize: 12, lineHeight: 18, marginTop: 5 },
-  flowCaution: { color: '#64748b', fontSize: 10, lineHeight: 15, textAlign: 'center', marginTop: 12 },
-  section: { color: '#f5f7fb', fontSize: 19, fontWeight: '800', marginTop: 28, marginBottom: 12 },
-  card: { backgroundColor: '#151f31', borderRadius: 16, padding: 17, marginBottom: 12, borderWidth: 1, borderColor: '#22314a' },
+  flowDivider: { borderTopWidth: 1, borderTopColor: theme.divider },
+  flowPath: { color: theme.accentLight, fontSize: 13, fontWeight: '800' },
+  flowExplanation: { color: theme.body, fontSize: 12, lineHeight: 18, marginTop: 5 },
+  watchCard: { backgroundColor: theme.watchBackground, borderRadius: 14, padding: 14, marginTop: 12, borderLeftWidth: 3, borderLeftColor: theme.warning },
+  watchLabel: { color: theme.warning, fontSize: 11, fontWeight: '800', letterSpacing: 0.5 },
+  watchText: { color: theme.watchText, fontSize: 12, lineHeight: 18, marginTop: 5 },
+  flowCaution: { color: theme.subdued, fontSize: 10, lineHeight: 15, textAlign: 'center', marginTop: 12 },
+  themeCard: { backgroundColor: theme.surface, borderRadius: 16, padding: 16, marginTop: 24, borderWidth: 1, borderColor: theme.border },
+  themeLabel: { color: theme.text, fontSize: 15, fontWeight: '800' },
+  themeHint: { color: theme.secondary, fontSize: 11, marginTop: 3 },
+  themeToggle: { flexDirection: 'row', backgroundColor: theme.background, borderRadius: 12, padding: 4, marginTop: 14 },
+  themeOption: { flex: 1, alignItems: 'center', borderRadius: 9, paddingVertical: 9 },
+  themeOptionActive: { backgroundColor: theme.activeSurface },
+  themeOptionText: { color: theme.muted, fontSize: 13, fontWeight: '800' },
+  themeOptionTextActive: { color: theme.onAccent },
+  section: { color: theme.text, fontSize: 19, fontWeight: '800', marginTop: 28, marginBottom: 12 },
+  card: { backgroundColor: theme.surface, borderRadius: 16, padding: 17, marginBottom: 12, borderWidth: 1, borderColor: theme.border },
   row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  tag: { color: '#7fb8f5', fontSize: 11, fontWeight: '700', letterSpacing: 1 },
-  level: { color: '#f3c969', fontSize: 12, fontWeight: '700' },
-  cardTitle: { color: '#f5f7fb', fontSize: 17, fontWeight: '700', lineHeight: 23, marginTop: 10 },
-  body: { color: '#c0cad9', fontSize: 14, lineHeight: 21, marginTop: 8 },
-  why: { color: '#8fa3bd', fontSize: 12, lineHeight: 18, marginTop: 12 },
-  source: { color: '#62a8ff', fontSize: 12, fontWeight: '700', marginTop: 14 },
+  tag: { color: theme.accentLabel, fontSize: 11, fontWeight: '700', letterSpacing: 1 },
+  level: { color: theme.warning, fontSize: 12, fontWeight: '700' },
+  cardTitle: { color: theme.text, fontSize: 17, fontWeight: '700', lineHeight: 23, marginTop: 10 },
+  body: { color: theme.body, fontSize: 14, lineHeight: 21, marginTop: 8 },
+  why: { color: theme.secondary, fontSize: 12, lineHeight: 18, marginTop: 12 },
+  source: { color: theme.accent, fontSize: 12, fontWeight: '700', marginTop: 14 },
   metrics: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
-  metric: { backgroundColor: '#151f31', borderRadius: 13, padding: 14, width: '47%' },
-  metricLabel: { color: '#8fa3bd', fontSize: 12 },
-  metricValue: { color: '#f5f7fb', fontSize: 17, fontWeight: '800', marginTop: 5 },
+  metric: { backgroundColor: theme.surface, borderRadius: 13, padding: 14, width: '47%', borderWidth: 1, borderColor: theme.border },
+  metricLabel: { color: theme.secondary, fontSize: 12 },
+  metricValue: { color: theme.text, fontSize: 17, fontWeight: '800', marginTop: 5 },
   topSearch: { flexDirection: 'row', alignItems: 'center', marginTop: 16 },
-  input: { flex: 1, backgroundColor: '#151f31', color: '#f5f7fb', borderRadius: 12, paddingHorizontal: 14, paddingVertical: 12, borderWidth: 1, borderColor: '#22314a' },
-  addButton: { backgroundColor: '#2d78cf', borderRadius: 12, paddingHorizontal: 18, paddingVertical: 12, marginLeft: 8 },
-  addButtonText: { color: '#fff', fontWeight: '800' },
-  stockName: { color: '#f5f7fb', fontSize: 19, fontWeight: '800' },
-  stockChange: { color: '#f3c969', fontSize: 16, fontWeight: '800' },
-  symbol: { color: '#7fb8f5', fontSize: 12, marginTop: 6 },
-  stockTime: { color: '#64748b', fontSize: 10, marginTop: 4 },
-  tabs: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 20, elevation: 20, flexDirection: 'row', backgroundColor: '#111a2b', borderTopWidth: 1, borderTopColor: '#22314a', paddingBottom: 14, paddingTop: 8 },
+  input: { flex: 1, backgroundColor: theme.surface, color: theme.text, borderRadius: 12, paddingHorizontal: 14, paddingVertical: 12, borderWidth: 1, borderColor: theme.border },
+  addButton: { backgroundColor: theme.primaryButton, borderRadius: 12, paddingHorizontal: 18, paddingVertical: 12, marginLeft: 8 },
+  addButtonText: { color: theme.onAccent, fontWeight: '800' },
+  stockName: { color: theme.text, fontSize: 19, fontWeight: '800' },
+  stockChange: { color: theme.warning, fontSize: 16, fontWeight: '800' },
+  symbol: { color: theme.accentLabel, fontSize: 12, marginTop: 6 },
+  stockTime: { color: theme.subdued, fontSize: 10, marginTop: 4 },
+  tabs: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 20, elevation: 20, flexDirection: 'row', backgroundColor: theme.surfaceAlt, borderTopWidth: 1, borderTopColor: theme.border, paddingBottom: 14, paddingTop: 8 },
   tab: { flex: 1, alignItems: 'center', paddingVertical: 8, borderRadius: 10, marginHorizontal: 6 },
-  activeTab: { backgroundColor: '#1b4778' },
-  tabText: { color: '#94a3b8', fontSize: 14, fontWeight: '800', letterSpacing: 1 },
-  activeTabText: { color: '#fff' },
-  tabHint: { color: '#64748b', fontSize: 10, marginTop: 3 },
-  empty: { color: '#64748b', fontSize: 13, marginBottom: 4 },
-  footer: { color: '#64748b', fontSize: 12, textAlign: 'center', marginTop: 28 },
+  activeTab: { backgroundColor: theme.activeSurface },
+  tabText: { color: theme.muted, fontSize: 14, fontWeight: '800', letterSpacing: 1 },
+  activeTabText: { color: theme.onAccent },
+  tabHint: { color: theme.subdued, fontSize: 10, marginTop: 3 },
+  empty: { color: theme.subdued, fontSize: 13, marginBottom: 4 },
+  footer: { color: theme.subdued, fontSize: 12, textAlign: 'center', marginTop: 28 },
 });
