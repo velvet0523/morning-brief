@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "morning-brief",
+    "name": "Morning Brief",
     "slug": "morning-brief",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,6 +10,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.velvet0523.morningbrief",
+      "versionCode": 1,
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
