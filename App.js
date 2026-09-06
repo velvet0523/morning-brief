@@ -9,6 +9,7 @@ export default function App() {
   const [tab, setTab] = React.useState('NEWS');
   const [refreshing, setRefreshing] = React.useState(false);
   const [newStock, setNewStock] = React.useState('');
+  const [showSearch, setShowSearch] = React.useState(false);
   const [addedStocks, setAddedStocks] = React.useState([]);
   const loadData = React.useCallback(() => {
     setRefreshing(true);
@@ -51,8 +52,8 @@ export default function App() {
       <View style={styles.body}>
         <ScrollView contentContainerStyle={styles.container} refreshControl={<RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor="#62a8ff" />}>
           <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>STOCK TABS V2</Text></View>
-          <Text style={styles.title}>{tab === 'NEWS' ? '아침 브리핑' : '관심 종목'}</Text>
-          <Text style={styles.date}>{data?.date || '오늘'} · 한국시간</Text>
+          <View style={styles.titleRow}><Text style={styles.title}>{tab === 'NEWS' ? '아침 브리핑' : '관심 종목'}</Text>{tab === 'STOCK' && <Pressable style={styles.searchIcon} onPress={() => setShowSearch(!showSearch)}><Text style={styles.searchIconText}>⌕</Text></Pressable>}</View>
+          <Text style={styles.date}>{data?.date || '오늘'} · 한국시간</Text>{tab === 'STOCK' && showSearch && <View style={styles.topSearch}><TextInput value={newStock} onChangeText={setNewStock} placeholder="티커 입력 (예: MU, 005930.KS)" placeholderTextColor="#64748b" style={styles.input} autoCapitalize="characters" autoFocus/><Pressable onPress={addStock} style={styles.addButton}><Text style={styles.addButtonText}>추가</Text></Pressable></View>}
           {tab === 'NEWS' ? (
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY IN 3 LINES</Text><Text style={styles.heroText}>{data?.headline || '세계 경제와 주식시장의 핵심 흐름을 출근 전 빠르게 확인하세요.'}</Text><Text style={styles.heroHint}>AI가 중요도와 시장 영향을 분석한 브리핑입니다.</Text></View>
@@ -67,7 +68,6 @@ export default function App() {
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY'S STOCK IMPACT</Text><Text style={styles.heroText}>오늘 뉴스가 관심 종목에 미친 영향을 확인하세요.</Text><Text style={styles.heroHint}>주가 변화의 원인을 호재·악재·수급성 움직임으로 구분합니다.</Text></View>
               <Text style={styles.section}>관심 종목 분석</Text>
-              <View style={styles.addBox}><TextInput value={newStock} onChangeText={setNewStock} placeholder="티커 입력 (예: MU, 005930.KS)" placeholderTextColor="#64748b" style={styles.input} autoCapitalize="characters"/><Pressable onPress={addStock} style={styles.addButton}><Text style={styles.addButtonText}>추가</Text></Pressable></View>
               {visibleStocks.map((stock) => <View style={styles.card} key={stock.symbol}><View style={styles.row}><Text style={styles.stockName}>{stock.name}</Text><Text style={styles.stockChange}>{stock.change}</Text></View><Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text><Text style={styles.body}>{stock.reason}</Text><Text style={styles.why}>분석 기준 · 관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text></View>)}
               <Text style={styles.footer}>관심 종목 목록은 다음 단계에서 네가 지정한 종목으로 교체합니다.</Text>
             </>
@@ -76,8 +76,8 @@ export default function App() {
         </ScrollView>
       </View>
       <View style={styles.tabs}>
-        <Pressable style={[styles.tab, tab === 'NEWS' && styles.activeTab]} onPress={() => setTab('NEWS')}><Text style={[styles.tabText, tab === 'NEWS' && styles.activeTabText]}>NEWS</Text><Text style={styles.tabHint}>오늘의 거시·산업 뉴스</Text></Pressable>
-        <Pressable style={[styles.tab, tab === 'STOCK' && styles.activeTab]} onPress={() => setTab('STOCK')}><Text style={[styles.tabText, tab === 'STOCK' && styles.activeTabText]}>STOCK</Text><Text style={styles.tabHint}>관심 종목 영향 분석</Text></Pressable>
+        <Pressable style={[styles.tab, tab === 'NEWS' && styles.activeTab]} onPress={() => setTab('NEWS')}><Text style={[styles.tabText, tab === 'NEWS' && styles.activeTabText]}>NEWS</Text></Pressable>
+        <Pressable style={[styles.tab, tab === 'STOCK' && styles.activeTab]} onPress={() => setTab('STOCK')}><Text style={[styles.tabText, tab === 'STOCK' && styles.activeTabText]}>STOCK</Text></Pressable>
       </View>
     </View>
   );
@@ -90,7 +90,10 @@ const styles = StyleSheet.create({
   buildRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   eyebrow: { color: '#62a8ff', fontSize: 12, fontWeight: '700', letterSpacing: 2 },
   build: { color: '#62a8ff', fontSize: 10, fontWeight: '800' },
-  title: { color: '#f5f7fb', fontSize: 32, fontWeight: '800', marginTop: 8 },
+  titleRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 },
+  title: { color: '#f5f7fb', fontSize: 32, fontWeight: '800' },
+  searchIcon: { width: 46, height: 46, borderRadius: 23, backgroundColor: '#1b4778', alignItems: 'center', justifyContent: 'center' },
+  searchIconText: { color: '#fff', fontSize: 31, fontWeight: '700', lineHeight: 34 },
   date: { color: '#94a3b8', marginTop: 6, fontSize: 13 },
   hero: { backgroundColor: '#14345a', borderRadius: 18, padding: 20, marginTop: 24 },
   heroLabel: { color: '#8ec5ff', fontSize: 11, fontWeight: '700', letterSpacing: 1.5 },
@@ -109,7 +112,7 @@ const styles = StyleSheet.create({
   metric: { backgroundColor: '#151f31', borderRadius: 13, padding: 14, width: '47%' },
   metricLabel: { color: '#8fa3bd', fontSize: 12 },
   metricValue: { color: '#f5f7fb', fontSize: 17, fontWeight: '800', marginTop: 5 },
-  addBox: { flexDirection: 'row', alignItems: 'center', marginBottom: 12 },
+  topSearch: { flexDirection: 'row', alignItems: 'center', marginTop: 16 },
   input: { flex: 1, backgroundColor: '#151f31', color: '#f5f7fb', borderRadius: 12, paddingHorizontal: 14, paddingVertical: 12, borderWidth: 1, borderColor: '#22314a' },
   addButton: { backgroundColor: '#2d78cf', borderRadius: 12, paddingHorizontal: 18, paddingVertical: 12, marginLeft: 8 },
   addButtonText: { color: '#fff', fontWeight: '800' },
