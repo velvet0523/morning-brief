@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, AppState, Linking, Pressable, RefreshControl, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Alert, AppState, Linking, Platform, Pressable, RefreshControl, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -102,6 +102,10 @@ export default function App() {
   };
 
   const requestAIRefresh = () => {
+    if (Platform.OS === 'web') {
+      Linking.openURL(CHAT_REFRESH_URL);
+      return;
+    }
     Alert.alert(
       'AI 뉴스 최신화',
       'ChatGPT가 열리면 “지금 뉴스 갱신해줘”라고 보내세요. 분석이 끝난 뒤 앱으로 돌아오면 최신 데이터를 자동으로 다시 확인합니다.',
@@ -212,7 +216,7 @@ export default function App() {
 const createStyles = (theme) => StyleSheet.create({
   screen: { flex: 1, backgroundColor: theme.background },
   body: { flex: 1 },
-  container: { padding: 22, paddingTop: 62, paddingBottom: 120 },
+  container: { width: '100%', maxWidth: 900, alignSelf: 'center', padding: 22, paddingTop: 62, paddingBottom: 120 },
   buildRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   eyebrow: { color: theme.accent, fontSize: 12, fontWeight: '700', letterSpacing: 2 },
   build: { color: theme.accent, fontSize: 10, fontWeight: '800' },
