@@ -100,12 +100,15 @@ export default function App() {
     watch: '사실로 확인된 변화와 시장의 추정을 구분해 표시합니다.',
   };
   const stocks = data?.stocks || [
-    { symbol: '005930.KS', name: '삼성전자', change: '—', stance: '분석 예정', reason: '관심 종목을 등록하면 오늘 뉴스와 주가 변동의 연결고리를 분석합니다.' },
-    { symbol: '000660.KS', name: 'SK하이닉스', change: '—', stance: '분석 예정', reason: '반도체·메모리 수급과 산업 뉴스의 영향을 표시합니다.' },
+    { symbol: '005930.KS', name: '삼성전자', change: '—', stance: '분석 예정', reason: '반도체·메모리 수급과 산업 뉴스의 영향을 표시합니다.' },
+    { symbol: 'MU', name: 'Micron', change: '—', stance: '분석 예정', reason: '메모리 수급과 AI 서버 수요의 영향을 표시합니다.' },
     { symbol: 'NVDA', name: 'NVIDIA', change: '—', stance: '분석 예정', reason: 'AI 인프라 투자와 공급망 뉴스의 영향을 표시합니다.' },
+    { symbol: 'GOOGL', name: 'Alphabet (Google)', change: '—', stance: '분석 예정', reason: '광고·클라우드·AI 산업 뉴스의 영향을 표시합니다.' },
+    { symbol: 'MSFT', name: 'Microsoft', change: '—', stance: '분석 예정', reason: '클라우드·소프트웨어·AI 투자 뉴스의 영향을 표시합니다.' },
   ];
 
-  const visibleStocks = [...stocks, ...addedStocks];
+  const officialSymbols = new Set(stocks.map((stock) => stock.symbol));
+  const visibleStocks = [...stocks, ...addedStocks.filter((stock) => !officialSymbols.has(stock.symbol))];
   const screenTitle = { NEWS: '아침 브리핑', STOCK: '관심 종목', FLOW: '뉴스 흐름' }[tab];
   const headerUpdatedAt = tab === 'STOCK' ? data?.updatedAt : (data?.newsUpdatedAt || data?.updatedAt);
   const addStock = () => {
