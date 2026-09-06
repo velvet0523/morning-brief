@@ -1,9 +1,11 @@
 import React from 'react';
 import { Alert, AppState, Linking, Pressable, RefreshControl, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const DATA_URL = 'https://raw.githubusercontent.com/velvet0523/morning-brief/main/data/today.json';
 const CHAT_REFRESH_URL = 'https://chatgpt.com/c/6a9c3a18-ce08-83ee-b207-0ab2e8886f30';
+const THEME_STORAGE_KEY = '@morning-brief/theme';
 
 const THEMES = {
   dark: {
@@ -47,6 +49,19 @@ export default function App() {
   const [themeName, setThemeName] = React.useState('dark');
   const theme = THEMES[themeName];
   const styles = React.useMemo(() => createStyles(theme), [theme]);
+
+  React.useEffect(() => {
+    AsyncStorage.getItem(THEME_STORAGE_KEY)
+      .then((savedTheme) => {
+        if (savedTheme === 'light' || savedTheme === 'dark') setThemeName(savedTheme);
+      })
+      .catch(() => {});
+  }, []);
+
+  const selectTheme = React.useCallback((nextTheme) => {
+    setThemeName(nextTheme);
+    AsyncStorage.setItem(THEME_STORAGE_KEY, nextTheme).catch(() => {});
+  }, []);
   const loadData = React.useCallback(() => {
     setRefreshing(true);
     return fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' })
@@ -166,7 +181,7 @@ export default function App() {
                     accessibilityRole="button"
                     accessibilityState={{ selected: themeName === 'light' }}
                     style={[styles.themeOption, themeName === 'light' && styles.themeOptionActive]}
-                    onPress={() => setThemeName('light')}
+                    onPress={() => selectTheme('light')}
                   >
                     <Text style={[styles.themeOptionText, themeName === 'light' && styles.themeOptionTextActive]}>☀ 일반</Text>
                   </Pressable>
@@ -174,7 +189,7 @@ export default function App() {
                     accessibilityRole="button"
                     accessibilityState={{ selected: themeName === 'dark' }}
                     style={[styles.themeOption, themeName === 'dark' && styles.themeOptionActive]}
-                    onPress={() => setThemeName('dark')}
+                    onPress={() => selectTheme('dark')}
                   >
                     <Text style={[styles.themeOptionText, themeName === 'dark' && styles.themeOptionTextActive]}>☾ 다크</Text>
                   </Pressable>
