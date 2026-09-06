@@ -99,7 +99,7 @@ const renderStock = () => {
     <h2 class="section-title">관심 종목 분석</h2>
     ${stocks.map((stock) => `
       <article class="card">
-        <div class="card-top"><span class="stock-name">${escapeHtml(stock.name)}</span><span class="stock-change">${escapeHtml(stock.change)}</span></div>
+        <div class="stock-heading"><div class="stock-name">${escapeHtml(stock.name)}</div><div class="stock-change">${escapeHtml(stock.change)}</div></div>
         <div class="symbol">${escapeHtml(stock.symbol)} · ${escapeHtml(stock.stance)}</div>
         <div class="analysis-time">분석 기준 · ${escapeHtml(formatUpdatedAt(stock.analyzedAt || state.data?.updatedAt))}</div>
         <p class="summary">${escapeHtml(stock.reason)}</p>
