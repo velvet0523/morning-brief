@@ -40,6 +40,12 @@ export default function App() {
   const macroStories = stories.filter((story) => story.category === 'MACRO');
   const industryStories = stories.filter((story) => story.category === 'INDUSTRY');
   const markets = data?.markets || ['S&P 500', 'NASDAQ', 'KOSPI', '닛케이 225', '원·달러', 'WTI'].map((label) => ({ label, value: '—' }));
+  const flow = data?.flowAnalysis || {
+    title: '핵심 뉴스의 연결고리를 분석 중입니다',
+    overview: '다음 AI 갱신부터 주요 사건이 금리·유가·산업과 주가에 전달되는 경로를 요약합니다.',
+    links: [],
+    watch: '사실로 확인된 변화와 시장의 추정을 구분해 표시합니다.',
+  };
   const stocks = data?.stocks || [
     { symbol: '005930.KS', name: '삼성전자', change: '—', stance: '분석 예정', reason: '관심 종목을 등록하면 오늘 뉴스와 주가 변동의 연결고리를 분석합니다.' },
     { symbol: '000660.KS', name: 'SK하이닉스', change: '—', stance: '분석 예정', reason: '반도체·메모리 수급과 산업 뉴스의 영향을 표시합니다.' },
@@ -47,6 +53,7 @@ export default function App() {
   ];
 
   const visibleStocks = [...stocks, ...addedStocks];
+  const screenTitle = { NEWS: '아침 브리핑', STOCK: '관심 종목', FLOW: '뉴스 흐름' }[tab];
   const addStock = () => {
     const symbol = newStock.trim().toUpperCase();
     if (!symbol || visibleStocks.some((stock) => stock.symbol === symbol)) return;
@@ -80,12 +87,11 @@ export default function App() {
       <StatusBar style="light" />
       <View style={styles.body}>
         <ScrollView contentContainerStyle={styles.container} refreshControl={<RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor="#62a8ff" />}>
-          <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>STOCK TABS V2</Text></View>
+          <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>FLOW V3</Text></View>
           <View style={styles.titleRow}>
-            <Text style={styles.title}>{tab === 'NEWS' ? '아침 브리핑' : '관심 종목'}</Text>
-            {tab === 'NEWS'
-              ? <Pressable style={styles.refreshButton} onPress={requestAIRefresh}><Text style={styles.refreshIcon}>↻</Text><Text style={styles.refreshText}>뉴스 최신화</Text></Pressable>
-              : <Pressable style={styles.searchIcon} onPress={() => setShowSearch(!showSearch)}><Text style={styles.searchIconText}>⌕</Text></Pressable>}
+            <Text style={styles.title}>{screenTitle}</Text>
+            {tab === 'NEWS' && <Pressable style={styles.refreshButton} onPress={requestAIRefresh}><Text style={styles.refreshIcon}>↻</Text><Text style={styles.refreshText}>뉴스 최신화</Text></Pressable>}
+            {tab === 'STOCK' && <Pressable style={styles.searchIcon} onPress={() => setShowSearch(!showSearch)}><Text style={styles.searchIconText}>⌕</Text></Pressable>}
           </View>
           <Text style={styles.date}>{data?.date || '오늘'} · 한국시간</Text>
           <Text style={styles.updatedAt}>최근 AI 분석 · {formatUpdatedAt(data?.updatedAt)}</Text>
@@ -100,12 +106,31 @@ export default function App() {
               <Text style={styles.section}>시장 한눈에 보기</Text>
               <View style={styles.metrics}>{markets.map((item) => <View style={styles.metric} key={item.label}><Text style={styles.metricLabel}>{item.label}</Text><Text style={styles.metricValue}>{item.value}</Text></View>)}</View>
             </>
-          ) : (
+          ) : tab === 'STOCK' ? (
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY'S STOCK IMPACT</Text><Text style={styles.heroText}>오늘 뉴스가 관심 종목에 미친 영향을 확인하세요.</Text><Text style={styles.heroHint}>주가 변화의 원인을 호재·악재·수급성 움직임으로 구분합니다.</Text></View>
               <Text style={styles.section}>관심 종목 분석</Text>
               {visibleStocks.map((stock) => <View style={styles.card} key={stock.symbol}><View style={styles.row}><Text style={styles.stockName}>{stock.name}</Text><Text style={styles.stockChange}>{stock.change}</Text></View><Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text><Text style={styles.body}>{stock.reason}</Text><Text style={styles.why}>분석 기준 · 관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text></View>)}
               <Text style={styles.footer}>관심 종목 목록은 다음 단계에서 네가 지정한 종목으로 교체합니다.</Text>
+            </>
+          ) : (
+            <>
+              <View style={[styles.hero, styles.flowHero]}>
+                <Text style={styles.heroLabel}>MARKET CAUSAL MAP</Text>
+                <Text style={styles.flowTitle}>{flow.title}</Text>
+                <Text style={styles.flowOverview}>{flow.overview}</Text>
+              </View>
+              <Text style={styles.section}>핵심 연결고리</Text>
+              <View style={styles.flowCard}>
+                {flow.links?.length ? flow.links.slice(0, 3).map((link, index) => (
+                  <View style={[styles.flowLink, index > 0 && styles.flowDivider]} key={link.cause + link.effect}>
+                    <Text style={styles.flowPath}>{link.cause}  →  {link.effect}</Text>
+                    <Text style={styles.flowExplanation}>{link.explanation}</Text>
+                  </View>
+                )) : <Text style={styles.empty}>다음 뉴스 갱신부터 인과관계 분석이 표시됩니다.</Text>}
+              </View>
+              <View style={styles.watchCard}><Text style={styles.watchLabel}>앞으로 볼 변수</Text><Text style={styles.watchText}>{flow.watch}</Text></View>
+              <Text style={styles.flowCaution}>AI 해석이며, 확인된 사실과 추정 경로를 구분해 작성합니다.</Text>
             </>
           )}
           <Text style={styles.footer}>데이터 기준 시각과 출처를 함께 표시합니다.</Text>
@@ -114,6 +139,7 @@ export default function App() {
       <View style={styles.tabs}>
         <Pressable style={[styles.tab, tab === 'NEWS' && styles.activeTab]} onPress={() => setTab('NEWS')}><Text style={[styles.tabText, tab === 'NEWS' && styles.activeTabText]}>NEWS</Text></Pressable>
         <Pressable style={[styles.tab, tab === 'STOCK' && styles.activeTab]} onPress={() => setTab('STOCK')}><Text style={[styles.tabText, tab === 'STOCK' && styles.activeTabText]}>STOCK</Text></Pressable>
+        <Pressable style={[styles.tab, tab === 'FLOW' && styles.activeTab]} onPress={() => setTab('FLOW')}><Text style={[styles.tabText, tab === 'FLOW' && styles.activeTabText]}>FLOW</Text></Pressable>
       </View>
     </View>
   );
@@ -139,6 +165,18 @@ const styles = StyleSheet.create({
   heroLabel: { color: '#8ec5ff', fontSize: 11, fontWeight: '700', letterSpacing: 1.5 },
   heroText: { color: '#fff', fontSize: 21, lineHeight: 29, fontWeight: '700', marginTop: 10 },
   heroHint: { color: '#b8d7f7', fontSize: 12, marginTop: 14 },
+  flowHero: { paddingBottom: 18 },
+  flowTitle: { color: '#fff', fontSize: 19, lineHeight: 26, fontWeight: '800', marginTop: 9 },
+  flowOverview: { color: '#d6e7fa', fontSize: 13, lineHeight: 20, marginTop: 9 },
+  flowCard: { backgroundColor: '#151f31', borderRadius: 16, paddingHorizontal: 16, borderWidth: 1, borderColor: '#22314a' },
+  flowLink: { paddingVertical: 13 },
+  flowDivider: { borderTopWidth: 1, borderTopColor: '#273750' },
+  flowPath: { color: '#8ec5ff', fontSize: 13, fontWeight: '800' },
+  flowExplanation: { color: '#c0cad9', fontSize: 12, lineHeight: 18, marginTop: 5 },
+  watchCard: { backgroundColor: '#202238', borderRadius: 14, padding: 14, marginTop: 12, borderLeftWidth: 3, borderLeftColor: '#f3c969' },
+  watchLabel: { color: '#f3c969', fontSize: 11, fontWeight: '800', letterSpacing: 0.5 },
+  watchText: { color: '#d7dbea', fontSize: 12, lineHeight: 18, marginTop: 5 },
+  flowCaution: { color: '#64748b', fontSize: 10, lineHeight: 15, textAlign: 'center', marginTop: 12 },
   section: { color: '#f5f7fb', fontSize: 19, fontWeight: '800', marginTop: 28, marginBottom: 12 },
   card: { backgroundColor: '#151f31', borderRadius: 16, padding: 17, marginBottom: 12, borderWidth: 1, borderColor: '#22314a' },
   row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
