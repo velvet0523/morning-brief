@@ -39,9 +39,40 @@ const formatUpdatedAt = (value) => {
   }
 };
 
-export default function App() {
-  const scrollRef = React.useRef(null);
+function StockCard({ stock, updatedAt, styles }) {
+  const [expanded, setExpanded] = React.useState(false);
+  const valuation = stock.valuation || {};
 
+  return (
+    <View style={styles.card}>
+      <Pressable onPress={() => setExpanded((current) => !current)}>
+        <Text style={styles.stockName}>{stock.name}</Text>
+        <Text style={styles.stockChange}>{stock.change}</Text>
+        <View style={styles.stockMetaRow}>
+          <Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text>
+          <Text style={styles.stockChevron}>{expanded ? '▲' : '▼'}</Text>
+        </View>
+        <Text style={styles.stockTime}>분석 기준 · {formatUpdatedAt(stock.analyzedAt || updatedAt)}</Text>
+      </Pressable>
+
+      {expanded ? (
+        <View style={styles.valuationPanel}>
+          <View style={styles.valuationGrid}>
+            <View style={styles.valuationItem}><Text style={styles.valuationLabel}>PER</Text><Text style={styles.valuationValue}>{valuation.pe || '—'}</Text></View>
+            <View style={styles.valuationItem}><Text style={styles.valuationLabel}>PBR</Text><Text style={styles.valuationValue}>{valuation.pbr || '—'}</Text></View>
+            <View style={styles.valuationItem}><Text style={styles.valuationLabel}>EPS</Text><Text style={styles.valuationValue}>{valuation.eps || '—'}</Text></View>
+          </View>
+          <Text style={styles.valuationBasis}>{valuation.basis ? valuation.basis + ' · ' + valuation.asOf : '다음 갱신에서 지표를 계산합니다.'}</Text>
+        </View>
+      ) : null}
+
+      <Text style={styles.body}>{stock.reason}</Text>
+      <Text style={styles.why}>관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text>
+    </View>
+  );
+}
+
+export default function App() {
   React.useEffect(() => {
     if (Platform.OS !== 'web' || typeof document === 'undefined') return;
     document.documentElement.style.height = '100%';
@@ -62,7 +93,6 @@ export default function App() {
   const [newStock, setNewStock] = React.useState('');
   const [showSearch, setShowSearch] = React.useState(false);
   const [addedStocks, setAddedStocks] = React.useState([]);
-  const [expandedSymbol, setExpandedSymbol] = React.useState(null);
   const [themeName, setThemeName] = React.useState('dark');
   const theme = THEMES[themeName];
   const styles = React.useMemo(() => createStyles(theme), [theme]);
@@ -112,21 +142,6 @@ export default function App() {
 
   const officialSymbols = new Set(stocks.map((stock) => stock.symbol));
   const visibleStocks = [...stocks, ...addedStocks.filter((stock) => !officialSymbols.has(stock.symbol))];
-  const toggleStock = (symbol) => {
-    setExpandedSymbol((current) => (current === symbol ? null : symbol));
-  };
-  const changeTab = (nextTab) => {
-    setTab(nextTab);
-    setTimeout(() => {
-      if (scrollRef.current) scrollRef.current.scrollTo({ y: 0, animated: false });
-    }, 0);
-  };
-  React.useEffect(() => {
-    const resetTimer = setTimeout(() => {
-      if (scrollRef.current) scrollRef.current.scrollTo({ y: 0, animated: false });
-    }, 0);
-    return () => clearTimeout(resetTimer);
-  }, [tab, data?.updatedAt]);
   const screenTitle = { NEWS: '아침 브리핑', STOCK: '관심 종목', FLOW: '뉴스 흐름' }[tab];
   const headerUpdatedAt = tab === 'STOCK' ? data?.updatedAt : (data?.newsUpdatedAt || data?.updatedAt);
   const addStock = () => {
@@ -165,7 +180,7 @@ export default function App() {
     <View style={styles.screen}>
       <StatusBar style={themeName === 'dark' ? 'light' : 'dark'} />
       <View style={styles.body}>
-        <ScrollView ref={scrollRef} key={'mobile-v8-' + tab} style={styles.scroll} contentContainerStyle={styles.container} refreshControl={Platform.OS === 'web' ? undefined : <RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
+        <ScrollView style={styles.scroll} contentContainerStyle={styles.container} refreshControl={Platform.OS === 'web' ? undefined : <RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
           <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>FLOW V3</Text></View>
           <View style={styles.titleRow}>
             <Text style={styles.title}>{screenTitle}</Text>
@@ -189,48 +204,7 @@ export default function App() {
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY'S STOCK IMPACT</Text><Text style={styles.heroText}>오늘 뉴스가 관심 종목에 미친 영향을 확인하세요.</Text><Text style={styles.heroHint}>주가 변화의 원인을 호재·악재·수급성 움직임으로 구분합니다.</Text></View>
               <Text style={styles.section}>관심 종목 분석</Text>
-              {visibleStocks.map((stock) => {
-                const isExpanded = expandedSymbol === stock.symbol;
-                const valuation = stock.valuation || {};
-                return (
-                  <View style={styles.card} key={stock.symbol}>
-                    <Pressable onPress={() => toggleStock(stock.symbol)}>
-                      <View style={styles.stockHeader}>
-                        <Text style={styles.stockName}>{stock.name}</Text>
-                        <Text style={styles.stockChange}>{stock.change}</Text>
-                      </View>
-                      <View style={styles.stockMetaRow}>
-                        <Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text>
-                        <Text style={styles.stockChevron}>{isExpanded ? '▲' : '▼'}</Text>
-                      </View>
-                      <Text style={styles.stockTime}>분석 기준 · {formatUpdatedAt(stock.analyzedAt || data?.updatedAt)}</Text>
-                    </Pressable>
-                    {isExpanded ? (
-                      <View style={styles.valuationPanel}>
-                        <View style={styles.valuationGrid}>
-                          <View style={styles.valuationItem}>
-                            <Text style={styles.valuationLabel}>PER</Text>
-                            <Text style={styles.valuationValue}>{valuation.pe || '—'}</Text>
-                          </View>
-                          <View style={styles.valuationItem}>
-                            <Text style={styles.valuationLabel}>PBR</Text>
-                            <Text style={styles.valuationValue}>{valuation.pbr || '—'}</Text>
-                          </View>
-                          <View style={styles.valuationItem}>
-                            <Text style={styles.valuationLabel}>EPS</Text>
-                            <Text style={styles.valuationValue}>{valuation.eps || '—'}</Text>
-                          </View>
-                        </View>
-                        <Text style={styles.valuationBasis}>
-                          {valuation.basis ? valuation.basis + ' · ' + valuation.asOf : '다음 갱신에서 지표를 계산합니다.'}
-                        </Text>
-                      </View>
-                    ) : null}
-                    <Text style={styles.body}>{stock.reason}</Text>
-                    <Text style={styles.why}>관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text>
-                  </View>
-                );
-              })}
+              {visibleStocks.map((stock) => <StockCard key={stock.symbol} stock={stock} updatedAt={data?.updatedAt} styles={styles} />)}
               <Text style={styles.footer}>관심 종목 목록은 다음 단계에서 네가 지정한 종목으로 교체합니다.</Text>
             </>
           ) : (
@@ -281,9 +255,9 @@ export default function App() {
         </ScrollView>
       </View>
       <View style={styles.tabs}>
-        <Pressable style={[styles.tab, tab === 'NEWS' && styles.activeTab]} onPress={() => changeTab('NEWS')}><Text style={[styles.tabText, tab === 'NEWS' && styles.activeTabText]}>NEWS</Text></Pressable>
-        <Pressable style={[styles.tab, tab === 'STOCK' && styles.activeTab]} onPress={() => changeTab('STOCK')}><Text style={[styles.tabText, tab === 'STOCK' && styles.activeTabText]}>STOCK</Text></Pressable>
-        <Pressable style={[styles.tab, tab === 'FLOW' && styles.activeTab]} onPress={() => changeTab('FLOW')}><Text style={[styles.tabText, tab === 'FLOW' && styles.activeTabText]}>FLOW</Text></Pressable>
+        <Pressable style={[styles.tab, tab === 'NEWS' && styles.activeTab]} onPress={() => setTab('NEWS')}><Text style={[styles.tabText, tab === 'NEWS' && styles.activeTabText]}>NEWS</Text></Pressable>
+        <Pressable style={[styles.tab, tab === 'STOCK' && styles.activeTab]} onPress={() => setTab('STOCK')}><Text style={[styles.tabText, tab === 'STOCK' && styles.activeTabText]}>STOCK</Text></Pressable>
+        <Pressable style={[styles.tab, tab === 'FLOW' && styles.activeTab]} onPress={() => setTab('FLOW')}><Text style={[styles.tabText, tab === 'FLOW' && styles.activeTabText]}>FLOW</Text></Pressable>
       </View>
     </View>
   );
