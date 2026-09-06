@@ -1,6 +1,6 @@
 {
   "date": "2026-09-05",
-  "updatedAt": "2026-09-05T02:00:00+09:00",
+  "updatedAt": "2026-09-06T09:10:00+09:00",
   "headline": "테스트 갱신: 고용 강세와 중동발 원유·운송 차질이 주요 변수입니다.",
   "stories": [
     {
@@ -74,23 +74,77 @@
     {
       "symbol": "005930.KS",
       "name": "삼성전자",
-      "change": "—",
-      "stance": "분석 예정",
-      "reason": "관심 종목 등록 테스트: 메모리·파운드리·AI 수요 뉴스와 주가 반응을 연결합니다."
+      "change": "₩255,500 · +2.20%",
+      "stance": "호재 우세 · 업종/시장 동반",
+      "reason": "9월 4일 KOSPI(+1.64%)보다 0.56%p 더 올랐습니다. AI발 DRAM·HBM 공급 부족 기대와 메모리 업종 강세가 긍정적이었고, 확인된 당일 기업 고유 단일 재료보다는 업종 모멘텀과 시장 반등의 영향이 큰 것으로 판단합니다.",
+      "drivers": [
+        {
+          "type": "산업 호재",
+          "summary": "AI 수요로 DRAM 공급 부족과 가격 강세 기대 지속",
+          "impact": "긍정"
+        },
+        {
+          "type": "시장",
+          "summary": "KOSPI 대형주 동반 상승",
+          "impact": "긍정"
+        },
+        {
+          "type": "기업 고유",
+          "summary": "당일 확정된 신규 핵심 공시는 확인되지 않음",
+          "impact": "중립"
+        }
+      ],
+      "source": "https://dividend.samsung.com/info.do"
     },
     {
       "symbol": "000660.KS",
       "name": "SK하이닉스",
-      "change": "—",
-      "stance": "분석 예정",
-      "reason": "HBM·DRAM·NAND 수급과 설비투자 뉴스가 주가에 미친 영향을 분석합니다."
+      "change": "₩1,647,000 · +3.20%",
+      "stance": "호재 우세 · HBM/메모리 강세",
+      "reason": "KOSPI보다 1.56%p 초과 상승했습니다. AI 인프라 투자 기대와 HBM·DRAM 공급 부족 논리가 메모리 종목 전반을 끌어올린 영향이 우세합니다. 거래량은 65일 평균보다 낮아 강한 신규 수급보다는 업종 심리 회복 성격도 섞인 것으로 봅니다.",
+      "drivers": [
+        {
+          "type": "산업 호재",
+          "summary": "HBM 리더십과 메모리 공급 부족 기대",
+          "impact": "긍정"
+        },
+        {
+          "type": "수급/트레이딩",
+          "summary": "최근 조정 뒤 메모리주 반등",
+          "impact": "긍정"
+        },
+        {
+          "type": "주의",
+          "summary": "고평가·증설 흡수 우려는 잔존",
+          "impact": "상쇄"
+        }
+      ],
+      "source": "https://www.skhynix.com/ir/UI-FR-IR02/"
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "change": "—",
-      "stance": "분석 예정",
-      "reason": "AI 인프라 투자와 GPU 공급망 관련 뉴스의 영향을 분석합니다."
+      "change": "$230.36 · +0.77%",
+      "stance": "호재 우세 · 기업 이슈/상대강도",
+      "reason": "9월 4일 S&P 500이 0.38% 하락한 가운데 NVIDIA는 0.77% 상승해 상대강도가 나타났습니다. Hugging Face 인수 발표와 AI 생태계 확대 기대가 긍정적이었고, 강한 고용지표에 따른 금리 상승 부담이 상승 폭을 제한한 것으로 판단합니다.",
+      "drivers": [
+        {
+          "type": "기업 호재",
+          "summary": "Hugging Face 인수로 AI 개발 생태계 영향력 확대 기대",
+          "impact": "긍정"
+        },
+        {
+          "type": "매크로 악재",
+          "summary": "강한 고용지표와 금리 인상 우려",
+          "impact": "부정"
+        },
+        {
+          "type": "판단",
+          "summary": "시장 하락 속 상승해 단순 시장 베타만으로 설명되지는 않음",
+          "impact": "긍정"
+        }
+      ],
+      "source": "https://www.reuters.com/business/nvidia-buy-hugging-face-nearly-13-billion-big-bet-open-ai-models-2026-09-03/"
     }
   ]
 }
