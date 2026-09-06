@@ -1,8 +1,20 @@
 import React from 'react';
-import { Linking, Pressable, RefreshControl, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Alert, AppState, Linking, Pressable, RefreshControl, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 const DATA_URL = 'https://raw.githubusercontent.com/velvet0523/morning-brief/main/data/today.json';
+const CHAT_REFRESH_URL = 'https://chatgpt.com/c/6a9c3a18-ce08-83ee-b207-0ab2e8886f30';
+
+const formatUpdatedAt = (value) => {
+  if (!value) return '아직 갱신 기록 없음';
+  try {
+    return new Intl.DateTimeFormat('ko-KR', {
+      timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric', hour: 'numeric', minute: '2-digit',
+    }).format(new Date(value));
+  } catch {
+    return value;
+  }
+};
 
 export default function App() {
   const [data, setData] = React.useState(null);
@@ -16,7 +28,13 @@ export default function App() {
     return fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' })
       .then((r) => r.json()).then(setData).catch(() => {}).finally(() => setRefreshing(false));
   }, []);
-  React.useEffect(() => { loadData(); }, [loadData]);
+  React.useEffect(() => {
+    loadData();
+    const subscription = AppState.addEventListener('change', (nextState) => {
+      if (nextState === 'active') loadData();
+    });
+    return () => subscription.remove();
+  }, [loadData]);
 
   const stories = data?.stories || [];
   const macroStories = stories.filter((story) => story.category === 'MACRO');
@@ -36,6 +54,17 @@ export default function App() {
     setNewStock('');
   };
 
+  const requestAIRefresh = () => {
+    Alert.alert(
+      'AI 뉴스 최신화',
+      'ChatGPT가 열리면 “지금 뉴스 갱신해줘”라고 보내세요. 분석이 끝난 뒤 앱으로 돌아오면 최신 데이터를 자동으로 다시 확인합니다.',
+      [
+        { text: '취소', style: 'cancel' },
+        { text: 'ChatGPT 열기', onPress: () => Linking.openURL(CHAT_REFRESH_URL) },
+      ],
+    );
+  };
+
   const renderStories = (items) => items.map((story) => (
     <View style={styles.card} key={story.tag + story.title}>
       <View style={styles.row}><Text style={styles.tag}>{story.tag}</Text><Text style={styles.level}>{story.level}{story.importanceScore ? ' · ' + story.importanceScore + '점' : ''}</Text></View>
@@ -52,8 +81,15 @@ export default function App() {
       <View style={styles.body}>
         <ScrollView contentContainerStyle={styles.container} refreshControl={<RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor="#62a8ff" />}>
           <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>STOCK TABS V2</Text></View>
-          <View style={styles.titleRow}><Text style={styles.title}>{tab === 'NEWS' ? '아침 브리핑' : '관심 종목'}</Text>{tab === 'STOCK' && <Pressable style={styles.searchIcon} onPress={() => setShowSearch(!showSearch)}><Text style={styles.searchIconText}>⌕</Text></Pressable>}</View>
-          <Text style={styles.date}>{data?.date || '오늘'} · 한국시간</Text>{tab === 'STOCK' && showSearch && <View style={styles.topSearch}><TextInput value={newStock} onChangeText={setNewStock} placeholder="티커 입력 (예: MU, 005930.KS)" placeholderTextColor="#64748b" style={styles.input} autoCapitalize="characters" autoFocus/><Pressable onPress={addStock} style={styles.addButton}><Text style={styles.addButtonText}>추가</Text></Pressable></View>}
+          <View style={styles.titleRow}>
+            <Text style={styles.title}>{tab === 'NEWS' ? '아침 브리핑' : '관심 종목'}</Text>
+            {tab === 'NEWS'
+              ? <Pressable style={styles.refreshButton} onPress={requestAIRefresh}><Text style={styles.refreshIcon}>↻</Text><Text style={styles.refreshText}>뉴스 최신화</Text></Pressable>
+              : <Pressable style={styles.searchIcon} onPress={() => setShowSearch(!showSearch)}><Text style={styles.searchIconText}>⌕</Text></Pressable>}
+          </View>
+          <Text style={styles.date}>{data?.date || '오늘'} · 한국시간</Text>
+          <Text style={styles.updatedAt}>최근 AI 분석 · {formatUpdatedAt(data?.updatedAt)}</Text>
+          {tab === 'STOCK' && showSearch && <View style={styles.topSearch}><TextInput value={newStock} onChangeText={setNewStock} placeholder="티커 입력 (예: MU, 005930.KS)" placeholderTextColor="#64748b" style={styles.input} autoCapitalize="characters" autoFocus/><Pressable onPress={addStock} style={styles.addButton}><Text style={styles.addButtonText}>추가</Text></Pressable></View>}
           {tab === 'NEWS' ? (
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY IN 3 LINES</Text><Text style={styles.heroText}>{data?.headline || '세계 경제와 주식시장의 핵심 흐름을 출근 전 빠르게 확인하세요.'}</Text><Text style={styles.heroHint}>AI가 중요도와 시장 영향을 분석한 브리핑입니다.</Text></View>
@@ -92,9 +128,13 @@ const styles = StyleSheet.create({
   build: { color: '#62a8ff', fontSize: 10, fontWeight: '800' },
   titleRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 },
   title: { color: '#f5f7fb', fontSize: 32, fontWeight: '800' },
+  refreshButton: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#1b4778', borderRadius: 14, paddingHorizontal: 11, paddingVertical: 9 },
+  refreshIcon: { color: '#8ec5ff', fontSize: 18, fontWeight: '800', marginRight: 5 },
+  refreshText: { color: '#fff', fontSize: 12, fontWeight: '800' },
   searchIcon: { width: 46, height: 46, borderRadius: 23, backgroundColor: '#1b4778', alignItems: 'center', justifyContent: 'center' },
   searchIconText: { color: '#fff', fontSize: 31, fontWeight: '700', lineHeight: 34 },
   date: { color: '#94a3b8', marginTop: 6, fontSize: 13 },
+  updatedAt: { color: '#64748b', marginTop: 4, fontSize: 11 },
   hero: { backgroundColor: '#14345a', borderRadius: 18, padding: 20, marginTop: 24 },
   heroLabel: { color: '#8ec5ff', fontSize: 11, fontWeight: '700', letterSpacing: 1.5 },
   heroText: { color: '#fff', fontSize: 21, lineHeight: 29, fontWeight: '700', marginTop: 10 },
