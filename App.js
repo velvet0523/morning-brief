@@ -171,7 +171,7 @@ export default function App() {
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY'S STOCK IMPACT</Text><Text style={styles.heroText}>오늘 뉴스가 관심 종목에 미친 영향을 확인하세요.</Text><Text style={styles.heroHint}>주가 변화의 원인을 호재·악재·수급성 움직임으로 구분합니다.</Text></View>
               <Text style={styles.section}>관심 종목 분석</Text>
-              {visibleStocks.map((stock) => <View style={styles.card} key={stock.symbol}><View style={styles.row}><Text style={styles.stockName}>{stock.name}</Text><Text style={styles.stockChange}>{stock.change}</Text></View><Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text><Text style={styles.stockTime}>분석 기준 · {formatUpdatedAt(stock.analyzedAt || data?.updatedAt)}</Text><Text style={styles.body}>{stock.reason}</Text><Text style={styles.why}>관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text></View>)}
+              {visibleStocks.map((stock) => <View style={styles.card} key={stock.symbol}><View style={styles.stockHeader}><Text style={styles.stockName}>{stock.name}</Text><Text style={styles.stockChange}>{stock.change}</Text></View><Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text><Text style={styles.stockTime}>분석 기준 · {formatUpdatedAt(stock.analyzedAt || data?.updatedAt)}</Text><Text style={styles.body}>{stock.reason}</Text><Text style={styles.why}>관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text></View>)}
               <Text style={styles.footer}>관심 종목 목록은 다음 단계에서 네가 지정한 종목으로 교체합니다.</Text>
             </>
           ) : (
@@ -296,8 +296,9 @@ const createStyles = (theme) => StyleSheet.create({
   input: { flex: 1, backgroundColor: theme.surface, color: theme.text, borderRadius: 12, paddingHorizontal: 14, paddingVertical: 12, borderWidth: 1, borderColor: theme.border },
   addButton: { backgroundColor: theme.primaryButton, borderRadius: 12, paddingHorizontal: 18, paddingVertical: 12, marginLeft: 8 },
   addButtonText: { color: theme.onAccent, fontWeight: '800' },
-  stockName: { color: theme.text, fontSize: 19, fontWeight: '800' },
-  stockChange: { color: theme.warning, fontSize: 16, fontWeight: '800' },
+  stockHeader: { alignItems: 'flex-start', gap: 7, marginBottom: 1, minWidth: 0 },
+  stockName: { color: theme.text, fontSize: 19, fontWeight: '800', flexShrink: 1 },
+  stockChange: { color: theme.warning, fontSize: 16, fontWeight: '800', flexShrink: 1, width: '100%' },
   symbol: { color: theme.accentLabel, fontSize: 12, marginTop: 6 },
   stockTime: { color: theme.subdued, fontSize: 10, marginTop: 4 },
   tabs: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 20, elevation: 20, flexDirection: 'row', backgroundColor: theme.surfaceAlt, borderTopWidth: 1, borderTopColor: theme.border, paddingBottom: 14, paddingTop: 8 },
