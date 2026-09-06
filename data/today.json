@@ -1,96 +1,116 @@
 {
-  "date": "2026-09-05",
-  "updatedAt": "2026-09-06T09:10:00+09:00",
-  "newsUpdatedAt": "2026-09-06T09:10:00+09:00",
+  "date": "2026-09-06",
+  "updatedAt": "2026-09-06T09:56:47+09:00",
+  "newsUpdatedAt": "2026-09-06T09:56:47+09:00",
   "analysisStatus": {
-    "usUpdatedAt": "2026-09-06T09:10:00+09:00",
-    "krUpdatedAt": "2026-09-06T09:10:00+09:00"
+    "usUpdatedAt": "2026-09-06T09:56:47+09:00",
+    "krUpdatedAt": "2026-09-06T09:56:47+09:00"
   },
-  "headline": "테스트 갱신: 고용 강세와 중동발 원유·운송 차질이 주요 변수입니다.",
+  "headline": "강한 미국 고용과 중동발 유가 상승이 금리 부담을 키우는 가운데, AI·메모리 수요가 반도체를 방어하고 있습니다.",
   "flowAnalysis": {
-    "title": "고용 강세와 원유 공급 위험이 ‘높은 금리 장기화’ 가능성을 함께 키우는 흐름",
-    "overview": "미국 고용의 예상 밖 강세는 경기의 급격한 둔화 가능성을 낮추는 동시에 연준이 금리를 서둘러 내릴 필요도 줄입니다. 여기에 중동 운송 차질 우려로 유가가 오르면 상품·운송비를 통해 물가 하락 속도가 느려질 수 있습니다. 두 재료가 겹치면 국채금리와 할인율 부담이 커져 성장주에는 불리하지만, 반도체는 AI·메모리 수급 개선이라는 독립적인 호재가 있어 주가가 금리 방향과 반드시 같이 움직이지는 않을 수 있습니다.",
+    "title": "고용·유가가 할인율을 끌어올리고, AI 메모리 수요가 반도체 이익을 방어하는 흐름",
+    "overview": "미국 8월 고용의 예상 밖 강세는 경기 침체 우려를 낮췄지만 연준의 금리 인상 가능성과 국채금리를 함께 높였습니다. 동시에 미국·이란 긴장과 호르무즈 운송 차질로 유가와 정제마진이 오르면 물가 둔화가 늦어질 수 있습니다. 이는 미래 이익의 할인율을 높여 성장주에 불리합니다. 반면 한국 반도체 수출의 기록적 증가와 AI 생태계 투자는 메모리 이익 전망을 지지해, 반도체가 시장보다 강한 상대수익률을 보일 여지를 만들고 있습니다.",
     "links": [
       {
-        "cause": "중동 긴장·운송 차질",
-        "effect": "유가·운임 상승",
-        "explanation": "실제 공급 감소뿐 아니라 보험료와 우회 운항 같은 위험비용도 원유·정제유 가격과 운임을 밀어 올릴 수 있습니다."
+        "cause": "미국 고용 서프라이즈",
+        "effect": "연준 인상 확률·국채금리 상승",
+        "explanation": "노동시장이 예상보다 강하면 연준이 수요를 더 억제해야 한다는 판단이 강화돼 단기금리와 성장주 할인율에 부담이 됩니다."
       },
       {
-        "cause": "유가 상승·강한 고용",
-        "effect": "물가 둔화 지연·연준 부담",
-        "explanation": "에너지발 물가 압력과 견조한 노동시장이 동시에 이어지면 금리 인하가 늦어지거나 높은 금리가 더 오래 유지될 가능성이 커집니다."
+        "cause": "호르무즈 위험·유가 상승",
+        "effect": "에너지·운송비를 통한 물가 압력",
+        "explanation": "실제 공급 감소가 크지 않아도 보험료, 우회 운항, 위험 프리미엄과 높은 정제마진이 소비자 가격 하락을 늦출 수 있습니다."
       },
       {
-        "cause": "국채금리·할인율 상승",
-        "effect": "성장주 밸류에이션 압박",
-        "explanation": "먼 미래 이익의 현재가치가 낮아져 AI·반도체 같은 성장주에 부담입니다. 다만 메모리 가격과 HBM 수요가 충분히 강하면 산업 이익 개선이 금리 악재를 일부 상쇄할 수 있습니다."
+        "cause": "AI 투자·메모리 수출 증가",
+        "effect": "반도체 이익 전망 개선",
+        "explanation": "HBM과 메모리 수요가 실적 추정치를 충분히 높이면 금리 상승에 따른 밸류에이션 하락을 일부 상쇄할 수 있습니다."
       }
     ],
-    "watch": "유가 상승이 위험 프리미엄에 그치는지 실제 공급 차질로 이어지는지, 미국 기대인플레이션과 2년물 국채금리가 동반 상승하는지, 반도체 이익 전망 상향이 할인율 부담보다 강한지를 확인해야 합니다."
+    "watch": "9월 FOMC 전 물가 지표와 미국 2년물 금리, 호르무즈 실제 통항량과 위험 프리미엄의 분리, 메모리 가격·수주·설비투자 추세를 확인해야 합니다. 유가가 빠르게 정상화되거나 고용이 재차 둔화하면 금리 부담 시나리오는 약해집니다."
   },
   "stories": [
     {
       "category": "MACRO",
-      "importanceScore": 82,
+      "importanceScore": 92,
       "level": "높음",
       "tag": "US ECONOMY",
-      "title": "미국 8월 고용, 예상보다 강한 증가",
-      "summary": "미국 8월 비농업 고용이 16만2천 명 증가한 것으로 보도됐습니다.",
-      "why": "고용 강세가 지속되면 연준의 금리 결정과 국채금리 경로가 달라질 수 있습니다.",
-      "source": "https://www.wsj.com/economy/jobs/american-workers-have-slammed-the-brakes-on-switching-jobs-767c45d1"
+      "title": "미국 8월 고용 16만2천 명 증가…금리 인상 전망 재부상",
+      "summary": "비농업 고용이 16만2천 명 늘어 시장 예상 약 5만6천 명을 크게 웃돌았고, 실업률은 4.1%를 유지했습니다.",
+      "why": "강한 고용은 경기 급락 위험을 낮추지만 연준의 추가 긴축 가능성과 국채금리를 높여 주식 밸류에이션에 직접 영향을 줍니다.",
+      "source": "https://www.bls.gov/news.release/empsit.nr0.htm"
     },
     {
       "category": "MACRO",
+      "importanceScore": 90,
+      "level": "높음",
+      "tag": "OIL · GEOPOLITICS",
+      "title": "미국·이란 긴장에 WTI 주간 약 10% 급등",
+      "summary": "호르무즈 해협의 운송 차질 우려가 이어지며 WTI가 9월 4일 91달러대로 올라 주간 기준 약 10% 상승했습니다.",
+      "why": "유가 충격은 물가, 연준 정책, 소비와 기업 마진을 동시에 건드리는 광범위한 매크로 변수입니다.",
+      "source": "https://www.reuters.com/business/energy/oil-set-steepest-weekly-gain-since-mid-july-over-intensifying-us-iran-tensions-2026-09-04/"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 86,
+      "level": "높음",
+      "tag": "SEMICONDUCTOR",
+      "title": "한국 8월 반도체 수출 466억5천만 달러로 사상 최대",
+      "summary": "한국의 8월 반도체 수출은 전년 대비 209% 증가했습니다. 정부는 하이퍼스케일러의 AI 투자를 핵심 배경으로 설명했습니다.",
+      "why": "개별 기업 실적이 아니라 AI·메모리 업황 전체의 수요와 이익 전망을 뒷받침하는 산업 데이터입니다.",
+      "source": "https://english.motir.go.kr/eng/article/EATCLdfa319ada"
+    },
+    {
+      "category": "INDUSTRY",
       "importanceScore": 78,
       "level": "높음",
-      "tag": "GEOPOLITICS",
-      "title": "미국·이란 긴장으로 유가와 인플레이션 우려 확대",
-      "summary": "중동 긴장이 원유 공급과 운송 차질 가능성을 키우고 있습니다.",
-      "why": "유가가 물가와 중앙은행 정책, 글로벌 성장 전망에 동시에 영향을 줄 수 있습니다.",
-      "source": "https://www.reuters.com/business/energy/oil-set-steepest-weekly-gain-since-mid-july-over-intensifying-us-iran-tensions-2026-09-04/"
+      "tag": "REFINING · ENERGY",
+      "title": "고유가와 정제마진 강세가 휘발유 가격 압력 확대",
+      "summary": "미국 EIA는 높은 원유 가격과 크랙 스프레드가 소매 연료 가격을 밀어 올리고 있으며 높은 정제마진이 연말까지 이어질 것으로 봤습니다.",
+      "why": "정유사 마진에는 호재지만 소비자 물가와 수요에는 악재여서 에너지 업종과 금리 전망을 함께 바꿀 수 있습니다.",
+      "source": "https://www.eia.gov/todayinenergy/detail.php?id=67424"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 76,
-      "level": "높음",
-      "tag": "ENERGY · SHIPPING",
-      "title": "호르무즈 운송 차질 우려로 원유·정제유 운임 변수 확대",
-      "summary": "긴장이 지속되면서 호르무즈 해협을 지나는 원유와 정제유 선박의 운송 차질 가능성이 부각됐습니다.",
-      "why": "공급 거리와 운항 위험이 동시에 커지면 정유·탱커 산업의 톤마일과 운임에 영향을 줄 수 있습니다.",
-      "source": "https://www.reuters.com/business/energy/oil-set-steepest-weekly-gain-since-mid-july-over-intensifying-us-iran-tensions-2026-09-04/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 72,
+      "importanceScore": 73,
       "level": "중간",
-      "tag": "SEMICONDUCTOR",
-      "title": "AI·메모리 공급망 뉴스는 중요도 기준에 따라 선별 예정",
-      "summary": "개별 기업 실적이 아니라 메모리 수급·가격·설비투자처럼 산업 전체 전망을 바꾸는 정보만 포함합니다.",
-      "why": "네 관심 분야인 반도체·메모리·AI 인프라를 우선하되 단순 제품 홍보는 제외합니다.",
-      "source": "https://www.reuters.com/technology/"
+      "tag": "AI INFRA",
+      "title": "NVIDIA, 허깅페이스 129억3천만 달러 인수 합의",
+      "summary": "NVIDIA가 오픈소스 AI 플랫폼 허깅페이스 인수를 발표해 칩을 넘어 모델 개발 생태계와 인프라 영향력 확대에 나섰습니다.",
+      "why": "개별 기업 실적 뉴스는 아니며, AI 개발 생태계의 수직 통합과 GPU 수요 경로에 영향을 주는 산업 전략 변화입니다.",
+      "source": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 66,
+      "level": "중간",
+      "tag": "CHIP POLICY",
+      "title": "한미, 반도체 투자·관세 우려 놓고 협의",
+      "summary": "한국과 미국이 반도체 투자 방안을 논의하는 가운데 미국의 품목별 반도체 관세 가능성이 한국 업계의 불확실성으로 남았습니다.",
+      "why": "삼성전자와 SK하이닉스의 미국 투자비, 공급망 배치와 수익성에 영향을 줄 수 있는 정책 변수입니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/south-korea-says-chip-investments-under-discussion-with-us-amid-tariff-concerns-2026-09-04/"
     }
   ],
   "markets": [
     {
       "label": "S&P 500",
-      "value": "7,718.60"
+      "value": "7,718.60 · -0.38% · 9/4"
     },
     {
       "label": "NASDAQ",
-      "value": "26,587.90"
+      "value": "26,506.99 · -0.29% · 9/4"
     },
     {
       "label": "KOSPI",
-      "value": "6,687.21 · 9/4 마감"
+      "value": "6,687.21 · +1.64% · 9/4"
     },
     {
       "label": "닛케이 225",
-      "value": "65,020.94 · 9/4 마감"
+      "value": "65,020.94 · +1.26% · 9/4"
     },
     {
       "label": "원·달러",
-      "value": "1,345.55"
+      "value": "1,345.55 · -0.82% · 9/4 글로벌"
     },
     {
       "label": "WTI",
@@ -101,80 +121,80 @@
     {
       "symbol": "005930.KS",
       "name": "삼성전자",
-      "change": "₩255,500 · +2.20%",
-      "stance": "호재 우세 · 업종/시장 동반",
-      "reason": "9월 4일 KOSPI(+1.64%)보다 0.56%p 더 올랐습니다. AI발 DRAM·HBM 공급 부족 기대와 메모리 업종 강세가 긍정적이었고, 확인된 당일 기업 고유 단일 재료보다는 업종 모멘텀과 시장 반등의 영향이 큰 것으로 판단합니다.",
+      "change": "₩255,500 · +2.20% · 9/4 마감",
+      "stance": "호재 우세 · 업종·시장 동반",
+      "reason": "삼성전자는 KOSPI보다 0.56%p 더 올랐습니다. 외국인·기관의 대형주 매수와 반도체 업종 반등이 당일 상승의 주된 설명입니다. 9월 5일 공개된 8월 반도체 수출 기록은 장 마감 뒤 확인된 자료라 당일 원인이라기보다 메모리 수요 강세를 사후 확인하는 근거입니다.",
       "drivers": [
         {
           "type": "산업 호재",
-          "summary": "AI 수요로 DRAM 공급 부족과 가격 강세 기대 지속",
+          "summary": "AI 투자와 기록적인 반도체 수출이 메모리 수요 전망 지지",
           "impact": "긍정"
         },
         {
-          "type": "시장",
-          "summary": "KOSPI 대형주 동반 상승",
+          "type": "수급·시장",
+          "summary": "KOSPI 상승과 외국인·기관의 대형주 매수",
           "impact": "긍정"
         },
         {
-          "type": "기업 고유",
-          "summary": "당일 확정된 신규 핵심 공시는 확인되지 않음",
-          "impact": "중립"
+          "type": "정책 위험",
+          "summary": "미국 반도체 관세와 현지 투자 협의의 불확실성",
+          "impact": "부정"
         }
       ],
-      "source": "https://dividend.samsung.com/info.do",
-      "analyzedAt": "2026-09-06T09:10:00+09:00"
+      "source": "https://en.yna.co.kr/view/AEN20260904008551320",
+      "analyzedAt": "2026-09-06T09:56:47+09:00"
     },
     {
       "symbol": "000660.KS",
       "name": "SK하이닉스",
-      "change": "₩1,647,000 · +3.20%",
-      "stance": "호재 우세 · HBM/메모리 강세",
-      "reason": "KOSPI보다 1.56%p 초과 상승했습니다. AI 인프라 투자 기대와 HBM·DRAM 공급 부족 논리가 메모리 종목 전반을 끌어올린 영향이 우세합니다. 거래량은 65일 평균보다 낮아 강한 신규 수급보다는 업종 심리 회복 성격도 섞인 것으로 봅니다.",
+      "change": "₩1,647,000 · +3.20% · 9/4 마감",
+      "stance": "호재 우세 · 메모리 상대강도",
+      "reason": "SK하이닉스는 KOSPI보다 1.56%p 초과 상승했습니다. 외국인 수급과 최근 조정 뒤 반등에 AI·HBM 및 메모리 수요 기대가 더해진 것으로 판단합니다. 반도체 수출 기록은 업황 판단을 강화하지만 장 마감 후 발표돼 9월 4일 주가의 직접 원인으로 단정할 수는 없습니다.",
       "drivers": [
         {
           "type": "산업 호재",
-          "summary": "HBM 리더십과 메모리 공급 부족 기대",
+          "summary": "AI·HBM 수요와 메모리 업황 회복 기대",
           "impact": "긍정"
         },
         {
-          "type": "수급/트레이딩",
-          "summary": "최근 조정 뒤 메모리주 반등",
+          "type": "수급·트레이딩",
+          "summary": "외국인 매수와 최근 조정 뒤 반등",
           "impact": "긍정"
         },
         {
-          "type": "주의",
-          "summary": "고평가·증설 흡수 우려는 잔존",
-          "impact": "상쇄"
+          "type": "정책 위험",
+          "summary": "미국 반도체 관세 및 투자 조건 불확실성",
+          "impact": "부정"
         }
       ],
-      "source": "https://www.skhynix.com/ir/UI-FR-IR02/",
-      "analyzedAt": "2026-09-06T09:10:00+09:00"
+      "source": "https://www.businesskorea.co.kr/news/articleView.html?idxno=276250",
+      "analyzedAt": "2026-09-06T09:56:47+09:00"
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "change": "$230.36 · +0.77%",
-      "stance": "호재 우세 · 기업 이슈/상대강도",
-      "reason": "9월 4일 S&P 500이 0.38% 하락한 가운데 NVIDIA는 0.77% 상승해 상대강도가 나타났습니다. Hugging Face 인수 발표와 AI 생태계 확대 기대가 긍정적이었고, 강한 고용지표에 따른 금리 상승 부담이 상승 폭을 제한한 것으로 판단합니다.",
+      "change": "$230.36 · +0.77% · 9/4 마감",
+      "stance": "호재 우세 · 기업 이슈 상대강도",
+      "reason": "NVIDIA는 S&P 500보다 1.15%p, NASDAQ보다 1.06%p 강했습니다. 허깅페이스 인수에 따른 AI 생태계 확대 기대가 긍정적으로 작용한 것으로 보이며, 강한 고용 이후 오른 금리와 성장주 할인율 부담이 상승 폭을 제한했습니다. 상대강도는 기업 재료의 영향을 시사하지만 인수 뉴스만으로 전부 설명할 수는 없습니다.",
       "drivers": [
         {
-          "type": "기업 호재",
-          "summary": "Hugging Face 인수로 AI 개발 생태계 영향력 확대 기대",
+          "type": "기업·산업 호재",
+          "summary": "허깅페이스 인수로 오픈소스 AI 생태계 영향력 확대",
+          "impact": "긍정"
+        },
+        {
+          "type": "상대강도",
+          "summary": "미국 주요 지수 하락 중 플러스 수익률",
           "impact": "긍정"
         },
         {
           "type": "매크로 악재",
-          "summary": "강한 고용지표와 금리 인상 우려",
+          "summary": "고용 서프라이즈 뒤 금리 인상 기대와 할인율 상승",
           "impact": "부정"
-        },
-        {
-          "type": "판단",
-          "summary": "시장 하락 속 상승해 단순 시장 베타만으로 설명되지는 않음",
-          "impact": "긍정"
         }
       ],
       "source": "https://www.reuters.com/business/nvidia-buy-hugging-face-nearly-13-billion-big-bet-open-ai-models-2026-09-03/",
-      "analyzedAt": "2026-09-06T09:10:00+09:00"
+      "analyzedAt": "2026-09-06T09:56:47+09:00"
     }
   ]
 }
