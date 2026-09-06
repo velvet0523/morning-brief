@@ -3,7 +3,7 @@ import { Alert, AppState, Linking, Platform, Pressable, RefreshControl, ScrollVi
 import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const DATA_URL = 'https://raw.githubusercontent.com/velvet0523/morning-brief/main/data/today.json';
+const DATA_URL = 'https://velvet0523.github.io/morning-brief/data/today.json';
 const CHAT_REFRESH_URL = 'https://chatgpt.com/c/6a9c3a18-ce08-83ee-b207-0ab2e8886f30';
 const THEME_STORAGE_KEY = '@morning-brief/theme';
 
