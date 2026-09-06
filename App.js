@@ -39,9 +39,17 @@ const formatUpdatedAt = (value) => {
   }
 };
 
+const calculateForwardPe = (valuation = {}) => {
+  const price = Number(valuation.price);
+  const forwardEps = Number(valuation.forwardEps);
+  if (!Number.isFinite(price) || !Number.isFinite(forwardEps) || forwardEps <= 0) return '—';
+  return `${(price / forwardEps).toFixed(2)}배`;
+};
+
 function StockCard({ stock, updatedAt, styles }) {
   const [expanded, setExpanded] = React.useState(false);
   const valuation = stock.valuation || {};
+  const forwardPe = calculateForwardPe(valuation);
 
   return (
     <View style={styles.card}>
@@ -61,8 +69,11 @@ function StockCard({ stock, updatedAt, styles }) {
             <View style={styles.valuationItem}><Text style={styles.valuationLabel}>PER</Text><Text style={styles.valuationValue}>{valuation.pe || '—'}</Text></View>
             <View style={styles.valuationItem}><Text style={styles.valuationLabel}>PBR</Text><Text style={styles.valuationValue}>{valuation.pbr || '—'}</Text></View>
             <View style={styles.valuationItem}><Text style={styles.valuationLabel}>EPS</Text><Text style={styles.valuationValue}>{valuation.eps || '—'}</Text></View>
+            <View style={styles.valuationItem}><Text style={styles.valuationLabel}>12M Fwd PER</Text><Text style={styles.valuationValue}>{forwardPe}</Text></View>
           </View>
           <Text style={styles.valuationBasis}>{valuation.basis ? valuation.basis + ' · ' + valuation.asOf : '다음 갱신에서 지표를 계산합니다.'}</Text>
+          {forwardPe !== '—' ? <Text style={styles.valuationBasis}>12개월 선행 컨센서스 · 예상 EPS {valuation.forwardEpsLabel} · {valuation.forwardAsOf}</Text> : <Text style={styles.valuationBasis}>12개월 예상 EPS가 없어 선행 PER을 표시하지 않습니다.</Text>}
+          {valuation.forwardSource ? <Pressable onPress={() => Linking.openURL(valuation.forwardSource)}><Text style={styles.valuationSource}>Forward PER 출처 열기  ›</Text></Pressable> : null}
         </View>
       ) : null}
 
@@ -338,11 +349,12 @@ const createStyles = (theme) => StyleSheet.create({
   stockChevron: { color: theme.accent, fontSize: 18, fontWeight: '800' },
   stockTime: { color: theme.subdued, fontSize: 10, marginTop: 4 },
   valuationPanel: { backgroundColor: theme.surfaceAlt, borderRadius: 12, borderWidth: 1, borderColor: theme.divider, padding: 12, marginTop: 12, marginBottom: 2 },
-  valuationGrid: { flexDirection: 'row' },
-  valuationItem: { flex: 1, minWidth: 0, marginRight: 6 },
+  valuationGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  valuationItem: { width: '47%', minWidth: 0, flexGrow: 1, backgroundColor: theme.surface, borderRadius: 9, padding: 9 },
   valuationLabel: { color: theme.secondary, fontSize: 11, fontWeight: '700', marginBottom: 4 },
-  valuationValue: { color: theme.text, fontSize: 15, fontWeight: '800', flexShrink: 1 },
-  valuationBasis: { color: theme.subdued, fontSize: 10, marginTop: 9 },
+  valuationValue: { color: theme.text, fontSize: 15, fontWeight: '800', flexShrink: 1, flexWrap: 'wrap' },
+  valuationBasis: { color: theme.subdued, fontSize: 10, lineHeight: 15, marginTop: 9, flexWrap: 'wrap' },
+  valuationSource: { color: theme.accent, fontSize: 10, fontWeight: '700', marginTop: 8 },
   tabs: { position: 'absolute', left: 0, right: 0, bottom: 0, zIndex: 20, elevation: 20, flexDirection: 'row', backgroundColor: theme.surfaceAlt, borderTopWidth: 1, borderTopColor: theme.border, paddingBottom: 14, paddingTop: 8 },
   tab: { flex: 1, alignItems: 'center', paddingVertical: 8, borderRadius: 10, marginHorizontal: 6 },
   activeTab: { backgroundColor: theme.activeSurface },
