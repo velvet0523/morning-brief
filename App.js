@@ -60,7 +60,7 @@ export default function App() {
   const [newStock, setNewStock] = React.useState('');
   const [showSearch, setShowSearch] = React.useState(false);
   const [addedStocks, setAddedStocks] = React.useState([]);
-  const [expandedStocks, setExpandedStocks] = React.useState({});
+  const [expandedSymbol, setExpandedSymbol] = React.useState(null);
   const [themeName, setThemeName] = React.useState('dark');
   const theme = THEMES[themeName];
   const styles = React.useMemo(() => createStyles(theme), [theme]);
@@ -111,7 +111,7 @@ export default function App() {
   const officialSymbols = new Set(stocks.map((stock) => stock.symbol));
   const visibleStocks = [...stocks, ...addedStocks.filter((stock) => !officialSymbols.has(stock.symbol))];
   const toggleStock = (symbol) => {
-    setExpandedStocks((current) => ({ ...current, [symbol]: !current[symbol] }));
+    setExpandedSymbol((current) => (current === symbol ? null : symbol));
   };
   const screenTitle = { NEWS: '아침 브리핑', STOCK: '관심 종목', FLOW: '뉴스 흐름' }[tab];
   const headerUpdatedAt = tab === 'STOCK' ? data?.updatedAt : (data?.newsUpdatedAt || data?.updatedAt);
@@ -175,22 +175,48 @@ export default function App() {
             <>
               <View style={styles.hero}><Text style={styles.heroLabel}>TODAY'S STOCK IMPACT</Text><Text style={styles.heroText}>오늘 뉴스가 관심 종목에 미친 영향을 확인하세요.</Text><Text style={styles.heroHint}>주가 변화의 원인을 호재·악재·수급성 움직임으로 구분합니다.</Text></View>
               <Text style={styles.section}>관심 종목 분석</Text>
-              {visibleStocks.map((stock) => <View style={styles.card} key={stock.symbol}>
-                <Pressable onPress={() => toggleStock(stock.symbol)} accessibilityRole="button" accessibilityState={{ expanded: !!expandedStocks[stock.symbol] }}>
-                  <View style={styles.stockHeader}><Text style={styles.stockName}>{stock.name}</Text><Text style={styles.stockChange}>{stock.change}</Text></View>
-                  <View style={styles.stockMetaRow}><Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text><Text style={styles.stockChevron}>{expandedStocks[stock.symbol] ? '⌃' : '⌄'}</Text></View>
-                  <Text style={styles.stockTime}>분석 기준 · {formatUpdatedAt(stock.analyzedAt || data?.updatedAt)}</Text>
-                </Pressable>
-                {expandedStocks[stock.symbol] && <View style={styles.valuationPanel}>
-                  <View style={styles.valuationGrid}>
-                    <View style={styles.valuationItem}><Text style={styles.valuationLabel}>PER</Text><Text style={styles.valuationValue}>{stock.valuation?.pe || '—'}</Text></View>
-                    <View style={styles.valuationItem}><Text style={styles.valuationLabel}>PBR</Text><Text style={styles.valuationValue}>{stock.valuation?.pbr || '—'}</Text></View>
-                    <View style={styles.valuationItem}><Text style={styles.valuationLabel}>EPS</Text><Text style={styles.valuationValue}>{stock.valuation?.eps || '—'}</Text></View>
+              {visibleStocks.map((stock) => {
+                const isExpanded = expandedSymbol === stock.symbol;
+                const valuation = stock.valuation || {};
+                return (
+                  <View style={styles.card} key={stock.symbol}>
+                    <Pressable onPress={() => toggleStock(stock.symbol)}>
+                      <View style={styles.stockHeader}>
+                        <Text style={styles.stockName}>{stock.name}</Text>
+                        <Text style={styles.stockChange}>{stock.change}</Text>
+                      </View>
+                      <View style={styles.stockMetaRow}>
+                        <Text style={styles.symbol}>{stock.symbol} · {stock.stance}</Text>
+                        <Text style={styles.stockChevron}>{isExpanded ? '▲' : '▼'}</Text>
+                      </View>
+                      <Text style={styles.stockTime}>분석 기준 · {formatUpdatedAt(stock.analyzedAt || data?.updatedAt)}</Text>
+                    </Pressable>
+                    {isExpanded ? (
+                      <View style={styles.valuationPanel}>
+                        <View style={styles.valuationGrid}>
+                          <View style={styles.valuationItem}>
+                            <Text style={styles.valuationLabel}>PER</Text>
+                            <Text style={styles.valuationValue}>{valuation.pe || '—'}</Text>
+                          </View>
+                          <View style={styles.valuationItem}>
+                            <Text style={styles.valuationLabel}>PBR</Text>
+                            <Text style={styles.valuationValue}>{valuation.pbr || '—'}</Text>
+                          </View>
+                          <View style={styles.valuationItem}>
+                            <Text style={styles.valuationLabel}>EPS</Text>
+                            <Text style={styles.valuationValue}>{valuation.eps || '—'}</Text>
+                          </View>
+                        </View>
+                        <Text style={styles.valuationBasis}>
+                          {valuation.basis ? valuation.basis + ' · ' + valuation.asOf : '다음 갱신에서 지표를 계산합니다.'}
+                        </Text>
+                      </View>
+                    ) : null}
+                    <Text style={styles.body}>{stock.reason}</Text>
+                    <Text style={styles.why}>관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text>
                   </View>
-                  <Text style={styles.valuationBasis}>{stock.valuation ? `${stock.valuation.basis} · ${stock.valuation.asOf}` : '다음 갱신에서 지표를 계산합니다.'}</Text>
-                </View>}
-                <Text style={styles.body}>{stock.reason}</Text><Text style={styles.why}>관련 매크로·산업 뉴스, 기업 고유 이슈, 시장 수급을 구분해 판단합니다.</Text>
-              </View>)}
+                );
+              })}
               <Text style={styles.footer}>관심 종목 목록은 다음 단계에서 네가 지정한 종목으로 교체합니다.</Text>
             </>
           ) : (
@@ -315,16 +341,16 @@ const createStyles = (theme) => StyleSheet.create({
   input: { flex: 1, backgroundColor: theme.surface, color: theme.text, borderRadius: 12, paddingHorizontal: 14, paddingVertical: 12, borderWidth: 1, borderColor: theme.border },
   addButton: { backgroundColor: theme.primaryButton, borderRadius: 12, paddingHorizontal: 18, paddingVertical: 12, marginLeft: 8 },
   addButtonText: { color: theme.onAccent, fontWeight: '800' },
-  stockHeader: { alignItems: 'flex-start', gap: 7, marginBottom: 1, minWidth: 0 },
+  stockHeader: { alignItems: 'flex-start', marginBottom: 1, minWidth: 0 },
   stockName: { color: theme.text, fontSize: 19, fontWeight: '800', flexShrink: 1 },
-  stockChange: { color: theme.warning, fontSize: 16, fontWeight: '800', flexShrink: 1, width: '100%' },
+  stockChange: { color: theme.warning, fontSize: 16, fontWeight: '800', flexShrink: 1, width: '100%', marginTop: 7 },
   symbol: { color: theme.accentLabel, fontSize: 12, marginTop: 6 },
-  stockMetaRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 },
+  stockMetaRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
   stockChevron: { color: theme.accent, fontSize: 18, fontWeight: '800' },
   stockTime: { color: theme.subdued, fontSize: 10, marginTop: 4 },
   valuationPanel: { backgroundColor: theme.surfaceAlt, borderRadius: 12, borderWidth: 1, borderColor: theme.divider, padding: 12, marginTop: 12, marginBottom: 2 },
-  valuationGrid: { flexDirection: 'row', gap: 8 },
-  valuationItem: { flex: 1, minWidth: 0 },
+  valuationGrid: { flexDirection: 'row' },
+  valuationItem: { flex: 1, minWidth: 0, marginRight: 6 },
   valuationLabel: { color: theme.secondary, fontSize: 11, fontWeight: '700', marginBottom: 4 },
   valuationValue: { color: theme.text, fontSize: 15, fontWeight: '800', flexShrink: 1 },
   valuationBasis: { color: theme.subdued, fontSize: 10, marginTop: 9 },
