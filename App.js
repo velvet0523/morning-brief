@@ -40,6 +40,8 @@ const formatUpdatedAt = (value) => {
 };
 
 export default function App() {
+  const scrollRef = React.useRef(null);
+
   React.useEffect(() => {
     if (Platform.OS !== 'web' || typeof document === 'undefined') return;
     document.documentElement.style.height = '100%';
@@ -113,6 +115,18 @@ export default function App() {
   const toggleStock = (symbol) => {
     setExpandedSymbol((current) => (current === symbol ? null : symbol));
   };
+  const changeTab = (nextTab) => {
+    setTab(nextTab);
+    setTimeout(() => {
+      if (scrollRef.current) scrollRef.current.scrollTo({ y: 0, animated: false });
+    }, 0);
+  };
+  React.useEffect(() => {
+    const resetTimer = setTimeout(() => {
+      if (scrollRef.current) scrollRef.current.scrollTo({ y: 0, animated: false });
+    }, 0);
+    return () => clearTimeout(resetTimer);
+  }, [tab, data?.updatedAt]);
   const screenTitle = { NEWS: '아침 브리핑', STOCK: '관심 종목', FLOW: '뉴스 흐름' }[tab];
   const headerUpdatedAt = tab === 'STOCK' ? data?.updatedAt : (data?.newsUpdatedAt || data?.updatedAt);
   const addStock = () => {
@@ -151,7 +165,7 @@ export default function App() {
     <View style={styles.screen}>
       <StatusBar style={themeName === 'dark' ? 'light' : 'dark'} />
       <View style={styles.body}>
-        <ScrollView style={styles.scroll} contentContainerStyle={styles.container} refreshControl={Platform.OS === 'web' ? undefined : <RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
+        <ScrollView ref={scrollRef} key={'mobile-v8-' + tab} style={styles.scroll} contentContainerStyle={styles.container} refreshControl={Platform.OS === 'web' ? undefined : <RefreshControl refreshing={refreshing} onRefresh={loadData} tintColor={theme.accent} colors={[theme.accent]} />}>
           <View style={styles.buildRow}><Text style={styles.eyebrow}>MORNING BRIEF</Text><Text style={styles.build}>FLOW V3</Text></View>
           <View style={styles.titleRow}>
             <Text style={styles.title}>{screenTitle}</Text>
@@ -267,9 +281,9 @@ export default function App() {
         </ScrollView>
       </View>
       <View style={styles.tabs}>
-        <Pressable style={[styles.tab, tab === 'NEWS' && styles.activeTab]} onPress={() => setTab('NEWS')}><Text style={[styles.tabText, tab === 'NEWS' && styles.activeTabText]}>NEWS</Text></Pressable>
-        <Pressable style={[styles.tab, tab === 'STOCK' && styles.activeTab]} onPress={() => setTab('STOCK')}><Text style={[styles.tabText, tab === 'STOCK' && styles.activeTabText]}>STOCK</Text></Pressable>
-        <Pressable style={[styles.tab, tab === 'FLOW' && styles.activeTab]} onPress={() => setTab('FLOW')}><Text style={[styles.tabText, tab === 'FLOW' && styles.activeTabText]}>FLOW</Text></Pressable>
+        <Pressable style={[styles.tab, tab === 'NEWS' && styles.activeTab]} onPress={() => changeTab('NEWS')}><Text style={[styles.tabText, tab === 'NEWS' && styles.activeTabText]}>NEWS</Text></Pressable>
+        <Pressable style={[styles.tab, tab === 'STOCK' && styles.activeTab]} onPress={() => changeTab('STOCK')}><Text style={[styles.tabText, tab === 'STOCK' && styles.activeTabText]}>STOCK</Text></Pressable>
+        <Pressable style={[styles.tab, tab === 'FLOW' && styles.activeTab]} onPress={() => changeTab('FLOW')}><Text style={[styles.tabText, tab === 'FLOW' && styles.activeTabText]}>FLOW</Text></Pressable>
       </View>
     </View>
   );
