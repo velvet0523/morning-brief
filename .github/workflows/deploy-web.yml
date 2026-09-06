@@ -21,8 +21,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Add website icon
-        run: cp assets/favicon.png web/favicon.png
+      - name: Assemble standalone website
+        run: |
+          cp assets/favicon.png web/favicon.png
+          mkdir -p web/data
+          cp data/today.json web/data/today.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
