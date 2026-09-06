@@ -147,6 +147,11 @@
         "pe": "11.37배",
         "pbr": "3.01배",
         "eps": "₩22,476",
+        "price": 255500,
+        "forwardEps": 62776.4128,
+        "forwardEpsLabel": "₩62,776",
+        "forwardAsOf": "2026-09-06",
+        "forwardSource": "https://stockanalysis.com/quote/krx/005930/statistics/",
         "basis": "TTM EPS · 최근 공시 BPS 기준",
         "asOf": "2026-09-04"
       }
@@ -180,6 +185,11 @@
         "pe": "23.02배",
         "pbr": "11.40배",
         "eps": "$44.17",
+        "price": 1016.59,
+        "forwardEps": 143.7893,
+        "forwardEpsLabel": "$143.79",
+        "forwardAsOf": "2026-09-06",
+        "forwardSource": "https://stockanalysis.com/stocks/mu/statistics/",
         "basis": "TTM EPS · 최근 분기 BPS 기준",
         "asOf": "2026-09-04"
       }
@@ -213,6 +223,11 @@
         "pe": "28.90배",
         "pbr": "24.29배",
         "eps": "$7.97",
+        "price": 230.36,
+        "forwardEps": 12.0607,
+        "forwardEpsLabel": "$12.06",
+        "forwardAsOf": "2026-09-06",
+        "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/",
         "basis": "TTM EPS · 최근 분기 BPS 기준",
         "asOf": "2026-09-04"
       }
@@ -246,6 +261,11 @@
         "pe": "17.00배",
         "pbr": "8.56배",
         "eps": "$19.91",
+        "price": 338.46,
+        "forwardEps": 13.3304,
+        "forwardEpsLabel": "$13.33",
+        "forwardAsOf": "2026-09-06",
+        "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/",
         "basis": "TTM EPS · 최근 분기 BPS 기준",
         "asOf": "2026-09-04"
       }
@@ -279,6 +299,11 @@
         "pe": "29.74배",
         "pbr": "8.39배",
         "eps": "$16.80",
+        "price": 499.70,
+        "forwardEps": 19.7510,
+        "forwardEpsLabel": "$19.75",
+        "forwardAsOf": "2026-09-06",
+        "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/",
         "basis": "TTM EPS · 최근 분기 BPS 기준",
         "asOf": "2026-09-04"
       }
