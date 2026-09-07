@@ -1,94 +1,94 @@
 {
-  "date": "2026-09-06",
-  "updatedAt": "2026-09-06T11:04:36+09:00",
-  "newsUpdatedAt": "2026-09-06T09:56:47+09:00",
+  "date": "2026-09-07",
+  "updatedAt": "2026-09-07T09:15:41.375+09:00",
+  "newsUpdatedAt": "2026-09-07T09:15:41.375+09:00",
   "analysisStatus": {
     "usUpdatedAt": "2026-09-06T10:47:15+09:00",
     "krUpdatedAt": "2026-09-06T09:56:47+09:00"
   },
-  "headline": "강한 미국 고용과 중동발 유가 상승이 금리 부담을 키우는 가운데, AI·메모리 수요가 반도체를 방어하고 있습니다.",
+  "headline": "호르무즈 통항이 급감하고 이란이 배제구역을 예고한 가운데 OPEC+는 10월 생산정책을 동결해, 유가·물가·금리 부담이 다시 핵심 변수로 떠올랐습니다.",
   "flowAnalysis": {
-    "title": "고용·유가가 할인율을 끌어올리고, AI 메모리 수요가 반도체 이익을 방어하는 흐름",
-    "overview": "미국 8월 고용의 예상 밖 강세는 경기 침체 우려를 낮췄지만 연준의 금리 인상 가능성과 국채금리를 함께 높였습니다. 동시에 미국·이란 긴장과 호르무즈 운송 차질로 유가와 정제마진이 오르면 물가 둔화가 늦어질 수 있습니다. 이는 미래 이익의 할인율을 높여 성장주에 불리합니다. 반면 한국 반도체 수출의 기록적 증가와 AI 생태계 투자는 메모리 이익 전망을 지지해, 반도체가 시장보다 강한 상대수익률을 보일 여지를 만들고 있습니다.",
+    "title": "호르무즈 공급위험 → 유가·물가 압력 → 금리·성장주 할인율, 중국 자본확충은 신용 여력을 보완",
+    "overview": "호르무즈 해협의 원자재 선박 통항이 최근 10일 하루 평균 10척으로 5월 이후 최저 수준까지 줄었고, 이란은 새 배제구역을 예고했습니다. 실제 운송 감소와 보험료·운임 상승은 원유 가격을 넘어 물가 경로에 압력을 줍니다. OPEC+가 10월 생산정책을 유지한 것은 이 공급 충격을 빠르게 상쇄할 추가 증산 완충이 제한적이라는 뜻입니다. 여기에 강한 미국 고용이 겹치면 연준의 긴축 기대와 국채금리가 높아져 장기 성장주 밸류에이션에 불리합니다. 반도체는 AI·메모리 수요가 이익 전망을 지지하지만, 주말 동안 새 실적 촉매는 확인되지 않아 기존 업황 신호와 새 주가 재료를 구분해야 합니다. 중국의 540억달러 금융사 자본확충은 대출 여력을 높이지만 실제 경기 효과는 신규 대출 수요 회복이 확인돼야 합니다.",
     "links": [
       {
-        "cause": "미국 고용 서프라이즈",
-        "effect": "연준 인상 확률·국채금리 상승",
-        "explanation": "노동시장이 예상보다 강하면 연준이 수요를 더 억제해야 한다는 판단이 강화돼 단기금리와 성장주 할인율에 부담이 됩니다."
+        "cause": "호르무즈 통항 급감·이란 배제구역 예고",
+        "effect": "원유 공급위험·운임·보험료 상승",
+        "explanation": "물리적 통항량 감소는 위험 프리미엄뿐 아니라 실제 인도 지연 가능성을 높여 유가와 운송비를 동시에 자극합니다."
       },
       {
-        "cause": "호르무즈 위험·유가 상승",
-        "effect": "에너지·운송비를 통한 물가 압력",
-        "explanation": "실제 공급 감소가 크지 않아도 보험료, 우회 운항, 위험 프리미엄과 높은 정제마진이 소비자 가격 하락을 늦출 수 있습니다."
+        "cause": "OPEC+ 10월 생산정책 동결",
+        "effect": "공급 충격을 흡수할 추가 완충 제한",
+        "explanation": "회원국 실제 생산이 목표에 못 미치는 상황에서 정책 동결은 호르무즈 차질을 즉시 상쇄할 새 공급이 크지 않음을 뜻합니다."
       },
       {
-        "cause": "AI 투자·메모리 수출 증가",
-        "effect": "반도체 이익 전망 개선",
-        "explanation": "HBM과 메모리 수요가 실적 추정치를 충분히 높이면 금리 상승에 따른 밸류에이션 하락을 일부 상쇄할 수 있습니다."
+        "cause": "유가 압력·강한 미국 고용",
+        "effect": "물가 둔화 지연·금리 상승·성장주 할인율 부담",
+        "explanation": "에너지 가격과 견조한 고용이 함께 유지되면 연준이 긴축을 오래 지속할 가능성이 커져 AI·소프트웨어 등 장기 성장주의 멀티플을 낮출 수 있습니다."
       }
     ],
-    "watch": "9월 FOMC 전 물가 지표와 미국 2년물 금리, 호르무즈 실제 통항량과 위험 프리미엄의 분리, 메모리 가격·수주·설비투자 추세를 확인해야 합니다. 유가가 빠르게 정상화되거나 고용이 재차 둔화하면 금리 부담 시나리오는 약해집니다."
+    "watch": "호르무즈 실제 통항량과 VLCC 출항, 유조선 운임·전쟁보험료, WTI·브렌트 선물곡선, 이번 주 미국 PPI·CPI와 2년물 금리, 중국 신규대출 증가율, HBM·DRAM 가격과 하이퍼스케일러 설비투자를 확인해야 합니다. 통항이 빠르게 정상화되거나 물가가 예상보다 낮으면 금리 부담 시나리오는 약해집니다."
   },
   "stories": [
     {
       "category": "MACRO",
-      "importanceScore": 92,
+      "importanceScore": 95,
       "level": "높음",
-      "tag": "US ECONOMY",
-      "title": "미국 8월 고용 16만2천 명 증가…금리 인상 전망 재부상",
-      "summary": "비농업 고용이 16만2천 명 늘어 시장 예상 약 5만6천 명을 크게 웃돌았고, 실업률은 4.1%를 유지했습니다.",
-      "why": "강한 고용은 경기 급락 위험을 낮추지만 연준의 추가 긴축 가능성과 국채금리를 높여 주식 밸류에이션에 직접 영향을 줍니다.",
-      "source": "https://www.bls.gov/news.release/empsit.nr0.htm"
+      "tag": "OIL · GEOPOLITICS",
+      "title": "호르무즈 통항, 5월 이후 최저…이란은 새 배제구역 예고",
+      "summary": "최근 10일 호르무즈를 지난 원자재 선박이 하루 평균 10척으로 줄었고, 이란은 해협 인근에서 선박 통항을 겨냥한 새 배제구역을 예고했습니다.",
+      "why": "실제 통항 감소는 원유 공급과 운임·보험료를 동시에 밀어 올려 물가, 연준 정책, 소비와 기업 마진에 광범위한 영향을 줄 수 있습니다.",
+      "source": "https://www.reuters.com/world/middle-east/hormuz-traffic-dips-lowest-since-may-after-us-iranian-strikes-ships-2026-09-06/"
     },
     {
       "category": "MACRO",
-      "importanceScore": 90,
+      "importanceScore": 88,
       "level": "높음",
-      "tag": "OIL · GEOPOLITICS",
-      "title": "미국·이란 긴장에 WTI 주간 약 10% 급등",
-      "summary": "호르무즈 해협의 운송 차질 우려가 이어지며 WTI가 9월 4일 91달러대로 올라 주간 기준 약 10% 상승했습니다.",
-      "why": "유가 충격은 물가, 연준 정책, 소비와 기업 마진을 동시에 건드리는 광범위한 매크로 변수입니다.",
-      "source": "https://www.reuters.com/business/energy/oil-set-steepest-weekly-gain-since-mid-july-over-intensifying-us-iran-tensions-2026-09-04/"
+      "tag": "US ECONOMY",
+      "title": "강한 미국 고용 뒤 이번 주 물가 지표가 금리 경로 분기점",
+      "summary": "8월 비농업 고용이 16만2천 명 늘어 시장 예상을 크게 웃돌았습니다. 유가 상승이 겹친 가운데 이번 주 PPI와 CPI가 연준의 다음 판단을 좌우합니다.",
+      "why": "고용과 물가가 함께 강하면 추가 긴축 기대와 국채금리가 올라 주식, 특히 장기 성장주의 밸류에이션에 직접 부담이 됩니다.",
+      "source": "https://www.reuters.com/business/fed-rate-hike-back-focus-after-strong-jobs-report-2026-09-04/"
+    },
+    {
+      "category": "MACRO",
+      "importanceScore": 81,
+      "level": "높음",
+      "tag": "CHINA · CREDIT",
+      "title": "중국, 국유 은행·보험사에 540억달러 규모 자본확충",
+      "summary": "중국 재정부가 농업은행·공상은행과 국유 보험사 등에 총 540억달러 규모의 자본확충을 추진해 금융 안정성과 대출 여력을 보강합니다.",
+      "why": "신용공급 능력 확대는 중국 경기와 아시아 수요의 하방을 완충할 수 있지만, 약한 대출 수요가 지속되면 실물경제 효과는 제한됩니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/china-pump-47-bln-into-state-banks-insurers-capital-boosting-push-2026-09-06/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 86,
+      "importanceScore": 87,
+      "level": "높음",
+      "tag": "OIL · OPEC+",
+      "title": "OPEC+, 10월 원유 생산정책 동결",
+      "summary": "OPEC+는 10월 생산정책을 현 수준으로 유지했습니다. 이란 전쟁 여파로 일부 회원국의 실제 생산이 목표를 밑도는 가운데 추가 정책 변경은 없었습니다.",
+      "why": "호르무즈 차질을 상쇄할 즉각적인 추가 증산이 제한돼 유가·정제마진과 원유선 운임의 위험 프리미엄이 오래갈 가능성을 높입니다.",
+      "source": "https://www.reuters.com/business/energy/opec-set-keep-oil-output-policy-unchanged-sunday-sources-say-2026-09-06/"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 83,
       "level": "높음",
       "tag": "SEMICONDUCTOR",
-      "title": "한국 8월 반도체 수출 466억5천만 달러로 사상 최대",
-      "summary": "한국의 8월 반도체 수출은 전년 대비 209% 증가했습니다. 정부는 하이퍼스케일러의 AI 투자를 핵심 배경으로 설명했습니다.",
-      "why": "개별 기업 실적이 아니라 AI·메모리 업황 전체의 수요와 이익 전망을 뒷받침하는 산업 데이터입니다.",
+      "title": "한국 8월 반도체 수출 466억5천만달러…AI·메모리 수요 재확인",
+      "summary": "한국의 8월 반도체 수출은 전년 대비 209% 증가해 사상 최대를 기록했고, 정부는 하이퍼스케일러의 AI 설비투자를 핵심 배경으로 설명했습니다.",
+      "why": "주말에 새 기업 실적 촉매는 없었지만, AI·메모리 업황 전체의 수요와 이익 전망을 뒷받침하는 최신 산업 데이터로 유효합니다.",
       "source": "https://english.motir.go.kr/eng/article/EATCLdfa319ada"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 78,
+      "importanceScore": 77,
       "level": "높음",
       "tag": "REFINING · ENERGY",
-      "title": "고유가와 정제마진 강세가 휘발유 가격 압력 확대",
-      "summary": "미국 EIA는 높은 원유 가격과 크랙 스프레드가 소매 연료 가격을 밀어 올리고 있으며 높은 정제마진이 연말까지 이어질 것으로 봤습니다.",
-      "why": "정유사 마진에는 호재지만 소비자 물가와 수요에는 악재여서 에너지 업종과 금리 전망을 함께 바꿀 수 있습니다.",
+      "title": "고유가·정제마진 강세, 정유 호재와 소비자 물가 부담 동시 확대",
+      "summary": "미국 EIA는 높은 원유 가격과 크랙 스프레드가 소매 연료 가격을 끌어올리고 높은 정제마진이 연말까지 이어질 수 있다고 분석했습니다.",
+      "why": "정유사에는 마진 호재지만 소비와 물가에는 악재여서 에너지 업종 수익성과 연준 금리 경로를 함께 바꾸는 변수입니다.",
       "source": "https://www.eia.gov/todayinenergy/detail.php?id=67424"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 73,
-      "level": "중간",
-      "tag": "AI INFRA",
-      "title": "NVIDIA, 허깅페이스 129억3천만 달러 인수 합의",
-      "summary": "NVIDIA가 오픈소스 AI 플랫폼 허깅페이스 인수를 발표해 칩을 넘어 모델 개발 생태계와 인프라 영향력 확대에 나섰습니다.",
-      "why": "개별 기업 실적 뉴스는 아니며, AI 개발 생태계의 수직 통합과 GPU 수요 경로에 영향을 주는 산업 전략 변화입니다.",
-      "source": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 66,
-      "level": "중간",
-      "tag": "CHIP POLICY",
-      "title": "한미, 반도체 투자·관세 우려 놓고 협의",
-      "summary": "한국과 미국이 반도체 투자 방안을 논의하는 가운데 미국의 품목별 반도체 관세 가능성이 한국 업계의 불확실성으로 남았습니다.",
-      "why": "삼성전자와 SK하이닉스의 미국 투자비, 공급망 배치와 수익성에 영향을 줄 수 있는 정책 변수입니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/south-korea-says-chip-investments-under-discussion-with-us-amid-tariff-concerns-2026-09-04/"
     }
   ],
   "markets": [
@@ -219,7 +219,7 @@
         "pe": "28.90배",
         "pbr": "24.29배",
         "eps": "$7.97",
-        "forwardPe": 19.10,
+        "forwardPe": 19.1,
         "forwardAsOf": "2026-09-06",
         "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/",
         "basis": "TTM EPS · 최근 분기 BPS 기준",
@@ -291,7 +291,7 @@
         "pe": "29.74배",
         "pbr": "8.39배",
         "eps": "$16.80",
-        "forwardPe": 25.30,
+        "forwardPe": 25.3,
         "forwardAsOf": "2026-09-06",
         "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/",
         "basis": "TTM EPS · 최근 분기 BPS 기준",
