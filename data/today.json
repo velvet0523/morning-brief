@@ -1,114 +1,124 @@
 {
-  "date": "2026-09-08",
-  "updatedAt": "2026-09-08T06:24:29.634+09:00",
-  "newsUpdatedAt": "2026-09-08T06:24:29.634+09:00",
+  "date": "2026-09-09",
+  "updatedAt": "2026-09-09T06:28:54+09:00",
+  "newsUpdatedAt": "2026-09-09T06:28:54+09:00",
   "analysisStatus": {
-    "usUpdatedAt": "2026-09-06T10:47:15+09:00",
+    "usUpdatedAt": "2026-09-09T06:28:54+09:00",
     "krUpdatedAt": "2026-09-07T20:40:39.628+09:00"
   },
-  "headline": "호르무즈 공급 차질로 유가가 6주 최고치로 오른 가운데, 이번 주 미국 CPI가 금리 경로를 가를 핵심 변수이며 AI 인프라 투자 확대는 반도체 수요를 지지하고 있습니다.",
+  "headline": "중동 에너지 시설 공격으로 유가·국채금리 부담이 커진 가운데, AI 칩·데이터센터·EUV 투자는 확대됐지만 GPT-6 Astra는 소프트웨어 업종의 재평가를 촉발했습니다.",
   "flowAnalysis": {
-    "title": "호르무즈 차질 → 에너지·물가 압력 → 금리 부담, AI 컴퓨팅 투자는 메모리 수요를 방어",
-    "overview": "미국·이란의 선박 공격과 호르무즈 통항 둔화로 WTI와 브렌트가 6주 최고치에 올랐습니다. 원유뿐 아니라 디젤·운임·보험료가 함께 오르면 생산·물류비가 소비자물가로 전가되고, 강한 고용과 결합해 연준의 추가 인상 가능성을 높일 수 있습니다. 이번 주 CPI가 예상보다 높으면 국채금리와 달러가 반등해 장기 성장주의 밸류에이션에 부담이 됩니다. 반면 GPT-6 Astra 공개와 AI 서버 업체의 원재료·설비 자금조달은 연산량과 고용량 메모리 수요가 계속 확대되는 산업 신호입니다. 따라서 AI·메모리 실적 기대가 할인율 상승을 얼마나 상쇄하는지가 반도체 주가의 핵심입니다. 중국의 금융사 자본확충은 주식·신용 공급 여력을 늘리지만 실제 경기 효과는 대출 수요와 자금 집행에서 확인해야 합니다.",
+    "title": "사우디 에너지 공격 → 유가·물가·금리 부담, AI 투자는 반도체 수요를 지지하되 소프트웨어 가치를 재편",
+    "overview": "후티의 사우디 에너지 시설 공격과 호르무즈 차질 우려로 WTI가 93.03달러까지 올랐습니다. 원유·디젤·운임 상승이 기대물가를 밀어 올리면 약 4.8%의 미국 10년물 금리와 연준 추가 인상 경계가 유지돼 주식 할인율, 특히 장기 성장주의 밸류에이션에 부담이 됩니다. 이와 별개로 GPT-6 Astra는 기존 소프트웨어 기능과 좌석 수요를 대체할 수 있다는 우려를 키워 소프트웨어·서비스 업종 하락을 촉발했습니다. 반면 Qualcomm·Amazon의 최대 600억달러 AI 칩 협력, ASML의 EUV 증설, OpenAI의 말레이시아 연산 계약은 연산·네트워크·메모리·노광장비 수요가 실제 투자로 이어지고 있다는 신호입니다. 다만 맞춤형 칩 확대는 NVIDIA 등 기존 공급자의 점유율과 가격 협상력에는 경쟁 요인입니다. 중국의 수출 급증은 반도체 사이클을 지지하지만 무역흑자 확대는 통상 마찰 위험도 높입니다.",
     "links": [
       {
-        "cause": "호르무즈 통항 차질·중동 선박 공격",
-        "effect": "원유·디젤·운송비와 기대물가 상승",
-        "explanation": "물리적 공급 지연과 위험 프리미엄이 동시에 커지면 기업 원가와 소비자 연료비가 올라 물가 둔화 속도를 늦춥니다."
+        "cause": "사우디 시설 공격·호르무즈 공급 위험",
+        "effect": "유가·운송비·기대물가와 국채금리 상승",
+        "explanation": "에너지 비용이 생산·물류·소비자물가로 전가되면 연준의 긴축 완화가 늦어지고 성장주 미래이익의 현재가치가 낮아질 수 있습니다."
       },
       {
-        "cause": "유가 상승·강한 미국 고용",
-        "effect": "CPI 경계·연준 인상 확률·성장주 할인율 상승",
-        "explanation": "수요와 에너지 가격이 함께 강하면 연준이 긴축을 오래 유지할 근거가 생겨 미래 이익 비중이 큰 기술주 멀티플에 부담을 줍니다."
+        "cause": "GPT-6 Astra의 업무 자동화 성능",
+        "effect": "소프트웨어 좌석·기능 대체 우려와 업종 멀티플 하락",
+        "explanation": "AI가 기존 앱 기능을 직접 수행할수록 소프트웨어 매출 잠식 우려가 커지지만, 동시에 클라우드·추론 연산 수요는 늘어 인프라 업체에는 반대 효과가 납니다."
       },
       {
-        "cause": "고성능 AI 모델·서버 생산 확대",
-        "effect": "GPU·HBM·DRAM 및 전력 인프라 수요 증가",
-        "explanation": "추론량과 서버 생산능력 확대가 실제 주문과 설비투자로 이어지면 반도체 이익 증가가 금리 부담을 일부 상쇄할 수 있습니다."
+        "cause": "Amazon 맞춤형 칩·ASML 증설·OpenAI 데이터센터 계약",
+        "effect": "AI 서버·메모리·네트워크·EUV 수요 확대",
+        "explanation": "발표가 실제 발주와 생산능력 확대로 이어지면 반도체 이익을 지지하지만, 맞춤형 가속기 확산은 기존 GPU 공급자와의 경쟁을 강화합니다."
       }
     ],
-    "watch": "9월 11일 미국 CPI와 2년물 국채금리, 호르무즈 일일 통항량과 유조선 전쟁보험료, WTI·브렌트 선물곡선, AI 서버 수주·원재료 조달, HBM·DRAM 가격을 확인해야 합니다. 통항이 정상화되거나 CPI가 예상보다 낮으면 금리 부담은 완화되지만, 선박 공격이 확대되면 유가 100달러 상회 위험이 커집니다."
+    "watch": "9월 11일 미국 CPI, WTI·브렌트와 사우디 생산·호르무즈 통항, 미국 2년·10년물 금리, 소프트웨어 업체의 좌석·예약매출, 하이퍼스케일러의 AI 설비투자와 HBM·DRAM 주문을 확인해야 합니다."
   },
   "stories": [
     {
       "category": "MACRO",
-      "importanceScore": 95,
+      "importanceScore": 96,
       "level": "높음",
       "tag": "OIL · GEOPOLITICS",
-      "title": "호르무즈 긴장에 WTI·브렌트 6주 최고치",
-      "summary": "미국·이란의 선박 공격과 호르무즈 통항 둔화로 WTI가 92.65달러, 브렌트가 97.31달러까지 상승했습니다. OPEC+는 10월 생산정책을 유지했습니다.",
-      "why": "원유와 디젤·운송비 상승은 물가와 중앙은행 정책, 소비와 기업 마진을 동시에 흔드는 가장 광범위한 매크로 변수입니다.",
-      "source": "https://www.reuters.com/business/energy/oil-extends-gains-after-us-iran-strike-ships-2026-09-07/"
+      "title": "사우디 에너지 시설 피격…WTI 93달러로 6주 최고",
+      "summary": "후티 공격으로 사우디 에너지 시설이 손상되고 70명 이상이 다친 가운데 WTI는 배럴당 93.03달러, 브렌트는 97.92달러에 마감했습니다.",
+      "why": "원유·디젤 공급과 운송 위험이 함께 커지면 물가, 국채금리, 소비와 기업 마진에 동시에 영향을 주며 연준의 정책 경로까지 바꿀 수 있습니다.",
+      "source": "https://www.reuters.com/business/energy/oil-rises-risks-prolonged-mideast-conflict-heighten-supply-worries-2026-09-08/"
     },
     {
       "category": "MACRO",
-      "importanceScore": 84,
+      "importanceScore": 82,
+      "level": "높음",
+      "tag": "CHINA · TRADE",
+      "title": "중국 8월 수출 25%·수입 28.2% 급증",
+      "summary": "중국의 8월 수출은 전년 대비 25%, 수입은 28.2% 늘었고 무역흑자는 1,190억9천만달러를 기록했습니다. 반도체와 자동차 등 첨단제품 수출이 강했습니다.",
+      "why": "글로벌 제조·반도체 수요에는 긍정적이지만 큰 무역흑자는 추가 경기부양 필요성을 낮추고 미국·유럽과의 통상 마찰을 키울 수 있습니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/chinas-exports-up-25-yy-august-imports-surge-282-2026-09-08/"
+    },
+    {
+      "category": "MACRO",
+      "importanceScore": 78,
       "level": "높음",
       "tag": "RATES · FX",
-      "title": "미국 CPI 앞두고 엔화 7개월 최고…금리 경로 재평가",
-      "summary": "강한 미국 고용 뒤 9월 연준 인상 확률이 약 60%로 높아진 가운데 엔화는 일본은행 긴축 기대와 캐리트레이드 청산으로 달러당 154엔대까지 강세를 보였습니다.",
-      "why": "이번 주 CPI 결과는 미국 금리와 달러, 글로벌 자금조달 비용을 바꿔 기술주와 아시아 증시의 밸류에이션에 직접 영향을 줄 수 있습니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/dollar-gets-little-lift-boost-fed-hike-expectations-2026-09-07/"
-    },
-    {
-      "category": "MACRO",
-      "importanceScore": 77,
-      "level": "높음",
-      "tag": "CHINA · LIQUIDITY",
-      "title": "중국 금융사 자본확충, 주식·신용 공급 여력 확대",
-      "summary": "중국은 5개 보험사와 3개 은행에 3,600억위안 규모의 자본확충을 추진하며, 분석가들은 보험사의 주식 투자 여력이 약 1,000억위안 늘 수 있다고 봤습니다.",
-      "why": "금융기관의 위험수용 능력 확대는 중국 증시와 신용경로를 보완하지만 약한 대출 수요가 지속되면 실물경제 파급은 제한될 수 있습니다.",
-      "source": "https://www.reuters.com/legal/litigation/china-insurer-capital-injections-could-boost-stock-investments-analysts-say-2026-09-07/"
+      "title": "엔화 7개월 최고권…BOJ 긴축·캐리 청산 재평가",
+      "summary": "엔화는 일본은행 긴축 기대와 해외자금 환류, 캐리트레이드 축소로 한때 달러당 152.89엔까지 강세를 보인 뒤 153엔대에서 거래됐습니다.",
+      "why": "급격한 엔화 강세는 글로벌 레버리지와 자금조달 거래를 되돌려 일본 주식과 미국 위험자산의 수급 변동성을 높일 수 있습니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/yen-extends-rally-new-seven-month-high-dollar-subdued-ahead-cpi-2026-09-08/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 89,
+      "importanceScore": 88,
       "level": "높음",
-      "tag": "AI INFRA",
-      "title": "OpenAI, GPT-6 Astra 공개…고성능 AI 연산 수요 확대",
-      "summary": "OpenAI가 컴퓨터 사용·코딩·과학 작업 성능을 높인 GPT-6 Astra를 공개했습니다. 아시아 시장에서는 고성능 모델 확산이 AI 하드웨어와 메모리 수요를 늘릴 것이라는 기대가 반도체주 강세로 이어졌습니다.",
-      "why": "새 모델의 추론량과 실제 사용 확대는 GPU·HBM·서버·전력 인프라 수요 경로를 바꿀 수 있는 산업 전환 신호입니다.",
-      "source": "https://openai.com/index/gpt-6-astra/"
+      "tag": "AI CHIP",
+      "title": "Qualcomm·Amazon, 최대 600억달러 AI 칩 장기 협력",
+      "summary": "Amazon은 Qualcomm의 데이터센터 칩과 관련 제품을 최대 600억달러 규모로 구매할 수 있는 장기 계약을 맺었고, 양사는 AWS용 맞춤형 설계도 확대합니다.",
+      "why": "하이퍼스케일러의 AI 반도체 지출을 확인하는 동시에 맞춤형 가속기 확산이 기존 GPU 공급자의 점유율과 가격 협상력에 미칠 경쟁 효과를 보여 줍니다.",
+      "source": "https://www.reuters.com/technology/qualcomm-amazon-develop-custom-chips-ai-data-centers-2026-09-08/"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 84,
+      "level": "높음",
+      "tag": "SEMICONDUCTOR CAPEX",
+      "title": "ASML, AI 수요 대응 EUV 증설·대형 마스크 개발",
+      "summary": "ASML은 네덜란드 신규 제조시설 착공과 함께 주요 칩업체와 대형 마스크 기술을 개발합니다. 회사는 EUV 생산능력이 2027년까지 거의 예약됐다고 밝혔습니다.",
+      "why": "노광장비 증설과 40% 생산성 향상 목표는 AI·메모리 선단공정 투자가 장기 공급망 주문으로 전환되고 있다는 신호입니다.",
+      "source": "https://www.reuters.com/business/asml-breaks-ground-new-manufacturing-facilities-major-expansion-2026-09-08/"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 80,
+      "level": "높음",
+      "tag": "AI · SOFTWARE",
+      "title": "GPT-6 Astra 이후 소프트웨어 업종 재평가 지속",
+      "summary": "GPT-6 Astra의 업무 자동화 성능이 기존 소프트웨어 기능과 좌석 수요를 대체할 수 있다는 우려로 미국 소프트웨어·서비스 지수는 8일 1.4% 하락했습니다.",
+      "why": "단순 시황이 아니라 생성형 AI가 소프트웨어의 가격·좌석 기반 사업모델과 클라우드 연산 수요를 동시에 바꾸는 구조적 전환입니다.",
+      "source": "https://www.reuters.com/business/wall-st-futures-slip-oil-surge-puts-markets-edge-2026-09-08/"
     },
     {
       "category": "INDUSTRY",
       "importanceScore": 76,
       "level": "높음",
-      "tag": "AI SERVER",
-      "title": "위스트론, AI 서버 원재료 조달 위해 14.7억달러 증자",
-      "summary": "엔비디아 서버 공급사 위스트론이 글로벌 주식 발행으로 14.7억달러를 조달해 원재료 구매와 생산능력 확대에 투입합니다.",
-      "why": "개별 실적보다 AI 서버 공급망이 실제 원재료와 생산시설 확보 단계에 있다는 점을 보여 주며 GPU·메모리 수요 지속성을 뒷받침합니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/taiwans-wistron-launches-up-15-billion-gds-sale-term-sheet-shows-2026-09-07/"
+      "tag": "AI INFRA",
+      "title": "OpenAI, 말레이시아 데이터센터 연산능력 장기 확보",
+      "summary": "OpenAI는 NVIDIA가 지원하는 Firmus와 다년 계약을 맺고 말레이시아 두 곳의 데이터센터에서 AI 연산능력을 공급받기로 했습니다.",
+      "why": "AI 수요가 모델 발표를 넘어 아시아 데이터센터의 GPU·메모리·전력·네트워크 투자로 이어지고 있음을 보여 줍니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/nvidia-backed-firmus-signs-deal-with-openai-malaysia-data-centre-capacity-2026-09-08/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 70,
+      "importanceScore": 68,
       "level": "중간",
-      "tag": "CHINA AI CHIP",
-      "title": "중국 AI 가속기 업체 성장, NVIDIA 중국 시장 방어 부담",
-      "summary": "엔플레임·무어스레드·메타엑스·비런 등 중국 업체가 자금조달과 CUDA 호환 생태계를 확대하며 중국 AI 반도체 국산화를 가속하고 있습니다.",
-      "why": "중국 내 대체재 확산은 엔비디아의 시장점유율과 소프트웨어 해자를 압박하는 동시에 현지 AI 인프라 투자의 자립도를 높이는 구조적 변화입니다.",
-      "source": "https://www.reuters.com/commentary/breakingviews/chinas-ai-dragons-breathe-fire-nvidias-moat-2026-09-07/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 58,
-      "level": "중간",
-      "tag": "CHIP SUPPLY CHAIN",
-      "title": "벨기에, GaN 반도체 기술 유출 혐의 수사",
-      "summary": "벨기에 검찰이 전직 Belgan 임원의 중국 기업 대상 갈륨나이트라이드 반도체 기술·영업비밀 유출 혐의를 수사하고 있습니다.",
-      "why": "GaN은 전기차·항공우주·방산에 쓰이는 전략 기술로, 사건이 확대되면 유럽의 대중국 투자심사와 반도체 기술통제가 강화될 수 있습니다.",
-      "source": "https://www.reuters.com/world/china/belgium-detains-chinese-man-suspicion-semiconductor-espionage-2026-09-07/"
+      "tag": "AI POLICY",
+      "title": "미국, 중국 AI 기업의 모델 증류를 기술 탈취로 규정",
+      "summary": "미국 당국은 DeepSeek·Moonshot·Alibaba 등 중국 AI 기업들이 미국 모델을 대규모로 증류했다고 주장했습니다. 중국 측의 구체적 반박은 즉시 확인되지 않았습니다.",
+      "why": "의혹이 정책으로 이어지면 모델 접근·반도체 수출통제가 강화돼 미국 AI 기업의 지식재산 보호와 중국 AI 공급망 비용에 영향을 줄 수 있습니다.",
+      "source": "https://www.reuters.com/technology/us-accuses-chinese-ai-firms-industrial-scale-theft-ai-technology-2026-09-08/"
     }
   ],
   "markets": [
     {
       "label": "S&P 500",
-      "value": "7,718.60 · -0.38% · 9/4"
+      "value": "7,673.52 · -0.58% · 9/8"
     },
     {
       "label": "NASDAQ",
-      "value": "26,506.99 · -0.29% · 9/4"
+      "value": "26,421.41 · -0.32% · 9/8"
     },
     {
       "label": "KOSPI",
@@ -116,15 +126,15 @@
     },
     {
       "label": "닛케이 225",
-      "value": "66,399.84 · +2.12% · 9/7"
+      "value": "65,269.33 · -1.70% · 9/8"
     },
     {
       "label": "원·달러",
-      "value": "1,345.29 · 9/8 오전 글로벌"
+      "value": "1,341.41 · 9/9 오전 글로벌"
     },
     {
       "label": "WTI",
-      "value": "$92.65 · 9/8 오전"
+      "value": "$93.03 · 9/8 마감"
     }
   ],
   "stocks": [
@@ -172,126 +182,146 @@
     {
       "symbol": "MU",
       "name": "Micron",
-      "change": "$1,016.59 · +6.03% · 9/4 마감",
-      "stance": "호재 우세 · 메모리·반도체 상대강도",
-      "reason": "Micron은 S&P 500보다 6.41%p, NASDAQ보다 6.32%p 강했고 반도체지수 상승률도 약 2.6%p 웃돌았습니다. 당일 새 기업 공시보다 AI발 메모리 공급 부족과 가격 강세 기대, 반도체 업종으로의 자금 유입이 상승을 설명하는 비중이 큽니다. 뚜렷한 단일 기업 고유 재료는 확인되지 않아 업종·수급 요인으로 분류합니다.",
+      "change": "$1,000.26 · -1.61% · 9/8 마감",
+      "stance": "악재 우세 · 차익실현·금리 및 업종 순환",
+      "reason": "Micron은 1.61% 하락해 S&P 500보다 1.03%p, NASDAQ보다 1.29%p 약했습니다. 9월 4일 6%대 급등 뒤 차익실현 가능성이 있는 가운데 유가 상승과 높은 국채금리가 성장주 할인율에 부담을 줬고, 반도체 자금이 Amazon과 협력한 Qualcomm·Intel 쪽으로 일부 이동한 것으로 해석됩니다. 당일 하락을 단독으로 설명할 뚜렷한 Micron 고유 공시·재료는 확인되지 않았습니다.",
       "drivers": [
         {
-          "type": "산업 호재",
-          "summary": "AI 서버용 메모리 수요와 공급 부족·가격 강세 기대",
-          "impact": "긍정"
-        },
-        {
-          "type": "상대강도",
-          "summary": "반도체지수 +3.4%를 크게 웃돈 메모리 종목 강세",
-          "impact": "긍정"
+          "type": "수급·트레이딩",
+          "summary": "직전 거래일 6%대 급등 뒤 차익실현 가능성",
+          "impact": "부정"
         },
         {
           "type": "매크로 악재",
-          "summary": "고용 서프라이즈에 따른 금리 인상 기대와 할인율 상승",
+          "summary": "유가 상승과 높은 국채금리가 성장주 할인율에 부담",
           "impact": "부정"
+        },
+        {
+          "type": "업종 순환",
+          "summary": "Amazon 맞춤형 칩 협력 수혜 기대가 Qualcomm·Intel에 집중",
+          "impact": "부정"
+        },
+        {
+          "type": "기업 고유 재료",
+          "summary": "당일 변동을 단독 설명할 신규 핵심 재료 미확인",
+          "impact": "중립"
         }
       ],
-      "source": "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",
-      "analyzedAt": "2026-09-06T10:47:15+09:00",
+      "source": "https://www.reuters.com/business/wall-st-futures-slip-oil-surge-puts-markets-edge-2026-09-08/",
+      "analyzedAt": "2026-09-09T06:28:54+09:00",
       "valuation": {
-        "pe": "23.02배",
-        "pbr": "11.40배",
-        "eps": "$44.17",
+        "pe": "22.57배",
+        "pbr": "11.21배",
+        "eps": "$44.31",
+        "basis": "TTM EPS · 최근 분기 BPS $89.22 기준",
+        "asOf": "2026-09-08",
         "forwardPe": 7.07,
-        "forwardAsOf": "2026-09-06",
-        "forwardSource": "https://stockanalysis.com/stocks/mu/statistics/",
-        "basis": "TTM EPS · 최근 분기 BPS 기준",
-        "asOf": "2026-09-04"
+        "forwardAsOf": "2026-09-08",
+        "forwardSource": "https://stockanalysis.com/stocks/mu/statistics/"
       }
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "change": "$230.36 · +0.77% · 9/4 마감",
-      "stance": "호재 우세 · 기업 이슈 상대강도",
-      "reason": "NVIDIA는 S&P 500보다 1.15%p, NASDAQ보다 1.06%p 강했습니다. 허깅페이스 인수에 따른 AI 생태계 확대 기대가 긍정적으로 작용한 것으로 보이며, 강한 고용 이후 오른 금리와 성장주 할인율 부담이 상승 폭을 제한했습니다. 상대강도는 기업 재료의 영향을 시사하지만 인수 뉴스만으로 전부 설명할 수는 없습니다.",
+      "change": "$225.73 · -2.01% · 9/8 마감",
+      "stance": "악재 우세 · 맞춤형 AI 칩 경쟁·금리 부담",
+      "reason": "NVIDIA는 2.01% 하락해 S&P 500보다 1.43%p, NASDAQ보다 1.69%p 약했습니다. Qualcomm과 Amazon의 최대 600억달러 데이터센터 칩 협력은 AI 투자 확대라는 수요 측 호재인 동시에 하이퍼스케일러의 맞춤형 칩 다변화가 NVIDIA의 점유율과 가격 협상력을 압박할 수 있다는 경쟁 신호입니다. 유가·국채금리 부담도 고밸류 성장주에 불리했으며, 새 NVIDIA 고유 악재가 하락 전체를 설명한다고 단정하기는 어렵습니다.",
       "drivers": [
         {
-          "type": "기업·산업 호재",
-          "summary": "허깅페이스 인수로 오픈소스 AI 생태계 영향력 확대",
-          "impact": "긍정"
+          "type": "산업 경쟁",
+          "summary": "Amazon·Qualcomm 맞춤형 AI 칩 협력으로 공급자 다변화 우려",
+          "impact": "부정"
         },
         {
-          "type": "상대강도",
-          "summary": "미국 주요 지수 하락 중 플러스 수익률",
+          "type": "산업 호재",
+          "summary": "하이퍼스케일러의 대규모 AI 반도체 투자 지속 확인",
           "impact": "긍정"
         },
         {
           "type": "매크로 악재",
-          "summary": "고용 서프라이즈 뒤 금리 인상 기대와 할인율 상승",
+          "summary": "에너지발 물가·국채금리 부담이 고밸류 성장주 할인율 상승",
           "impact": "부정"
+        },
+        {
+          "type": "기업 고유 재료",
+          "summary": "당일 하락 전체를 설명할 신규 핵심 공시 미확인",
+          "impact": "중립"
         }
       ],
-      "source": "https://www.reuters.com/business/nvidia-buy-hugging-face-nearly-13-billion-big-bet-open-ai-models-2026-09-03/",
-      "analyzedAt": "2026-09-06T09:56:47+09:00",
+      "source": "https://www.reuters.com/technology/qualcomm-amazon-develop-custom-chips-ai-data-centers-2026-09-08/",
+      "analyzedAt": "2026-09-09T06:28:54+09:00",
       "valuation": {
-        "pe": "28.90배",
-        "pbr": "24.29배",
-        "eps": "$7.97",
+        "pe": "28.54배",
+        "pbr": "23.81배",
+        "eps": "$7.91",
+        "basis": "TTM EPS · 최근 분기 BPS $9.48 기준",
+        "asOf": "2026-09-08",
         "forwardPe": 19.1,
-        "forwardAsOf": "2026-09-06",
-        "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/",
-        "basis": "TTM EPS · 최근 분기 BPS 기준",
-        "asOf": "2026-09-04"
+        "forwardAsOf": "2026-09-08",
+        "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/"
       }
     },
     {
       "symbol": "GOOGL",
       "name": "Alphabet (Google)",
-      "change": "$338.46 · -1.20% · 9/4 마감",
-      "stance": "악재 우세 · 금리 부담",
-      "reason": "Alphabet은 NASDAQ보다 0.91%p 더 하락했습니다. 예상보다 강한 미국 고용이 연준 인상 기대와 국채금리를 끌어올려 대형 성장주의 밸류에이션에 부담을 준 영향으로 해석됩니다. 당일 주가를 단독으로 설명할 만한 새 기업 고유 악재는 확인되지 않아 매크로와 대형 기술주 수급 영향이 중심인 것으로 판단합니다.",
+      "change": "$338.36 · -0.03% · 9/8 마감",
+      "stance": "중립 · 지수 대비 방어·기업 고유 재료 제한",
+      "reason": "Alphabet은 0.03% 하락에 그쳐 S&P 500보다 0.55%p, NASDAQ보다 0.29%p 강했습니다. 미국 당국이 중국 AI 기업의 미국 모델 증류를 문제 삼은 것은 Google 등 미국 모델 기업의 지식재산 보호 논리를 강화할 수 있지만 직접적인 당일 실적 재료는 아닙니다. 유가·금리 부담과 기술주 수급 속에서도 주가가 방어됐으며, 변동을 단독 설명할 뚜렷한 Alphabet 고유 호재·악재는 확인되지 않았습니다.",
       "drivers": [
         {
-          "type": "매크로 악재",
-          "summary": "강한 고용 이후 금리 인상 확률과 성장주 할인율 상승",
-          "impact": "부정"
+          "type": "정책·산업",
+          "summary": "미국의 AI 모델 지식재산 보호 강화 가능성",
+          "impact": "긍정"
         },
         {
-          "type": "수급·트레이딩",
-          "summary": "연휴 전 위험 축소와 대형 기술주 차익실현 가능성",
+          "type": "상대강도",
+          "summary": "S&P 500과 NASDAQ보다 낙폭이 작아 대형 기술주 내 방어",
+          "impact": "긍정"
+        },
+        {
+          "type": "매크로 악재",
+          "summary": "유가·국채금리 상승 경계가 성장주 밸류에이션에 부담",
           "impact": "부정"
         },
         {
           "type": "기업 고유 재료",
-          "summary": "당일 변동을 단독 설명할 신규 핵심 악재 미확인",
+          "summary": "당일 변동을 단독 설명할 신규 핵심 재료 미확인",
           "impact": "중립"
         }
       ],
-      "source": "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",
-      "analyzedAt": "2026-09-06T10:47:15+09:00",
+      "source": "https://www.reuters.com/technology/us-accuses-chinese-ai-firms-industrial-scale-theft-ai-technology-2026-09-08/",
+      "analyzedAt": "2026-09-09T06:28:54+09:00",
       "valuation": {
-        "pe": "17.00배",
-        "pbr": "8.56배",
-        "eps": "$19.91",
+        "pe": "16.98배",
+        "pbr": "6.65배",
+        "eps": "$19.93",
+        "basis": "TTM EPS · 최근 분기 BPS $50.90 기준",
+        "asOf": "2026-09-08",
         "forwardPe": 25.39,
-        "forwardAsOf": "2026-09-06",
-        "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/",
-        "basis": "TTM EPS · 최근 분기 BPS 기준",
-        "asOf": "2026-09-04"
+        "forwardAsOf": "2026-09-08",
+        "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/"
       }
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "change": "$499.70 · -2.05% · 9/4 마감",
-      "stance": "악재 우세 · 소프트웨어 업종 동반",
-      "reason": "Microsoft는 S&P 500보다 1.67%p, NASDAQ보다 1.76%p 더 하락했고, 당일 소프트웨어·서비스 업종 하락률(-2.1%)과 거의 같았습니다. 강한 고용에 따른 금리 부담과 소프트웨어 업종 전반의 매도가 주된 설명이며, 당일 변동을 단독으로 설명할 새 기업 고유 악재는 확인되지 않았습니다.",
+      "change": "$493.95 · -1.15% · 9/8 마감",
+      "stance": "악재 우세 · 소프트웨어 재평가·금리 부담",
+      "reason": "Microsoft는 1.15% 하락해 S&P 500보다 0.57%p, NASDAQ보다 0.83%p 약했습니다. GPT-6 Astra가 기존 업무용 소프트웨어 기능과 좌석 수요를 대체할 수 있다는 우려로 소프트웨어·서비스 지수가 1.4% 하락한 업종 압력이 주된 설명입니다. Azure의 AI 연산 수요에는 반대 방향의 긍정 효과가 가능하지만, 당일에는 유가·금리 부담과 소프트웨어 멀티플 축소가 우세했습니다. Microsoft만의 새로운 핵심 악재는 확인되지 않았습니다.",
       "drivers": [
         {
           "type": "업종 악재",
-          "summary": "소프트웨어·서비스 업종이 당일 2.1% 하락",
+          "summary": "GPT-6 Astra 이후 소프트웨어 기능·좌석 대체 우려",
           "impact": "부정"
         },
         {
+          "type": "클라우드 수요",
+          "summary": "고성능 AI 확산은 Azure 추론·데이터센터 사용량에 잠재적 호재",
+          "impact": "긍정"
+        },
+        {
           "type": "매크로 악재",
-          "summary": "금리 인상 기대가 장기 성장주 밸류에이션에 부담",
+          "summary": "유가 상승과 높은 국채금리가 장기 성장주 할인율에 부담",
           "impact": "부정"
         },
         {
@@ -300,17 +330,17 @@
           "impact": "중립"
         }
       ],
-      "source": "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",
-      "analyzedAt": "2026-09-06T10:47:15+09:00",
+      "source": "https://www.reuters.com/business/wall-st-futures-slip-oil-surge-puts-markets-edge-2026-09-08/",
+      "analyzedAt": "2026-09-09T06:28:54+09:00",
       "valuation": {
-        "pe": "29.74배",
-        "pbr": "8.39배",
-        "eps": "$16.80",
+        "pe": "27.52배",
+        "pbr": "8.29배",
+        "eps": "$17.95",
+        "basis": "TTM EPS · 최근 분기 BPS $59.56 기준",
+        "asOf": "2026-09-08",
         "forwardPe": 25.3,
-        "forwardAsOf": "2026-09-06",
-        "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/",
-        "basis": "TTM EPS · 최근 분기 BPS 기준",
-        "asOf": "2026-09-04"
+        "forwardAsOf": "2026-09-08",
+        "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/"
       }
     }
   ]
