@@ -1,114 +1,114 @@
 {
   "date": "2026-09-10",
-  "updatedAt": "2026-09-10T15:41:23+09:00",
-  "newsUpdatedAt": "2026-09-10T06:22:14+09:00",
+  "updatedAt": "2026-09-11T06:21:29+09:00",
+  "newsUpdatedAt": "2026-09-11T06:21:29+09:00",
   "analysisStatus": {
-    "usUpdatedAt": "2026-09-10T06:22:14+09:00",
+    "usUpdatedAt": "2026-09-11T06:21:29+09:00",
     "krUpdatedAt": "2026-09-10T15:41:23+09:00"
   },
-  "headline": "호르무즈 해상 공격으로 브렌트유가 100달러를 넘고 미국 국채금리가 뛰는 가운데, Google·OpenAI의 데이터센터·맞춤형 칩 투자는 AI 공급망 수요를 지지했습니다.",
+  "headline": "미국 생산자물가와 100달러대 유가가 금리 부담을 키운 반면, HBM 부족과 AI 인프라 확장은 메모리·가속기 수요의 구조적 강세를 확인했습니다.",
   "flowAnalysis": {
-    "title": "호르무즈 충격 → 유가·물가·금리 부담, AI 인프라 투자는 반도체 수요를 방어",
-    "overview": "호르무즈 인근 선박 공격과 미국의 이란 유조선 격침이 겹치며 브렌트유는 101.21달러, WTI는 96.05달러에 마감했습니다. 세계 원유·가스 교역의 약 20%가 지나는 항로의 통항량이 줄고 정제유 공급까지 빠듯해지면 운송비와 생산비가 소비자물가로 전가될 수 있습니다. 여기에 미국 재무부의 60억달러 장기채 매입이 기대보다 작다는 평가가 더해져 10년물 금리는 약 4.84%로 올라갔고, 연준의 완화 기대와 성장주 밸류에이션에 부담을 줬습니다. 반면 Google의 핀란드 AI 인프라 151억달러 투자, OpenAI의 자체 칩 설계와 삼성 협력은 데이터센터 전력·가속기·HBM·DRAM 수요가 계속 확대된다는 신호입니다. 다만 대규모 설비투자는 Alphabet의 단기 현금흐름 부담이고, 맞춤형 칩 확산은 NVIDIA의 점유율·가격 협상력에 경쟁 요인입니다. 일본 금리 상승과 엔캐리 축소 가능성도 글로벌 유동성 변동성을 키울 수 있습니다.",
+    "title": "유가·생산자물가 → 금리·밸류에이션 압박, HBM·AI 투자는 수요를 방어",
+    "overview": "호르무즈·홍해 차질로 WTI가 102달러를 넘고 미국 8월 생산자물가는 전월 대비 0.4%, 전년 대비 5.4% 올랐습니다. 에너지·운송비가 소비자물가로 번지면 연준 인상 기대와 장기금리가 높아져 성장주 가치가 낮아집니다. ECB의 25bp 인상과 BOJ의 긴축 경고도 이 경로를 강화합니다. 반면 중국 AI칩 가격을 20~50% 끌어올린 HBM 부족과 NVIDIA의 호주 2GW 계획은 가속기·메모리 수요의 강세를 확인합니다. 다만 공급 부족과 AI 투자용 차입은 고객 비용과 투자수익률 부담도 키웁니다. MU·NVDA의 당일 약세는 수요 붕괴로 단정하기보다 금리 민감도와 차익실현이 산업 호재를 압도한 결과로 해석합니다.",
     "links": [
       {
-        "cause": "호르무즈 선박 공격·중동 원유 공급 차질",
-        "effect": "유가·정제유·운송비 상승과 물가 재가속",
-        "explanation": "에너지 비용이 기업 원가와 소비자물가로 전가되면 연준의 금리 인하 여지가 줄고, 장기 현금흐름 비중이 큰 성장주의 할인율이 높아질 수 있습니다."
+        "cause": "호르무즈·홍해 차질과 미국 PPI 상승",
+        "effect": "연준 인상 기대·장기금리 상승·성장주 할인율 확대",
+        "explanation": "WTI 102달러와 에너지 원가 상승이 소비자물가로 전가될 위험을 높여 연준 인상 확률이 약 70%로 올랐습니다."
       },
       {
-        "cause": "미 재무부 장기채 매입 규모에 대한 실망",
-        "effect": "10년물 금리 상승과 위험자산 할인율 부담",
-        "explanation": "채권 수급 안정 효과가 예상보다 작다고 평가되면서 재정·인플레이션 위험 프리미엄이 유지됐고, 고밸류 기술주의 멀티플 확장을 제약했습니다."
+        "cause": "HBM 부족과 중국 AI칩 가격 20~50% 인상",
+        "effect": "메모리 가격 협상력 강화와 고객 비용 증가",
+        "explanation": "Micron 등 공급자에는 우호적이지만 높은 칩 가격과 수출 통제는 AI 도입을 늦출 수 있어 일방적 호재는 아닙니다."
       },
       {
-        "cause": "Google 데이터센터·OpenAI 칩·삼성 메모리 협력",
-        "effect": "AI 전력·가속기·메모리 수요 확대와 공급자 경쟁 심화",
-        "explanation": "실제 설비와 칩 설계 투자는 반도체 수요를 지지하지만, 고객사의 자체 칩 확대는 기존 GPU 공급자의 점유율과 가격 협상력에는 반대 방향으로 작용합니다."
+        "cause": "호주 2GW AI 계획과 빅테크 차입 확대",
+        "effect": "반도체 수요 확대와 자본비용·수익성 검증 압력",
+        "explanation": "데이터센터 증설은 수요를 지지하지만 금리 상승과 채권 발행 확대는 Alphabet·Microsoft의 투자수익률 문턱을 높입니다."
       }
     ],
-    "watch": "9월 10일 미국 PPI와 11일 CPI, 호르무즈 통항·유조선 보험료, WTI·정제유 가격, 미국 10년물과 30년물 입찰, BOJ 회의 전 엔화·캐리 청산, Google 투자 집행과 HBM·DRAM 가격을 확인해야 합니다."
+    "watch": "9월 11일 미국 CPI·연준 인상 확률, 미 장기금리, 호르무즈 통항량과 WTI, HBM 가격, AI 데이터센터 착공과 빅테크 채권 스프레드를 확인해야 합니다."
   },
   "stories": [
     {
       "category": "MACRO",
-      "importanceScore": 98,
+      "importanceScore": 96,
       "level": "높음",
-      "tag": "OIL · GEOPOLITICS",
-      "title": "호르무즈 해상 공격 격화…브렌트유 101달러 돌파",
-      "summary": "이란이 호르무즈 인근 선박 10척을 공격하고 미국이 이란 유조선 5척을 격침한 뒤 브렌트유는 101.21달러, WTI는 96.05달러에 마감했습니다.",
-      "why": "세계 원유·가스 교역의 약 20%가 지나는 항로의 차질은 원유·정제유·운임을 동시에 올려 물가와 중앙은행 정책, 소비와 기업 마진에 광범위하게 영향을 줍니다.",
-      "source": "https://www.reuters.com/business/energy/brent-crude-rises-above-100-barrel-middle-east-conflict-escalates-2026-09-09/"
+      "tag": "US INFLATION · FED",
+      "title": "미국 8월 PPI 0.4% 상승…연준 인상 확률 70%",
+      "summary": "미국 생산자물가는 8월 전월 대비 0.4%, 전년 대비 5.4% 올라 월간 전망에 부합했습니다. 에너지는 4.2%, 디젤은 24.1% 뛰었고 실업수당 청구는 20만6천 건으로 줄었습니다.",
+      "why": "에너지발 원가 압력과 강한 고용이 함께 나타나면서 다음 주 연준 금리 인상 가능성이 약 70%로 높아졌습니다. 10년·30년물 금리 상승은 주식, 특히 장기 성장주의 할인율을 직접 끌어올립니다.",
+      "source": "https://www.reuters.com/business/us-producer-prices-increase-expected-august-2026-09-10/"
     },
     {
       "category": "MACRO",
-      "importanceScore": 88,
-      "level": "높음",
-      "tag": "US TREASURY · RATES",
-      "title": "미 재무부 장기채 60억달러 매입…시장 기대에는 미달",
-      "summary": "미 재무부는 9월 10일 10~20년 만기 국채를 최대 60억달러 매입한다고 발표했습니다. 종전 장기채 매입의 세 배지만 시장 기대보다 작다는 평가로 10년물 금리는 약 4.85%까지 올랐습니다.",
-      "why": "유가발 물가 우려와 재정 수급 부담이 겹친 상황에서 장기금리 상승은 주택·기업 조달비용과 성장주 할인율을 동시에 높입니다.",
-      "source": "https://www.reuters.com/world/us-treasury-buy-up-6-billion-sept-10-buyback-operation-2026-09-09/"
-    },
-    {
-      "category": "MACRO",
-      "importanceScore": 80,
-      "level": "높음",
-      "tag": "BOJ · LIQUIDITY",
-      "title": "일본 10년물 3%…BOJ 긴축·엔캐리 축소 위험 확대",
-      "summary": "일본 10년물 국채금리는 1996년 이후 처음 3%에 도달했고 Fitch는 BOJ 금리가 시장 예상보다 빠르게 오를 수 있다고 평가했습니다.",
-      "why": "일본 기관의 해외자금 환류와 엔화 차입 거래 축소가 이어지면 미국채와 글로벌 위험자산의 유동성·수급 변동성이 커질 수 있습니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/rising-japanese-yields-may-keep-more-domestic-money-home-fitch-says-2026-09-09/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 93,
-      "level": "높음",
-      "tag": "OIL SUPPLY",
-      "title": "EIA, 2026년 세계 원유재고 4억배럴 감소 전망",
-      "summary": "미 에너지정보청은 중동 공급 차질로 2026년 세계 원유재고가 약 4억배럴 줄고 4분기 생산 차질이 하루 570만배럴에 이를 것으로 전망하며 WTI 연평균 전망을 84.65달러로 높였습니다.",
-      "why": "단기 지정학적 프리미엄을 넘어 재고·생산 정상화가 2027년까지 지연될 수 있다는 공식 전망은 정유·탱커 운임과 에너지 비용의 지속성을 높입니다.",
-      "source": "https://www.reuters.com/business/energy/us-eia-hikes-oil-price-forecasts-iran-war-drains-global-stockpile-2026-09-09/"
-    },
-    {
-      "category": "INDUSTRY",
       "importanceScore": 90,
       "level": "높음",
-      "tag": "AI INFRA · POWER",
-      "title": "Google, 핀란드 AI 인프라에 151억달러·원전 전력 장기계약",
-      "summary": "Google은 2년간 핀란드 AI 인프라에 130억유로를 투자해 데이터센터 3곳을 짓고 Fortum 원전 한 곳의 전력 최대 50%를 22년간 구매하기로 했습니다.",
-      "why": "AI 투자의 병목이 칩에서 전력·냉각·데이터센터로 확대되는 동시에 Alphabet의 2026년 설비투자와 단기 현금흐름 부담도 커집니다.",
-      "source": "https://www.reuters.com/business/media-telecom/google-invest-15-billion-ai-infrastructure-finland-2026-09-09/"
+      "tag": "ECB · INFLATION",
+      "title": "ECB, 에너지 물가 대응해 25bp 인상…예금금리 2.5%",
+      "summary": "ECB는 올해 두 번째로 정책금리를 25bp 올렸습니다. 2026년 물가 전망은 3.0%, 2027년은 기존 2.3%에서 2.5%로 높였고, 2026년 성장률도 0.9%로 소폭 상향했습니다.",
+      "why": "에너지 충격이 단기 가격을 넘어 임금·서비스 물가로 번질 위험에 중앙은행이 실제 긴축으로 대응했습니다. 유럽 금리뿐 아니라 글로벌 채권금리와 달러 유동성에도 파급될 수 있습니다.",
+      "source": "https://www.reuters.com/business/ecb-raises-interest-rates-fight-off-inflation-jump-2026-09-10/"
+    },
+    {
+      "category": "MACRO",
+      "importanceScore": 82,
+      "level": "높음",
+      "tag": "BOJ · LIQUIDITY",
+      "title": "BOJ 위원, 물가 가속 시 빠른 금리 인상 경고",
+      "summary": "BOJ 마스 위원은 기조적 물가가 2% 목표에 매우 근접했고 실질금리를 마이너스에서 조속히 벗어나게 해야 한다고 밝혔습니다. 시장은 9월 1.25% 인상 가능성을 주시하고 있습니다.",
+      "why": "일본 금리 상승은 엔화와 일본 자금의 해외채권 수요를 바꾸고 엔캐리 거래를 축소할 수 있습니다. 다만 위원은 급격한 물가 과열 증거는 아직 없다고 선을 그었습니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/boj-may-be-forced-hike-rates-rapidly-if-inflation-accelerates-board-member-masu-2026-09-10/"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 99,
+      "level": "높음",
+      "tag": "OIL · SHIPPING",
+      "title": "호르무즈·홍해 차질 확대…WTI 102.48달러",
+      "summary": "WTI는 6.69% 오른 102.48달러, 브렌트유는 6.34% 오른 107.63달러에 마감했습니다. 호르무즈 통항 제한에 더해 후티가 예멘 모카항을 장악하면서 홍해 위험까지 커졌습니다.",
+      "why": "원유뿐 아니라 정제유·유조선 운임·보험료를 동시에 자극하는 공급 충격입니다. 다만 OPEC의 수요 전망 하향과 미국 재고 감소가 예상보다 작았다는 점은 추가 상승을 일부 제한할 수 있습니다.",
+      "source": "https://www.reuters.com/business/energy/brent-holds-above-100-tanker-attacks-deepen-supply-fear-2026-09-10/"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 94,
+      "level": "높음",
+      "tag": "HBM · AI CHIP",
+      "title": "중국 AI칩, HBM 부족에 가격 20~50% 인상",
+      "summary": "Huawei와 Cambricon의 AI 가속기 가격이 두 달 전보다 각각 약 20~50%, 20~30% 높아진 것으로 파악됐습니다. 첨단 HBM 부족과 수출 통제, 비공식 조달 비용이 핵심 배경입니다.",
+      "why": "HBM을 공급하는 SK하이닉스·삼성전자·Micron의 가격 협상력에는 긍정적입니다. 동시에 가속기 가격 급등은 중국 AI 투자의 경제성을 악화시키고 수요 지연을 만들 수 있습니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/chinas-ai-chipmakers-raise-prices-high-bandwidth-memory-shortage-bites-2026-09-10/"
     },
     {
       "category": "INDUSTRY",
       "importanceScore": 85,
       "level": "높음",
-      "tag": "AI CHIP",
-      "title": "OpenAI, AI로 자체 칩 설계…9개월 내 테이프아웃 목표",
-      "summary": "OpenAI는 자체 모델을 이용한 칩 설계 사업에 진입하며 ‘Jalapeno’ 칩을 9개월 안에 테이프아웃하는 목표를 제시했습니다.",
-      "why": "AI 기업의 자체 칩 설계는 반도체 설계 생산성을 높이고 파운드리·메모리 수요를 늘릴 수 있지만 기존 GPU 공급자에는 경쟁 압력입니다.",
-      "source": "https://www.reuters.com/world/china/openai-offers-ai-chip-design-touts-cost-advantage-over-open-source-cfo-says-2026-09-09/"
+      "tag": "NVIDIA · AI INFRA",
+      "title": "NVIDIA, 호주 파트너와 2027년 AI 용량 2GW 추진",
+      "summary": "NVIDIA와 호주 파트너들은 DSX 플랫폼을 활용해 2027년까지 최대 2GW의 AI 데이터센터 용량 구축을 추진합니다. 이는 현재 호주 데이터센터 용량 1.6GW를 웃도는 규모입니다.",
+      "why": "실물 설비와 전력 확보 계획은 GPU·네트워크·HBM 수요의 중기 가시성을 높입니다. 다만 인허가·전력망·자금 조달과 실제 가동 시점은 별도 확인이 필요합니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/nvidia-teams-up-with-australian-partners-build-ai-factory-capacity-2026-09-10/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 81,
+      "importanceScore": 84,
       "level": "높음",
-      "tag": "MEMORY · AI",
-      "title": "OpenAI·삼성, 차세대 칩 생산·연구 협력 확대",
-      "summary": "OpenAI는 삼성전자와 차세대 칩 공동 생산·연구를 진행 중이며 AI 확산으로 메모리 수요가 계속 늘 것으로 본다고 밝혔습니다.",
-      "why": "구체적 물량과 매출은 공개되지 않았지만 AI 모델 기업과 메모리 제조사의 직접 협력은 HBM·DRAM 수요와 공급망 공동설계의 구조적 확대를 시사합니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/openai-says-working-with-samsung-next-generation-chips-deepening-cooperation-2026-09-09/"
+      "tag": "AI CAPEX · CREDIT",
+      "title": "AI 투자 차입 확대…빅테크 1년 채권 발행 2,200억달러",
+      "summary": "Reuters 분석에 따르면 Alphabet·Amazon·Meta·Microsoft·Oracle 등 하이퍼스케일러의 최근 1년 채권 발행은 약 2,200억달러입니다. BIS는 상위 5개 기술기업의 2025~2026년 AI 투자가 1조달러를 넘을 것으로 봤습니다.",
+      "why": "대규모 차입은 데이터센터·반도체 수요를 앞당기지만, 금리 상승기에는 이자비용과 투자수익률 검증 압력을 키웁니다. AI 수요 강세와 빅테크 밸류에이션 부담이 동시에 발생하는 경로입니다.",
+      "source": "https://www.reuters.com/commentary/reuters-open-interest/ai-debt-splurge-is-warping-credit-spreads-marty-fridson-2026-09-10/"
     }
   ],
   "markets": [
     {
       "label": "S&P 500",
-      "value": "7,636.46 · -0.48% · 9/9"
+      "value": "7,591.75 · -0.58% · 9/10"
     },
     {
       "label": "NASDAQ",
-      "value": "26,253.34 · -0.64% · 9/9"
+      "value": "26,081.73 · -0.65% · 9/10"
     },
     {
       "label": "KOSPI",
@@ -116,15 +116,15 @@
     },
     {
       "label": "닛케이 225",
-      "value": "65,269.33 · -1.70% · 9/8"
+      "value": "65,270.95 · +0.20% · 9/10"
     },
     {
       "label": "원·달러",
-      "value": "1,341.41 · 9/9 오전 글로벌"
+      "value": "1,348.30 · +0.62% · 9/11 06:04"
     },
     {
       "label": "WTI",
-      "value": "$96.05 · 9/9 마감"
+      "value": "$102.48 · +6.69% · 9/10 마감"
     }
   ],
   "stocks": [
@@ -177,164 +177,164 @@
     {
       "symbol": "MU",
       "name": "Micron",
-      "change": "$1,027.77 · +2.75% · 9/9 마감",
-      "stance": "호재 우세 · 메모리 가격·공급 부족 기대",
-      "reason": "Micron은 2.75% 상승해 S&P 500보다 3.23%p, NASDAQ보다 3.39%p 강했습니다. 최신 메모리 가격 데이터와 공급 부족이 당분간 지속될 것이라는 기대가 상승의 직접적인 업종 재료로 거론됐습니다. Google·OpenAI의 데이터센터·칩 투자는 HBM·DRAM 수요를 지지하지만, 당일 Micron의 새 공시나 계약은 확인되지 않았습니다. 따라서 기업 고유 호재보다는 메모리 업황 기대와 최근 변동성 이후의 트레이딩 수요가 우세했던 것으로 해석합니다.",
+      "change": "$977.41 · -4.90% · 9/10 마감",
+      "stance": "악재 우세 · 금리 부담·차익실현 가능성",
+      "reason": "Micron은 977.41달러로 4.90% 하락해 S&P 500보다 4.32%p, NASDAQ보다 4.25%p 약했습니다. 사실로 확인된 시장 요인은 미국 8월 PPI와 100달러대 유가가 연준 인상 기대와 장기금리를 끌어올리며 반도체·고변동 성장주 매도를 자극한 점입니다. 중국 AI 가속기 가격을 20~50% 높인 HBM 부족은 Micron의 중기 수요·가격 협상력에는 우호적이므로 당일 하락을 메모리 수요 붕괴로 해석할 근거는 부족합니다. 당일 주가를 단독 설명할 신규 기업 공시·실적 변경은 확인되지 않아, 금리 민감도와 직전 강세 뒤 차익실현·포지션 조정이 함께 작용했을 가능성이 큽니다.",
       "drivers": [
         {
-          "type": "산업 호재",
-          "summary": "최신 메모리 가격 데이터와 공급 부족 지속 기대",
-          "impact": "긍정"
+          "type": "매크로 악재",
+          "summary": "PPI·유가 상승으로 연준 인상 확률과 장기금리가 올라 고변동 반도체주 할인율 부담 확대",
+          "impact": "부정"
         },
         {
-          "type": "AI 수요",
-          "summary": "Google 데이터센터와 OpenAI 칩·메모리 협력으로 HBM·DRAM 수요 기대 강화",
+          "type": "산업 호재",
+          "summary": "중국 AI칩 가격 급등이 첨단 HBM 부족과 메모리 공급자 협상력을 재확인",
           "impact": "긍정"
         },
         {
           "type": "상대강도",
-          "summary": "S&P 500보다 3.23%p, NASDAQ보다 3.39%p 강세",
-          "impact": "긍정"
+          "summary": "S&P 500보다 4.32%p, NASDAQ보다 4.25%p 약세",
+          "impact": "부정"
         },
         {
-          "type": "기업 고유 재료",
-          "summary": "당일 상승을 단독 설명할 신규 Micron 공시·계약은 미확인",
+          "type": "수급·트레이딩",
+          "summary": "뚜렷한 신규 기업 고유 악재 미확인으로 직전 강세 뒤 차익실현 가능성 병존",
           "impact": "중립"
         }
       ],
-      "source": "https://www.barrons.com/articles/micron-stock-price-rising-7309a557",
-      "analyzedAt": "2026-09-10T06:22:14+09:00",
+      "source": "https://www.reuters.com/business/sp-500-dow-futures-attempt-recovery-ahead-inflation-report-2026-09-10/",
+      "analyzedAt": "2026-09-11T06:21:29+09:00",
       "valuation": {
-        "pe": "23.19배",
-        "pbr": "11.52배",
+        "pe": "22.06배",
+        "pbr": "10.95배",
         "eps": "$44.31",
         "basis": "TTM EPS · 최근 분기 BPS $89.22 기준",
-        "asOf": "2026-09-09",
-        "forwardPe": 6.96,
-        "forwardAsOf": "2026-09-09",
+        "asOf": "2026-09-10",
+        "forwardPe": 7.15,
+        "forwardAsOf": "2026-09-10",
         "forwardSource": "https://stockanalysis.com/stocks/mu/statistics/"
       }
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "change": "$223.67 · -0.91% · 9/9 마감",
-      "stance": "악재 우세 · 금리 부담·맞춤형 칩 경쟁",
-      "reason": "NVIDIA는 0.91% 하락해 S&P 500보다 0.43%p, NASDAQ보다 0.27%p 약했습니다. 유가 100달러 돌파와 미국 10년물 금리 상승은 고밸류 성장주의 할인율에 부담을 줬습니다. OpenAI의 자체 칩 설계는 AI 연산 수요 확대를 확인하는 호재이면서 장기적으로 GPU 공급자 다변화 압력인 양면 요인입니다. Google의 데이터센터 투자도 수요에는 긍정적이지만, 당일 하락을 단독으로 설명할 NVIDIA 고유 악재는 확인되지 않았습니다.",
+      "change": "$218.36 · -2.37% · 9/10 마감",
+      "stance": "악재 우세 · 금리 부담, 생태계 확장은 긍정",
+      "reason": "NVIDIA는 218.36달러로 2.37% 하락해 S&P 500보다 1.79%p, NASDAQ보다 1.72%p 약했습니다. PPI·유가 상승 뒤 장기금리가 급등하면서 장기 성장 기대가 큰 AI 반도체의 할인율 부담이 커진 것이 확인된 공통 시장 요인입니다. 반면 NVIDIA와 호주 파트너의 2027년 최대 2GW AI 용량 구축 계획, d-Matrix의 NVLink Fusion 채택은 GPU·네트워크 생태계 수요에는 긍정적입니다. 이를 상쇄할 당일 확정 기업 고유 악재는 확인되지 않아, 하락은 산업 수요 훼손보다는 금리 민감도와 기술주 수급 조정의 영향이 컸던 것으로 해석합니다.",
       "drivers": [
         {
           "type": "매크로 악재",
-          "summary": "유가발 물가 우려와 10년물 금리 상승으로 성장주 할인율 부담",
+          "summary": "장기금리 상승과 연준 인상 기대가 고밸류 AI 주식의 멀티플을 압박",
           "impact": "부정"
         },
         {
-          "type": "산업 경쟁",
-          "summary": "OpenAI 자체 칩 설계가 고객사의 공급자 다변화 가능성을 확대",
-          "impact": "부정"
-        },
-        {
-          "type": "AI 수요",
-          "summary": "Google 데이터센터 투자 등 AI 인프라 지출은 GPU 수요를 지지",
+          "type": "산업 호재",
+          "summary": "호주 최대 2GW AI 데이터센터 계획이 GPU·네트워크·HBM 수요 가시성을 강화",
           "impact": "긍정"
         },
         {
-          "type": "기업 고유 재료",
-          "summary": "당일 하락 전체를 설명할 신규 핵심 NVIDIA 공시 미확인",
+          "type": "생태계 호재",
+          "summary": "d-Matrix의 NVLink Fusion 채택은 NVIDIA 랙·인터커넥트 표준 확장 신호",
+          "impact": "긍정"
+        },
+        {
+          "type": "확인 한계",
+          "summary": "당일 하락을 단독 설명할 신규 기업 고유 악재는 미확인",
           "impact": "중립"
         }
       ],
-      "source": "https://www.reuters.com/world/china/openai-offers-ai-chip-design-touts-cost-advantage-over-open-source-cfo-says-2026-09-09/",
-      "analyzedAt": "2026-09-10T06:22:14+09:00",
+      "source": "https://www.reuters.com/world/asia-pacific/nvidia-teams-up-with-australian-partners-build-ai-factory-capacity-2026-09-10/",
+      "analyzedAt": "2026-09-11T06:21:29+09:00",
       "valuation": {
-        "pe": "28.28배",
-        "pbr": "23.59배",
+        "pe": "27.61배",
+        "pbr": "23.03배",
         "eps": "$7.91",
         "basis": "TTM EPS · 최근 분기 BPS $9.48 기준",
-        "asOf": "2026-09-09",
-        "forwardPe": 18.71,
-        "forwardAsOf": "2026-09-09",
+        "asOf": "2026-09-10",
+        "forwardPe": 18.56,
+        "forwardAsOf": "2026-09-10",
         "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/"
       }
     },
     {
       "symbol": "GOOGL",
       "name": "Alphabet (Google)",
-      "change": "$330.65 · -2.28% · 9/9 마감",
-      "stance": "악재 우세 · 대규모 설비투자 부담",
-      "reason": "Alphabet은 2.28% 하락해 S&P 500보다 1.80%p, NASDAQ보다 1.64%p 약했습니다. Google이 핀란드 AI 인프라에 151억달러를 투자하고 원전 전력을 22년간 확보한다고 발표한 직후 주가가 약세를 보였습니다. 이는 Gemini·검색 서비스의 장기 연산능력에는 긍정적이지만 2026년 1,950억~2,050억달러 설비투자 계획과 함께 단기 현금흐름·투자회수 우려를 키울 수 있습니다. 하락 원인을 투자 발표 하나로만 단정할 수는 없으며 유가·금리 상승과 Meta의 AI 경쟁 심화도 함께 작용했을 가능성이 있습니다.",
+      "change": "$332.60 · +0.59% · 9/10 마감",
+      "stance": "중립 · 시장 대비 반등, 고유 재료 미확인",
+      "reason": "Alphabet은 332.60달러로 0.59% 상승해 S&P 500보다 1.17%p, NASDAQ보다 1.24%p 강했습니다. 전일 대규모 핀란드 AI 투자 발표 뒤 하락한 이후 시장 약세 속 반등했다는 점은 확인되지만, 당일 상승을 단독 설명할 신규 기업 공시나 확정 호재는 확인되지 않았습니다. AI 인프라 증설은 장기 클라우드 경쟁력에 긍정적이나, 최근 1년 하이퍼스케일러의 약 2,200억달러 채권 발행과 장기금리 상승은 현금흐름·투자수익률 부담입니다. 따라서 당일 움직임은 펀더멘털 재평가보다 저가매수·포지션 조정 가능성을 함께 보는 것이 타당합니다.",
       "drivers": [
         {
-          "type": "기업 고유 부담",
-          "summary": "핀란드 AI 인프라 151억달러 투자로 단기 설비투자·현금흐름 부담 확대",
-          "impact": "부정"
-        },
-        {
-          "type": "장기 성장",
-          "summary": "데이터센터 3곳과 22년 원전 전력계약으로 AI 연산능력 확보",
+          "type": "상대강도",
+          "summary": "S&P 500보다 1.17%p, NASDAQ보다 1.24%p 강한 방어적 반등",
           "impact": "긍정"
         },
         {
-          "type": "산업 경쟁",
-          "summary": "Meta AI 에이전트 강세가 대형 플랫폼 간 경쟁 우려를 자극",
+          "type": "산업 호재",
+          "summary": "AI 데이터센터 증설은 장기 클라우드·연산 수요를 지지",
+          "impact": "긍정"
+        },
+        {
+          "type": "자본비용 악재",
+          "summary": "빅테크 채권 발행 확대와 장기금리 상승이 AI 투자 수익률 검증 압력을 높임",
           "impact": "부정"
         },
         {
-          "type": "매크로 악재",
-          "summary": "유가·국채금리 상승이 대형 성장주 밸류에이션에 부담",
-          "impact": "부정"
+          "type": "수급·트레이딩",
+          "summary": "뚜렷한 당일 기업 고유 호재 미확인으로 전일 급락 뒤 저가매수 가능성",
+          "impact": "중립"
         }
       ],
-      "source": "https://www.reuters.com/business/media-telecom/google-invest-15-billion-ai-infrastructure-finland-2026-09-09/",
-      "analyzedAt": "2026-09-10T06:22:14+09:00",
+      "source": "https://www.reuters.com/commentary/reuters-open-interest/ai-debt-splurge-is-warping-credit-spreads-marty-fridson-2026-09-10/",
+      "analyzedAt": "2026-09-11T06:21:29+09:00",
       "valuation": {
-        "pe": "16.59배",
-        "pbr": "6.50배",
+        "pe": "16.69배",
+        "pbr": "6.53배",
         "eps": "$19.93",
         "basis": "TTM EPS · 최근 분기 BPS $50.90 기준",
-        "asOf": "2026-09-09",
-        "forwardPe": 24.8,
-        "forwardAsOf": "2026-09-09",
+        "asOf": "2026-09-10",
+        "forwardPe": 24.93,
+        "forwardAsOf": "2026-09-10",
         "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/"
       }
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "change": "$491.65 · -0.47% · 9/9 마감",
-      "stance": "중립 · 시장 동반, 뚜렷한 고유 재료 미확인",
-      "reason": "Microsoft는 0.47% 하락해 S&P 500과 거의 같았고 NASDAQ보다 0.17%p 강했습니다. 유가 100달러 돌파와 국채금리 상승에 따른 시장 전체 할인율 부담이 가장 일관된 설명입니다. OpenAI의 칩 설계와 기업용 AI 확대는 Azure 연산 수요에 긍정적일 수 있지만 동시에 AI 생태계의 자체 인프라 독립성을 높이는 요인입니다. 당일 등락을 단독으로 설명할 뚜렷한 Microsoft 고유 호재·악재는 확인되지 않아 업종 수급과 단순 트레이딩 가능성을 함께 봐야 합니다.",
+      "change": "$492.44 · +0.16% · 9/10 마감",
+      "stance": "중립 · 시장 대비 방어, 고유 재료 미확인",
+      "reason": "Microsoft는 492.44달러로 0.16% 상승해 S&P 500보다 0.74%p, NASDAQ보다 0.81%p 강했습니다. 시장 전반의 금리·유가 부담에도 하락하지 않았다는 상대강도는 확인되지만 당일 주가를 단독 설명할 신규 기업 공시·확정 호재는 확인되지 않았습니다. AI 인프라 투자 확대는 Azure 수요와 장기 성장에는 긍정적이지만, 하이퍼스케일러의 대규모 채권 발행과 금리 상승은 자본비용 및 투자수익률 부담을 키웁니다. 당일 소폭 상승은 기업 고유 재료보다 대형 우량주 선호와 단순 수급·트레이딩의 영향일 가능성이 있습니다.",
       "drivers": [
         {
-          "type": "매크로 악재",
-          "summary": "유가·국채금리 상승으로 대형 기술주 할인율 부담",
-          "impact": "부정"
-        },
-        {
-          "type": "클라우드 수요",
-          "summary": "OpenAI의 칩 설계·기업용 AI 확대는 Azure 연산 수요에 잠재적 호재",
+          "type": "상대강도",
+          "summary": "S&P 500보다 0.74%p, NASDAQ보다 0.81%p 강한 방어",
           "impact": "긍정"
         },
         {
-          "type": "상대강도",
-          "summary": "S&P 500과 거의 같은 낙폭, NASDAQ보다 0.17%p 방어",
-          "impact": "중립"
+          "type": "산업 호재",
+          "summary": "AI 데이터센터·클라우드 연산 수요의 구조적 확대가 Azure 성장 기반을 지지",
+          "impact": "긍정"
         },
         {
-          "type": "기업 고유 재료",
-          "summary": "당일 변동을 단독 설명할 신규 핵심 재료 미확인",
+          "type": "자본비용 악재",
+          "summary": "AI 설비투자용 채권 공급 확대와 장기금리 상승이 투자수익률 부담을 강화",
+          "impact": "부정"
+        },
+        {
+          "type": "확인 한계",
+          "summary": "당일 소폭 상승을 단독 설명할 뚜렷한 기업 고유 재료 미확인",
           "impact": "중립"
         }
       ],
-      "source": "https://www.reuters.com/business/wall-st-futures-muted-oil-tops-100-first-time-since-july-2026-09-09/",
-      "analyzedAt": "2026-09-10T06:22:14+09:00",
+      "source": "https://www.reuters.com/commentary/reuters-open-interest/ai-debt-splurge-is-warping-credit-spreads-marty-fridson-2026-09-10/",
+      "analyzedAt": "2026-09-11T06:21:29+09:00",
       "valuation": {
-        "pe": "27.39배",
-        "pbr": "8.25배",
+        "pe": "27.43배",
+        "pbr": "8.27배",
         "eps": "$17.95",
         "basis": "TTM EPS · 최근 분기 BPS $59.56 기준",
-        "asOf": "2026-09-09",
-        "forwardPe": 25.01,
-        "forwardAsOf": "2026-09-09",
+        "asOf": "2026-09-10",
+        "forwardPe": 24.89,
+        "forwardAsOf": "2026-09-10",
         "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/"
       }
     }
