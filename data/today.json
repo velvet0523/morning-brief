@@ -1,104 +1,84 @@
 {
   "date": "2026-09-11",
-  "updatedAt": "2026-09-12T06:17:23+09:00",
-  "newsUpdatedAt": "2026-09-12T06:17:23+09:00",
+  "updatedAt": "2026-09-14T06:20:29+09:00",
+  "newsUpdatedAt": "2026-09-14T06:20:29+09:00",
   "analysisStatus": {
     "usUpdatedAt": "2026-09-12T06:17:23+09:00",
     "krUpdatedAt": "2026-09-11T15:39:57+09:00"
   },
-  "headline": "미국 물가와 금리 부담은 커졌지만 유가가 100달러 선으로 되돌아 주식은 반등했고, 중동 공급 차질과 AI 인프라의 보안·자금조달 비용은 새로운 변수가 됐습니다.",
+  "headline": "사우디 우회 송유관 중단과 러시아 정제유 차질이 에너지·물가 위험을 다시 키웠고, 연준을 향한 금리 인하 압박은 물가 지표와 충돌하고 있습니다.",
   "flowAnalysis": {
-    "title": "물가·공급 충격은 금리를 밀고, 유가 되돌림은 위험자산을 단기 방어",
-    "overview": "미국 8월 CPI가 전월 대비 0.4%, 전년 대비 3.4% 오르고 1년 기대인플레이션도 4.6%로 뛰어 연준 인상 가능성이 약 90%까지 높아졌습니다. 높은 금리는 성장주 할인율과 AI 투자 자금비용을 올립니다. 다만 WTI가 100.05달러로 하루 약 3% 내려 즉각적인 물가 공포가 완화되며 S&P 500과 NASDAQ은 반등했습니다. 사우디 공급 급감과 낮아진 재고 완충력 때문에 유가 하락의 지속성은 불확실합니다. UAE 5GW AI 단지는 공격 이후 분산·지하화 설계로 바뀌고 미국은 AI 클라우드 공급망 금융을 검토하고 있습니다. 이는 수요 취소보다 보안·전력·금융 비용 상승과 가동 지연을 뜻해 칩 수요에는 중기 호재, 빅테크 투자수익률에는 부담입니다.",
+    "title": "원유·정제유 공급 차질 → 물가·금리 압력, AI 수요는 산업 고유 요인으로 분리",
+    "overview": "사우디 동서 송유관은 호르무즈를 피해 하루 약 400만배럴을 홍해로 보내던 핵심 우회로인데, 드론 공격 뒤 멈추면서 세계 공급의 최대 4%가 위험해졌습니다. 얀부 재고는 5~7일분이고 걸프·이란 회담도 연기돼 복구 불확실성이 커졌습니다. 우크라이나의 러시아 정유시설 공격으로 디젤 생산도 줄어 미국 평균 가격은 갤런당 6달러를 넘었습니다. 원유·운송연료 상승은 물류비와 기대인플레이션을 통해 연준 인상 위험과 장기금리를 높여 성장주 할인율에 부담을 줍니다. 반대로 미 대통령의 금리 인하 요구는 금융여건 완화를 지향하지만 실제 정책 변화는 아닙니다. 현대차의 NVIDIA 플랫폼 채택은 금리와 별개로 차량용 AI 수요를 지지하지만 자체 소프트웨어 지연은 도입 난도도 보여줍니다.",
     "links": [
       {
-        "cause": "미국 CPI·기대인플레이션 상승",
-        "effect": "연준 인상 기대와 성장주 할인율 상승",
-        "explanation": "헤드라인 물가 3.4%와 1년 기대물가 4.6%는 금리 인하보다 추가 인상 위험을 키워 고밸류 성장주에 부담을 줍니다."
+        "cause": "사우디 동서 송유관 중단과 회담 연기",
+        "effect": "원유 공급·운임·정유마진의 상방 위험",
+        "explanation": "우회하던 하루 약 400만배럴과 5~7일분 재고가 핵심 병목이어서 복구가 늦으면 유가와 탱커 항로 위험이 함께 커집니다."
       },
       {
-        "cause": "WTI 하루 하락과 중동 공급 차질의 공존",
-        "effect": "단기 위험선호 회복, 중기 물가 꼬리위험 유지",
-        "explanation": "WTI 100.05달러로의 되돌림은 이날 주가를 지지했지만 사우디 공급·정제유 차질이 지속돼 물가 압력이 해소됐다고 보기는 어렵습니다."
+        "cause": "러시아 정유시설 공격과 디젤 부족",
+        "effect": "물류비·상품가격·기대인플레이션 상승",
+        "explanation": "트럭·철도·선박·농기계 연료비가 넓게 전가되면 헤드라인 물가뿐 아니라 기업 마진과 소비 여력에도 부담입니다."
       },
       {
-        "cause": "AI 데이터센터의 분산·방호 설계와 정책금융",
-        "effect": "칩 수요 유지, 구축비·가동시점 부담 확대",
-        "explanation": "UAE의 5GW 계획 수정과 미국의 공급망 대출 검토는 AI 투자를 지지하면서도 보안·전력·자본비용을 높이는 양면 신호입니다."
+        "cause": "높은 물가와 정치권의 저금리 요구 충돌",
+        "effect": "연준 경로·채권금리 변동성 확대",
+        "explanation": "발언은 완화 압력이지만 정책 결정은 아닙니다. 실제 금리 방향은 연준 결정과 에너지 가격의 지속성으로 확인해야 합니다."
       }
     ],
-    "watch": "연준 결정과 2·10년물 금리, WTI 100달러, 호르무즈 통항량, Stargate UAE 가동 일정, 빅테크 AI 채권 스프레드를 확인해야 합니다."
+    "watch": "사우디 송유관 재가동과 얀부 재고, 호르무즈 협상, 디젤·정유마진, 연준 결정과 2·10년물 금리, NVIDIA 차량용 플랫폼 수주를 확인해야 합니다."
   },
   "stories": [
     {
       "category": "MACRO",
+      "importanceScore": 70,
+      "level": "중간",
+      "tag": "TRADE · CAPITAL FLOW",
+      "title": "독일 기업, 중국 투자 33% 증가…미국 투자는 약 3분의 2 감소",
+      "summary": "독일경제연구소가 분데스방크 자료를 분석한 결과 독일 기업의 2026년 상반기 중국 투자는 전년 동기보다 56억유로 늘었고, 미국 투자는 약 3분의 2 감소한 43억유로였습니다.",
+      "why": "미국 관세와 미·중 비용 격차가 유럽 제조업의 설비투자와 일자리 배치를 바꾸는 신호입니다. 다만 한 국가의 반기 자료이므로 세계 자본 흐름 전환으로 단정하기는 이릅니다.",
+      "source": "https://www.reuters.com/world/china/german-firms-lift-china-investment-as-us-outlays-fall-iw-study-shows-2026-09-13/"
+    },
+    {
+      "category": "MACRO",
+      "importanceScore": 62,
+      "level": "중간",
+      "tag": "FED · POLICY PRESSURE",
+      "title": "미 대통령, 연준 회의 앞두고 세계 최저금리 요구",
+      "summary": "미국 대통령은 물가·경제 지표와 무관하게 미국 금리가 세계에서 가장 낮아야 한다고 주장했습니다. 이는 8월 근원 CPI의 4개월 만 최대 상승 뒤 열린 연준 회의 직전 나온 발언입니다.",
+      "why": "연준 독립성과 정책 기대의 변동성을 키울 수 있지만 실제 금리 결정이나 연준 지침 변경은 아닙니다. 물가가 높아진 상황에서는 발언과 통화정책을 구분해야 합니다.",
+      "source": "https://www.reuters.com/business/ahead-fed-meeting-trump-says-us-should-have-worlds-lowest-interest-rate-2026-09-13/"
+    },
+    {
+      "category": "INDUSTRY",
       "importanceScore": 98,
       "level": "높음",
-      "tag": "US CPI · FED",
-      "title": "미국 8월 CPI 0.4% 상승…연준 인상 확률 약 90%",
-      "summary": "미국 소비자물가는 8월 전월 대비 0.4%, 전년 대비 3.4% 올랐고 근원물가는 각각 0.3%, 2.4% 상승했습니다. 휘발유 반등이 헤드라인 물가를 끌어올렸습니다.",
-      "why": "연준의 다음 결정과 국채금리, 달러, 성장주 밸류에이션에 동시에 영향을 주는 시장 전체 변수입니다. 다만 이날 유가 하락이 즉각적인 주가 충격을 일부 상쇄했습니다.",
-      "source": "https://www.reuters.com/world/us/us-consumer-inflation-picks-up-august-2026-09-11/"
-    },
-    {
-      "category": "MACRO",
-      "importanceScore": 87,
-      "level": "높음",
-      "tag": "US CONSUMER · INFLATION",
-      "title": "미국 소비심리 47.8로 하락…1년 기대물가 4.6%",
-      "summary": "미시간대 9월 예비 소비심리는 8월 51.7에서 47.8로 떨어져 예상치 51.0을 밑돌았고, 1년 기대인플레이션은 4.0%에서 4.6%로 상승했습니다.",
-      "why": "유가 충격이 가계의 물가 기대와 소비 여력을 함께 악화시키는 신호입니다. 성장 둔화와 높은 금리가 공존하는 정책 난도가 커집니다.",
-      "source": "https://www.reuters.com/business/us-consumer-sentiment-deteriorates-september-inflation-expectations-rise-2026-09-11/"
-    },
-    {
-      "category": "MACRO",
-      "importanceScore": 78,
-      "level": "높음",
-      "tag": "US FISCAL · RATES",
-      "title": "미국 회계연도 누적 적자 1.97조달러…이자비용 13% 증가",
-      "summary": "8월 명목 재정적자는 달력 효과로 1,670억달러였지만 조정치는 2,480억달러였습니다. 회계연도 누적 적자는 1.97조달러, 이자지출은 전년 대비 13% 늘었습니다.",
-      "why": "대규모 국채 공급과 이자비용의 악순환은 장기금리 하락을 제한해 주식의 할인율과 기업 자금조달비용을 높일 수 있습니다.",
-      "source": "https://www.reuters.com/markets/us/us-budget-deficit-shrinks-august-year-to-date-flat-197-trillion-2026-09-11/"
+      "tag": "OIL · SUPPLY ROUTE",
+      "title": "사우디 우회 송유관 중단…세계 원유 공급 최대 4% 위험",
+      "summary": "호르무즈 폐쇄를 피해 하루 약 400만배럴을 얀부로 보내던 사우디 동서 송유관이 드론 공격 뒤 멈췄습니다. 얀부의 수출용 재고는 5~7일분이며 수리 기간은 수주까지 걸릴 수 있다는 추정도 나왔습니다.",
+      "why": "세계 공급, 유가, 정유마진, 해상운임과 물가를 동시에 움직일 수 있는 핵심 병목입니다. 걸프·이란의 호르무즈 회담까지 연기돼 완화 경로도 불확실합니다.",
+      "source": "https://www.reuters.com/business/energy/saudi-pipeline-outage-threatens-loss-4-global-oil-supply-2026-09-13/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 96,
+      "importanceScore": 90,
       "level": "높음",
-      "tag": "OIL · SUPPLY",
-      "title": "사우디 원유 공급 30여년 최저…IEA, 공급 공백 확대 경고",
-      "summary": "IEA는 8월 사우디 원유 공급이 공격과 수송 차질로 하루 600만배럴까지 줄었다고 추산했습니다. 2026년 세계 공급 감소 전망은 하루 570만배럴로 확대됐습니다.",
-      "why": "원유뿐 아니라 디젤·운임·정유마진과 물가 전반에 파급됩니다. 수요 감소 전망에도 공급과 재고 완충력 훼손이 더 큰 단기 가격 변수입니다.",
-      "source": "https://www.reuters.com/business/energy/global-2026-oil-supply-gap-deepen-delayed-return-normal-gulf-flows-iea-says-2026-09-11/"
+      "tag": "DIESEL · REFINING",
+      "title": "러시아 정유시설 공격으로 디젤 부족…미국 평균 6달러 돌파",
+      "summary": "우크라이나의 장거리 공격으로 러시아 정유 생산과 연료 수출 전망이 낮아졌고, 미국 평균 디젤 가격은 갤런당 6달러를 처음 넘어섰습니다.",
+      "why": "디젤은 트럭·철도·선박·농기계에 광범위하게 쓰여 물류비와 상품가격으로 빠르게 전가됩니다. 원유보다 정제유 병목과 정유마진·제품선 운임에 직접적인 신호입니다.",
+      "source": "https://www.reuters.com/business/energy/trump-tells-ukraines-zelenskiy-stop-hitting-russian-diesel-2026-09-13/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 88,
-      "level": "높음",
-      "tag": "AI INFRA · SECURITY",
-      "title": "UAE 5GW AI 단지, 공격 이후 분산·지하화 설계로 수정",
-      "summary": "UAE는 이란 공격 이후 5GW AI 데이터센터 계획을 여러 시설로 분산하고 지하화·방폭·방공 대책을 검토하고 있습니다. 300억달러 규모 첫 단계의 200MW 가동 목표는 2026년입니다.",
-      "why": "AI 컴퓨팅 수요는 유지되지만 보안·전력·건설비와 가동 지연 위험이 커집니다. 가속기·메모리 수요와 클라우드 투자수익률에 반대 방향의 영향을 줍니다.",
-      "source": "https://www.reuters.com/world/middle-east/uae-revises-ai-data-center-plan-after-iranian-attacks-sources-say-2026-09-11/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 79,
-      "level": "높음",
-      "tag": "AI CLOUD · POLICY FINANCE",
-      "title": "미 국방부, AI 클라우드 공급망에 50억달러 대출 검토",
-      "summary": "미 국방부 전략자본실은 AI 클라우드 업체 Fluidstack에 약 50억달러를 대출해 미국 데이터센터 핵심 부품 공급망을 확충하는 방안을 논의 중인 것으로 전해졌습니다.",
-      "why": "확정 거래는 아니지만 AI 인프라가 민간 설비투자를 넘어 국가 안보·산업금융의 대상으로 확대되는 신호입니다.",
-      "source": "https://www.reuters.com/technology/pentagon-talks-lend-5-billion-ai-cloud-startup-fluidstack-wsj-reports-2026-09-10/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 76,
-      "level": "높음",
-      "tag": "AI CLOUD · DEMAND",
-      "title": "Oracle AI 클라우드 수주잔고 6,640억달러…투자비 우려는 지속",
-      "summary": "Oracle의 수주잔고가 260억달러 늘어 6,640억달러가 됐고 약 절반은 36개월 안에 매출로 전환될 전망입니다. 고객 선급금·자체 칩 제공이 자금 부담을 일부 낮췄습니다.",
-      "why": "개별 실적보다 AI 클라우드 수요와 데이터센터 자금조달 구조를 보여주는 산업 신호입니다. 수요 강도와 높은 부채·현금흐름 부담이 동시에 확인됐습니다.",
-      "source": "https://www.reuters.com/business/retail-consumer/oracle-shares-rise-ai-cloud-backlog-beats-estimates-2026-09-11/"
+      "importanceScore": 72,
+      "level": "중간",
+      "tag": "AUTOMOTIVE AI · NVIDIA",
+      "title": "현대차, 2028년 NVIDIA 기반 ADAS 도입…자체 플랫폼은 2029년",
+      "summary": "현대차그룹은 NVIDIA Hyperion 10을 활용한 레벨 2+·2++ 운전자보조 시스템을 2028년 도입하고 자체 소프트웨어 출시는 기존 계획보다 2년 늦은 2029년 말로 미뤘습니다.",
+      "why": "완성차의 차량용 AI 컴퓨팅·데이터센터·로봇 협업 확대는 NVIDIA 수요에 긍정적입니다. 동시에 자체 소프트웨어 개발 지연은 자율주행 상용화 난도와 공급자 의존도를 보여줍니다.",
+      "source": "https://www.reuters.com/business/autos-transportation/hyundai-motor-roll-out-in-house-driver-assist-system-2029-2026-09-13/"
     }
   ],
   "markets": [
