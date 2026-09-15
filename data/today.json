@@ -1,124 +1,124 @@
 {
   "date": "2026-09-15",
-  "updatedAt": "2026-09-15T16:14:23+09:00",
-  "newsUpdatedAt": "2026-09-15T06:22:20+09:00",
+  "updatedAt": "2026-09-16T06:21:57+09:00",
+  "newsUpdatedAt": "2026-09-16T06:21:57+09:00",
   "analysisStatus": {
-    "usUpdatedAt": "2026-09-15T06:22:20+09:00",
+    "usUpdatedAt": "2026-09-16T06:21:57+09:00",
     "krUpdatedAt": "2026-09-15T16:14:23+09:00"
   },
-  "headline": "AI 개발 속도 조절론이 반도체주를 압박한 가운데, 사우디 송유관 차질과 낮아진 미국 전략비축유가 유가·물가·금리의 상방 위험을 키웠습니다.",
+  "headline": "사우디 원유 수출 차질로 유가와 국채금리가 다시 뛰면서 성장주 할인율 부담이 커졌지만, 전일 급락한 반도체주는 일부 반등했습니다.",
   "flowAnalysis": {
-    "title": "AI 투자 속도 우려와 원유 공급 차질 → 반도체 실적 기대·성장주 할인율 동시 압박",
-    "overview": "사우디 동서 송유관 차질로 아시아 정유사의 고유황 원유 조달과 걸프발 탱커 운임이 빡빡해졌고 WTI는 101.39달러로 올랐습니다. 미국 전략비축유도 2억8,500만배럴로 1982년 이후 최저여서 추가 충격을 흡수할 여력이 줄었습니다. 유가 상승은 기대물가와 연준 인상 전망을 자극했고, 미국 10년물 금리가 5%를 넘으면서 장기 성장주 현금흐름의 현재가치를 낮췄습니다. 동시에 주요 AI 기업 경영진의 개발 속도 조절 요구는 데이터센터·가속기 투자 시점에 대한 불확실성을 키워 반도체주를 직접 압박했습니다. 다만 High-NA 장비 도입 약속과 기존 AI 인프라 부족은 장기 수요의 반대 근거입니다.",
+    "title": "사우디 수출 차질 → 유가·기대물가·국채금리 상승 → 성장주 압박, 반도체는 기술적 반등",
+    "overview": "사우디 동서 송유관 손상에 이어 얀부 선적 중단과 유럽향 화물 취소가 확인되면서 WTI는 105.83달러로 4.38% 급등했습니다. 원유 공급 충격은 운송·정제비와 소비자물가의 상방 위험을 높여 연준의 금리 인상 전망을 강화했고, 미국 10년물 금리는 장중 5.04%로 2007년 이후 최고치를 기록했습니다. 이에 장기 현금흐름 비중이 큰 플랫폼·소프트웨어주는 약세를 보였습니다. 반면 Micron과 NVIDIA는 전일 AI 개발 속도 조절론에 따른 급락 이후 소폭 반등했습니다. 이는 실제 주문·설비투자 취소가 확인된 결과가 아니라 과매도 되돌림 성격이 강하며, 2나노 모바일 칩과 유럽 AI 추론칩 공급계약은 AI·반도체 수요가 완전히 꺾이지 않았다는 반대 신호입니다.",
     "links": [
       {
-        "cause": "사우디 우회 송유관 중단·미국 전략비축유 감소",
-        "effect": "유가·정제원가·탱커 운임의 상방 위험",
-        "explanation": "고유황 원유 대체 조달 경쟁과 낮은 비축 여력은 공급 차질이 길어질수록 물류비와 소비자물가로 전가될 가능성을 높입니다."
+        "cause": "사우디 얀부 선적 중단·유럽향 원유 화물 취소",
+        "effect": "WTI 4.38% 급등·정제유 공급 불안",
+        "explanation": "호르무즈를 우회하던 핵심 수출로까지 막히며 원유와 디젤의 물류·조달 프리미엄이 함께 상승했습니다."
       },
       {
-        "cause": "유가·물가 압력과 국채 공급 확대",
-        "effect": "연준 인상 기대·미국 10년물 5% 돌파",
-        "explanation": "높은 무위험금리는 채권의 상대 매력을 높이고 AI 설비투자의 자금조달비와 성장주 할인율을 동시에 끌어올립니다."
+        "cause": "유가 상승·연준 인상 전망",
+        "effect": "미국 10년물 5.04%·성장주 할인율 상승",
+        "explanation": "에너지발 물가 압력이 정책금리의 고점과 지속기간 기대를 높여 먼 미래 이익의 현재가치를 낮췄습니다."
       },
       {
-        "cause": "AI 개발 속도 조절론과 데이터 보안 우려",
-        "effect": "칩 수요 기대 하향·보안형 클라우드 선호",
-        "explanation": "가속기 투자 지연 우려는 반도체에 부정적이지만 기업용 보안·사설 모델 수요는 대형 클라우드 사업자에 상대적으로 유리할 수 있습니다."
+        "cause": "전일 반도체 급락·신규 칩 공급 신호",
+        "effect": "MU·NVDA 제한적 반등",
+        "explanation": "실제 AI 주문 취소가 확인되지 않은 가운데 과매도 되돌림과 2나노·추론칩 투자 신호가 반등을 지지했지만 금리 부담은 남았습니다."
       }
     ],
-    "watch": "연준의 9월 16일 결정과 점도표, 사우디 송유관 복구·얀부 선적, WTI·탱커 운임, AI 기업의 실제 투자계획 변경 여부, 10년물 5% 안착 여부를 확인해야 합니다."
+    "watch": "9월 16일 연준 결정·점도표, 사우디 동서 송유관 복구 기간과 얀부 선적 재개, WTI 100달러 안착 여부, 미국 10년물 5% 지속, AI 데이터센터 주문·설비투자 변경 여부를 확인해야 합니다."
   },
   "stories": [
     {
       "category": "MACRO",
-      "importanceScore": 94,
+      "importanceScore": 95,
       "level": "높음",
       "tag": "FED · RATE PATH",
-      "title": "미 연준 25bp 인상 전망 85%…동결 예상에서 급반전",
-      "summary": "Reuters 조사에서 경제학자 101명 중 86명이 9월 16일 연준이 정책금리를 3.75~4.00%로 25bp 올릴 것으로 예상했습니다. 다수는 2027년 3월까지 최소 한 차례 추가 인상도 전망했습니다.",
-      "why": "강한 물가와 100달러대 유가가 연준 경로를 동결에서 인상으로 바꾼 핵심 변화입니다. 성장주 할인율, 기업 자금조달비와 달러 방향에 직접 영향을 줍니다.",
+      "title": "연준 25bp 인상 전망 우세…추가 인상 가능성도 확대",
+      "summary": "최근 Reuters 조사에서 경제학자 101명 중 86명이 9월 16일 연준이 기준금리를 3.75~4.00%로 25bp 올릴 것으로 예상했습니다. Morgan Stanley도 9월과 12월 두 차례 인상을 전망했습니다.",
+      "why": "고유가와 끈적한 물가가 불과 일주일 전 동결 우세였던 기대를 인상 쪽으로 바꿨습니다. 성장주 할인율과 기업 자금조달비에 직접 영향을 줍니다.",
       "source": "https://www.reuters.com/business/fed-rate-hike-wednesday-now-likely-say-economists-least-one-more-follow-2026-09-14/"
     },
     {
       "category": "MACRO",
-      "importanceScore": 88,
+      "importanceScore": 93,
       "level": "높음",
-      "tag": "TREASURY · LIQUIDITY",
-      "title": "미국 10년물 5% 돌파…2023년 이후 최고",
-      "summary": "미국 10년물 국채금리가 5.01%까지 올라 2023년 10월 이후 처음 5%를 넘었습니다. 유가·물가 우려와 재정적자, AI 투자용 회사채를 포함한 대규모 채권 공급이 함께 작용했습니다.",
-      "why": "5% 국채금리는 주식의 상대 매력을 낮추고 주택·소비·기업 차입비를 높입니다. 특히 먼 미래 이익 비중이 큰 AI·성장주의 밸류에이션에 직접적인 부담입니다.",
-      "source": "https://www.reuters.com/business/us-10-year-yields-reach-5-highest-since-2023-2026-09-14/"
+      "tag": "TREASURY · VALUATION",
+      "title": "미국 10년물 장중 5.04%…2007년 이후 최고",
+      "summary": "유가 급등과 연준 인상 전망 속에 미국 10년물 국채금리가 장중 5.04%까지 상승했습니다. 글로벌 국채 매도도 함께 진행됐습니다.",
+      "why": "무위험금리 상승은 주식의 상대 매력을 낮추고 특히 AI·소프트웨어처럼 장기 성장 기대가 큰 종목의 밸류에이션을 압박합니다.",
+      "source": "https://www.ft.com/content/5e2327aa-dbd0-4a79-8c99-622a893876d7"
     },
     {
       "category": "MACRO",
-      "importanceScore": 70,
-      "level": "중간",
-      "tag": "ECB · GLOBAL TIGHTENING",
-      "title": "ECB 위원, 2.5% 넘어 추가 긴축 가능성 제기",
-      "summary": "ECB의 마르틴스 카작스 위원은 에너지 가격 상승이 임금과 서비스 물가로 번지기 전에 금리를 제한적 영역으로 더 올릴 필요가 커지고 있다고 밝혔습니다.",
-      "why": "미국뿐 아니라 유럽도 에너지발 인플레이션에 대응하면 세계 금융여건이 동시에 긴축됩니다. 다만 이는 개별 위원의 견해이며 10월 인상을 확정한 발언은 아닙니다.",
-      "source": "https://www.reuters.com/business/finance/ecbs-kazaks-sees-growing-case-more-tightening-2026-09-14/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 98,
+      "importanceScore": 78,
       "level": "높음",
-      "tag": "OIL · TANKER",
-      "title": "사우디 송유관 차질로 고유황 원유·걸프발 탱커 운임 압박",
-      "summary": "사우디 동서 송유관 공격 이후 아시아 정유사들은 얀부 선적 지연과 고유황 원유 부족을 예상했습니다. 대체 물량 경쟁이 커지고 걸프-아시아 탱커 운임은 기록적 수준으로 상승했습니다.",
-      "why": "원유·정유마진·탱커 톤마일과 물가를 동시에 움직이는 공급망 병목입니다. 복구 시점과 실제 선적 배정이 확인되기 전까지 가격 변동성이 높습니다.",
-      "source": "https://www.reuters.com/business/energy/asian-refiners-awaiting-word-saudi-shipments-expect-tighter-supply-2026-09-14/"
+      "tag": "CHINA · GROWTH MIX",
+      "title": "중국 산업생산 5.2% 증가했지만 소비·부동산 침체 심화",
+      "summary": "중국 8월 산업생산은 전년 대비 5.2% 늘어 예상을 웃돌았지만 소매판매는 0.4% 증가에 그쳤고 부동산 투자는 19.9% 감소했습니다.",
+      "why": "AI·첨단 제조 생산은 견조하지만 내수와 부동산 부진이 원자재·소비재 수요와 중국 경기 회복의 지속성을 제한합니다.",
+      "source": "https://www.reuters.com/world/china/chinas-factories-rev-up-slower-consumption-highlights-deepening-economic-2026-09-15/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 95,
+      "importanceScore": 99,
       "level": "높음",
-      "tag": "AI · SEMICONDUCTOR",
-      "title": "AI 개발 속도 조절 요구에 필라델피아 반도체지수 5.9% 급락",
-      "summary": "Anthropic·OpenAI·xAI 경영진이 AI 안전 위험을 이유로 개발 속도 조절을 요구하자 NVIDIA는 3.36%, Micron은 5.25% 하락했고 필라델피아 반도체지수는 5.9% 떨어졌습니다.",
-      "why": "AI 가속기·HBM·데이터센터 투자 속도에 대한 기대를 직접 낮출 수 있는 신호입니다. 다만 실제 설비투자나 구매계약 취소는 아직 확인되지 않아 심리 충격과 실적 변화를 구분해야 합니다.",
-      "source": "https://www.reuters.com/business/ai-warnings-knock-nasdaq-futures-pressure-tech-stocks-2026-09-14/"
+      "tag": "OIL · SHIPPING",
+      "title": "사우디 얀부 선적 중단·유럽향 화물 취소…WTI 4.38% 급등",
+      "summary": "동서 송유관 공격 이후 얀부 원유 선적이 멈추고 일부 9월 유럽향 화물이 취소됐습니다. WTI는 105.83달러, Brent는 108.75달러로 마감했습니다.",
+      "why": "호르무즈 우회로가 하루 400만~500만배럴을 처리해온 만큼 복구가 늦어지면 세계 공급의 4~5%, 정유 원료와 탱커 항로에 동시 충격을 줄 수 있습니다.",
+      "source": "https://www.reuters.com/business/energy/oil-prices-rise-saudi-pipeline-outage-fresh-attacks-raise-supply-concerns-2026-09-15/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 85,
+      "importanceScore": 92,
       "level": "높음",
-      "tag": "OIL · STRATEGIC RESERVE",
-      "title": "미국 전략비축유 2억8,500만배럴…1982년 이후 최저",
-      "summary": "미 에너지부 자료에서 전략비축유는 지난주 2억8,500만배럴로 줄었습니다. 사전 합의된 총 1억7,200만배럴 방출 계획의 일부입니다.",
-      "why": "중동 공급 차질이 이어질 때 가격 급등을 완충할 정책 여력이 약해졌다는 의미입니다. 재고 자체보다 추가 방출 속도와 상업재고·수입 대체가 중요합니다.",
-      "source": "https://www.reuters.com/business/energy/oil-stocks-us-strategic-petroleum-reserve-fall-lowest-level-since-1982-2026-09-14/"
+      "tag": "DIESEL · REFINING",
+      "title": "러시아 주요 디젤 정유시설 절반 감산…제품 공급 부족 심화",
+      "summary": "드론 공격으로 러시아 상위 디젤 생산 정유시설 여섯 곳이 감산 또는 중단됐고 러시아는 휘발유·디젤·항공유 수출을 제한했습니다.",
+      "why": "중동 원유 차질과 러시아 제품 공급 감소가 겹쳐 디젤·정제마진과 운송비 상승 압력을 높입니다. 정유사에는 마진 호재지만 소비·물류에는 비용 악재입니다.",
+      "source": "https://www.reuters.com/business/energy/half-russias-top-diesel-producing-refineries-cut-back-output-after-drone-strikes-2026-09-15/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 72,
-      "level": "중간",
-      "tag": "SEMICONDUCTOR · HIGH-NA",
-      "title": "주요 칩 제조사, 차세대 High-NA EUV 도입 일정 확정",
-      "summary": "ASML의 기존 EUV 장비가 2027년까지 사실상 매진된 가운데 삼성전자와 SK하이닉스는 2028년, TSMC는 2030년부터 High-NA를 양산에 적용할 계획입니다.",
-      "why": "단기 AI 심리 악화와 별개로 첨단 로직·메모리의 미세화 투자가 이어진다는 장기 반대 신호입니다. 장비 가격은 약 4억달러로 투자 부담도 큽니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/asml-extends-chipmaking-dominance-customers-embrace-high-na-2026-09-14/"
+      "importanceScore": 84,
+      "level": "높음",
+      "tag": "REFINING · EUROPE",
+      "title": "Dangote 정유소, 유럽 연료 부족 메우며 상반기 흑자 전환",
+      "summary": "Dangote 정유소는 유럽의 중동산 디젤·항공유 공급 감소를 대체해 2분기 항공유를 하루 8만배럴 수출했고, 2026년 상반기 18억2천만달러 순이익을 기록했습니다.",
+      "why": "공급망 차질이 정제능력의 지역 재배치와 비중동 공급자의 가격결정력을 강화하고 있음을 보여줍니다.",
+      "source": "https://www.reuters.com/business/energy/dangote-profits-europe-fuel-crunch-ipo-tests-investor-appetite-2026-09-15/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 64,
+      "importanceScore": 76,
+      "level": "높음",
+      "tag": "SEMICONDUCTOR · 2NM",
+      "title": "MediaTek, TSMC 2나노 기반 모바일 AI 칩 출시",
+      "summary": "MediaTek은 TSMC 2나노 공정의 Dimensity 9600 Pro를 공개했습니다. 온디바이스 생성형 AI 성능은 전작 대비 51% 높다고 회사가 밝혔습니다.",
+      "why": "AI 수요가 데이터센터뿐 아니라 프리미엄 모바일로 확산되는 신호이며, 첨단 파운드리·메모리·패키징 수요를 지지합니다.",
+      "source": "https://www.reuters.com/business/media-telecom/mediatek-launches-new-mobile-chip-using-tsmcs-most-advanced-technology-2026-09-15/"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 68,
       "level": "중간",
-      "tag": "AI · DATA SECURITY",
-      "title": "기업 AI 도입의 새 병목으로 데이터 보안 부상",
-      "summary": "보도에 따르면 Palantir·NVIDIA·Booz Allen은 데이터 보존과 지식재산 우려로 외부 AI 모델 사용을 제한하거나 강한 보증을 요구하고 있습니다. Microsoft는 보안형 클라우드 환경과 자체 모델을 강조하고 있습니다.",
-      "why": "AI 도입이 중단된다기보다 공개형 모델에서 보안·사설 배포로 지출 구성이 이동할 가능성입니다. 원 보도에 대한 Reuters의 독립 확인은 이뤄지지 않았습니다.",
-      "source": "https://www.reuters.com/business/palantir-nvidia-curb-ai-model-use-over-data-fears-information-reports-2026-09-14/"
+      "tag": "AI · INFERENCE",
+      "title": "유럽 Axelera, AI 추론칩 공급계약·2세대 칩 공개",
+      "summary": "Axelera AI는 Dell·Supermicro 제품에 탑재될 2세대 Europa 칩과 여러 AI 팩토리 공급계약을 발표했습니다. 잠재 계약 규모는 최대 15억달러입니다.",
+      "why": "AI 인프라 지출이 학습용 GPU에서 기업용 추론과 대체 가속기로 넓어지는 신호지만 실제 매출 전환은 향후 납품을 확인해야 합니다.",
+      "source": "https://www.reuters.com/business/european-chip-startup-axelera-wins-ai-factory-supply-deals-launches-second-chip-2026-09-15/"
     }
   ],
   "markets": [
     {
       "label": "S&P 500",
-      "value": "7,619.94 · -0.48% · 9/14 마감"
+      "value": "7,585.73 · -0.45% · 9/15 마감"
     },
     {
       "label": "NASDAQ",
-      "value": "26,186.41 · -0.56% · 9/14 마감"
+      "value": "25,981.57 · -0.78% · 9/15 마감"
     },
     {
       "label": "KOSPI",
@@ -126,15 +126,15 @@
     },
     {
       "label": "닛케이 225",
-      "value": "63,492.99 · -0.81% · 9/14 마감"
+      "value": "63,600.20 · +0.17% · 9/15 마감"
     },
     {
       "label": "원·달러",
-      "value": "1,347.75 · +0.34% · 9/14"
+      "value": "1,358.28 · +0.78% · 9/15"
     },
     {
       "label": "WTI",
-      "value": "$101.39 · +1.34% · 9/14 마감"
+      "value": "$105.83 · +4.38% · 9/15 마감"
     }
   ],
   "stocks": [
@@ -192,40 +192,132 @@
     {
       "symbol": "MU",
       "name": "Micron",
-      "change": "$924.03 · -5.25% · 9/14 마감",
-      "stance": "악재 우세 · AI 투자 속도 우려",
-      "reason": "Micron은 5.25% 하락해 S&P 500보다 4.77%p, NASDAQ보다 4.69%p 약했습니다. 다만 필라델피아 반도체지수(-5.9%)보다는 0.65%p 강했습니다. 주요 AI 기업 경영진의 개발 속도 조절 요구가 데이터센터·가속기 투자 시점에 대한 우려를 만들면서 HBM·메모리 수요 기대가 직접 압박받았습니다. 미국 10년물 금리의 5% 돌파와 연준 인상 전망도 고베타 반도체주의 할인율 부담을 키웠습니다. ASML High-NA 장비 주문과 AI 인프라 부족은 장기 수요를 지지하지만 당일 심리 충격을 상쇄하지 못했습니다. 주가 하락을 단독 설명할 신규 Micron 고유 공시·확정 악재는 확인되지 않아 산업 전반의 디레이팅과 차익실현 가능성을 함께 반영합니다.",
-      "analyzedAt": "2026-09-15T06:22:20+09:00",
+      "change": "$927.60 · +0.39% · 9/15 마감",
+      "stance": "중립 · 과매도 반등·금리 부담 병존",
+      "reason": "Micron은 0.39% 상승해 S&P 500보다 0.84%p, NASDAQ보다 1.17%p 강했습니다. 전일 AI 개발 속도 조절론으로 5.25% 급락한 뒤 실제 HBM 주문 취소나 설비투자 축소가 확인되지 않으면서 과매도 되돌림이 나타난 것으로 보입니다. MediaTek의 2나노 모바일 AI 칩과 유럽 AI 추론칩 공급계약은 AI 반도체 수요가 여러 단말·인프라로 확산된다는 긍정 신호입니다. 반면 미국 10년물 5.04%와 WTI 105.83달러는 고베타 메모리주의 할인율과 위험선호에 부담입니다. 당일 상승을 단독 설명할 신규 Micron 고유 공시·확정 호재는 확인되지 않았습니다.",
+      "analyzedAt": "2026-09-16T06:21:57+09:00",
       "valuation": {
-        "pe": "20.85배",
-        "pbr": "10.36배",
+        "pe": "20.93배",
+        "pbr": "10.40배",
         "eps": "$44.31",
         "basis": "TTM EPS · 최근 분기 BPS $89.22 기준",
-        "asOf": "2026-09-14",
-        "forwardPe": 6.78,
-        "forwardAsOf": "2026-09-11",
+        "asOf": "2026-09-15",
+        "forwardPe": 6.4,
+        "forwardAsOf": "2026-09-15",
         "forwardSource": "https://stockanalysis.com/stocks/mu/statistics/"
       },
       "drivers": [
         {
-          "type": "산업 악재",
-          "summary": "AI 개발 속도 조절 요구가 HBM·데이터센터 투자 시점에 대한 불확실성을 확대",
-          "impact": "부정"
+          "type": "수급·트레이딩",
+          "summary": "전일 5.25% 급락 뒤 실제 주문 취소가 확인되지 않으며 과매도 일부 되돌림",
+          "impact": "긍정"
+        },
+        {
+          "type": "산업 호재",
+          "summary": "2나노 모바일 AI 칩과 추론칩 공급계약이 AI 반도체 수요의 확장을 시사",
+          "impact": "긍정"
         },
         {
           "type": "금리 악재",
-          "summary": "미국 10년물 5% 돌파와 연준 인상 전망이 고베타 반도체 할인율을 상승",
+          "summary": "미국 10년물 5.04%와 연준 인상 전망이 고베타 메모리주의 할인율을 상승",
           "impact": "부정"
         },
         {
           "type": "상대강도",
-          "summary": "NASDAQ보다 4.69%p 약했지만 필라델피아 반도체지수보다 0.65%p 강세",
+          "summary": "S&P 500보다 0.84%p, NASDAQ보다 1.17%p 강세",
+          "impact": "긍정"
+        },
+        {
+          "type": "확인 한계",
+          "summary": "신규 Micron 고유 공시·확정 호재와 HBM 주문 변경은 미확인",
+          "impact": "중립"
+        }
+      ],
+      "source": "https://stockanalysis.com/stocks/mu/statistics/"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA",
+      "change": "$212.17 · +0.57% · 9/15 마감",
+      "stance": "중립 · 반도체 반등·장기금리 부담",
+      "reason": "NVIDIA는 0.57% 상승해 S&P 500보다 1.02%p, NASDAQ보다 1.35%p 강했습니다. 전일 AI 개발 속도 조절론에 3.36% 하락한 뒤 실제 데이터센터 주문 취소가 확인되지 않으면서 반도체주에 저가 매수가 유입된 것으로 해석됩니다. MediaTek의 2나노 AI 칩과 Axelera의 추론칩 계약은 AI 컴퓨팅 생태계의 확장을 확인하지만 NVIDIA에는 경쟁 심화라는 반대 효과도 있습니다. 미국 10년물 5.04%와 연준 인상 전망은 높은 장기 성장 기대의 현재가치를 계속 압박합니다. 당일 주가를 단독 설명할 신규 NVIDIA 고유 확정 호재는 확인되지 않았습니다.",
+      "analyzedAt": "2026-09-16T06:21:57+09:00",
+      "valuation": {
+        "pe": "26.82배",
+        "pbr": "22.38배",
+        "eps": "$7.91",
+        "basis": "TTM EPS · 최근 분기 BPS $9.48 기준",
+        "asOf": "2026-09-15",
+        "forwardPe": 17.51,
+        "forwardAsOf": "2026-09-15",
+        "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/"
+      },
+      "drivers": [
+        {
+          "type": "수급·트레이딩",
+          "summary": "전일 3.36% 하락 뒤 주문 취소가 확인되지 않으며 반도체 저가 매수 유입",
+          "impact": "긍정"
+        },
+        {
+          "type": "산업 혼합",
+          "summary": "AI 칩 생태계 확장은 수요를 지지하지만 대체 가속기 확산은 경쟁 요인",
           "impact": "중립"
         },
         {
-          "type": "산업 호재",
-          "summary": "High-NA 채택과 AI 인프라 부족은 중장기 메모리·HBM 수요를 지지",
+          "type": "금리 악재",
+          "summary": "10년물 5.04%와 연준 인상 전망이 장기 성장 현금흐름의 할인율을 상승",
+          "impact": "부정"
+        },
+        {
+          "type": "상대강도",
+          "summary": "S&P 500보다 1.02%p, NASDAQ보다 1.35%p 강세",
           "impact": "긍정"
+        },
+        {
+          "type": "확인 한계",
+          "summary": "실제 데이터센터 주문 취소나 신규 기업 고유 확정 호재 미확인",
+          "impact": "중립"
+        }
+      ],
+      "source": "https://stockanalysis.com/stocks/nvda/statistics/"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet (Google)",
+      "change": "$344.98 · -1.26% · 9/15 마감",
+      "stance": "악재 우세 · 금리 상승·전일 강세 되돌림",
+      "reason": "Alphabet은 1.26% 하락해 S&P 500보다 0.81%p, NASDAQ보다 0.48%p 약했습니다. WTI 급등과 미국 10년물 5.04%가 장기 성장주의 할인율을 높였고, 전일 3.22% 상승한 뒤 차익실현도 겹친 것으로 보입니다. MediaTek의 신규 AI 칩과 Axelera의 추론 시장 진입은 AI 생태계 확대에는 긍정적이지만 Alphabet의 대규모 데이터센터 투자 효율성과 자체 TPU 경쟁을 재평가하게 하는 혼합 신호입니다. 당일 하락을 단독 설명할 신규 Alphabet 고유 공시·확정 악재는 확인되지 않았습니다.",
+      "analyzedAt": "2026-09-16T06:21:57+09:00",
+      "valuation": {
+        "pe": "17.31배",
+        "pbr": "6.78배",
+        "eps": "$19.93",
+        "basis": "TTM EPS · 최근 분기 BPS $50.90 기준",
+        "asOf": "2026-09-15",
+        "forwardPe": 26.19,
+        "forwardAsOf": "2026-09-15",
+        "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/"
+      },
+      "drivers": [
+        {
+          "type": "금리 악재",
+          "summary": "미국 10년물 5.04%와 연준 인상 전망이 대형 성장주의 할인율을 상승",
+          "impact": "부정"
+        },
+        {
+          "type": "수급·트레이딩",
+          "summary": "전일 3.22% 상승 이후 차익실현과 플랫폼주 약세가 겹침",
+          "impact": "부정"
+        },
+        {
+          "type": "산업 혼합",
+          "summary": "AI 칩 다변화는 생태계 확대와 자체 TPU 경쟁 심화를 동시에 의미",
+          "impact": "중립"
+        },
+        {
+          "type": "상대강도",
+          "summary": "S&P 500보다 0.81%p, NASDAQ보다 0.48%p 약세",
+          "impact": "부정"
         },
         {
           "type": "확인 한계",
@@ -233,145 +325,53 @@
           "impact": "중립"
         }
       ],
-      "source": "https://www.google.com/finance/quote/MU:NASDAQ"
-    },
-    {
-      "symbol": "NVDA",
-      "name": "NVIDIA",
-      "change": "$210.96 · -3.36% · 9/14 마감",
-      "stance": "악재 우세 · AI 투자 속도·금리 부담",
-      "reason": "NVIDIA는 3.36% 하락해 S&P 500보다 2.88%p, NASDAQ보다 2.80%p 약했지만 필라델피아 반도체지수보다 2.54%p 강했습니다. AI 기업 경영진의 개발 속도 조절 요구가 가속기 투자 성장률에 대한 기대를 낮췄고, 10년물 5%와 연준 인상 전망이 높은 장기 성장 기대의 현재가치를 압박했습니다. 외부 AI 모델의 데이터 보안 우려로 NVIDIA가 민감 업무에서 Anthropic 사용을 제한한다는 보도는 보안 리스크 관리 신호이지만 GPU 수요 감소로 바로 연결된 사실은 아닙니다. 실제 데이터센터 주문·설비투자 취소는 확인되지 않아 산업 심리와 포지션 조정의 영향이 더 큰 것으로 판단합니다.",
-      "analyzedAt": "2026-09-15T06:22:20+09:00",
-      "valuation": {
-        "pe": "26.67배",
-        "pbr": "22.25배",
-        "eps": "$7.91",
-        "basis": "TTM EPS · 최근 분기 BPS $9.48 기준",
-        "asOf": "2026-09-14",
-        "forwardPe": 18.12,
-        "forwardAsOf": "2026-09-11",
-        "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/"
-      },
-      "drivers": [
-        {
-          "type": "산업 악재",
-          "summary": "AI 개발 속도 조절론이 가속기·데이터센터 투자 성장률 기대를 낮춤",
-          "impact": "부정"
-        },
-        {
-          "type": "금리 악재",
-          "summary": "10년물 5%와 연준 인상 전망이 장기 성장 현금흐름의 할인율을 높임",
-          "impact": "부정"
-        },
-        {
-          "type": "보안 이슈",
-          "summary": "민감 업무의 외부 모델 사용 제한 보도는 보안 관리 신호이나 GPU 수요 감소는 미확인",
-          "impact": "중립"
-        },
-        {
-          "type": "상대강도",
-          "summary": "NASDAQ보다 2.80%p 약했지만 반도체지수보다 2.54%p 강세",
-          "impact": "중립"
-        },
-        {
-          "type": "확인 한계",
-          "summary": "실제 데이터센터 주문·설비투자 취소나 신규 확정 기업 악재 미확인",
-          "impact": "중립"
-        }
-      ],
-      "source": "https://www.google.com/finance/quote/NVDA:NASDAQ"
-    },
-    {
-      "symbol": "GOOGL",
-      "name": "Alphabet (Google)",
-      "change": "$349.39 · +3.22% · 9/14 마감",
-      "stance": "호재 우세 · 소프트웨어·플랫폼 로테이션",
-      "reason": "Alphabet은 3.22% 상승해 S&P 500보다 3.70%p, NASDAQ보다 3.78%p 강했습니다. AI 개발 속도 조절 요구가 반도체와 인프라 투자주를 압박한 반면, 최근 생성형 AI로 인한 기존 소프트웨어·플랫폼의 마진 훼손 우려가 일부 완화되며 자금이 이동한 것으로 해석됩니다. 유가와 10년물 상승은 대형 성장주에 부정적이지만 이날 주가에는 업종 내 로테이션이 더 강하게 작용했습니다. Alphabet의 당일 상승을 단독 설명할 신규 확정 기업 고유 호재는 확인되지 않았으며, 실제 AI 투자 축소가 확정된 것도 아닙니다.",
-      "analyzedAt": "2026-09-15T06:22:20+09:00",
-      "valuation": {
-        "pe": "17.53배",
-        "pbr": "6.86배",
-        "eps": "$19.93",
-        "basis": "TTM EPS · 최근 분기 BPS $50.90 기준",
-        "asOf": "2026-09-14",
-        "forwardPe": 25.37,
-        "forwardAsOf": "2026-09-11",
-        "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/"
-      },
-      "drivers": [
-        {
-          "type": "수급·로테이션",
-          "summary": "AI 인프라주 매도와 소프트웨어·플랫폼 재평가가 대형 플랫폼주에 상대적 수급을 제공",
-          "impact": "긍정"
-        },
-        {
-          "type": "산업 혼합",
-          "summary": "AI 속도 조절은 인프라 비용을 낮출 수 있지만 클라우드·모델 성장률에는 부담 가능",
-          "impact": "중립"
-        },
-        {
-          "type": "매크로 악재",
-          "summary": "유가 상승과 10년물 5%는 대형 성장주의 할인율에 부담",
-          "impact": "부정"
-        },
-        {
-          "type": "상대강도",
-          "summary": "S&P 500보다 3.70%p, NASDAQ보다 3.78%p 강세",
-          "impact": "긍정"
-        },
-        {
-          "type": "확인 한계",
-          "summary": "당일 초과 상승을 단독 설명할 신규 기업 고유 확정 호재 미확인",
-          "impact": "중립"
-        }
-      ],
-      "source": "https://www.google.com/finance/quote/GOOGL:NASDAQ"
+      "source": "https://stockanalysis.com/stocks/googl/statistics/"
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "change": "$505.41 · +1.97% · 9/14 마감",
-      "stance": "호재 우세 · 보안형 클라우드·소프트웨어 로테이션",
-      "reason": "Microsoft는 1.97% 상승해 S&P 500보다 2.45%p, NASDAQ보다 2.53%p 강했습니다. AI 개발 속도 조절론으로 반도체주가 급락한 반면 소프트웨어주는 AI가 기존 사업을 대체할 위험이 낮아질 수 있다는 해석으로 반등했습니다. 외부 AI 모델의 데이터 보존 우려가 커지는 가운데 Microsoft가 보안형 클라우드 환경과 자체 모델을 강조한다는 보도도 상대적 수혜 기대를 더했습니다. 다만 이는 원 보도에 대한 Reuters의 재전달이며 매출 효과가 확정된 것은 아닙니다. 10년물 5%와 연준 인상 전망은 Azure 설비투자 비용과 밸류에이션에 계속 부담입니다.",
-      "analyzedAt": "2026-09-15T06:22:20+09:00",
+      "change": "$497.12 · -1.64% · 9/15 마감",
+      "stance": "악재 우세 · 금리 상승·소프트웨어 차익실현",
+      "reason": "Microsoft는 1.64% 하락해 S&P 500보다 1.19%p, NASDAQ보다 0.86%p 약했습니다. 미국 10년물 5.04%와 연준 인상 전망은 Azure 데이터센터의 자금·전력 비용과 소프트웨어 성장주의 밸류에이션에 동시에 부담을 줬습니다. 전일 1.97% 상승한 뒤 차익실현도 영향을 준 것으로 보입니다. AI 추론칩 공급 확대는 클라우드 수요를 지지하지만 대체 가속기와 자체칩 확산은 NVIDIA 의존 비용을 낮추는 대신 설비투자 경쟁을 지속시킵니다. 당일 주가를 단독 설명할 신규 Microsoft 고유 공시·확정 악재는 확인되지 않았습니다.",
+      "analyzedAt": "2026-09-16T06:21:57+09:00",
       "valuation": {
-        "pe": "28.16배",
-        "pbr": "8.49배",
+        "pe": "27.69배",
+        "pbr": "8.35배",
         "eps": "$17.95",
         "basis": "TTM EPS · 최근 분기 BPS $59.56 기준",
-        "asOf": "2026-09-14",
-        "forwardPe": 24.93,
-        "forwardAsOf": "2026-09-11",
+        "asOf": "2026-09-15",
+        "forwardPe": 25.15,
+        "forwardAsOf": "2026-09-15",
         "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/"
       },
       "drivers": [
         {
-          "type": "수급·로테이션",
-          "summary": "반도체 매도와 소프트웨어 재평가가 Microsoft에 상대적 수급을 제공",
-          "impact": "긍정"
-        },
-        {
-          "type": "기업·산업 호재",
-          "summary": "기업의 데이터 보안 우려가 보안형 Azure·자체 모델 수요로 이동할 가능성",
-          "impact": "긍정"
-        },
-        {
-          "type": "근거 한계",
-          "summary": "보안형 클라우드 수혜는 보도 기반 해석이며 신규 계약·매출 효과는 미확정",
-          "impact": "중립"
-        },
-        {
           "type": "금리 악재",
-          "summary": "10년물 5%와 연준 인상 전망이 AI 설비투자 비용과 주식 할인율을 높임",
+          "summary": "미국 10년물 5.04%가 소프트웨어 할인율과 데이터센터 자금조달비를 상승",
           "impact": "부정"
         },
         {
+          "type": "수급·트레이딩",
+          "summary": "전일 1.97% 상승 이후 차익실현과 대형 플랫폼주 약세",
+          "impact": "부정"
+        },
+        {
+          "type": "산업 혼합",
+          "summary": "추론칩 다변화는 Azure 수요와 비용 선택지를 늘리지만 설비투자 경쟁을 지속",
+          "impact": "중립"
+        },
+        {
           "type": "상대강도",
-          "summary": "S&P 500보다 2.45%p, NASDAQ보다 2.53%p 강세",
-          "impact": "긍정"
+          "summary": "S&P 500보다 1.19%p, NASDAQ보다 0.86%p 약세",
+          "impact": "부정"
+        },
+        {
+          "type": "확인 한계",
+          "summary": "당일 하락을 단독 설명할 신규 기업 고유 공시·확정 악재 미확인",
+          "impact": "중립"
         }
       ],
-      "source": "https://www.google.com/finance/quote/MSFT:NASDAQ"
+      "source": "https://stockanalysis.com/stocks/msft/statistics/"
     }
   ]
 }
