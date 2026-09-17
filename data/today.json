@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "updatedAt": "2026-09-17T15:39:14+09:00",
+  "updatedAt": "2026-09-17T16:07:11+09:00",
   "newsUpdatedAt": "2026-09-17T06:21:48+09:00",
   "analysisStatus": {
     "usUpdatedAt": "2026-09-17T06:21:48+09:00",
@@ -372,6 +372,93 @@
         }
       ],
       "source": "https://stockanalysis.com/stocks/msft/statistics/"
+    },
+    {
+      "symbol": "TRMD",
+      "name": "TORM",
+      "change": "$36.60 · +4.78% · 9/16 마감",
+      "stance": "호재 우세 · 클린탱커 운임 상승",
+      "reason": "TORM은 36.60달러로 4.78% 상승했습니다. 중동 항로 위험과 정제유 운송거리 증가로 제품선 공급이 타이트해진 가운데, Baltic Clean Tanker Index(BCTI)는 9월 16일 1,896으로 전일 1,874보다 22포인트(+1.17%) 상승했습니다. 이는 TORM 개별 계약 운임이 아니라 글로벌 클린탱커 현물시장의 종합 지표이며, 실제 실적은 LR2·LR1·MR별 노출과 체결 시점에 따라 달라집니다. 최근 급등에 따른 운임 정상화와 지정학적 완화 가능성은 하방 위험입니다.",
+      "analyzedAt": "2026-09-17T16:07:11+09:00",
+      "valuation": {
+        "pe": "5.96배",
+        "pbr": "1.47배",
+        "eps": "$6.14",
+        "basis": "TTM EPS · 최근 분기 BPS $24.91 기준",
+        "asOf": "2026-09-16",
+        "forwardPe": 10.46,
+        "forwardAsOf": "2026-09-16",
+        "forwardSource": "https://stockanalysis.com/stocks/trmd/statistics/"
+      },
+      "drivers": [
+        {
+          "type": "산업 호재",
+          "summary": "중동 항로 위험과 우회 운항이 톤마일·제품선 수요를 확대",
+          "impact": "긍정"
+        },
+        {
+          "type": "기업 노출",
+          "summary": "약 100척 규모의 제품선 중심 선대로 클린탱커 현물 운임 상승 수혜",
+          "impact": "긍정"
+        },
+        {
+          "type": "리스크",
+          "summary": "지정학적 완화와 선복 복귀 시 급등한 운임이 빠르게 정상화될 가능성",
+          "impact": "부정"
+        },
+        {
+          "type": "클린탱커 운임 지수",
+          "summary": "BCTI 1,896 · 전일 대비 +22p(+1.17%) · 9/16 — TORM 개별 계약이 아닌 글로벌 종합 현물지수",
+          "impact": "긍정"
+        }
+      ],
+      "source": "https://en.stockq.org/index/BCTI.php"
+    },
+    {
+      "symbol": "RIG",
+      "name": "Transocean",
+      "change": "$5.54 · -6.73% · 9/16 마감",
+      "stance": "혼조 · 신규 수주·재무 부담",
+      "reason": "Transocean은 5.54달러로 6.73% 하락했습니다. 9월 15일 초심해 드릴십 Deepwater Conqueror가 적도기니에서 2개 유정을 시추하는 약 170일 계약을 수주해 8,000만 달러의 백로그를 추가한 점은 긍정적입니다. 회사가 일일운임을 직접 공개하지 않았으나 백로그를 기간으로 단순 나누면 약 47.1만 달러/일이며, 추가 서비스와 이동·철수 보상은 제외된 추정치입니다. 반면 TTM 순손실, 51.2억 달러 부채, Valaris 인수에 따른 통합·희석 우려와 높은 공매도 비중이 주가 변동성을 키울 수 있습니다. 당일 급락을 계약 발표 하나로 설명하기는 어려워 에너지주 수급과 차익실현 가능성을 함께 반영합니다.",
+      "analyzedAt": "2026-09-17T16:07:11+09:00",
+      "valuation": {
+        "pe": "적자(TTM)",
+        "pbr": "0.74배",
+        "eps": "-$1.55",
+        "basis": "TTM EPS 적자 · 최근 분기 BPS $7.49 기준",
+        "asOf": "2026-09-16",
+        "forwardPe": 30.54,
+        "forwardAsOf": "2026-09-16",
+        "forwardSource": "https://stockanalysis.com/stocks/rig/statistics/"
+      },
+      "drivers": [
+        {
+          "type": "기업 호재",
+          "summary": "Deepwater Conqueror 2개 유정·170일 계약으로 약 $80M 백로그 추가",
+          "impact": "긍정"
+        },
+        {
+          "type": "업황 호재",
+          "summary": "고사양 초심해 드릴십의 제한된 공급과 장기 해양개발 수요가 계약 기회를 지지",
+          "impact": "긍정"
+        },
+        {
+          "type": "재무 악재",
+          "summary": "TTM 순손실과 약 $5.12B 부채, Valaris 인수 관련 통합·희석 위험",
+          "impact": "부정"
+        },
+        {
+          "type": "수급 리스크",
+          "summary": "높은 공매도 비중과 에너지주 변동성으로 계약 호재와 별개로 주가 급락 가능",
+          "impact": "부정"
+        },
+        {
+          "type": "신규 계약",
+          "summary": "Deepwater Conqueror · 초심해 드릴십 · 적도기니 · 2027년 약 170일 · 공개 백로그 기준 역산 약 $471K/일(회사 직접 공시 운임 아님)",
+          "impact": "긍정"
+        }
+      ],
+      "source": "https://www.deepwater.com/news/detail?ID=30551"
     }
   ]
 }
