@@ -1,94 +1,94 @@
 {
   "date": "2026-09-18",
-  "updatedAt": "2026-09-19T06:20:18+09:00",
-  "newsUpdatedAt": "2026-09-19T06:20:18+09:00",
+  "updatedAt": "2026-09-21T06:17:19+09:00",
+  "newsUpdatedAt": "2026-09-21T06:17:19+09:00",
   "analysisStatus": {
     "usUpdatedAt": "2026-09-19T06:20:18+09:00",
     "krUpdatedAt": "2026-09-18T15:42:47+09:00"
   },
-  "headline": "유가 하락과 반도체 강세가 미국 지수를 지지했지만, 5%를 넘은 장기금리와 주요국 동시 긴축은 밸류에이션 부담을 남겼습니다.",
+  "headline": "연준의 추가 긴축 경계 속에서도 미·중 AI·희토류 협상이 공급망 완화 가능성을 열었지만, 중동과 러시아의 에너지시설 위험은 유가·물가의 재상승 변수로 남았습니다.",
   "flowAnalysis": {
-    "title": "유가 완화·반도체 강세 → 지수 방어, 5% 금리·동시 긴축 → 밸류에이션 부담",
-    "overview": "중국의 중동 긴장 완화 요청과 공급 차질 제한 기대에 WTI가 100.30달러로 하락하면서 에너지발 물가 압력은 소폭 완화됐습니다. 반도체주가 강세를 보이며 S&P 500과 NASDAQ을 끌어올렸고, 메모리 부족과 미국 내 NAND 생산 검토는 업황의 가격 지지력을 확인했습니다. 반면 미국 10년물 금리는 5%를 웃돌았고 연준의 10월 추가 인상 확률은 55.4%로 높아졌습니다. 일본은행도 금리를 1.25%로 올려 글로벌 할인율 부담이 이어졌습니다. 클린탱커 운임 상승은 정제유 운송 수급이 여전히 빡빡함을 시사하지만 지정학적 프리미엄 완화 시 변동성이 클 수 있습니다.",
+    "title": "광범위한 물가 압력 → 추가 긴축 경계, 미·중 협상 → AI 공급망 완화 기대",
+    "overview": "카시카리 미니애폴리스 연은 총재는 물가 압력이 에너지를 넘어 경제 전반에 남아 있다며 최근 25bp 인상을 지지했습니다. 이는 추가 인상과 높은 장기금리를 통해 성장주 밸류에이션과 AI 설비투자의 조달비용을 압박합니다. 반면 미국과 중국이 AI 안전·무역·희토류 공급을 의제로 고위급 협상을 시작해 반도체 공급망의 급격한 단절 위험은 일부 낮아질 수 있습니다. 동시에 CXMT의 차세대 DRAM 양산은 단기 메모리 공급 확대와 장기 경쟁 심화를 뜻합니다. 중동 공격 확대와 모스크바 정유시설 피격은 원유·정제유 공급 위험과 탱커 톤마일을 지지하지만, 물가와 금리에는 반대 방향의 부담입니다.",
     "links": [
       {
-        "cause": "중동 공급 우려 일부 완화",
-        "effect": "WTI 하락·에너지 물가 압력 완화",
-        "explanation": "유가 하락은 기업 원가와 기대물가를 낮춰 주식 위험선호에 우호적이지만, 호르무즈 제약과 사우디 송유관 복구 불확실성은 재상승 위험을 남깁니다."
+        "cause": "근원 부문까지 확산된 미국 물가 압력",
+        "effect": "추가 금리 인상·장기금리 상승 위험",
+        "explanation": "연준의 긴축이 길어지면 성장주 현금흐름의 할인율과 데이터센터·해양시추 같은 자본집약 산업의 조달비용이 함께 상승합니다."
       },
       {
-        "cause": "메모리 부족·AI 인프라 수요",
-        "effect": "반도체주 상승·NASDAQ 강세",
-        "explanation": "DRAM·NAND 가격과 설비투자 기대가 이익 전망을 지지했지만 중국 CXMT의 NAND 진입과 신규 증설은 중장기 공급 경쟁을 키울 수 있습니다."
+        "cause": "미·중 AI·무역·희토류 협상",
+        "effect": "반도체 공급망 단절 위험 완화 가능성",
+        "explanation": "희토류와 핵심 부품 흐름이 안정되면 AI 서버 생산 차질을 줄일 수 있지만, 실제 합의 전까지 수출통제와 관세 불확실성은 남습니다."
       },
       {
-        "cause": "연준 추가 인상 기대·BOJ 인상",
-        "effect": "장기금리 5% 상회·성장주 할인율 부담",
-        "explanation": "동시 긴축은 현금흐름의 현재가치를 낮추고 자본집약적 AI·에너지 프로젝트의 조달비용을 높여 지수 상승폭을 제한합니다."
+        "cause": "중동 재긴장·러시아 정유시설 피격",
+        "effect": "원유·정제유 공급 및 운임 프리미엄",
+        "explanation": "정제능력과 항로가 동시에 제약되면 제품선 톤마일과 운임에는 우호적일 수 있으나 유가·물가 상승은 주식시장 전반에 부담입니다."
       }
     ],
-    "watch": "미국 10년물 5% 안착 여부, 10월 연준 인상 확률, WTI 100달러 지지, 메모리 현물가격·CXMT NAND 투자 속도, 사우디 공급 복구와 BCTI 방향을 확인해야 합니다."
+    "watch": "연준 위원들의 추가 인상 발언, 미·중 정상회담 전 희토류·AI 안전 합의의 구체성, CXMT 양산 수율과 실제 출하량, 사우디·호르무즈 긴장, 러시아 정유시설 가동 차질을 확인해야 합니다."
   },
   "stories": [
     {
       "category": "MACRO",
-      "importanceScore": 88,
+      "importanceScore": 89,
       "level": "높음",
-      "tag": "GLOBAL RATES · FED",
-      "title": "미국 10년물 5% 상회…10월 연준 추가 인상 확률 55.4%",
-      "summary": "미국 증시는 반도체 강세로 올랐지만 10년물 국채금리가 5%를 웃돌았고, 시장의 10월 추가 금리 인상 확률은 55.4%로 높아졌습니다.",
-      "why": "높은 장기금리는 성장주 밸류에이션과 AI·에너지 설비투자의 자금조달 비용을 동시에 압박합니다.",
-      "source": "https://www.reuters.com/business/nasdaq-futures-lead-wall-st-gains-oil-retreat-eases-inflation-worries-2026-09-18/"
+      "tag": "FED · INFLATION",
+      "title": "카시카리 “물가 압력은 에너지를 넘어 경제 전반”…추가 긴축 경계",
+      "summary": "닐 카시카리 미니애폴리스 연은 총재는 근원 부문을 포함한 미국 물가가 여전히 너무 높다며 최근 25bp 금리 인상을 지지했습니다.",
+      "why": "에너지 가격이 안정돼도 물가가 충분히 둔화하지 않으면 추가 인상과 고금리 장기화가 성장주·설비투자를 압박할 수 있습니다.",
+      "source": "https://www.reuters.com/business/feds-kashkari-says-inflation-goes-beyond-oil-prices-according-fox-news-interview-2026-09-20/"
     },
     {
       "category": "MACRO",
-      "importanceScore": 80,
+      "importanceScore": 82,
       "level": "높음",
-      "tag": "BOJ · RATES",
-      "title": "일본은행, 기준금리 1.25%로 인상…31년 만의 최고",
-      "summary": "일본은행은 7대2로 정책금리를 1.0%에서 1.25%로 25bp 올렸습니다.",
-      "why": "미국·유럽에 이은 일본의 긴축은 글로벌 유동성과 엔 캐리 거래, 장기금리에 영향을 줄 수 있습니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/boj-raises-interest-rates-31-year-high-widely-expected-move-2026-09-18/"
+      "tag": "US·CHINA · TRADE",
+      "title": "미·중, AI 안전·무역·희토류 공급 협상 개시",
+      "summary": "미국 재무장관과 중국 부총리가 정상회담을 앞두고 AI 안전, 관세, 농산물·항공기 구매와 희토류 공급을 논의했습니다.",
+      "why": "희토류와 핵심 소재의 안정적 공급은 반도체·AI 인프라 생산 차질을 줄일 수 있지만, 구체적 합의가 없으면 수출통제 위험은 지속됩니다.",
+      "source": "https://www.reuters.com/business/finance/us-treasurys-bessent-chinas-he-launch-talks-ai-trade-critical-minerals-2026-09-20/"
+    },
+    {
+      "category": "MACRO",
+      "importanceScore": 61,
+      "level": "중간",
+      "tag": "GERMANY · GROWTH",
+      "title": "독일 IW, 2026년 성장률 전망 0.4%→1.2%로 상향",
+      "summary": "독일경제연구소 IW는 수출과 정부지출 강세를 반영해 올해 성장률 전망을 약 1.2%로 세 배 높였습니다.",
+      "why": "유럽 경기 하방 위험을 낮추지만 높은 에너지 비용·약한 민간투자·2.5% 이상의 물가가 하반기 모멘텀을 제한합니다.",
+      "source": "https://www.reuters.com/markets/europe/germanys-iw-institute-triples-growth-forecast-2026-2026-09-20/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 91,
+      "importanceScore": 88,
       "level": "높음",
-      "tag": "OIL · SUPPLY",
-      "title": "중국의 긴장 완화 요청에 유가 하락…WTI 100.30달러",
-      "summary": "중국이 이란에 사우디 석유시설을 겨냥한 후티 공격 억제를 촉구했다는 소식과 공급 차질 제한 기대에 WTI가 100.30달러로 내렸습니다.",
-      "why": "유가 하락은 물가·금리 부담을 낮추지만 호르무즈 통항 제약과 송유관 복구 불확실성 때문에 공급 위험은 남아 있습니다.",
-      "source": "https://www.reuters.com/business/energy/oil-prices-fall-1-hopes-limited-supply-disruptions-2026-09-18/"
+      "tag": "MEMORY · CHINA",
+      "title": "CXMT, 5세대 DRAM 플랫폼 양산…24Gb LPDDR5X 공개",
+      "summary": "CXMT는 11.95nm급 쿼드러플 패터닝 기반 플랫폼의 양산을 시작했으며 이전 세대보다 웨이퍼당 다이 생산량이 최소 50% 늘었다고 밝혔습니다.",
+      "why": "단기 메모리 부족 완화 가능성과 함께 삼성전자·SK하이닉스·Micron을 상대로 한 중국의 중장기 가격·점유율 경쟁이 강화됩니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/chinas-cxmt-says-new-memory-chip-platform-enters-mass-production-2026-09-20/"
     },
     {
       "category": "INDUSTRY",
       "importanceScore": 84,
       "level": "높음",
-      "tag": "MEMORY · CHINA",
-      "title": "중국 CXMT, 글로벌 NAND 부족 속 플래시메모리 진출 추진",
-      "summary": "CXMT가 NAND 연구개발 라인을 준비하며 삼성전자·SK하이닉스·Micron이 주도하는 시장 진입을 추진하고 있습니다.",
-      "why": "단기 메모리 부족은 가격을 지지하지만 중국의 신규 공급자는 중장기 NAND 가격과 점유율 경쟁을 높일 수 있습니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/chinas-cxmt-eyes-flash-memory-push-amid-global-shortage-firm-take-samsung-ymtc-2026-09-18/"
+      "tag": "OIL · GEOPOLITICS",
+      "title": "후티 공격 이후 미·이란 위협 교환…걸프 에너지 위험 재확대",
+      "summary": "리야드에 대한 미사일·드론 공격 이후 미국과 이란이 상호 위협을 강화했고, 호르무즈·바브엘만데브 제약도 이어지고 있습니다.",
+      "why": "걸프 원유·정제유 수출 차질 위험은 유가와 운임을 밀어 올릴 수 있으며 물가·금리 경로에도 직접 영향을 줍니다.",
+      "source": "https://www.reuters.com/world/asia-pacific/iran-warns-against-new-escalation-by-us-allies-2026-09-20/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 73,
+      "importanceScore": 72,
       "level": "중간",
-      "tag": "MEMORY · US CAPEX",
-      "title": "SK하이닉스 Solidigm, 미국 NAND 공장 검토",
-      "summary": "Solidigm이 뉴욕주를 포함한 미국 내 NAND 생산시설 후보지를 검토 중이나 최종 결정은 내려지지 않았습니다.",
-      "why": "미국 내 생산은 공급망 안정과 관세 대응에 유리하지만, 대규모 자본지출과 높은 현지 비용은 수익성 부담입니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/sk-hynixs-solidigm-unit-is-weighing-nand-memory-chip-factory-us-sources-say-2026-09-18/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 65,
-      "level": "중간",
-      "tag": "TANKER · FREIGHT",
-      "title": "BCTI 1,943으로 상승…클린탱커 현물운임 강세",
-      "summary": "Baltic Clean Tanker Index는 9월 18일 1,943으로 전 거래일보다 29포인트, 1.52% 상승했습니다.",
-      "why": "정제유 항로 차질과 톤마일 증가가 제품선 수익성을 지지하는 신호지만, 이는 개별 선사 계약이 아닌 글로벌 종합 현물지수입니다.",
-      "source": "https://en.stockq.org/index/BCTI.php"
+      "tag": "REFINING · RUSSIA",
+      "title": "대규모 드론 공격으로 모스크바 정유시설 일부 피격",
+      "summary": "러시아 당국은 대규모 드론 공격으로 모스크바 정유시설 일부가 피해를 입었다고 밝혔습니다. 해당 시설은 2024년 원유 1,100만톤 이상을 처리했습니다.",
+      "why": "가동 차질이 확인되면 러시아 정제유 공급과 디젤 가격, 제품선 운송경로 재편에 추가 압력이 될 수 있지만 피해 규모는 아직 불확실합니다.",
+      "source": "https://www.reuters.com/world/europe/two-dead-moscow-region-drones-hit-oil-refinery-russian-capital-2026-09-20/"
     }
   ],
   "markets": [
