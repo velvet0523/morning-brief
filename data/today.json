@@ -1,94 +1,114 @@
 {
   "date": "2026-09-23",
-  "updatedAt": "2026-09-23T15:42:09+09:00",
-  "newsUpdatedAt": "2026-09-23T06:19:02+09:00",
+  "updatedAt": "2026-09-24T06:22:28+09:00",
+  "newsUpdatedAt": "2026-09-24T06:22:28+09:00",
   "analysisStatus": {
-    "usUpdatedAt": "2026-09-23T06:19:02+09:00",
+    "usUpdatedAt": "2026-09-24T06:22:28+09:00",
     "krUpdatedAt": "2026-09-23T15:42:09+09:00"
   },
-  "headline": "사우디 우회 송유관 재가동과 호르무즈 통항 회복이 유가를 낮췄지만, 연준의 물가 경계는 이어졌습니다. AI 반도체는 강세를 지속한 반면 소프트웨어·에너지·탱커는 차별화됐습니다.",
+  "headline": "강한 미국 경기·물가와 유가 반등이 금리를 밀어 올리며 성장주를 압박",
   "flowAnalysis": {
-    "title": "중동 원유 흐름 회복 → 유가 하락, 연준 매파 경계 → 업종별 차별화",
-    "overview": "사우디 동서 송유관이 낮은 가동률로 재개되고 호르무즈 통항량이 늘면서 원유 공급 차질 우려가 일부 완화돼 WTI가 하락했습니다. 이는 기대물가와 장기금리 부담을 낮춰 AI 반도체에는 우호적이었지만, 지정학적 운임 프리미엄에 민감한 탱커·에너지주는 약세였습니다. 동시에 연준 인사들은 물가가 에너지·관세를 넘어 강한 소비와 광범위한 수요에서 지속된다고 평가해 추가 인상 가능성을 열어뒀습니다. Meta의 거래형 AI 에이전트와 Apple의 로컬 AI용 고성능 Mac은 AI 연산 수요를 지지하지만, 기존 검색·전자상거래·소프트웨어 사업모델에는 경쟁 압력도 높입니다.",
+    "title": "강한 수요와 에너지 충격이 금리·성장주를 동시에 압박",
+    "overview": "미국 9월 합성 PMI가 58.4로 5년여 만의 최고치를 기록하고 투입가격 지수도 66.4로 뛰었습니다. 여기에 이란의 강경 발언으로 WTI가 1.81% 반등하면서 수요발·공급발 물가 위험이 겹쳤습니다. 시장은 10월 연준 인상 확률을 약 71%로 높였고 미국 10년물 금리는 2007년 이후 최고치로 상승했습니다. 그 결과 할인율에 민감한 AI·플랫폼주는 조정을 받았지만, Microsoft의 걸프 지역 100억달러 이상 투자처럼 확정된 AI 인프라 지출은 개별 종목의 하방을 완충했습니다.",
     "links": [
       {
-        "cause": "사우디 동서 송유관 재가동·호르무즈 통항 증가",
-        "effect": "WTI 하락·에너지 공급 위험 프리미엄 축소",
-        "explanation": "우회 수송과 걸프 선적이 늘면 현물 부족 우려가 완화돼 물가 압력이 낮아질 수 있지만, 완전 복구에는 6~8주가 필요해 공급 위험은 남습니다."
+        "cause": "PMI 58.4·투입가격 66.4",
+        "effect": "연준 추가 인상 기대·장기금리 상승",
+        "explanation": "성장률 기대는 높아졌지만 공급 병목과 가격결정력까지 강해져 10월 인상 확률이 71%로 상승했습니다. 강한 실물경기가 곧바로 주식 호재가 되기보다 할인율 부담으로 전달됐습니다."
       },
       {
-        "cause": "연준의 광범위한 수요발 물가 경계",
-        "effect": "추가 금리 인상 가능성·장기 성장주 할인율 부담",
-        "explanation": "유가 하락만으로 물가가 목표로 복귀하지 않으면 정책금리 경로가 높게 유지돼 소프트웨어와 고부채 기업의 자본비용을 압박합니다."
+        "cause": "이란 강경 발언·호르무즈 불확실성",
+        "effect": "WTI 반등·운송비와 물가 위험 확대",
+        "explanation": "사우디 우회 공급과 미국 원유 재고 증가는 상승폭을 제한했지만, 원유·디젤 공급 불안이 제조·물류비를 통해 서비스와 상품 물가로 번질 가능성이 남았습니다."
       },
       {
-        "cause": "AI 에이전트·로컬 AI 시스템 확산",
-        "effect": "GPU·메모리 수요 지지와 플랫폼 경쟁 심화",
-        "explanation": "추론이 클라우드와 기기 양쪽으로 확산되면 반도체 수요 기반은 넓어지지만 기존 검색·쇼핑·업무 소프트웨어의 이용 경로는 재편될 수 있습니다."
+        "cause": "AI 인프라 투자 지속",
+        "effect": "반도체 수요 지지와 밸류에이션 조정 병존",
+        "explanation": "OECD는 AI 투자가 2026년 성장을 지지한다고 평가했습니다. 다만 금리 상승과 최근 급등 후 차익실현으로 SOX는 1.2% 하락했고, 실제 투자 계획이 확인된 Microsoft가 상대적으로 선방했습니다."
       }
     ],
-    "watch": "미·이란 협상과 호르무즈 실제 통항량, 사우디 송유관 복구 속도, 10년물 금리와 연준의 10월 인상 확률, BCTI 실수치, 미·중 정상회담의 AI·무역 합의를 확인해야 합니다."
+    "watch": "미국 10년물 5%대 지속 여부, 10월 연준 인상 확률, 호르무즈 재개 협상, WTI·디젤 가격, AI 인프라 발주가 실적 추정치로 연결되는 속도"
   },
   "stories": [
     {
-      "category": "MACRO",
-      "importanceScore": 82,
+      "category": "매크로",
+      "importanceScore": 92,
       "level": "높음",
-      "tag": "FED · INFLATION",
-      "title": "연준 Collins·Barkin, 추가 긴축 필요성 뒷받침",
-      "summary": "Collins는 9월 금리 인상을 지지하며 물가 위험이 높다고 밝혔고, Barkin은 강한 소비와 광범위한 경제 활동으로 물가 압력이 에너지·관세에만 국한되지 않는다고 평가했습니다.",
-      "why": "유가 하락에도 수요발 물가가 남으면 10월 추가 인상과 장기금리 상승 위험이 유지돼 성장주와 고부채 기업에 부담입니다.",
-      "source": "https://www.reuters.com/business/feds-barkin-says-economy-may-be-firming-inflation-not-limited-energy-tariff-2026-09-22/"
+      "tag": "미국 경기·물가",
+      "title": "미국 9월 합성 PMI 58.4, 5년여 만의 최고",
+      "summary": "S&P Global 합성 PMI는 8월 56.0에서 58.4로 상승했고 신규주문은 58.2, 투입가격은 66.4로 뛰었습니다. 공급 지연과 수주잔고도 확대됐습니다.",
+      "why": "강한 수요가 성장률을 지지하지만 가격결정력과 공급 병목을 키워 연준의 추가 긴축 가능성을 높입니다.",
+      "source": "https://www.reuters.com/business/us-business-activity-more-than-five-year-high-inflation-pressures-building-2026-09-23/"
     },
     {
-      "category": "MACRO",
+      "category": "매크로",
+      "importanceScore": 89,
+      "level": "높음",
+      "tag": "연준·국채금리",
+      "title": "10월 연준 인상 확률 71%, 10년물은 2007년 이후 최고",
+      "summary": "연준의 Barr는 추가 정책 조정이 필요할 가능성이 높다고 밝혔습니다. 금리선물의 10월 인상 확률은 약 71%로 상승했고 10년물 금리는 5%를 넘어 2007년 이후 최고치를 기록했습니다.",
+      "why": "장기금리 상승은 AI·플랫폼 성장주의 할인율과 기업 자금조달 비용을 동시에 높입니다.",
+      "source": "https://www.reuters.com/business/feds-barr-says-further-rate-hikes-will-likely-be-needed-2026-09-23/"
+    },
+    {
+      "category": "매크로",
+      "importanceScore": 76,
+      "level": "높음",
+      "tag": "세계 성장",
+      "title": "OECD, AI 투자가 2026년 에너지 충격을 일부 상쇄",
+      "summary": "OECD는 2026년 세계 성장률을 2.9%로 0.1%p 상향했지만 2027년은 3.0%로 0.1%p 하향했습니다. G20의 2027년 물가 전망은 3.6%로 크게 올렸습니다.",
+      "why": "AI 설비투자는 반도체·데이터센터 수요를 지지하지만 에너지 가격과 금리 상승이 2027년 성장과 밸류에이션을 제약할 수 있습니다.",
+      "source": "https://www.reuters.com/world/china/oecd-expects-ai-boom-help-offset-middle-east-energy-shock-now-2026-09-23/"
+    },
+    {
+      "category": "산업",
+      "importanceScore": 88,
+      "level": "높음",
+      "tag": "원유·호르무즈",
+      "title": "이란 강경 발언에 WTI 1.81%·Brent 3.86% 반등",
+      "summary": "WTI는 배럴당 92.16달러, Brent는 103.08달러에 마감했습니다. 이란은 조건 충족 전 호르무즈 재개가 어렵다는 입장을 유지했습니다.",
+      "why": "원유·정제유 공급 위험은 물류비와 물가를 밀어 올려 연준 긴축과 해양에너지 투자 기대에 상반된 영향을 줍니다.",
+      "source": "https://www.reuters.com/business/energy/oil-falls-increased-gulf-supply-hopes-us-iran-talks-2026-09-23/"
+    },
+    {
+      "category": "산업",
+      "importanceScore": 74,
+      "level": "중간",
+      "tag": "AI 인프라",
+      "title": "Microsoft, 걸프 지역에 2030년까지 100억달러 이상 투자",
+      "summary": "Microsoft는 UAE·사우디·카타르·쿠웨이트의 클라우드·AI 인프라와 운영에 2030년까지 100억달러 이상을 투자하고 연결망에도 4억달러 이상을 투입할 계획입니다.",
+      "why": "전력·보안 위험에도 AI 인프라 지출이 유지된다는 점은 클라우드와 가속기·메모리 수요의 실물 근거입니다.",
+      "source": "https://www.reuters.com/business/retail-consumer/microsoft-plans-10-billion-plus-gulf-investment-with-focus-resilience-2026-09-23/"
+    },
+    {
+      "category": "산업",
       "importanceScore": 66,
       "level": "중간",
-      "tag": "LIQUIDITY · RATES",
-      "title": "뉴욕 연은, 단기금리 통제 체계의 안정성 강조",
-      "summary": "Williams 뉴욕 연은 총재는 충분한 지급준비금과 정책 도구가 단기금리를 효과적으로 통제하고 금융시장 기능을 지지하고 있다고 밝혔습니다.",
-      "why": "정책금리 인상과 별개로 단기 자금시장의 급격한 유동성 경색 가능성을 낮추는 신호입니다.",
-      "source": "https://www.reuters.com/business/finance/feds-williams-says-rate-control-toolkit-is-working-well-2026-09-22/"
+      "tag": "정제유 정책",
+      "title": "미국 디젤 수출금지설을 백악관이 부인",
+      "summary": "90일 디젤 수출금지 보도 뒤 백악관이 사실이 아니라고 부인하면서 초저유황 디젤 선물은 4% 하락했습니다.",
+      "why": "수출 규제 여부는 미국 내 가격뿐 아니라 대서양 제품유 흐름과 클린탱커 톤마일 수요를 바꿀 수 있어 정책 불확실성 자체가 중요합니다.",
+      "source": "https://www.reuters.com/business/energy/us-diesel-futures-fall-after-report-export-ban-plan-which-white-house-denies-2026-09-23/"
     },
     {
-      "category": "INDUSTRY",
-      "importanceScore": 86,
-      "level": "높음",
-      "tag": "OIL · SUPPLY",
-      "title": "사우디 동서 송유관 재가동…완전 복구는 6~8주",
-      "summary": "사우디가 9월 11일 공격 뒤 중단됐던 동서 송유관을 낮은 가동률로 재개했습니다. 호르무즈를 우회하는 이 시설은 최근 하루 약 400만배럴을 운송했으며 완전 복구에는 6~8주가 예상됩니다.",
-      "why": "단기 원유 공급 위험과 유가를 낮추지만, 제한적 가동은 탱커 항로·운임과 정제유 공급의 변동성을 계속 남깁니다.",
-      "source": "https://www.reuters.com/business/energy/saudi-arabia-restarts-east-west-oil-pipeline-resume-exports-yanbu-sources-say-2026-09-22/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 77,
-      "level": "높음",
-      "tag": "AI · SEMICONDUCTORS",
-      "title": "AI 반도체 강세 지속…Micron 5% 상승",
-      "summary": "Meta의 거래형 AI 에이전트에 대한 기대와 AI 연산 수요가 반도체 매수를 이어가게 해 Micron은 5%, Sandisk는 약 7% 상승했고 NASDAQ은 사상 최고로 마감했습니다.",
-      "why": "AI 추론 확산은 메모리·가속기 수요에 우호적이지만 소프트웨어·전자상거래 플랫폼에는 대체 경쟁 우려를 키웁니다.",
-      "source": "https://www.reuters.com/business/wall-st-futures-pause-after-ai-rally-focus-mideast-tensions-2026-09-22/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 68,
+      "category": "산업",
+      "importanceScore": 57,
       "level": "중간",
-      "tag": "AI · EDGE COMPUTING",
-      "title": "Apple, 로컬 AI용 고성능 Mac으로 클라우드 비용 경쟁",
-      "summary": "Apple은 여러 대의 Mac Studio를 연결해 대형 AI 모델을 로컬에서 구동하는 구성을 공개하며 고비용 클라우드 GPU의 대안을 제시했습니다.",
-      "why": "AI 연산이 데이터센터와 기기·온프레미스로 분산될 수 있어 메모리 수요에는 긍정적이지만 NVIDIA·Microsoft 중심 클라우드 생태계에는 경쟁 요인입니다.",
-      "source": "https://www.reuters.com/business/retail-consumer/with-new-macs-apple-aims-take-microsoft-nvidia-rush-lower-ai-costs-2026-09-22/"
+      "tag": "AI 규제",
+      "title": "NVIDIA CEO, AI 기업의 책임·반독점 면제에 반대",
+      "summary": "Jensen Huang은 AI 기업이 안전성을 검증해야 하며 제품책임법이나 반독점법상 면제를 받아서는 안 된다고 밝혔습니다.",
+      "why": "AI 안전 협력을 위한 면제 논의에 제동을 걸어 규제 준수비용과 산업 구조 논쟁을 부각시켰습니다.",
+      "source": "https://www.reuters.com/legal/litigation/ai-firms-should-not-get-regulatory-waivers-nvidia-ceo-says-podcast-2026-09-23/"
     }
   ],
   "markets": [
     {
       "label": "S&P 500",
-      "value": "7,764.64 · -0.00% · 9/22 마감"
+      "value": "7,706.05 · -0.75% · 9/23 마감"
     },
     {
       "label": "NASDAQ",
-      "value": "27,244.28 · +0.45% · 9/22 마감"
+      "value": "26,936.04 · -1.13% · 9/23 마감"
     },
     {
       "label": "KOSPI",
@@ -100,11 +120,11 @@
     },
     {
       "label": "원·달러",
-      "value": "1,380.74 · +0.22% · 9/17"
+      "value": "1,365.06 · +0.94% · 9/23 12:00 ET"
     },
     {
       "label": "WTI",
-      "value": "$94.99 · -1.24% · 9/22 마감"
+      "value": "$92.16 · +1.81% · 9/23 마감"
     }
   ],
   "stocks": [
@@ -167,44 +187,39 @@
     {
       "symbol": "MU",
       "name": "Micron",
-      "change": "$1,096.16 · +5.00% · 9/22 마감",
-      "stance": "호재 우세 · AI 메모리 강세",
-      "reason": "Micron은 1,096.16달러로 5.00% 상승해 보합권 S&P 500과 NASDAQ(+0.45%)을 크게 웃돌았습니다. AI 관련 반도체 매수와 메모리 수요 기대가 직접적 배경이었으며 Reuters도 Micron의 5% 상승을 확인했습니다. 다만 추가 금리 인상 위험과 CXMT 증산은 반대 요인이고, 당일 별도 확정 수주보다는 업종·수급 효과가 큰 것으로 해석합니다.",
-      "analyzedAt": "2026-09-23T06:19:02+09:00",
+      "change": "$1,071.88 · -2.20% · 9/23 마감",
+      "stance": "약세 · 금리 상승과 반도체 차익실현",
+      "reason": "Micron은 1,071.88달러로 2.20% 하락했습니다. 전일 급등 뒤 미국 10년물 금리 상승과 SOX(-1.2%) 조정이 차익실현을 촉발한 것으로 보입니다. PMI 강세와 연준 추가 인상 위험은 할인율 부담이지만, OECD가 확인한 AI 인프라 투자는 HBM·메모리 수요의 중기 지지 요인입니다. 뚜렷한 신규 Micron 고유 악재는 확인되지 않았습니다.",
+      "analyzedAt": "2026-09-24T06:22:28+09:00",
       "valuation": {
-        "pe": "24.82배",
-        "pbr": "12.29배",
+        "pe": "24.27배",
+        "pbr": "12.01배",
         "eps": "$44.17",
-        "basis": "9/22 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $89.22 기준",
-        "asOf": "2026-09-22",
+        "basis": "9/23 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $89.22 기준",
+        "asOf": "2026-09-23",
         "forwardPe": 6.42,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/mu/statistics/"
       },
       "drivers": [
         {
-          "type": "산업 호재",
-          "summary": "AI 연산 수요와 메모리 업황 기대 속 Micron 5% 상승",
-          "impact": "긍정"
-        },
-        {
-          "type": "매크로 혼합",
-          "summary": "유가 하락은 우호적이나 연준 추가 인상 가능성은 할인율 부담",
-          "impact": "중립"
-        },
-        {
-          "type": "경쟁 악재",
-          "summary": "CXMT 증산은 중장기 범용 DRAM 공급 경쟁 위험",
+          "type": "금리 악재",
+          "summary": "PMI·물가 강세로 10월 연준 인상 확률이 71%로 상승",
           "impact": "부정"
         },
         {
-          "type": "상대강도",
-          "summary": "S&P 500보다 약 5.00%p, NASDAQ보다 4.55%p 강세",
+          "type": "업종 수급",
+          "summary": "SOX가 1.2% 하락하며 전일 급등 뒤 반도체 차익실현",
+          "impact": "부정"
+        },
+        {
+          "type": "산업 호재",
+          "summary": "OECD는 데이터센터·반도체 AI 투자가 성장의 핵심 지지대라고 평가",
           "impact": "긍정"
         },
         {
           "type": "확인 한계",
-          "summary": "신규 Micron 고유 확정 수주 미확인; 업종·수급 영향 병존",
+          "summary": "뚜렷한 신규 Micron 고유 악재 미확인",
           "impact": "중립"
         }
       ],
@@ -213,44 +228,39 @@
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "change": "$228.87 · +0.64% · 9/22 마감",
-      "stance": "호재 우세 · AI 수요 지속",
-      "reason": "NVIDIA는 228.87달러로 0.64% 상승해 S&P 500보다 0.64%p, NASDAQ보다 0.19%p 강했습니다. AI 에이전트와 로컬 AI 확산은 연산 수요 기반을 넓히지만 Apple의 저비용 로컬 시스템은 클라우드 GPU 집중도에 장기 경쟁 요인입니다. 신규 NVIDIA 고유 확정 수주는 확인되지 않았습니다.",
-      "analyzedAt": "2026-09-23T06:19:02+09:00",
+      "change": "$225.51 · -1.49% · 9/23 마감",
+      "stance": "약세 · 금리·반도체 업종 조정",
+      "reason": "NVIDIA는 225.51달러로 1.49% 하락했습니다. SOX(-1.2%)와 장기금리 상승이 AI 성장주의 밸류에이션을 압박했습니다. Jensen Huang의 규제 발언은 산업 책임 원칙을 제시했지만 단기 실적 재료는 아니었습니다. AI 인프라 투자는 수요를 지지하나 신규 확정 수주가 확인되지 않아 업종·수급 영향이 더 컸습니다.",
+      "analyzedAt": "2026-09-24T06:22:28+09:00",
       "valuation": {
-        "pe": "28.72배",
-        "pbr": "24.14배",
+        "pe": "28.29배",
+        "pbr": "23.79배",
         "eps": "$7.97",
-        "basis": "9/22 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $9.48 기준",
-        "asOf": "2026-09-22",
+        "basis": "9/23 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $9.48 기준",
+        "asOf": "2026-09-23",
         "forwardPe": 17.61,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/"
       },
       "drivers": [
         {
-          "type": "산업 호재",
-          "summary": "AI 에이전트 확산과 반도체 업종 강세가 가속기 수요 기대를 지지",
-          "impact": "긍정"
-        },
-        {
-          "type": "경쟁 요인",
-          "summary": "Apple의 로컬 AI 시스템은 고비용 클라우드 GPU 의존도를 낮출 가능성",
-          "impact": "부정"
-        },
-        {
           "type": "금리 악재",
-          "summary": "연준 추가 인상 가능성은 장기 성장주 할인율 부담",
+          "summary": "10년물 금리가 2007년 이후 최고치로 상승해 고밸류 성장주 압박",
           "impact": "부정"
         },
         {
-          "type": "상대강도",
-          "summary": "S&P 500보다 0.64%p, NASDAQ보다 0.19%p 강세",
+          "type": "업종 수급",
+          "summary": "SOX -1.2%, NVIDIA -1.49%로 반도체 전반 차익실현",
+          "impact": "부정"
+        },
+        {
+          "type": "산업 호재",
+          "summary": "OECD와 Microsoft 투자 계획이 AI 인프라 수요 지속을 뒷받침",
           "impact": "긍정"
         },
         {
-          "type": "확인 한계",
-          "summary": "신규 NVIDIA 고유 확정 수주 미확인",
+          "type": "규제 요인",
+          "summary": "CEO는 AI 기업의 책임·반독점 면제에 반대; 단기 재무 영향은 미확정",
           "impact": "중립"
         }
       ],
@@ -259,16 +269,16 @@
     {
       "symbol": "GOOGL",
       "name": "Alphabet (Google)",
-      "change": "$351.16 · -1.07% · 9/22 마감",
-      "stance": "악재 우세 · AI 에이전트 경쟁 부담",
-      "reason": "Alphabet은 351.16달러로 1.07% 하락해 S&P 500보다 1.07%p, NASDAQ보다 1.52%p 약했습니다. Meta의 거래형 AI 에이전트가 검색·쇼핑 이용 경로를 대체할 수 있다는 우려가 플랫폼주에 부담이 됐습니다. 클라우드 AI 수요는 긍정적이지만 당일에는 경쟁 우려와 차익실현이 우세했습니다.",
-      "analyzedAt": "2026-09-23T06:19:02+09:00",
+      "change": "$337.83 · -3.83% · 9/23 마감",
+      "stance": "약세 · AI 에이전트 경쟁 우려",
+      "reason": "Alphabet은 337.83달러로 3.83% 하락해 지수보다 크게 부진했습니다. Reuters는 Meta의 Muse AI 에이전트가 검색·쇼핑·여행 플랫폼의 이용 경로를 대체할 수 있다는 우려 속 Alphabet이 하락했다고 전했습니다. 장기금리 상승도 추가 부담이었습니다. 단일 확정 실적 악화보다는 경쟁 재평가와 수급 영향이 복합적으로 작용했습니다.",
+      "analyzedAt": "2026-09-24T06:22:28+09:00",
       "valuation": {
-        "pe": "17.64배",
-        "pbr": "6.90배",
+        "pe": "16.97배",
+        "pbr": "6.64배",
         "eps": "$19.91",
-        "basis": "9/22 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $50.90 기준",
-        "asOf": "2026-09-22",
+        "basis": "9/23 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $50.90 기준",
+        "asOf": "2026-09-23",
         "forwardPe": 25.93,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/"
@@ -276,28 +286,23 @@
       "drivers": [
         {
           "type": "경쟁 악재",
-          "summary": "Meta Muse가 검색·쇼핑·거래 경로를 대체할 수 있다는 우려",
+          "summary": "Meta Muse가 검색·쇼핑·거래·여행의 사용자 진입점을 대체할 수 있다는 우려",
           "impact": "부정"
-        },
-        {
-          "type": "산업 호재",
-          "summary": "AI 연산 확대는 Google Cloud 수요를 지지",
-          "impact": "긍정"
         },
         {
           "type": "금리 악재",
-          "summary": "연준 추가 인상 가능성은 플랫폼 성장주의 할인율 부담",
+          "summary": "10년물 급등으로 플랫폼 성장주의 할인율 부담 확대",
           "impact": "부정"
+        },
+        {
+          "type": "클라우드 호재",
+          "summary": "AI 인프라 투자는 Google Cloud의 중기 수요 기반을 지지",
+          "impact": "긍정"
         },
         {
           "type": "상대강도",
-          "summary": "S&P 500보다 1.07%p, NASDAQ보다 1.52%p 약세",
+          "summary": "S&P 500보다 3.08%p 약세",
           "impact": "부정"
-        },
-        {
-          "type": "트레이딩 요인",
-          "summary": "신규 확정 기업 재료보다 경쟁 우려와 차익실현 가능성",
-          "impact": "중립"
         }
       ],
       "source": "https://stockanalysis.com/stocks/googl/statistics/"
@@ -305,44 +310,39 @@
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "change": "$498.00 · -0.71% · 9/22 마감",
-      "stance": "악재 우세 · AI 경쟁·금리 부담",
-      "reason": "Microsoft는 498.00달러로 0.71% 하락해 S&P 500보다 0.71%p, NASDAQ보다 1.16%p 약했습니다. Apple의 로컬 AI 시스템은 일부 추론 워크로드의 클라우드 대체 가능성을 제기했고 연준의 추가 인상 경계도 Azure·소프트웨어 밸류에이션에 부담이었습니다. DARPA의 양자 시스템 접근 발표는 장기 호재지만 당일 하락을 상쇄하지 못했습니다.",
-      "analyzedAt": "2026-09-23T06:19:02+09:00",
+      "change": "$500.59 · +0.56% · 9/23 마감",
+      "stance": "강세 · 걸프 AI 투자 계획이 금리 부담 상쇄",
+      "reason": "Microsoft는 500.59달러로 0.56% 상승해 하락장에서도 상대 강세였습니다. 회사가 걸프 4개국의 클라우드·AI 인프라에 2030년까지 100억달러 이상을 투자할 계획이라고 밝힌 점이 성장 기대를 지지했습니다. 다만 높은 장기금리와 공격적 설비투자의 자본효율성은 부담 요인입니다.",
+      "analyzedAt": "2026-09-24T06:22:28+09:00",
       "valuation": {
-        "pe": "29.64배",
-        "pbr": "8.36배",
+        "pe": "29.80배",
+        "pbr": "8.40배",
         "eps": "$16.80",
-        "basis": "9/22 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $59.56 기준",
-        "asOf": "2026-09-22",
+        "basis": "9/23 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $59.56 기준",
+        "asOf": "2026-09-23",
         "forwardPe": 25.16,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/"
       },
       "drivers": [
         {
-          "type": "경쟁 악재",
-          "summary": "Apple의 로컬 AI 시스템이 일부 클라우드 추론 비용 경쟁을 강화",
-          "impact": "부정"
+          "type": "기업 고유 호재",
+          "summary": "걸프 지역 클라우드·AI 인프라에 2030년까지 100억달러 이상 투자 계획",
+          "impact": "긍정"
         },
         {
-          "type": "기업 고유 호재",
-          "summary": "DARPA가 Maryland 양자 시스템에 직접 접근하는 협력은 장기 기술 신뢰도에 긍정",
+          "type": "산업 호재",
+          "summary": "중동의 AI 허브 투자가 Azure 수요와 생태계 확장 기대를 지지",
           "impact": "긍정"
         },
         {
           "type": "금리 악재",
-          "summary": "연준 추가 인상 가능성이 소프트웨어 할인율·자본비용 부담",
+          "summary": "장기금리 상승은 클라우드·소프트웨어 밸류에이션과 자본비용 부담",
           "impact": "부정"
         },
         {
-          "type": "상대강도",
-          "summary": "S&P 500보다 0.71%p, NASDAQ보다 1.16%p 약세",
-          "impact": "부정"
-        },
-        {
-          "type": "확인 한계",
-          "summary": "단일 재료보다 경쟁·금리·수급 영향이 복합적으로 작용",
+          "type": "실행 위험",
+          "summary": "전쟁·전력·고급칩 접근성과 대규모 CAPEX 회수 속도는 불확실",
           "impact": "중립"
         }
       ],
@@ -351,39 +351,39 @@
     {
       "symbol": "TRMD",
       "name": "TORM",
-      "change": "$34.63 · -6.71% · 9/22 마감",
-      "stance": "악재 우세 · 유가·위험 프리미엄 하락",
-      "reason": "TORM은 34.63달러로 6.71% 하락해 S&P 500보다 6.71%p 약했습니다. 사우디 동서 송유관 재가동과 호르무즈 통항 증가가 중동 공급 차질·우회 운송 프리미엄 축소 우려를 키웠습니다. 반면 디젤 부족과 높은 실제 운송비는 제품선 수요를 지지할 수 있습니다. 9월 22일 BCTI의 지수값을 검증하지 못해 기존 9월 18일 값 1,943(+29p, +1.52%)을 보존했습니다.",
-      "analyzedAt": "2026-09-23T06:19:02+09:00",
+      "change": "$34.42 · -0.69% · 9/23 마감",
+      "stance": "중립 · 유가·운임 호재와 정책 불확실성 혼재",
+      "reason": "TORM은 34.42달러로 0.69% 하락했습니다. 이란 강경 발언과 호르무즈 불확실성은 제품유 항로·톤마일 확대 기대에 우호적일 수 있지만, 디젤 수출금지설과 부인으로 정제유 흐름의 정책 불확실성이 커졌습니다. 최신 검증 가능한 BCTI는 9월 22일 2,039로 상승해 운임 환경 자체는 강했습니다.",
+      "analyzedAt": "2026-09-24T06:22:28+09:00",
       "valuation": {
-        "pe": "5.64배",
-        "pbr": "1.39배",
+        "pe": "5.61배",
+        "pbr": "1.38배",
         "eps": "$6.14",
-        "basis": "9/22 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $24.91 기준",
-        "asOf": "2026-09-22",
+        "basis": "9/23 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $24.91 기준",
+        "asOf": "2026-09-23",
         "forwardPe": 10.46,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/trmd/statistics/"
       },
       "drivers": [
         {
-          "type": "산업 악재",
-          "summary": "사우디 우회 송유관 재가동·호르무즈 통항 증가로 지정학적 운임 프리미엄 축소 우려",
-          "impact": "부정"
-        },
-        {
           "type": "산업 호재",
-          "summary": "디젤 부족과 높은 지역 간 운송비는 제품선 톤마일을 지지할 수 있음",
+          "summary": "호르무즈 불확실성과 지역별 정제유 부족은 우회 운송·톤마일을 지지할 수 있음",
           "impact": "긍정"
         },
         {
-          "type": "상대강도",
-          "summary": "주가는 -6.71%로 S&P 500보다 6.71%p 약세",
-          "impact": "부정"
+          "type": "정책 불확실성",
+          "summary": "미국 디젤 수출금지설과 백악관 부인으로 제품유 무역 흐름 변동성 확대",
+          "impact": "중립"
+        },
+        {
+          "type": "트레이딩 요인",
+          "summary": "전일 급락 뒤에도 주가는 -0.69%; 단일 TORM 고유 재료 미확인",
+          "impact": "중립"
         },
         {
           "type": "클린탱커 운임 지수",
-          "summary": "9/22 BCTI 지수값 검증 불가로 기존 값 보존: BCTI 1,943 · 전 거래일 대비 +29p(+1.52%) · 9/18 — TORM 개별 계약이 아닌 글로벌 클린탱커 종합 현물지수",
+          "summary": "BCTI 2,039 · 전 거래일 대비 +69p(+3.50%) · 9/22 — TORM 개별 계약이 아닌 글로벌 클린탱커 종합 현물지수",
           "impact": "긍정"
         }
       ],
@@ -392,44 +392,39 @@
     {
       "symbol": "RIG",
       "name": "Transocean",
-      "change": "$5.49 · +0.92% · 9/22 마감",
-      "stance": "중립 우세 · 저가 매수·유가 부담 병존",
-      "reason": "Transocean은 5.49달러로 0.92% 상승해 S&P 500보다 0.92%p 강했습니다. WTI 하락은 해양시추 발주 기대에 부담이지만 고사양 초심해 리그 공급 제약과 전일 급락 뒤 저가 매수가 주가를 지지했을 가능성이 있습니다. 직전 분석 이후 Transocean 공식 발표와 Fleet Status Report에서 신규 계약·연장·옵션 행사는 확인되지 않았습니다.",
-      "analyzedAt": "2026-09-23T06:19:02+09:00",
+      "change": "$5.47 · -0.36% · 9/23 마감",
+      "stance": "중립 · 유가 반등에도 금리·재무 부담",
+      "reason": "Transocean은 5.47달러로 0.36% 하락했습니다. WTI 반등은 장기 해양개발 경제성에 우호적이지만 금리 상승과 TTM 적자·높은 재무 레버리지가 주가를 제약했습니다. 직전 분석 이후 공식 신규 계약·연장·옵션 행사는 확인되지 않았습니다.",
+      "analyzedAt": "2026-09-24T06:22:28+09:00",
       "valuation": {
         "pe": "적자(TTM)",
         "pbr": "0.73배",
         "eps": "-$1.77",
-        "basis": "9/22 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $7.49 기준",
-        "asOf": "2026-09-22",
+        "basis": "9/23 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $7.49 기준",
+        "asOf": "2026-09-23",
         "forwardPe": 30.54,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/rig/statistics/"
       },
       "drivers": [
         {
-          "type": "유가 악재",
-          "summary": "WTI -1.24%로 장기 해양시추 발주 기대에 단기 부담",
-          "impact": "부정"
-        },
-        {
-          "type": "업황 호재",
-          "summary": "고사양 초심해 드릴십 공급 제약은 중장기 일일운임을 지지",
+          "type": "유가 호재",
+          "summary": "WTI가 92.16달러로 1.81% 상승해 해양개발 심리를 지지",
           "impact": "긍정"
         },
         {
-          "type": "재무 악재",
-          "summary": "TTM 적자와 높은 부채로 금리·유가 변동 민감도 확대",
+          "type": "금리 악재",
+          "summary": "장기금리 상승은 부채와 자본집약도가 높은 시추업체에 부담",
           "impact": "부정"
         },
         {
-          "type": "트레이딩 요인",
-          "summary": "전일 급락 뒤 저가 매수 가능성; 신규 기업 고유 재료 미확인",
-          "impact": "중립"
+          "type": "재무 악재",
+          "summary": "TTM 적자와 높은 부채로 유가·금리 민감도가 큼",
+          "impact": "부정"
         },
         {
           "type": "신규 계약",
-          "summary": "직전 분석 이후 신규 계약·연장·옵션 행사 공식 발표 미확인; 최신 9/15 Deepwater Conqueror 초심해 드릴십 계약은 이전 분석 반영 완료",
+          "summary": "직전 분석 이후 Transocean 공식 신규 계약·연장·옵션 행사 미확인",
           "impact": "중립"
         }
       ],
