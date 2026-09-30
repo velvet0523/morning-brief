@@ -1,94 +1,104 @@
 {
-  "date": "2026-09-29",
-  "updatedAt": "2026-09-30T06:18:54+09:00",
-  "newsUpdatedAt": "2026-09-30T06:18:54+09:00",
+  "date": "2026-09-30",
+  "updatedAt": "2026-10-01T06:24:42+09:00",
+  "newsUpdatedAt": "2026-10-01T06:24:42+09:00",
   "analysisStatus": {
-    "usUpdatedAt": "2026-09-30T06:18:54+09:00",
+    "usUpdatedAt": "2026-10-01T06:24:42+09:00",
     "krUpdatedAt": "2026-09-28T15:45:49+09:00"
   },
-  "headline": "장기금리 5.29%가 증시를 눌렀지만 유가 하락·연준 속도조절론이 낙폭 제한",
+  "headline": "예상보다 낮은 PCE가 10월 인상 우려를 낮췄지만 강한 성장·장기금리가 증시 상단 제약",
   "flowAnalysis": {
-    "title": "중동 수출 회복과 노동 둔화가 금리 충격을 일부 완충",
-    "overview": "사우디 동서 송유관과 얀부 선적 재개로 중동 원유 수출이 전쟁 이후 최고 수준으로 회복되면서 WTI가 3.5% 하락했습니다. 이는 에너지발 기대물가를 낮추는 방향이지만, 누적된 유가·AI 설비투자 수요와 PCE 경계로 미국 10년물은 장중 5.293%까지 올라 주식 할인율을 압박했습니다. 소비자신뢰와 구인건수 하락은 수요 둔화를 시사했으나 낮은 해고율은 급격한 침체보다 완만한 냉각에 가깝습니다. Williams의 인상 속도조절 발언으로 10월 인상 기대가 약 51.5%로 낮아져 낙폭을 제한했습니다. AI 인프라 실수요는 반도체를 지지하지만 높은 자본비용과 고객·클라우드 집중 위험은 종목별 차별화를 키웁니다.",
+    "title": "낮은 물가 서프라이즈와 강한 수요가 금리곡선을 엇갈리게 만든 하루",
+    "overview": "8월 PCE 물가는 전월 대비 0.3%, 전년 대비 3.4%로 예상보다 낮았고 근원 PCE도 전년 대비 3.0%로 하향 조정됐습니다. 이에 10월 금리 인상 확률은 약 37%로 낮아져 단기 정책금리 부담이 완화됐습니다. 그러나 소비지출이 0.9% 급증하고 2분기 GDP가 연율 2.2%로 상향되면서 성장과 AI 설비투자 수요가 장기금리를 지지했습니다. 결과적으로 나스닥은 AI·반도체 기대에 상승했지만 S&P 500은 장기금리와 시장 폭 약화로 하락했습니다. 원유는 중동 수출 회복에도 디젤 재고 감소와 미·이란 협상 교착으로 반등해 물가 하방을 제한했습니다. Micron의 예상을 웃돈 가이던스는 HBM 부족과 메모리 가격 상승이 산업 전반으로 확산되고 있음을 확인했습니다.",
     "links": [
       {
-        "cause": "중동 원유 수출 회복·SPR 추가 대여",
-        "effect": "유가와 단기 기대물가 하락",
-        "explanation": "사우디 동서 송유관·얀부 선적 재개와 미국의 최대 4천만배럴 SPR 대여 계획이 공급 우려를 낮췄습니다. 다만 디젤 재고와 호르무즈 위험이 남아 에너지 물가의 하방은 제한적입니다."
+        "cause": "예상보다 낮은 PCE·과거치 하향 조정",
+        "effect": "10월 인상 확률 하락·단기금리 부담 완화",
+        "explanation": "8월 PCE는 월간 0.3%, 연간 3.4%로 예상보다 낮았고 근원 PCE는 3.0%였습니다. 10월 25bp 인상 확률은 전일 약 51%에서 약 37%로 낮아져 성장주에 단기 완충 역할을 했습니다."
       },
       {
-        "cause": "장기금리 상승·PCE 경계",
-        "effect": "성장주 할인율과 AI 조달비용 상승",
-        "explanation": "10년물 5.293%, 30년물 5.6206%는 미래 현금흐름 가치와 데이터센터 투자 수익률을 압박했습니다. 유가 하락과 Williams의 신중론이 단기 금리 기대를 낮춰 충격을 일부 상쇄했습니다."
+        "cause": "소비지출 급증·GDP 상향·AI 설비투자",
+        "effect": "장기금리 고착·시장 폭 약화",
+        "explanation": "소비지출 0.9%와 2분기 GDP 2.2%는 경기 회복력을 보여줬습니다. 강한 수요는 기업이익을 지지하지만 장기금리를 높은 수준에 묶어 자본집약적 AI 투자와 비기술 업종의 밸류에이션을 압박합니다."
       },
       {
-        "cause": "소비자신뢰·구인 감소와 낮은 해고",
-        "effect": "연착륙 기대와 금리 경로 혼재",
-        "explanation": "소비자신뢰 81.9와 구인 707.9만건은 수요 냉각 신호지만 해고는 164.1만건으로 낮았습니다. 연준은 물가 억제와 고용 둔화 사이에서 데이터 의존성이 커졌습니다."
+        "cause": "HBM 공급 부족·제품유 재고 감소",
+        "effect": "반도체 이익 개선·탱커 운임 강세",
+        "explanation": "Micron은 HBM 주문이 생산능력을 크게 웃돈다고 밝혔고, 미국 증류유 재고는 230만배럴 감소했습니다. 메모리 가격과 제품유 운송 수요에는 우호적이지만 높은 설비투자비와 에너지 비용은 반대 요인입니다."
       }
     ],
-    "watch": "9월 PCE와 고용보고서, 10년물 5.3%선, 10월 인상 확률, 호르무즈 통항·디젤 재고, BCTI 후속 공표치, AI 클라우드 투자·고객 집중도"
+    "watch": "9월 비농업고용·실업률, 10년물 5.3%선, 10월 인상 확률, Micron 컨퍼런스콜·HBM 공급계획, 미·이란 협상과 미국 증류유 재고, BCTI 후속 공표치"
   },
   "stories": [
     {
       "category": "매크로",
-      "importanceScore": 85,
+      "importanceScore": 90,
       "level": "높음",
-      "tag": "고용·소비",
-      "title": "미 소비자신뢰 12년 반 만의 최저, 구인도 예상 하회",
-      "summary": "9월 소비자신뢰는 81.9로 6.7포인트 하락했고 예상치 89.2를 밑돌았습니다. 8월 구인은 707.9만건으로 25.6만건 감소했지만 해고는 164.1만건으로 낮았습니다.",
-      "why": "소비·고용 수요 둔화는 성장 전망과 금리 경로를 낮추지만, 낮은 해고는 급격한 침체 신호를 제한합니다.",
-      "source": "https://www.reuters.com/business/us-consumer-confidence-dives-more-than-12-year-low-september-2026-09-29/"
+      "tag": "물가·연준",
+      "title": "미 PCE 예상 하회, 10월 금리 인상 확률 약 37%로 하락",
+      "summary": "8월 PCE 물가는 전월 대비 0.3%, 전년 대비 3.4% 상승했고 근원 PCE는 전년 대비 3.0%였습니다. 방법론 변경과 과거치 하향 조정으로 시장 예상보다 낮았으며 10월 인상 기대가 크게 후퇴했습니다.",
+      "why": "정책금리 기대를 낮춰 성장주 할인율에 완충을 주지만 월간 물가는 재가속했고 연준 목표 2%를 여전히 웃돕니다.",
+      "source": "https://www.reuters.com/business/us-stock-futures-inch-up-yields-ease-inflation-report-looms-2026-09-30/"
     },
     {
       "category": "매크로",
-      "importanceScore": 82,
+      "importanceScore": 80,
       "level": "높음",
-      "tag": "연준·금리",
-      "title": "연준 내부 인상 속도 이견, 장기금리는 다년래 최고",
-      "summary": "Barr 이사는 추가 인상 필요성을 강조한 반면 Williams 총재는 9월 인상 뒤 서두를 필요가 없다고 밝혔습니다. 10년물은 장중 5.293%, 30년물은 5.6206%까지 올랐습니다.",
-      "why": "장기금리 상승은 성장주와 AI 설비투자의 할인율·조달비용을 높이지만, Williams 발언 뒤 10월 인상 확률은 약 51.5%로 낮아졌습니다.",
-      "source": "https://www.reuters.com/business/feds-williams-sees-no-urgency-next-fed-rate-hike-2026-09-29/"
+      "tag": "성장·소비",
+      "title": "미 소비지출 0.9% 급증, 2분기 GDP 2.2%로 상향",
+      "summary": "8월 소비지출은 0.9%, 실질 기준 0.6% 늘었습니다. 2분기 GDP는 연율 2.2%로 상향됐고 AI 인프라 관련 설비투자가 성장을 지지했습니다.",
+      "why": "기업 매출과 AI 수요에는 긍정적이지만 강한 최종수요는 장기금리 하락을 제한하고 향후 물가 재상승 위험을 남깁니다.",
+      "source": "https://www.marketscreener.com/news/us-inflation-rises-less-than-expected-in-august-consumer-spending-surges-ce785ad2d18df12c"
+    },
+    {
+      "category": "매크로",
+      "importanceScore": 66,
+      "level": "중간",
+      "tag": "고용",
+      "title": "ADP 민간고용 9만명 증가, 예상 상회",
+      "summary": "9월 민간고용은 9만명 늘어 예상치 7만명을 웃돌았고 8월 수치는 3만6천명으로 하향됐습니다. 공식 고용보고서는 비농업 고용 9만명 증가와 실업률 4.1%가 예상됩니다.",
+      "why": "노동시장이 급격히 무너지지 않았다는 신호지만 ADP와 공식 통계의 괴리가 커 최종 판단은 고용보고서 확인이 필요합니다.",
+      "source": "https://www.reuters.com/business/us-private-payrolls-growth-picks-up-september-adp-says-2026-09-30/"
     },
     {
       "category": "산업",
-      "importanceScore": 84,
+      "importanceScore": 91,
       "level": "높음",
-      "tag": "원유·공급망",
-      "title": "사우디 수출 회복으로 WTI 3.5% 하락",
-      "summary": "사우디 동서 송유관과 얀부 선적이 재개되며 중동 9월 원유 수출은 하루 1,632.8만배럴로 전쟁 이후 최고를 기록했습니다. WTI는 89.38달러로 3.5% 하락했습니다.",
-      "why": "공급 회복은 원유발 인플레이션과 해양개발 기대를 낮추지만, 디젤 부족과 호르무즈 불확실성은 정제유·탱커 운임을 지지합니다.",
-      "source": "https://www.reuters.com/business/energy/oil-prices-rise-second-session-continued-middle-east-supply-concern-2026-09-29/"
+      "tag": "메모리·HBM",
+      "title": "Micron, AI 메모리 호황 지속을 시사하는 예상 상회 가이던스",
+      "summary": "Micron은 다음 분기 매출 615억달러±15억달러와 조정 EPS 38.15달러±1달러를 제시해 시장 예상 570.2억달러와 35.40달러를 웃돌았습니다. HBM 주문은 생산능력을 크게 초과했습니다.",
+      "why": "HBM 부족이 기존 DRAM 공급까지 조여 메모리 가격과 업계 이익률을 높이는 산업 신호이며 NVIDIA 생태계와 삼성전자·SK하이닉스에도 직접적인 읽힘을 줍니다.",
+      "source": "https://www.reuters.com/business/micron-forecasts-quarterly-revenue-above-estimates-2026-09-30/"
     },
     {
       "category": "산업",
-      "importanceScore": 72,
-      "level": "중간",
-      "tag": "전략비축유",
-      "title": "미국, 전략비축유 최대 4천만배럴 추가 대여",
-      "summary": "미국은 IEA 공동 방출 약속의 마지막 물량으로 SPR 최대 4천만배럴을 대여하기로 했습니다. SPR 재고는 2억8,400만배럴 미만으로 1982년 이후 최저입니다.",
-      "why": "단기 공급 완충은 유가 상단을 낮추지만 낮은 비축 수준은 향후 추가 충격 대응 여력을 제한합니다.",
-      "source": "https://www.reuters.com/business/energy/us-release-40-million-barrels-crude-strategic-petroleum-reserve-energy-2026-09-29/"
+      "importanceScore": 78,
+      "level": "높음",
+      "tag": "원유·정제유",
+      "title": "미·이란 협상 교착과 증류유 재고 감소로 WTI 반등",
+      "summary": "WTI는 90.42달러로 1.2% 상승했습니다. 걸프 수출은 2025년 평균 수준까지 회복됐지만 미국 증류유 재고가 230만배럴 감소했고 미·이란 협상은 돌파구를 찾지 못했습니다.",
+      "why": "원유 공급 회복은 가격 상단을 제한하지만 제품유 부족과 높은 운임은 정유마진·탱커 수요·물가 압력을 지지합니다.",
+      "source": "https://www.reuters.com/business/energy/oil-climbs-after-trump-denies-he-is-willing-ease-sanctions-iran-2026-09-30/"
     },
     {
       "category": "산업",
-      "importanceScore": 68,
+      "importanceScore": 70,
       "level": "중간",
-      "tag": "AI 인프라",
-      "title": "Anthropic 공시, AI 성장과 클라우드·고객 집중 위험 동시 확인",
-      "summary": "Anthropic의 2025년 매출 중 47%가 Amazon·Google 채널을 거쳤고 장기 컴퓨팅 약정은 2026년 초 4,170억달러를 넘었습니다. 두 고객이 각각 매출 12%를 차지했습니다.",
-      "why": "대규모 컴퓨팅 약정은 GPU·클라우드 수요를 지지하지만 자본집약도와 파트너·고객 집중은 AI 생태계의 현금흐름 위험을 높입니다.",
-      "source": "https://www.reuters.com/world/anthropic-ipo-prospectus-lays-bare-deep-dependence-big-tech-partners-2026-09-29/"
+      "tag": "AI 규제",
+      "title": "FTC, Anthropic·OpenAI 등 에이전트형 AI 업계 조사 착수",
+      "summary": "FTC는 Anthropic, OpenAI와 METR에 정보 제출과 임원 증언을 요구하는 업계 전반의 조사를 진행합니다. 에이전트형 AI 해킹 사고 이후 미국의 첫 공식 집행 조치입니다.",
+      "why": "안전·책임 비용과 출시 지연 위험을 높일 수 있지만 기존 법률 중심 접근이라 당장 AI 인프라 투자를 중단시키는 규제로 단정하기는 이릅니다.",
+      "source": "https://www.reuters.com/business/ftc-opens-probe-into-ai-giants-including-anthropic-openai-new-york-post-reports-2026-09-30/"
     }
   ],
   "markets": [
     {
       "label": "S&P 500",
-      "value": "7,670.84 · -0.17% · 9/29 마감"
+      "value": "7,651.54 · -0.25% · 9/30 마감"
     },
     {
       "label": "NASDAQ",
-      "value": "26,797.54 · -0.09% · 9/29 마감"
+      "value": "26,861.06 · +0.24% · 9/30 마감"
     },
     {
       "label": "KOSPI",
@@ -96,15 +106,15 @@
     },
     {
       "label": "닛케이 225",
-      "value": "65,481.00 · -0.60% · 9/29 마감"
+      "value": "66,753.72 · +1.94% · 9/30 마감"
     },
     {
       "label": "원·달러",
-      "value": "1,355.11원 · -0.35% · 9/29 뉴욕 기준"
+      "value": "1,351.66원 · 약 -0.25% · 9/30 뉴욕 기준"
     },
     {
       "label": "WTI",
-      "value": "$89.38 · -3.50% · 9/29 마감"
+      "value": "$90.42 · +1.16% · 9/30 마감"
     }
   ],
   "stocks": [
@@ -162,34 +172,34 @@
     {
       "symbol": "MU",
       "name": "Micron",
-      "change": "$1065.08 · +1.05% · 9/29 마감",
-      "stance": "강세 · 유가 하락과 AI 메모리 수요",
-      "reason": "Micron은 1,065.08달러로 1.05% 상승했습니다. 장기금리 상승은 반도체 멀티플에 부담이었지만 유가 급락과 AI·HBM 실수요 기대가 이를 상쇄했습니다. 당일 상승을 단독 설명할 신규 기업 고유 공시는 확인되지 않아 업종 수급 영향도 함께 봐야 합니다.",
-      "analyzedAt": "2026-09-30T06:18:54+09:00",
+      "change": "$1065.11 · +0.13% · 9/30 마감",
+      "stance": "중립 강세 · 정규장 보합 후 가이던스 상회",
+      "reason": "Micron은 정규장에서 1,065.11달러로 0.13% 상승했습니다. 정규장 이후 발표한 다음 분기 매출·이익 전망이 시장 예상을 웃돌았고 HBM 주문이 생산능력을 크게 초과한다고 밝혀 시간외에서 1% 넘게 올랐습니다. 이 실적은 정규장 등락 원인이라기보다 다음 거래일의 신규 촉매입니다.",
+      "analyzedAt": "2026-10-01T06:24:42+09:00",
       "valuation": {
         "pe": "24.11배",
         "pbr": "11.94배",
         "eps": "$44.17",
-        "basis": "9/29 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $89.22 기준",
-        "asOf": "2026-09-29",
+        "basis": "9/30 정규장 종가 ÷ 기존 검증 TTM EPS · 최근 분기 BPS $89.22 기준; 신규 재무 원자료 미반영 시 기존 EPS 보존",
+        "asOf": "2026-09-30",
         "forwardPe": 6.42,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/mu/statistics/"
       },
       "drivers": [
         {
+          "type": "기업 고유",
+          "summary": "정규장 후 다음 분기 매출 $61.5B±$1.5B·조정 EPS $38.15±$1로 예상 상회",
+          "impact": "긍정"
+        },
+        {
           "type": "산업",
-          "summary": "AI·HBM 실수요 기대가 메모리 업황을 지지",
+          "summary": "HBM 주문이 생산능력을 크게 초과하고 기존 메모리 공급도 타이트",
           "impact": "긍정"
         },
         {
-          "type": "매크로",
-          "summary": "WTI 3.5% 하락이 에너지발 물가·금리 부담 완화",
-          "impact": "긍정"
-        },
-        {
-          "type": "금리",
-          "summary": "10년물 5.293%는 고밸류 반도체 할인율 부담",
+          "type": "법률 위험",
+          "summary": "Netlist가 Micron HBM 포함 제품의 미국 수입금지를 ITC에 요청",
           "impact": "부정"
         }
       ],
@@ -198,16 +208,16 @@
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "change": "$227.21 · -0.76% · 9/29 마감",
-      "stance": "약세 · 장기금리 부담",
-      "reason": "NVIDIA는 227.21달러로 0.76% 하락했습니다. AI 인프라 수요와 Anthropic의 대규모 컴퓨팅 약정은 수요 기반을 지지했지만 10년물 금리 상승이 밸류에이션을 압박했습니다. 뚜렷한 당일 기업 고유 악재는 확인되지 않았습니다.",
-      "analyzedAt": "2026-09-30T06:18:54+09:00",
+      "change": "$228.38 · +0.54% · 9/30 마감",
+      "stance": "강세 · PCE 완화와 HBM 수요 확인",
+      "reason": "NVIDIA는 228.38달러로 0.54% 상승했습니다. 예상보다 낮은 PCE가 단기 금리 부담을 낮췄고 Micron의 HBM 주문 초과·메모리 공급 부족 발언이 AI 가속기 수요의 견조함을 뒷받침했습니다. 다만 장기금리와 Netlist의 수입금지 청구는 위험 요인입니다.",
+      "analyzedAt": "2026-10-01T06:24:42+09:00",
       "valuation": {
-        "pe": "28.51배",
-        "pbr": "23.97배",
+        "pe": "28.65배",
+        "pbr": "24.09배",
         "eps": "$7.97",
-        "basis": "9/29 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $9.48 기준",
-        "asOf": "2026-09-29",
+        "basis": "9/30 정규장 종가 ÷ 기존 검증 TTM EPS · 최근 분기 BPS $9.48 기준; 신규 재무 원자료 미반영 시 기존 EPS 보존",
+        "asOf": "2026-09-30",
         "forwardPe": 17.61,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/"
@@ -215,18 +225,18 @@
       "drivers": [
         {
           "type": "산업",
-          "summary": "Anthropic 등 AI 사업자의 대규모 컴퓨팅 약정은 GPU 수요에 우호적",
+          "summary": "Micron의 HBM 주문 초과와 강한 가이던스가 AI 가속기 수요 확인",
           "impact": "긍정"
         },
         {
           "type": "금리",
-          "summary": "10년물 5.293%가 장기 성장주 할인율 압박",
-          "impact": "부정"
+          "summary": "10월 인상 확률 하락은 긍정적이나 장기금리 고점은 멀티플 부담",
+          "impact": "혼합"
         },
         {
-          "type": "확인 한계",
-          "summary": "뚜렷한 당일 기업 고유 악재 미확인",
-          "impact": "중립"
+          "type": "법률 위험",
+          "summary": "Netlist ITC 청구가 Micron 메모리를 탑재한 NVIDIA 제품을 포함",
+          "impact": "부정"
         }
       ],
       "source": "https://stockanalysis.com/stocks/nvda/statistics/"
@@ -234,34 +244,34 @@
     {
       "symbol": "GOOGL",
       "name": "Alphabet (Google)",
-      "change": "$340.92 · -0.52% · 9/29 마감",
-      "stance": "약세 · 금리와 AI 생태계 집중 위험",
-      "reason": "Alphabet은 340.92달러로 0.52% 하락했습니다. Anthropic 매출의 47%가 Amazon·Google 채널을 거친 점은 클라우드 유통력에 긍정적이지만, 투자·공급·경쟁 관계의 집중과 장기금리 상승은 위험 요인입니다.",
-      "analyzedAt": "2026-09-30T06:18:54+09:00",
+      "change": "$344.08 · +0.95% · 9/30 마감",
+      "stance": "강세 · AI 모델·설비투자 기대",
+      "reason": "Alphabet은 344.08달러로 0.95% 상승했습니다. Gemini 4 공개와 Micron이 언급한 대형 기술기업의 AI 인프라 투자 확대가 클라우드·AI 경쟁력을 지지했습니다. 반면 FTC의 에이전트형 AI 조사와 높은 장기금리는 규제·투자비 부담입니다.",
+      "analyzedAt": "2026-10-01T06:24:42+09:00",
       "valuation": {
-        "pe": "17.12배",
-        "pbr": "6.70배",
+        "pe": "17.28배",
+        "pbr": "6.76배",
         "eps": "$19.91",
-        "basis": "9/29 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $50.90 기준",
-        "asOf": "2026-09-29",
+        "basis": "9/30 정규장 종가 ÷ 기존 검증 TTM EPS · 최근 분기 BPS $50.90 기준; 신규 재무 원자료 미반영 시 기존 EPS 보존",
+        "asOf": "2026-09-30",
         "forwardPe": 25.93,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/"
       },
       "drivers": [
         {
-          "type": "사업",
-          "summary": "Anthropic의 Google·Amazon 채널 매출 비중 47%로 클라우드 유통력 확인",
+          "type": "기업 고유",
+          "summary": "지연됐던 Gemini 4 플래그십 모델 공개",
           "impact": "긍정"
         },
         {
-          "type": "집중 위험",
-          "summary": "투자자·컴퓨팅 공급자·유통 파트너·경쟁자 관계가 중첩",
-          "impact": "부정"
+          "type": "산업",
+          "summary": "AI 인프라 지출과 HBM 수요가 클라우드 생태계 확대를 지지",
+          "impact": "긍정"
         },
         {
-          "type": "금리",
-          "summary": "높은 장기금리가 AI 투자 회수기간과 할인율 압박",
+          "type": "규제·금리",
+          "summary": "에이전트형 AI 조사와 높은 장기금리는 비용·멀티플 부담",
           "impact": "부정"
         }
       ],
@@ -270,35 +280,35 @@
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "change": "$508.96 · -0.04% · 9/29 마감",
-      "stance": "보합 · AI 수요와 금리 부담 균형",
-      "reason": "Microsoft는 508.96달러로 0.04% 하락해 사실상 보합이었습니다. Anthropic이 Microsoft 클라우드도 판매 채널로 활용하는 점과 AI 컴퓨팅 수요는 긍정적이지만, 장기금리와 자본집약적 AI 투자 부담이 상승을 제한했습니다.",
-      "analyzedAt": "2026-09-30T06:18:54+09:00",
+      "change": "$512.90 · +0.78% · 9/30 마감",
+      "stance": "강세 · 기술주 선호와 AI 수요",
+      "reason": "Microsoft는 512.90달러로 0.78% 상승했습니다. 낮은 PCE로 단기 인상 우려가 줄었고 AI 인프라와 모델 유통 수요가 Azure 기대를 지지했습니다. 다만 강한 소비와 장기금리 상승은 데이터센터 투자비와 밸류에이션 부담을 남겼습니다.",
+      "analyzedAt": "2026-10-01T06:24:42+09:00",
       "valuation": {
-        "pe": "30.30배",
-        "pbr": "8.54배",
+        "pe": "30.53배",
+        "pbr": "8.61배",
         "eps": "$16.80",
-        "basis": "9/29 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $59.56 기준",
-        "asOf": "2026-09-29",
+        "basis": "9/30 정규장 종가 ÷ 기존 검증 TTM EPS · 최근 분기 BPS $59.56 기준; 신규 재무 원자료 미반영 시 기존 EPS 보존",
+        "asOf": "2026-09-30",
         "forwardPe": 25.16,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/"
       },
       "drivers": [
         {
+          "type": "매크로",
+          "summary": "PCE 예상 하회로 10월 금리 인상 확률이 약 37%로 하락",
+          "impact": "긍정"
+        },
+        {
           "type": "사업",
-          "summary": "AI 모델 유통·컴퓨팅 수요가 Azure 생태계를 지지",
+          "summary": "AI 인프라·클라우드 수요와 모델 유통 생태계 지속",
           "impact": "긍정"
         },
         {
           "type": "금리·자본비용",
-          "summary": "장기금리 상승이 데이터센터 투자 수익률과 멀티플 압박",
+          "summary": "장기금리 고점이 데이터센터 투자 수익률과 멀티플 압박",
           "impact": "부정"
-        },
-        {
-          "type": "수급",
-          "summary": "지수 약세 속 보합으로 상대 방어",
-          "impact": "중립"
         }
       ],
       "source": "https://stockanalysis.com/stocks/msft/statistics/"
@@ -306,16 +316,16 @@
     {
       "symbol": "TRMD",
       "name": "TORM",
-      "change": "$36.15 · +1.98% · 9/29 마감",
-      "stance": "강세 · 클린탱커 운임 상승",
-      "reason": "TORM은 36.15달러로 1.98% 상승했습니다. 중동 원유 수출 회복은 유가 위험 프리미엄을 낮췄지만 디젤 부족과 우회 운송 수요 속 BCTI가 9월 28일 2,226으로 상승해 제품유 운임 환경을 지지했습니다. 이는 TORM 개별 계약이 아닌 글로벌 현물 운임 신호입니다.",
-      "analyzedAt": "2026-09-30T06:18:54+09:00",
+      "change": "$38.05 · +5.26% · 9/30 마감",
+      "stance": "강세 · 제품유 부족과 BCTI 상승",
+      "reason": "TORM은 38.05달러로 5.26% 상승했습니다. 미국 증류유 재고 감소와 미·이란 협상 교착이 제품유 운송 수요와 운임 기대를 높였습니다. 최신 검증 가능한 BCTI는 9월 29일 2,293으로 전 거래일보다 67포인트 상승했으며, 이는 TORM 개별 계약이 아닌 글로벌 클린탱커 현물지수입니다.",
+      "analyzedAt": "2026-10-01T06:24:42+09:00",
       "valuation": {
-        "pe": "5.89배",
-        "pbr": "1.45배",
+        "pe": "6.20배",
+        "pbr": "1.53배",
         "eps": "$6.14",
-        "basis": "9/29 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $24.91 기준",
-        "asOf": "2026-09-29",
+        "basis": "9/30 정규장 종가 ÷ 기존 검증 TTM EPS · 최근 분기 BPS $24.91 기준; 신규 재무 원자료 미반영 시 기존 EPS 보존",
+        "asOf": "2026-09-30",
         "forwardPe": 10.46,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/trmd/statistics/"
@@ -323,35 +333,35 @@
       "drivers": [
         {
           "type": "정제유 수급",
-          "summary": "미국 디젤 가격 강세와 글로벌 재고 부족이 제품유 해상운송 수요 지지",
+          "summary": "미국 증류유 재고 230만배럴 감소와 글로벌 제품유 부족",
           "impact": "긍정"
         },
         {
-          "type": "원유 공급",
-          "summary": "사우디 수출 회복은 중동 위험 프리미엄 일부 완화",
-          "impact": "부정"
+          "type": "중동·운송",
+          "summary": "걸프 수출 회복은 완충이나 미·이란 협상 교착과 높은 운임 지속",
+          "impact": "혼합"
         },
         {
           "type": "클린탱커 운임 지수",
-          "summary": "BCTI 2,226 · 전 거래일 대비 +66p(+3.06%) · 9/28 기준 — TORM 개별 계약이 아닌 글로벌 클린탱커 종합 현물지수",
+          "summary": "BCTI 2,293 · 전 거래일 대비 +67p(+3.01%) · 9/29 기준 — TORM 개별 계약이 아닌 글로벌 클린탱커 종합 현물지수",
           "impact": "긍정"
         }
       ],
-      "source": "https://fr.stockq.org/index/BCTI.php"
+      "source": "https://data.eastmoney.com/cjsj/hyzs_EMI00107669.html"
     },
     {
       "symbol": "RIG",
       "name": "Transocean",
-      "change": "$5.21 · -1.33% · 9/29 마감",
-      "stance": "약세 · 유가 하락과 신규 계약 공백",
-      "reason": "Transocean은 5.21달러로 1.33% 하락했습니다. WTI의 3.5% 하락은 단기 해양개발 기대에 부담이었고 TTM 적자와 높은 금리도 압박 요인입니다. 직전 분석 이후 신규 계약·연장·옵션 행사는 공식 발표에서 확인되지 않았습니다.",
-      "analyzedAt": "2026-09-30T06:18:54+09:00",
+      "change": "$5.24 · +0.58% · 9/30 마감",
+      "stance": "중립 강세 · 유가 반등, 신규 계약은 부재",
+      "reason": "Transocean은 5.24달러로 0.58% 상승했습니다. WTI 반등과 미·이란 협상 교착은 장기 심해 시추 경제성에 우호적이지만 높은 금리와 TTM 적자는 부담입니다. 직전 분석 이후 신규 계약·연장·옵션 행사는 공식 발표와 Fleet Status Report에서 확인되지 않았습니다.",
+      "analyzedAt": "2026-10-01T06:24:42+09:00",
       "valuation": {
         "pe": "적자(TTM)",
         "pbr": "0.70배",
         "eps": "-$1.77",
-        "basis": "9/29 정규장 종가 ÷ TTM EPS · 최근 분기 BPS $7.49 기준",
-        "asOf": "2026-09-29",
+        "basis": "9/30 정규장 종가 ÷ 기존 검증 TTM EPS · 최근 분기 BPS $7.49 기준; 신규 재무 원자료 미반영 시 기존 EPS 보존",
+        "asOf": "2026-09-30",
         "forwardPe": 30.54,
         "forwardAsOf": "2026-09-16",
         "forwardSource": "https://stockanalysis.com/stocks/rig/statistics/"
@@ -359,12 +369,12 @@
       "drivers": [
         {
           "type": "유가",
-          "summary": "WTI 3.5% 하락이 단기 심해 시추 투자 기대에 부담",
-          "impact": "부정"
+          "summary": "WTI 1.2% 반등과 중동 공급 위험이 심해 시추 경제성 지지",
+          "impact": "긍정"
         },
         {
           "type": "재무·금리",
-          "summary": "TTM 적자와 높은 자본비용 부담",
+          "summary": "TTM 적자와 높은 장기금리는 자본비용 부담",
           "impact": "부정"
         },
         {
