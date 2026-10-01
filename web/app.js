@@ -71,8 +71,8 @@ const storyCard = (story) => `
 const renderNews = () => {
   const data = state.data;
   const stories = data?.stories || [];
-  const macro = stories.filter((item) => item.category === 'MACRO');
-  const industry = stories.filter((item) => item.category === 'INDUSTRY');
+  const macro = stories.filter((item) => ['MACRO', '매크로'].includes(item.category));
+  const industry = stories.filter((item) => ['INDUSTRY', '산업'].includes(item.category));
   const markets = data?.markets || [];
   return `
     <section class="hero">
