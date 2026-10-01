@@ -136,8 +136,8 @@ export default function App() {
   }, [loadData]);
 
   const stories = data?.stories || [];
-  const macroStories = stories.filter((story) => story.category === 'MACRO');
-  const industryStories = stories.filter((story) => story.category === 'INDUSTRY');
+  const macroStories = stories.filter((story) => ['MACRO', '매크로'].includes(story.category));
+  const industryStories = stories.filter((story) => ['INDUSTRY', '산업'].includes(story.category));
   const markets = data?.markets || ['S&P 500', 'NASDAQ', 'KOSPI', '닛케이 225', '원·달러', 'WTI'].map((label) => ({ label, value: '—' }));
   const flow = data?.flowAnalysis || {
     title: '핵심 뉴스의 연결고리를 분석 중입니다',
