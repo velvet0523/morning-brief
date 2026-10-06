@@ -31,7 +31,7 @@
   },
   "stories": [
     {
-      "category": "매크로",
+      "category": "MACRO",
       "importanceScore": 84,
       "level": "높음",
       "tag": "연준·국채금리",
@@ -41,7 +41,7 @@
       "source": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-06/"
     },
     {
-      "category": "매크로",
+      "category": "MACRO",
       "importanceScore": 67,
       "level": "중간",
       "tag": "미국 무역·수요",
@@ -51,7 +51,7 @@
       "source": "https://bea.gov/news/2026/us-international-trade-goods-and-services-august-2026"
     },
     {
-      "category": "산업",
+      "category": "INDUSTRY",
       "importanceScore": 88,
       "level": "높음",
       "tag": "AI 인프라·전력",
@@ -61,7 +61,7 @@
       "source": "https://www.googlecloudpresscorner.com/2026-10-06-Google-and-Constellation-Announce-Landmark-Agreement-to-Bring-890-MW-of-New-Nuclear-Capacity-to-PJM-Grid-as-Part-of-Long-Term-Power-Deal"
     },
     {
-      "category": "산업",
+      "category": "INDUSTRY",
       "importanceScore": 78,
       "level": "높음",
       "tag": "원유·정유·탱커",
