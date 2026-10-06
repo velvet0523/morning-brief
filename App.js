@@ -135,9 +135,29 @@ export default function App() {
     return () => subscription.remove();
   }, [loadData]);
 
-  const stories = data?.stories || [];
-  const macroStories = stories.filter((story) => ['MACRO', '매크로'].includes(story.category));
-  const industryStories = stories.filter((story) => ['INDUSTRY', '산업'].includes(story.category));
+  const stories = Array.isArray(data?.stories) ? data.stories : [];
+  const normalizeStoryCategory = (category) => String(category || '')
+    .trim()
+    .toUpperCase()
+    .replace(/[·ㆍ]/g, '-')
+    .replace(/\s+/g, ' ');
+  const isMacroStory = (story) => {
+    const category = normalizeStoryCategory(story?.category);
+    return category === 'MACRO'
+      || category === '매크로'
+      || category.includes('MACRO')
+      || category.includes('매크로');
+  };
+  const isIndustryStory = (story) => {
+    const category = normalizeStoryCategory(story?.category);
+    return category === 'INDUSTRY'
+      || category === '산업'
+      || category.includes('INDUSTRY')
+      || category.includes('산업');
+  };
+  const macroStories = stories.filter(isMacroStory);
+  const industryStories = stories.filter(isIndustryStory);
+  const uncategorizedStories = stories.filter((story) => !isMacroStory(story) && !isIndustryStory(story));
   const markets = data?.markets || ['S&P 500', 'NASDAQ', 'KOSPI', '닛케이 225', '원·달러', 'WTI'].map((label) => ({ label, value: '—' }));
   const flow = data?.flowAnalysis || {
     title: '핵심 뉴스의 연결고리를 분석 중입니다',
@@ -211,6 +231,12 @@ export default function App() {
               {macroStories.length ? renderStories(macroStories) : <Text style={styles.empty}>선정 기준을 통과한 매크로 뉴스가 없습니다.</Text>}
               <Text style={styles.section}>핵심 뉴스 · 산업</Text>
               {industryStories.length ? renderStories(industryStories) : <Text style={styles.empty}>선정 기준을 통과한 산업 뉴스가 없습니다.</Text>}
+              {uncategorizedStories.length ? (
+                <>
+                  <Text style={styles.section}>핵심 뉴스 · 기타</Text>
+                  {renderStories(uncategorizedStories)}
+                </>
+              ) : null}
               <Text style={styles.section}>시장 한눈에 보기</Text>
               <View style={styles.metrics}>{markets.map((item) => <View style={styles.metric} key={item.label}><Text style={styles.metricLabel}>{item.label}</Text><Text style={styles.metricValue}>{item.value}</Text></View>)}</View>
             </>
