@@ -1,94 +1,94 @@
 {
   "date": "2026-10-29",
-  "updatedAt": "2026-10-29T15:39:19+09:00",
-  "newsUpdatedAt": "2026-10-29T06:17:28+09:00",
+  "updatedAt": "2026-10-30T06:23:01+09:00",
+  "newsUpdatedAt": "2026-10-30T06:23:01+09:00",
   "analysisStatus": {
-    "usUpdatedAt": "2026-10-29T06:17:28+09:00",
+    "usUpdatedAt": "2026-10-30T06:23:01+09:00",
     "krUpdatedAt": "2026-10-29T15:39:19+09:00"
   },
-  "headline": "연준 동결 속 AI 투자 양극화: 메모리 강세와 유가 공급위험이 시장을 갈랐다",
+  "headline": "미국 성장·물가가 함께 강해진 가운데, AI 투자 회수 우려가 기술주를 압박",
   "flowAnalysis": {
-    "title": "금리 동결에도 인상 위험이 남고, AI 투자 효율성과 에너지 공급 충격이 업종별 수익률을 차별화",
-    "overview": "연준은 정책금리를 3.75~4.00%로 동결했지만 물가가 여전히 높고 경제 활동이 견조하다고 평가해 12월 인상 가능성을 남겼습니다. 이는 장기 성장주의 할인율 하락을 제한하는 요인입니다. 동시에 AI 설비투자는 미국 장비 주문과 Microsoft Azure 성장을 지지했으나 Alphabet의 사상 첫 음의 잉여현금흐름은 투자 회수기간에 대한 경계를 키웠습니다. SK하이닉스의 이익 급증은 메모리 수급 개선 기대를 강화했고, 사우디 정유시설 피격은 원유·정제품 공급 프리미엄을 높여 시추주와 탱커주에 서로 다른 영향을 줬습니다.",
+    "title": "강한 성장·물가가 금리 부담을 유지하고, AI 투자 효율성 논쟁이 종목별 밸류에이션을 재편",
+    "overview": "미국 3분기 GDP는 연율 3.4%로 예상보다 강했고 9월 PCE 물가는 전년 대비 3.6%로 재가속했습니다. 경기 침체 위험은 낮아졌지만 12월 연준 인상 가능성이 유지돼 장기 성장주의 할인율 부담이 남았습니다. 동시에 클라우드 수요 자체는 강했으나 Alphabet의 현금흐름 악화와 대규모 AI 설비투자는 투자 회수기간을 핵심 변수로 만들었습니다. 유가는 중동 공급위험과 협상 기대가 맞서며 하락했고, 제품유 탱커 주가와 BCTI는 엇갈렸습니다.",
     "links": [
       {
-        "cause": "연준 3.75~4.00% 동결·물가 경계 유지",
-        "effect": "12월 인상 위험과 성장주 할인율 부담",
-        "explanation": "동결 자체는 예상에 부합했지만 경제 평가 상향과 높은 물가 언급 때문에 완화 신호로 보기는 어렵습니다. 금리 민감도가 높은 AI 대형주의 밸류에이션 상단을 제약할 수 있습니다."
+        "cause": "미국 GDP 3.4%·PCE 3.6%",
+        "effect": "경기 연착륙 기대와 12월 금리 인상 위험 병존",
+        "explanation": "견조한 소비와 AI 투자는 이익 전망을 지지하지만, 물가 재가속은 연준의 긴축 유지 가능성을 높입니다. 실적 개선분과 더 높은 할인율이 동시에 주가에 반영되는 구간입니다."
       },
       {
-        "cause": "AI 설비투자 확대·클라우드 수요 강세",
-        "effect": "반도체·메모리 주문 증가와 현금흐름 양극화",
-        "explanation": "Microsoft Azure와 Google Cloud 수요는 견조했지만 Alphabet의 잉여현금흐름 악화는 막대한 데이터센터 지출의 회수기간을 부각했습니다. 수요 호재와 투자비 부담이 함께 존재합니다."
+        "cause": "클라우드 성장과 AI 설비투자 급증",
+        "effect": "반도체 수요 확대·빅테크 현금흐름 차별화",
+        "explanation": "Google Cloud와 Azure 수요는 AI 인프라 주문을 지지했습니다. 그러나 Alphabet의 잉여현금흐름 급감은 매출 성장만으로 대규모 투자비를 정당화하기 어렵다는 경계를 키워 기술주 전반의 멀티플을 압박했습니다."
       },
       {
-        "cause": "사우디 정유시설 공격·원유 공급 우려",
-        "effect": "유가 상승과 에너지·탱커 업종 차별화",
-        "explanation": "원유 위험 프리미엄은 심해시추 투자 기대에 우호적이지만, BCTI 하락은 제품유 탱커 현물운임이 같은 날 같은 방향으로 움직이지 않았음을 보여줍니다."
+        "cause": "미·이란 협상 기대와 중동 시설 공격",
+        "effect": "유가 하락 속 에너지·탱커 신호 혼재",
+        "explanation": "외교 기대는 원유 위험 프리미엄을 낮췄지만 실제 시설 공격과 해상 위험은 남았습니다. TRMD 주가는 상승했으나 BCTI는 하락해 개별 수급과 글로벌 클린탱커 현물운임을 같은 원인으로 단정할 수 없습니다."
       }
     ],
-    "watch": "미국 3분기 GDP, 12월 FOMC 인상 확률과 장기금리, 빅테크 AI 자본지출·잉여현금흐름, 메모리 가격, 사우디 시설 복구 상황, BCTI 후속치"
+    "watch": "12월 FOMC 인상 확률과 미국 장기금리, 빅테크 2027년 AI 자본지출·잉여현금흐름, Intel 공급차질의 반도체 수급 영향, 중동 협상과 원유시설 피해, BCTI 후속치"
   },
   "stories": [
     {
       "category": "MACRO",
-      "importanceScore": 88,
+      "importanceScore": 92,
       "level": "높음",
-      "tag": "연준·정책금리",
-      "title": "연준, 금리 3.75~4.00% 동결…물가 경계와 추가 인상 여지 유지",
-      "summary": "연준은 10대 2로 기준금리를 동결했습니다. 경제 활동 평가는 상향했지만 물가가 여전히 높다고 밝혔고, 시장은 12월 25bp 인상 가능성을 약 85%로 반영했습니다.",
-      "why": "예상된 동결보다 향후 인상 경로가 중요합니다. 높은 정책금리와 장기금리는 성장주 할인율·기업 조달비용·달러 흐름을 함께 좌우합니다.",
-      "source": "https://www.investing.com/news/economy-news/fed-holds-rates-steady-as-it-awaits-accumulation-of-more-information-4980411"
+      "tag": "미국 성장·물가",
+      "title": "미국 3분기 GDP 3.4%·9월 PCE 3.6%…강한 성장과 물가 재가속",
+      "summary": "미 상무부는 3분기 실질 GDP가 연율 3.4% 증가했다고 발표했습니다. 9월 PCE 물가는 전년 대비 3.6%로 8월 3.4%에서 높아졌습니다.",
+      "why": "침체 우려를 낮추는 성장률과 연준의 추가 인상 근거가 되는 물가가 동시에 확인됐습니다. 금리·달러·성장주 할인율에 광범위한 영향을 줍니다.",
+      "source": "https://www.bea.gov/index.php/news/2026/gdp-advance-estimate-3rd-quarter-2026"
     },
     {
       "category": "MACRO",
-      "importanceScore": 68,
+      "importanceScore": 76,
+      "level": "높음",
+      "tag": "ECB·금리",
+      "title": "ECB, 예금금리 2.5% 동결…에너지발 물가로 12월 인상 가능성 시사",
+      "summary": "ECB는 정책금리를 동결했지만 에너지 가격 상승이 물가 위험을 키운다고 경고했습니다. 로이터가 접촉한 정책위원들은 에너지 가격 급락이 없으면 12월 인상이 유력하다고 전했습니다.",
+      "why": "유럽 금리 경로는 글로벌 국채금리와 유로·달러, 미국 다국적 기업의 금융여건에 연결됩니다.",
+      "source": "https://www.investing.com/news/economy-news/ecb-keeps-rates-unchanged-but-points-to-mounting-inflation-risk-4983925"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 94,
+      "level": "높음",
+      "tag": "AI 인프라·현금흐름",
+      "title": "AI 투자 회수 우려 확대…Alphabet 현금흐름 악화가 기술주 압박",
+      "summary": "Alphabet은 Google Cloud 매출이 두 배 이상 늘었지만 AI 설비투자로 잉여현금흐름이 크게 줄었습니다. 시장은 빅테크 4사의 2026년 AI 데이터센터 지출이 7,000억달러를 넘을 전망이라는 점에 민감하게 반응했습니다.",
+      "why": "AI 수요의 존재보다 투자비 회수 속도가 밸류에이션 핵심으로 이동했습니다. 반도체 주문에는 호재지만 플랫폼 기업의 현금흐름과 자금조달에는 부담입니다.",
+      "source": "https://www.investing.com/news/stock-market-news/alphabets-heavy-cloud-spending-drives-biggerthanexpected-cash-burn-4980612"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 71,
       "level": "중간",
-      "tag": "미국 성장·설비투자",
-      "title": "AI 투자 붐이 미국 설비투자 지지…비용·차입 부담은 확대",
-      "summary": "9월 핵심 자본재 주문은 0.5%, 출하는 1.2% 증가했습니다. 장비투자가 3분기에도 두 자릿수 연율 성장했을 가능성이 커졌지만, AI 인프라 비용과 높은 차입금리는 향후 둔화 위험입니다.",
-      "why": "AI 투자가 제조업·GDP를 떠받치는 경로와 고금리·전력비가 투자 효율을 훼손하는 경로가 동시에 확인돼 성장률과 기술주 이익 전망에 파급됩니다.",
-      "source": "https://www.reuters.com/business/us-core-capital-goods-rise-september-shipments-accelerate-2026-10-27/"
+      "tag": "반도체 공급망",
+      "title": "Intel, 이스라엘 팹 폭발·PC 부진으로 전망 하향…AI 서버 수요와 대비",
+      "summary": "Intel은 이스라엘 Kiryat Gat 공장 폭발이 4분기 매출 전망을 약 3억달러, 총마진을 약 2%포인트 낮출 것이라고 밝혔습니다. PC 부문 매출은 5% 감소했지만 AI 서버칩 수요는 강했습니다.",
+      "why": "공급차질과 PC 약세가 성숙 반도체·파운드리 회복을 늦추는 반면 AI 서버 수요는 견조해 반도체 내부의 수요 양극화를 보여줍니다.",
+      "source": "https://www.reuters.com/business/intel-signals-slower-growth-pc-market-remains-under-pressure-2026-10-29/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 86,
-      "level": "높음",
-      "tag": "AI 클라우드·자본지출",
-      "title": "Microsoft Azure 호조와 Alphabet 현금소진이 AI 투자 양극화 부각",
-      "summary": "Microsoft Azure 분기 매출은 48% 증가해 예상치를 웃돌았습니다. Alphabet의 Google Cloud도 두 배 이상 성장했지만 대규모 AI 투자로 잉여현금흐름이 90억7천만달러 적자를 기록했습니다.",
-      "why": "AI 수요는 강하지만 투자비 회수 속도는 기업별로 갈립니다. 반도체·데이터센터 주문에는 호재인 반면 플랫폼 기업의 현금흐름과 밸류에이션에는 선별 압력이 커집니다.",
-      "source": "https://www.reuters.com/business/alphabets-google-cloud-unit-beats-quarterly-revenue-estimates-steady-ai-demand-2026-10-28/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 79,
-      "level": "높음",
-      "tag": "메모리·AI 인프라",
-      "title": "SK하이닉스 이익 7배 급증…AI 메모리 수요 기대 재강화",
-      "summary": "SK하이닉스의 분기 이익이 7배 넘게 늘자 Micron은 5.86% 상승했고 필라델피아 반도체지수도 강세를 보였습니다. HBM과 고성능 메모리 수요가 핵심 배경입니다.",
-      "why": "경쟁사의 실적은 AI 서버용 메모리 수급과 가격 환경을 확인하는 산업 신호입니다. 다만 Micron의 급등에는 모멘텀·포지셔닝 영향도 포함될 수 있습니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/nasdaq-futures-rise-sk-hynix-boosts-chips-before-fed-decision-earnings-2026-10-28/"
-    },
-    {
-      "category": "INDUSTRY",
-      "importanceScore": 77,
-      "level": "높음",
+      "importanceScore": 69,
+      "level": "중간",
       "tag": "원유·정유·탱커",
-      "title": "사우디 최대 정유시설 피격 주장…원유 공급 위험 프리미엄 재확대",
-      "summary": "후티가 하루 55만배럴 처리능력의 사우디 정유시설을 미사일로 공격했다고 주장하면서 WTI가 상승했습니다. 사우디 당국의 즉각적인 확인은 없었고 실제 피해·복구기간은 불확실합니다.",
-      "why": "공급 차질 위험은 유가·물가·금리 기대를 밀어 올리고 시추 투자를 지지할 수 있습니다. 정제품 물동량과 탱커 운임 영향은 시설 피해와 대체 공급에 따라 달라집니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/oil-prices-rise-after-attack-saudi-arabian-refinery-reignites-supply-concerns-2026-10-28/"
+      "title": "중동 협상 기대에 WTI 하락…시설 공격과 해상위험은 잔존",
+      "summary": "WTI는 0.76% 내린 102달러에 마감했습니다. 미·이란 협상 재개 기대가 가격을 낮췄지만 사우디 정유시설 공격 주장과 호르무즈 인근 탱커 사고가 하락폭을 제한했습니다.",
+      "why": "외교 진전은 물가와 시추 투자 프리미엄을 낮추지만 실제 공급차질 위험은 정유마진·탱커 운임 변동성을 유지합니다.",
+      "source": "https://www.reuters.com/business/energy/us-oil-prices-fall-investors-gauge-risks-mideast-supply-2026-10-29/"
     }
   ],
   "markets": [
     {
       "label": "S&P 500",
-      "value": "7,743.97 · +0.28% · 10/28 마감"
+      "value": "7,720.39 · -0.30% · 10/29 마감"
     },
     {
       "label": "NASDAQ",
-      "value": "26,549.85 · +0.27% · 10/28 마감"
+      "value": "26,184.72 · -1.38% · 10/29 마감"
     },
     {
       "label": "KOSPI",
@@ -96,15 +96,15 @@
     },
     {
       "label": "닛케이 225",
-      "value": "63,954.19 · +1.08% · 10/28 마감"
+      "value": "64,659.47 · +1.10% · 10/29 마감"
     },
     {
       "label": "원·달러",
-      "value": "1,342.77원 · +1.23% · 10/28 기준"
+      "value": "1,337.55원 · 10/29 기준"
     },
     {
       "label": "WTI",
-      "value": "$101.77 · +2.37% · 10/28 마감"
+      "value": "$102.00 · -0.76% · 10/29 마감"
     }
   ],
   "stocks": [
@@ -172,243 +172,193 @@
     {
       "symbol": "MU",
       "name": "Micron",
-      "change": "$983.23 · +5.86% · 10/28 마감",
-      "stance": "강세 · AI 메모리 수요 재확인",
-      "reason": "SK하이닉스의 분기 이익이 7배 넘게 증가하며 HBM·DRAM 수요 기대가 강화됐고 Micron이 5.86% 상승했습니다. 업종 재평가와 모멘텀 수급이 함께 작용했을 가능성이 있으며, Micron 고유의 신규 확정 재료만으로 단정하기는 어렵습니다.",
-      "analyzedAt": "2026-10-29T06:17:28+09:00",
+      "change": "$934.27 · -4.98% · 10/29 마감",
+      "stance": "약세 · AI 투자 회수 우려와 전일 급등 후 차익실현",
+      "reason": "Micron은 10월 29일 정규장에서 4.98% 하락했습니다. Alphabet의 대규모 AI 투자와 현금흐름 악화가 AI 인프라 전반의 투자 회수 우려를 키웠고, 전일 급등 뒤 차익실현이 겹친 것으로 해석됩니다. 메모리 수요 둔화를 확인할 회사 고유 신규 공시나 확정 악재는 확인되지 않았습니다.",
+      "analyzedAt": "2026-10-30T06:23:01+09:00",
       "valuation": {
-        "pe": "13.23배",
-        "pbr": "8.04배",
+        "pe": "12.57배",
+        "pbr": "7.64배",
         "eps": "$74.33",
-        "basis": "10/28 정규장 종가 ÷ TTM EPS, 10/28 종가 ÷ 최근 분기 BPS $122.35",
-        "asOf": "2026-10-28",
-        "forwardPe": 5.26,
-        "forwardAsOf": "2026-10-28",
+        "basis": "10/29 정규장 종가 $934.27 ÷ TTM EPS $74.33 · 최근 분기 BPS $122.35 기준",
+        "asOf": "2026-10-29",
+        "forwardPe": 5.29,
+        "forwardAsOf": "2026-10-29",
         "forwardSource": "https://stockanalysis.com/stocks/mu/statistics/"
       },
       "drivers": [
         {
-          "type": "메모리 산업",
-          "summary": "SK하이닉스 이익 7배 이상 증가로 AI 서버용 HBM·고성능 메모리 수요 신뢰 강화",
-          "impact": "긍정"
-        },
-        {
-          "type": "업종 수급",
-          "summary": "필라델피아 반도체지수 강세와 함께 메모리주로 모멘텀 매수 유입",
-          "impact": "긍정"
-        },
-        {
-          "type": "매크로",
-          "summary": "연준의 물가 경계와 12월 인상 가능성은 고밸류 기술주 할인율 부담",
+          "type": "AI·메모리 산업",
+          "summary": "클라우드 수요는 견조하지만 빅테크 AI 설비투자의 회수기간 우려가 반도체 밸류에이션을 압박",
           "impact": "부정"
         },
         {
-          "type": "기업 고유",
-          "summary": "10월 28일 주가를 단독 설명할 신규 Micron 공식 공시·확정 수주 미확인",
-          "impact": "중립"
+          "type": "수급·트레이딩",
+          "summary": "전일 강세 뒤 위험회피와 차익실현 가능성; 뚜렷한 기업 고유 재료 미확인",
+          "impact": "부정"
         }
       ],
-      "source": "https://www.reuters.com/world/asia-pacific/nasdaq-futures-rise-sk-hynix-boosts-chips-before-fed-decision-earnings-2026-10-28/"
+      "source": "https://stockanalysis.com/stocks/mu/statistics/"
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "change": "$215.38 · -1.17% · 10/28 마감",
-      "stance": "약세 · 반도체 강세 속 차익실현",
-      "reason": "메모리 업황과 AI 설비투자 뉴스는 업종에 우호적이었지만 NVIDIA는 1.17% 하락했습니다. 연준의 인상 경계, 고점권 포지션 조정과 차익실현 가능성이 업종 호재를 상쇄한 것으로 해석되며 뚜렷한 당일 기업 고유 악재는 확인되지 않았습니다.",
-      "analyzedAt": "2026-10-29T06:17:28+09:00",
+      "change": "$213.66 · -0.80% · 10/29 마감",
+      "stance": "약보합 · AI 수요 기대와 투자 효율성 우려가 상쇄",
+      "reason": "NVIDIA는 0.80% 하락했습니다. 강한 클라우드 성장과 미국 AI 투자는 가속기 수요에 우호적이지만 Alphabet의 현금흐름 악화가 고객사의 자본지출 지속가능성 우려를 부각했습니다. 당일 주가를 단독 설명할 신규 NVIDIA 확정 악재는 확인되지 않았습니다.",
+      "analyzedAt": "2026-10-30T06:23:01+09:00",
       "valuation": {
-        "pe": "27.23배",
-        "pbr": "22.72배",
+        "pe": "27.01배",
+        "pbr": "22.54배",
         "eps": "$7.91",
-        "basis": "10/28 정규장 종가 ÷ TTM EPS, 10/28 종가 ÷ 최근 분기 BPS $9.48",
-        "asOf": "2026-10-28",
-        "forwardPe": 17.78,
-        "forwardAsOf": "2026-10-28",
+        "basis": "10/29 정규장 종가 $213.66 ÷ TTM EPS $7.91 · 최근 분기 BPS $9.48 기준",
+        "asOf": "2026-10-29",
+        "forwardPe": 17.65,
+        "forwardAsOf": "2026-10-29",
         "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/"
       },
       "drivers": [
         {
-          "type": "AI 산업",
-          "summary": "클라우드와 설비투자 증가는 GPU 수요의 중기 기반을 지지",
+          "type": "AI 인프라 수요",
+          "summary": "Google Cloud·Azure 성장과 미국 AI 투자는 GPU 수요의 중기 기반",
           "impact": "긍정"
         },
         {
-          "type": "매크로",
-          "summary": "연준의 높은 물가 평가와 12월 인상 가능성이 성장주 할인율 부담을 유지",
+          "type": "밸류에이션·매크로",
+          "summary": "PCE 3.6%와 AI 투자 회수 우려가 고밸류 성장주 할인율에 부담",
           "impact": "부정"
-        },
-        {
-          "type": "수급·트레이딩",
-          "summary": "반도체 업종 강세에도 역행해 고점권 차익실현·포지션 조정 가능성",
-          "impact": "부정"
-        },
-        {
-          "type": "기업 고유",
-          "summary": "10월 28일 정규장 하락을 직접 설명할 신규 확정 악재 미확인",
-          "impact": "중립"
         }
       ],
-      "source": "https://www.reuters.com/world/asia-pacific/nasdaq-futures-rise-sk-hynix-boosts-chips-before-fed-decision-earnings-2026-10-28/"
+      "source": "https://stockanalysis.com/stocks/nvda/statistics/"
     },
     {
       "symbol": "GOOGL",
-      "name": "Alphabet (Google)",
-      "change": "$324.89 · +1.34% · 10/28 마감",
-      "stance": "정규장 강세·시간외 급락 · 클라우드 성장과 현금흐름 우려 교차",
-      "reason": "정규장은 AI 칩 구매 기대와 대형 플랫폼 선호로 1.34% 상승했지만, 장 마감 뒤 매출 미달과 90억7천만달러의 음의 잉여현금흐름이 공개되며 시간외 약 8.6% 하락했습니다. Google Cloud의 두 배 이상 성장과 AI 투자비 부담이 동시에 확인됐습니다.",
-      "analyzedAt": "2026-10-29T06:17:28+09:00",
+      "name": "Alphabet",
+      "change": "$283.82 · -12.64% · 10/29 마감",
+      "stance": "급락 · 검색 성장 둔화와 AI 현금소진 우려",
+      "reason": "Alphabet은 12.64% 급락했습니다. Google Cloud 매출은 두 배 이상 늘었지만 검색광고 성장과 전체 매출이 기대에 못 미쳤고, AI 설비투자로 잉여현금흐름이 90.7억달러 적자로 악화된 점이 직접 악재였습니다. 시장은 2027년 추가 자본지출 확대가 현금흐름을 더 압박할 수 있다고 평가했습니다.",
+      "analyzedAt": "2026-10-30T06:23:01+09:00",
       "valuation": {
-        "pe": "16.30배",
-        "pbr": "6.38배",
-        "eps": "$19.93",
-        "basis": "10/28 정규장 종가 ÷ TTM EPS, 10/28 종가 ÷ 최근 분기 BPS $50.90",
-        "asOf": "2026-10-28",
-        "forwardPe": 23.95,
-        "forwardAsOf": "2026-10-28",
+        "pe": "14.81배",
+        "pbr": "5.29배",
+        "eps": "$19.16",
+        "basis": "10/29 정규장 종가 $283.82 ÷ TTM EPS $19.16 · 최근 분기 BPS $53.65 기준",
+        "asOf": "2026-10-29",
+        "forwardPe": 20.5,
+        "forwardAsOf": "2026-10-29",
         "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/"
       },
       "drivers": [
         {
-          "type": "정규장 수급",
-          "summary": "AI 칩 구매 기대와 대형 플랫폼 선호로 정규장 1.34% 상승",
-          "impact": "긍정"
-        },
-        {
-          "type": "클라우드",
-          "summary": "Google Cloud 매출이 두 배 이상 증가해 기업 AI 수요를 확인",
-          "impact": "긍정"
-        },
-        {
-          "type": "실적·현금흐름",
-          "summary": "매출 기대 미달과 AI 투자로 잉여현금흐름 -$9.07B, 시간외 약 8.6% 하락",
+          "type": "기업 고유 악재",
+          "summary": "검색광고·매출 기대 미달과 AI 투자 확대에 따른 잉여현금흐름 악화",
           "impact": "부정"
         },
         {
-          "type": "해석 한계",
-          "summary": "시간외 반응은 10월 28일 정규장 등락률에 포함하지 않음",
-          "impact": "중립"
+          "type": "클라우드·AI",
+          "summary": "Google Cloud 매출 2배 이상 성장은 수요를 확인했으나 투자비 회수 우려를 상쇄하지 못함",
+          "impact": "혼합"
         }
       ],
-      "source": "https://www.reuters.com/business/alphabets-google-cloud-unit-beats-quarterly-revenue-estimates-steady-ai-demand-2026-10-28/"
+      "source": "https://stockanalysis.com/stocks/googl/statistics/"
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "change": "$531.01 · -0.06% · 10/28 마감",
-      "stance": "정규장 보합·시간외 강세 · Azure 성장 확인",
-      "reason": "정규장은 연준 발표 전후 대형 기술주 혼조 속 0.06% 하락했습니다. 장 마감 뒤 Azure 매출이 48% 증가해 예상치를 웃돌면서 시간외 약 2.5% 상승했습니다. 클라우드 수요는 강하지만 AI 자본지출과 금리 부담을 함께 봐야 합니다.",
-      "analyzedAt": "2026-10-29T06:17:28+09:00",
+      "change": "$530.14 · -0.16% · 10/29 마감",
+      "stance": "보합권 · Azure 성장과 AI 자금조달 부담이 상쇄",
+      "reason": "Microsoft는 0.16% 하락했습니다. Azure 성장과 186억달러의 잉여현금흐름은 상대적 방어 요인이었지만, 자본지출이 452억달러로 늘고 최대 250억달러 채권 조달 보도가 나오면서 AI 투자비 부담이 상단을 제한했습니다.",
+      "analyzedAt": "2026-10-30T06:23:01+09:00",
       "valuation": {
-        "pe": "29.58배",
-        "pbr": "8.92배",
-        "eps": "$17.95",
-        "basis": "10/28 정규장 종가 ÷ TTM EPS, 10/28 종가 ÷ 최근 분기 BPS $59.56",
-        "asOf": "2026-10-28",
-        "forwardPe": 26.89,
-        "forwardAsOf": "2026-10-28",
+        "pe": "27.68배",
+        "pbr": "8.37배",
+        "eps": "$19.15",
+        "basis": "10/29 정규장 종가 $530.14 ÷ TTM EPS $19.15 · 최근 분기 BPS $63.35 기준",
+        "asOf": "2026-10-29",
+        "forwardPe": 25.99,
+        "forwardAsOf": "2026-10-29",
         "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/"
       },
       "drivers": [
         {
-          "type": "정규장 수급",
-          "summary": "연준 동결 전후 대형 기술주 혼조 속 보합권 마감",
-          "impact": "중립"
-        },
-        {
           "type": "기업 고유 호재",
-          "summary": "Azure 분기 매출 +48%로 예상 상회, 시간외 약 2.5% 상승",
+          "summary": "Azure 고성장과 양의 잉여현금흐름이 AI 수익화 기대를 지지",
           "impact": "긍정"
         },
         {
-          "type": "AI 산업",
-          "summary": "기업 AI·클라우드 수요가 대규모 인프라 지출의 매출 전환을 지지",
-          "impact": "긍정"
-        },
-        {
-          "type": "비용·매크로",
-          "summary": "AI 자본지출 확대와 12월 금리 인상 위험은 현금흐름·밸류에이션 부담",
+          "type": "자본지출·조달",
+          "summary": "AI 자본지출 확대와 최대 250억달러 채권 조달 보도가 투자비 부담을 부각",
           "impact": "부정"
         }
       ],
-      "source": "https://ca.marketscreener.com/news/microsoft-beats-quarterly-cloud-revenue-estimates-ce785cd3d980f624"
+      "source": "https://stockanalysis.com/stocks/msft/statistics/"
     },
     {
       "symbol": "TRMD",
       "name": "TORM",
-      "change": "$41.71 · +3.32% · 10/28 마감",
-      "stance": "강세 · 에너지 공급위험과 주식 수급",
-      "reason": "사우디 정유시설 공격 주장으로 원유·정제품 공급위험이 부각되며 TORM이 3.32% 상승했습니다. 다만 BCTI는 2,872로 68포인트 하락해 현물운임 지표는 주가와 반대 방향이었고, TORM 고유 신규 계약은 확인되지 않았습니다.",
-      "analyzedAt": "2026-10-29T06:17:28+09:00",
+      "change": "$43.05 · +3.20% · 10/29 마감",
+      "stance": "강세 · 운임지수 하락과 엇갈린 개별 수급",
+      "reason": "TORM은 3.20% 상승했습니다. 그러나 최신 BCTI는 2,833으로 39포인트(-1.36%) 하락해 주가 상승을 운임 개선으로 설명할 수 없습니다. 중동 공급위험과 제품유 물류 불확실성이 업종 관심을 지지했을 수 있으나, 뚜렷한 TORM 고유 신규 계약·공시는 확인되지 않아 개별 수급·포지셔닝 가능성을 함께 봐야 합니다.",
+      "analyzedAt": "2026-10-30T06:23:01+09:00",
       "valuation": {
-        "pe": "6.96배",
-        "pbr": "1.67배",
-        "eps": "$5.99",
-        "basis": "10/28 정규장 종가 ÷ TTM EPS, 10/28 종가 ÷ 최근 분기 BPS $24.91",
-        "asOf": "2026-10-28",
-        "forwardPe": 4.75,
-        "forwardAsOf": "2026-10-28",
+        "pe": "7.16배",
+        "pbr": "1.73배",
+        "eps": "$6.01",
+        "basis": "10/29 정규장 종가 $43.05 ÷ TTM EPS $6.01 · 최근 분기 BPS $24.91 기준",
+        "asOf": "2026-10-29",
+        "forwardPe": 4.91,
+        "forwardAsOf": "2026-10-29",
         "forwardSource": "https://stockanalysis.com/stocks/trmd/statistics/"
       },
       "drivers": [
         {
-          "type": "에너지 공급위험",
-          "summary": "사우디 정유시설 공격 주장으로 정제품 공급 차질·우회 수송 기대 부각",
-          "impact": "긍정"
-        },
-        {
-          "type": "기업 고유",
-          "summary": "10월 28일 신규 TORM 개별 계약·공식 확정 재료 미확인",
-          "impact": "중립"
-        },
-        {
-          "type": "수급·트레이딩",
-          "summary": "운임지수 하락과 달리 주가가 상승해 에너지 위험 프리미엄·단기 수급 영향 가능성",
+          "type": "에너지·물류",
+          "summary": "중동 시설 공격과 해상위험은 제품유 물류 프리미엄 요인이지만 협상 기대와 유가 하락은 반대 영향",
           "impact": "혼합"
         },
         {
+          "type": "수급·트레이딩",
+          "summary": "운임지수 하락에도 주가 상승; 뚜렷한 기업 고유 재료 미확인",
+          "impact": "긍정"
+        },
+        {
           "type": "클린탱커 운임 지수",
-          "summary": "BCTI 2,872, 전 거래일 대비 -68p(-2.31%), 10월 28일 기준. TORM 개별 계약이 아닌 글로벌 클린탱커 종합 현물지수",
+          "summary": "BCTI 2,833, 전 거래일 대비 -39p(-1.36%), 2026-10-29 기준. TORM 개별 계약이 아닌 글로벌 클린탱커 종합 현물지수",
           "impact": "부정"
         }
       ],
-      "source": "https://en.stockq.org/index/BCTI.php"
+      "source": "https://stockanalysis.com/stocks/trmd/statistics/"
     },
     {
       "symbol": "RIG",
       "name": "Transocean",
-      "change": "$6.71 · +3.87% · 10/28 마감",
-      "stance": "강세 · 유가 상승과 신규 백로그 반영",
-      "reason": "사우디 정유시설 공격 주장으로 WTI가 상승하며 심해시추 투자 기대가 개선됐고 RIG는 3.87% 올랐습니다. 직전 분석 이후 미국 걸프 드릴십 2척과 노르웨이 반잠수식 1척의 신규 계약이 확인돼 중기 백로그도 보강됐습니다.",
-      "analyzedAt": "2026-10-29T06:17:28+09:00",
+      "change": "$6.69 · -0.30% · 10/29 마감",
+      "stance": "약보합 · 유가 하락과 중동 공급위험이 상쇄",
+      "reason": "Transocean은 0.30% 하락했습니다. 미·이란 협상 기대에 WTI가 0.76% 하락해 심해시추 투자 기대에 부담이었지만, 중동 시설 공격과 해상위험이 하락폭을 제한했을 수 있습니다. 직전 분석 이후 공식 발표와 Fleet Status에서 신규 계약·연장·옵션 행사는 확인되지 않았습니다.",
+      "analyzedAt": "2026-10-30T06:23:01+09:00",
       "valuation": {
-        "pe": "적자(TTM EPS 음수)",
-        "pbr": "0.90배",
+        "pe": "적자",
+        "pbr": "0.89배",
         "eps": "-$1.55",
-        "basis": "10/28 정규장 종가·TTM EPS 음수, 10/28 종가 ÷ 최근 분기 BPS $7.49",
-        "asOf": "2026-10-28",
-        "forwardPe": 35.2,
-        "forwardAsOf": "2026-10-28",
+        "basis": "10/29 정규장 종가 $6.69 · TTM EPS -$1.55로 PER 산출 불가 · 최근 분기 BPS $7.49 기준",
+        "asOf": "2026-10-29",
+        "forwardPe": 35.1,
+        "forwardAsOf": "2026-10-29",
         "forwardSource": "https://stockanalysis.com/stocks/rig/statistics/"
       },
       "drivers": [
         {
-          "type": "유가·매크로",
-          "summary": "WTI 상승과 공급위험 재확대로 심해시추 경제성·발주 기대 개선",
-          "impact": "긍정"
-        },
-        {
-          "type": "수급·트레이딩",
-          "summary": "에너지주 위험 프리미엄 재평가가 당일 상승폭을 키웠을 가능성",
-          "impact": "긍정"
+          "type": "원유·시추",
+          "summary": "WTI 하락은 장기 시추투자 기대에 부담이나 중동 공급위험은 반대 방향",
+          "impact": "혼합"
         },
         {
           "type": "신규 계약",
-          "summary": "직전 분석 이후 Deepwater Proteus(초심해 드릴십·미국 걸프·약 700일·백로그 $325M, 역산 약 $464천/일), Deepwater Conqueror(초심해 드릴십·미국 걸프·약 450일·$225M, 역산 약 $500천/일·동원비 제외), Transocean Norge(가혹환경 반잠수식·노르웨이·약 120일·$62M, 역산 약 $517천/일·추가 서비스 제외) 확인. 모두 백로그/기간 단순 역산 추정치",
-          "impact": "긍정"
+          "summary": "직전 분석 이후 신규 계약·연장·옵션 행사 미확인(Transocean 공식 발표·Fleet Status 확인)",
+          "impact": "중립"
         }
       ],
-      "source": "https://deepwater.com/news/detail?ID=30626"
+      "source": "https://stockanalysis.com/stocks/rig/statistics/"
     }
   ]
 }
