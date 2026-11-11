@@ -1,84 +1,84 @@
 {
   "date": "2026-11-11",
-  "updatedAt": "2026-11-11T16:02:57+09:00",
-  "newsUpdatedAt": "2026-11-10T06:18:33+09:00",
+  "updatedAt": "2026-11-12T06:20:44+09:00",
+  "newsUpdatedAt": "2026-11-12T06:20:44+09:00",
   "analysisStatus": {
-    "usUpdatedAt": "2026-11-10T06:18:33+09:00",
+    "usUpdatedAt": "2026-11-12T06:20:44+09:00",
     "krUpdatedAt": "2026-11-11T16:02:57+09:00"
   },
-  "headline": "미·중 관세 유예와 이란 긴장 완화가 위험선호를 되살렸지만, NVIDIA 경영진 불확실성과 연준의 긴축 경계는 AI 랠리의 상단을 제한했습니다.",
+  "headline": "연준의 추가 긴축 경계가 할인율 부담을 높였지만, AI 인프라 수요 확인과 반도체 낙폭 매수가 미국 기술주를 되살렸습니다.",
   "flowAnalysis": {
-    "title": "무역·에너지 긴장 완화 → 물가 부담 완충, AI 칩 경쟁은 분화",
-    "overview": "중국의 대미 관세 유예 연장과 이란 재공격 가능성 완화가 교역·에너지 비용의 꼬리위험을 낮췄습니다. 유가 하락은 물가와 기업 원가 부담을 줄여 미국 증시 반등을 도왔지만, 강한 고용 뒤 12월 금리인상 경계는 성장주 할인율 부담으로 남았습니다.",
+    "title": "긴축 경계와 AI 수요 확인의 충돌, 에너지·탱커는 지정학과 선복이 분화",
+    "overview": "미국 물가 압력이 이어지며 연준 인사들은 추가 금리인상을 예고했습니다. 이는 성장주의 할인율을 높이지만, CoreWeave가 강한 수요와 고객 약정을 제시하자 AI 설비투자 회수 우려가 완화돼 반도체와 데이터센터주가 반등했습니다.",
     "links": [
       {
-        "cause": "중국, 대미 24% 추가관세 유예 연장",
-        "effect": "교역비용 급등 회피·공급망 불확실성 완화",
-        "explanation": "10% 추가관세는 유지되지만 24% 관세와 미국 연계 선박 특별항만료의 유예가 연장돼 즉각적인 비용 충격은 피했습니다. 임시 조치라 장기 투자 불확실성까지 해소한 것은 아닙니다."
+        "cause": "연준의 추가 긴축 신호",
+        "effect": "금리 기대 상승 → 성장주 밸류에이션 상단 제한",
+        "explanation": "Paulson은 점진적 추가 인상이 적절하다고 밝혔고 시장은 12월 인상을 강하게 반영했습니다. 금리가 오르면 장기 현금흐름의 현재가치와 차입형 AI 인프라의 조달여건이 악화됩니다. 다만 국채 현물시장은 재향군인의 날로 휴장해 당일 가격발견은 제한됐습니다."
       },
       {
-        "cause": "미국의 이란 재공격 가능성 완화",
-        "effect": "유가·운송 위험 프리미엄 하락 → 물가 우려 완충",
-        "explanation": "WTI 급락은 연료·물류비와 기대인플레이션에 긍정적이지만, 시추·탱커에는 공급위험 프리미엄 축소로 작용합니다. 호르무즈 위험이 재확대되면 효과는 빠르게 뒤집힐 수 있습니다."
+        "cause": "CoreWeave의 수요·고객약정 확인",
+        "effect": "AI 회수 우려 완화 → 메모리·GPU·데이터센터주 반등",
+        "explanation": "조정수익 흑자 목표와 고객 수요가 차입 부담 우려를 일부 누그러뜨렸습니다. MU와 NVDA에는 긍정적이지만 높은 금리와 대규모 CAPEX가 사라진 것은 아니어서 이번 반등만으로 지속 가능한 수익성을 확정할 수 없습니다."
       },
       {
-        "cause": "Google 신규 TPU 공개와 NVIDIA 경영진 조사",
-        "effect": "AI 수요 지속 속 칩 공급자 간 주가 분화",
-        "explanation": "Google의 자체칩 확대는 AI 연산수요를 확인하는 동시에 NVIDIA의 대체재 경쟁을 높입니다. CEO 조사까지 겹치며 NVIDIA는 업종 반등에서 이탈해 AI 수요와 개별 지배구조 위험이 분리됐습니다."
+        "cause": "호르무즈 위험 지속·VLCC 대규모 발주",
+        "effect": "단기 운임 프리미엄과 장기 선복 공급의 반대 작용",
+        "explanation": "공격 위험과 보험·기뢰 제거 비용은 단기 유가·탱커 운임을 지지합니다. 반면 2029~2030년 인도될 16척 VLCC는 장기 공급 증가 신호입니다. VLCC는 원유선이므로 이를 TORM의 클린탱커 운임과 동일시하지 않았습니다."
       }
     ],
-    "watch": "미국 10월 CPI, 12월 금리인상 확률, 미·이란 협상, Google TPU 채택과 NVIDIA 조사 결과를 확인해야 합니다."
+    "watch": "12월 FOMC의 인상 폭, CoreWeave 약정의 현금화, NVIDIA 11월 17일 실적, 호르무즈 공격과 BCTI 방향을 확인해야 합니다."
   },
   "stories": [
     {
       "category": "MACRO",
-      "importanceScore": 80,
-      "level": "높음",
-      "tag": "미·중 무역",
-      "title": "중국, 대미 24% 추가관세 유예를 두 달 연장",
-      "summary": "중국 국무원 관세세칙위원회는 미국산 수입품에 대한 24% 추가관세 적용 중단을 두 달 연장하고 10% 추가관세는 유지했습니다. 미국 연계 선박 특별항만료 유예도 2027년 1월 10일까지 연장됐습니다.",
-      "why": "만료 직전의 관세·항만료 급등을 피하면서 미국 농산물과 양국 제조업 공급망의 비용 불확실성을 낮췄습니다. 다만 임시 휴전이므로 장기 교역·설비투자 판단의 불확실성은 남습니다.",
-      "source": "https://english.www.gov.cn/news/202611/09/content_WS6af18d6bc6d00ca5f9a0e308.html"
-    },
-    {
-      "category": "MACRO",
-      "importanceScore": 78,
+      "importanceScore": 82,
       "level": "높음",
       "tag": "연준·금리",
-      "title": "유가 하락에도 12월 연준 금리인상 경계 지속",
-      "summary": "Reuters는 유가 급락이 단기 물가 우려를 완화했지만, 강한 10월 고용 이후 시장이 12월 금리인상 가능성을 80% 이상 반영했다고 전했습니다. Richmond 연은의 Thomas Barkin은 정책 대응에 신중함이 필요하다고 말했습니다.",
-      "why": "에너지발 물가 완화는 주식 할인율에 긍정적이지만, 고용 강세와 금리인상 경계는 장기금리와 고멀티플 성장주의 밸류에이션 상단을 제한합니다. 11월 10일 CPI가 다음 핵심 확인 지표입니다.",
-      "source": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/"
+      "title": "연준 Paulson, 점진적 추가 금리인상 필요성 강조",
+      "summary": "Philadelphia 연은의 Anna Paulson은 물가가 목표를 웃도는 가운데 통화정책을 다소 제약적으로 유지하고 점진적인 추가 인상이 적절하다고 밝혔습니다. 물가 기대나 임금 압력이 커지면 더 빠른 대응도 가능하다고 말했습니다.",
+      "why": "12월 FOMC의 인상 가능성과 성장주 할인율, AI 인프라 조달비용에 직접 연결됩니다. 점진론은 50bp 인상 위험을 완충하지만 추가 긴축 자체는 부정하지 않았습니다.",
+      "source": "https://www.reuters.com/business/feds-paulson-calls-gradual-rate-hikes-amid-ongoing-high-inflation-2026-11-10/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 86,
+      "importanceScore": 81,
+      "level": "높음",
+      "tag": "AI 인프라",
+      "title": "CoreWeave 수요·고객약정이 AI 설비투자 우려 완화",
+      "summary": "CoreWeave가 강한 수요와 고객 약정을 근거로 2028년 상반기 조정기준 흑자 전환을 제시하자 AI 인프라와 반도체주가 반등했습니다. S&P 500과 NASDAQ도 각각 1% 넘게 상승했습니다.",
+      "why": "차입 중심 데이터센터 투자의 회수 가능성은 GPU·HBM·클라우드 수요 전망을 좌우합니다. 다만 조정기준 목표이고 흑자 시점이 멀어 자금조달 위험이 해소됐다고 단정할 수 없습니다.",
+      "source": "https://www.reuters.com/business/sp-500-nasdaq-futures-rise-after-coreweave-soothes-ai-spending-fears-2026-11-11/"
+    },
+    {
+      "category": "INDUSTRY",
+      "importanceScore": 77,
       "level": "높음",
       "tag": "원유·탱커",
-      "title": "미국의 이란 재공격 가능성 완화에 원유 위험 프리미엄 급락",
-      "summary": "미국 대통령이 이란에 대한 즉각적인 추가 공격 가능성을 낮추고 협상 기대가 커지면서 WTI가 11월 9일 85.34달러로 4.64% 하락했습니다.",
-      "why": "유가 하락은 물가와 운송·정유 원가를 낮추지만, 중동 공급차질과 우회항로에 붙었던 탱커·해양시추 위험 프리미엄도 축소합니다. 협상 결렬이나 호르무즈 공격 재발 시 반대 방향 변동성이 큽니다.",
-      "source": "https://www.reuters.com/world/asia-pacific/global-markets-global-markets-2026-11-09/"
+      "title": "호르무즈 운항위험 지속에 원유 위험 프리미엄 반등",
+      "summary": "이란이 농축 핵물질 반출을 거부하고 호르무즈 인근 선박 공격 우려가 이어지며 WTI는 86.53달러로 0.57% 상승했습니다. 10월 공격 선박은 37척으로 전쟁 이후 월간 최대였습니다.",
+      "why": "공급차질·보험료·우회운항 위험은 유가와 탱커 운임을 지지하지만, 협상 진전과 중동 생산 회복은 반대 압력입니다. 즉각적인 정상화에는 기뢰 제거와 선주 복귀가 필요합니다.",
+      "source": "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/"
     },
     {
       "category": "INDUSTRY",
-      "importanceScore": 80,
-      "level": "높음",
-      "tag": "AI 반도체",
-      "title": "Google, 규제산업·대용량 AI용 신규 TPU 두 종 공개",
-      "summary": "Google은 보안 연산용 8tx와 대용량 AI 처리를 위한 듀얼칩 8i Max를 공개했습니다. 8tx는 AMD 프로세서와 하드웨어 암호화를 결합하며 이전 제품 대비 최대 두 배 성능을 제시했습니다.",
-      "why": "AI 연산 수요와 클라우드 자체칩 투자가 지속되고 있음을 보여주는 동시에 NVIDIA GPU의 대체재 경쟁을 강화합니다. Alphabet의 클라우드 차별화에는 긍정적이지만 AI 칩 공급자 간 점유율 분화 가능성이 커집니다.",
-      "source": "https://www.reuters.com/business/google-to-introduce-two-variants-its-in-house-chips-bloomberg-news-reports-2026-11-09/"
+      "importanceScore": 64,
+      "level": "중간",
+      "tag": "탱커 선복",
+      "title": "COSCO, 16척 VLCC 발주로 장기 원유선 공급 확대",
+      "summary": "COSCO SHIPPING Development는 30만7천DWT급 VLCC 16척을 약 20억달러에 발주했습니다. 메탄올·LNG 대응 설계로 2029년 말부터 2030년 사이 인도되며 20년 장기 용선될 예정입니다.",
+      "why": "대규모 친환경 대응 선박 투자는 장기 원유선 선복과 조선 수요를 늘립니다. 다만 VLCC는 원유선이며 TORM이 주력인 클린 제품선과는 시장이 달라 BCTI의 직접 하락 요인으로 보지 않았습니다.",
+      "source": "https://www.marketscreener.com/news/china-s-cosco-shipping-development-signs-2-billion-tanker-order-secures-long-term-leases-ce785edbdf89f522/"
     }
   ],
   "markets": [
     {
       "label": "S&P 500",
-      "value": "7,549.81 · +2.34% · 11/9 마감"
+      "value": "7,617.84 · +1.29% · 11/11 마감"
     },
     {
       "label": "NASDAQ",
-      "value": "25,220.45 · +2.61% · 11/9 마감"
+      "value": "25,464.57 · +1.59% · 11/11 마감"
     },
     {
       "label": "KOSPI",
@@ -86,15 +86,15 @@
     },
     {
       "label": "닛케이 225",
-      "value": "58,775.50 · +2.33% · 11/9 마감"
+      "value": "61,248.59 · +1.31% · 11/11 마감"
     },
     {
       "label": "원·달러",
-      "value": "1,347.10원 · -0.70% · 11/9 서울 마감"
+      "value": "1,333.60원 · -0.29% · 11/11 서울 마감"
     },
     {
       "label": "WTI",
-      "value": "$85.34 · -4.64% · 11/9 마감"
+      "value": "$86.53 · +0.57% · 11/11 마감"
     }
   ],
   "stocks": [
@@ -157,248 +157,248 @@
     {
       "symbol": "MU",
       "name": "Micron",
-      "change": "$733.72 · +6.28% · 11/9 마감",
-      "stance": "강세 · 반도체 투매 과도 인식과 업종 반등",
-      "reason": "Micron은 6.28% 상승해 반도체 업종의 낙폭 회복을 주도했습니다. 필라델피아 반도체지수가 약 7% 반등하고 지난주 AI 규제 우려가 과도했다는 평가가 확산된 점이 메모리주에 긍정적이었습니다. Google의 신규 TPU 공개도 AI 연산·메모리 수요가 계속 확대되고 있음을 시사합니다. 다만 강한 고용 이후 12월 금리인상 경계와 지난주 급락 뒤 숏커버 가능성이 함께 있어 추세 전환으로 단정하지 않았습니다. 당일 실적 전망을 바꿀 뚜렷한 Micron 고유 재료는 확인되지 않았습니다.",
-      "analyzedAt": "2026-11-10T06:18:33+09:00",
+      "change": "$811.97 · +11.98% · 11/11 마감",
+      "stance": "급등 · AI 인프라 수요 확인과 메모리 낙폭 매수",
+      "reason": "Micron은 11월 11일 정규장에서 11.98% 급등했습니다. CoreWeave가 강한 수요와 고객 약정을 제시해 차입형 AI 인프라의 수익성 우려를 일부 누그러뜨리자 반도체 전반이 반등했고, 메모리 공급 타이트 기대가 큰 Micron에 매수세가 집중됐습니다. 다만 당일 실적 전망을 바꿀 신규 Micron 고유 공시는 확인되지 않았으며, 직전 하락 뒤 숏커버와 고베타 낙폭 매수가 상승폭을 키웠을 가능성을 배제하지 않았습니다.",
+      "analyzedAt": "2026-11-12T06:20:44+09:00",
       "valuation": {
-        "pe": "9.87배",
-        "pbr": "6.00배",
+        "pe": "10.92배",
+        "pbr": "6.64배",
         "eps": "$74.33",
-        "basis": "11/9 정규장 종가 $733.72 ÷ TTM EPS $74.33 · 최근 분기 BPS $122.35 기준",
-        "asOf": "2026-11-09",
-        "forwardPe": 4.15,
-        "forwardAsOf": "2026-11-09",
+        "basis": "11/11 정규장 종가 $811.97 ÷ TTM EPS $74.33 · 최근 분기 BPS $122.35 기준",
+        "asOf": "2026-11-11",
+        "forwardPe": 4.6,
+        "forwardAsOf": "2026-11-11",
         "forwardSource": "https://stockanalysis.com/stocks/mu/statistics/"
       },
       "drivers": [
         {
           "type": "AI·메모리",
-          "summary": "Google의 신규 TPU와 반도체 업종 반등이 AI 연산·HBM 수요의 지속 기대를 지지",
+          "summary": "CoreWeave의 수요·고객약정 확인이 AI 서버와 HBM·DRAM 수요 지속 기대를 회복",
           "impact": "긍정"
         },
         {
           "type": "금리·매크로",
-          "summary": "유가 급락은 물가 우려를 낮췄지만 강한 고용 뒤 12월 금리인상 경계는 할인율 부담",
-          "impact": "혼합"
+          "summary": "연준 추가 인상 경계는 높은 금리 민감도와 고객 CAPEX 조달비용에 부담",
+          "impact": "부정"
         },
         {
           "type": "기업 고유",
-          "summary": "당일 실적 전망을 바꿀 뚜렷한 기업 고유 재료 미확인",
+          "summary": "당일 실적 전망을 바꿀 신규 Micron 고유 공시·확정 재료 미확인",
           "impact": "중립"
         },
         {
           "type": "수급·트레이딩",
-          "summary": "지난주 급락 뒤 업종 전반 숏커버와 낙폭 과대 매수 성격을 배제하기 어려움",
+          "summary": "직전 조정 뒤 반도체 업종의 숏커버와 고베타 낙폭 매수가 상승폭을 확대했을 가능성",
           "impact": "긍정"
         }
       ],
-      "source": "https://finance.yahoo.com/quote/MU/"
+      "source": "https://stockanalysis.com/stocks/mu/history/"
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "change": "$178.61 · -4.30% · 11/9 마감",
-      "stance": "하락 · CEO 조사·승계 불확실성으로 업종 반등에서 이탈",
-      "reason": "NVIDIA는 4.30% 하락해 약 7% 오른 반도체 업종과 역행했습니다. Jensen Huang CEO가 외국 정보활동의 표적이 됐는지를 회사가 조사한다는 보도가 경영진 지속성과 정부 관계에 대한 불확실성을 키웠습니다. 동시에 Google의 신규 TPU는 AI 수요 자체에는 긍정적이지만 NVIDIA의 대체재 경쟁을 높이는 요인입니다. 당일 하락은 AI 최종수요 붕괴보다 기업 고유 지배구조·승계 위험과 경쟁 우려에 더 민감하게 반응한 것으로 해석했습니다.",
-      "analyzedAt": "2026-11-10T06:18:33+09:00",
+      "change": "$173.85 · +2.94% · 11/11 마감",
+      "stance": "반등 · AI 수요 우려 완화, 경영진 불확실성은 잔존",
+      "reason": "NVIDIA는 2.94% 상승했습니다. CoreWeave의 강한 수요와 고객 약정이 GPU 데이터센터 투자 지속성을 지지했고, 이틀간 약 4,300억달러의 시가총액이 감소한 뒤 낙폭 매수가 유입됐습니다. 반면 CEO 관련 내부 조사와 AI 규제·자체칩 경쟁 우려는 남아 있어 기업 고유 위험이 해소됐다고 보기 어렵습니다. 상승은 최종수요 확인과 단기 포지션 복원의 복합 결과로 해석했습니다.",
+      "analyzedAt": "2026-11-12T06:20:44+09:00",
       "valuation": {
-        "pe": "22.58배",
-        "pbr": "18.84배",
+        "pe": "21.98배",
+        "pbr": "18.34배",
         "eps": "$7.91",
-        "basis": "11/9 정규장 종가 $178.61 ÷ TTM EPS $7.91 · 최근 분기 BPS $9.48 기준",
-        "asOf": "2026-11-09",
-        "forwardPe": 14.61,
-        "forwardAsOf": "2026-11-09",
+        "basis": "11/11 정규장 종가 $173.85 ÷ TTM EPS $7.91 · 최근 분기 BPS $9.48 기준",
+        "asOf": "2026-11-11",
+        "forwardPe": 14.43,
+        "forwardAsOf": "2026-11-11",
         "forwardSource": "https://stockanalysis.com/stocks/nvda/statistics/"
       },
       "drivers": [
         {
+          "type": "AI 인프라",
+          "summary": "CoreWeave의 수요·고객약정이 GPU 임대와 데이터센터 투자 지속 기대를 지지",
+          "impact": "긍정"
+        },
+        {
           "type": "기업 고유",
-          "summary": "Jensen Huang CEO 관련 외국 정보활동 의혹에 대한 내부 조사 보도로 경영진 지속성·승계 불확실성 확대",
+          "summary": "CEO 관련 내부 조사와 승계·정부관계 불확실성은 해소되지 않음",
           "impact": "부정"
         },
         {
-          "type": "AI 경쟁",
-          "summary": "Google 8tx·8i Max TPU 공개는 AI 수요 지속 신호인 동시에 NVIDIA GPU 대체재 경쟁 강화",
+          "type": "경쟁·규제",
+          "summary": "클라우드 자체칩 확대와 미국 AI 규제 가능성은 중기 점유율·멀티플 변수",
           "impact": "혼합"
         },
         {
-          "type": "업종 상대강도",
-          "summary": "필라델피아 반도체지수가 약 7% 반등한 가운데 NVIDIA만 하락해 기업 고유 요인의 영향이 두드러짐",
-          "impact": "부정"
-        },
-        {
           "type": "수급·트레이딩",
-          "summary": "CEO 뉴스와 지난주 AI 규제 우려가 겹치며 고변동성 매도와 포지션 축소가 지속됐을 가능성",
-          "impact": "부정"
+          "summary": "이틀 연속 급락 뒤 낙폭 매수와 숏커버 성격을 배제하기 어려움",
+          "impact": "긍정"
         }
       ],
-      "source": "https://finance.yahoo.com/quote/NVDA/"
+      "source": "https://stockanalysis.com/stocks/nvda/history/"
     },
     {
       "symbol": "GOOGL",
       "name": "Alphabet",
-      "change": "$288.14 · +1.18% · 11/9 마감",
-      "stance": "상승 · 신규 TPU 공개와 기술주 위험선호 회복",
-      "reason": "Alphabet은 1.18% 상승했습니다. Google이 규제산업용 8tx와 대용량 AI용 8i Max TPU를 공개하면서 Cloud의 자체칩 차별화와 외부 고객 확대 기대가 부각됐습니다. 유가 하락과 미국 기술주 반등도 우호적이었습니다. 다만 장중 상승폭 일부를 반납했고, 자체칩 확대에 필요한 설비투자와 NVIDIA·AMD 등과의 생태계 경쟁은 비용·채택 속도 변수로 남습니다.",
-      "analyzedAt": "2026-11-10T06:18:33+09:00",
+      "change": "$293.57 · +2.15% · 11/11 마감",
+      "stance": "상승 · AI 위험선호 회복과 자체칩 선택권",
+      "reason": "Alphabet은 2.15% 상승했습니다. CoreWeave가 AI 인프라 수요의 지속성을 확인하면서 클라우드·AI 플랫폼 전반의 위험선호가 회복됐고, Google의 자체 TPU 역량은 외부 GPU 의존도를 낮출 선택권으로 평가됐습니다. 당일 실적 전망을 바꿀 신규 Alphabet 고유 공시는 확인되지 않았습니다. 금리인상 경계와 대규모 설비투자 회수기간은 여전히 밸류에이션 부담입니다.",
+      "analyzedAt": "2026-11-12T06:20:44+09:00",
       "valuation": {
-        "pe": "15.05배",
-        "pbr": "5.37배",
+        "pe": "15.33배",
+        "pbr": "5.47배",
         "eps": "$19.15",
-        "basis": "11/9 정규장 종가 $288.14 ÷ TTM EPS $19.15 · 최근 분기 BPS $53.65 기준",
-        "asOf": "2026-11-09",
-        "forwardPe": 20.99,
-        "forwardAsOf": "2026-11-09",
+        "basis": "11/11 정규장 종가 $293.57 ÷ TTM EPS $19.15 · 최근 분기 BPS $53.65 기준",
+        "asOf": "2026-11-11",
+        "forwardPe": 21.32,
+        "forwardAsOf": "2026-11-11",
         "forwardSource": "https://stockanalysis.com/stocks/googl/statistics/"
       },
       "drivers": [
         {
-          "type": "기업 고유",
-          "summary": "보안 연산용 8tx와 대용량 AI용 8i Max TPU 공개로 Google Cloud의 자체칩 제품군 확대",
+          "type": "AI·클라우드",
+          "summary": "AI 인프라 수요 우려 완화가 Google Cloud와 모델 서비스의 성장 기대를 지지",
           "impact": "긍정"
         },
         {
-          "type": "AI 인프라",
-          "summary": "AI 연산 수요가 지속되며 자체 가속기와 클라우드 서비스의 결합 가치가 부각",
-          "impact": "긍정"
+          "type": "자체칩",
+          "summary": "TPU 제품군은 연산비용·공급 선택권을 넓히지만 외부 채택 속도는 확인 필요",
+          "impact": "긍정·불확실"
         },
         {
-          "type": "경쟁·설비투자",
-          "summary": "외부 고객 채택 속도와 대규모 인프라 투자 회수기간은 실적의 핵심 불확실성",
-          "impact": "혼합"
+          "type": "금리·설비투자",
+          "summary": "추가 금리인상은 대규모 데이터센터 투자 회수와 성장주 할인율에 부담",
+          "impact": "부정"
         },
         {
           "type": "수급·트레이딩",
-          "summary": "광범위한 기술주 반등이 지지했지만 장중 고점 대비 상승폭을 일부 반납",
-          "impact": "혼합"
+          "summary": "기술주 전반의 위험선호 회복이 동반 상승에 기여",
+          "impact": "긍정"
         }
       ],
-      "source": "https://finance.yahoo.com/quote/GOOGL/"
+      "source": "https://stockanalysis.com/stocks/googl/history/"
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "change": "$545.24 · +2.79% · 11/9 마감",
-      "stance": "강세 · 기술주 위험선호 회복과 유가 하락",
-      "reason": "Microsoft는 2.79% 상승했습니다. 이란 긴장 완화에 따른 유가 하락이 물가·할인율 우려를 낮추고, 지난주 AI 규제 우려가 과도했다는 평가가 대형 기술주 전반의 낙폭 회복을 도왔습니다. 당일 실적 전망을 바꿀 확정 기업 고유 재료는 확인되지 않았으며, 강한 고용과 12월 금리인상 경계는 Azure AI 투자비와 성장주 멀티플에 반대 압력으로 남습니다.",
-      "analyzedAt": "2026-11-10T06:18:33+09:00",
+      "change": "$520.72 · -2.32% · 11/11 마감",
+      "stance": "하락 · 업무용 AI 경쟁과 금리·데이터센터 규제 부담",
+      "reason": "Microsoft는 NASDAQ 상승에도 2.32% 하락했습니다. 시장은 업무용 AI 도구 경쟁 심화와 중국산 데이터센터 부품 제한 가능성, 연준의 추가 금리인상 경계를 함께 반영한 것으로 보입니다. CoreWeave의 수요 확인은 Azure·AI 최종수요에는 긍정적이지만, Microsoft가 인프라 비용과 외부 파트너 위험을 부담한다는 점도 부각됐습니다. 여러 재료가 겹쳤으며 하나의 직접 원인으로 단정하지 않았습니다.",
+      "analyzedAt": "2026-11-12T06:20:44+09:00",
       "valuation": {
-        "pe": "28.47배",
-        "pbr": "8.61배",
+        "pe": "27.19배",
+        "pbr": "8.22배",
         "eps": "$19.15",
-        "basis": "11/9 정규장 종가 $545.24 ÷ TTM EPS $19.15 · 최근 분기 BPS $63.35 기준",
-        "asOf": "2026-11-09",
-        "forwardPe": 26.37,
-        "forwardAsOf": "2026-11-09",
+        "basis": "11/11 정규장 종가 $520.72 ÷ TTM EPS $19.15 · 최근 분기 BPS $63.35 기준",
+        "asOf": "2026-11-11",
+        "forwardPe": 25.05,
+        "forwardAsOf": "2026-11-11",
         "forwardSource": "https://stockanalysis.com/stocks/msft/statistics/"
       },
       "drivers": [
         {
-          "type": "AI·클라우드",
-          "summary": "AI 데이터센터 규제가 즉각적으로 수요를 훼손할 가능성이 과도하게 반영됐다는 인식",
+          "type": "AI 경쟁",
+          "summary": "업무용 AI 도구 경쟁 심화가 Office·Copilot의 가격결정력과 점유율 우려를 자극",
+          "impact": "부정"
+        },
+        {
+          "type": "공급망·규제",
+          "summary": "중국산 데이터센터 부품 제한 가능성이 조달비용과 구축 일정의 불확실성을 높임",
+          "impact": "부정"
+        },
+        {
+          "type": "AI 최종수요",
+          "summary": "CoreWeave의 수요 확인은 Azure와 AI 서비스 수요 자체에는 긍정적",
           "impact": "긍정"
         },
         {
-          "type": "금리·매크로",
-          "summary": "유가 급락은 물가 우려를 완화했지만 12월 금리인상 경계는 장기 성장주 할인율 부담",
-          "impact": "혼합"
-        },
-        {
-          "type": "기업 고유",
-          "summary": "당일 실적 전망을 바꿀 뚜렷한 기업 고유 재료 미확인",
-          "impact": "중립"
-        },
-        {
-          "type": "수급·트레이딩",
-          "summary": "지난주 급락 뒤 대형 기술주 전반의 위험선호 회복과 숏커버 가능성",
-          "impact": "긍정"
+          "type": "금리·수급",
+          "summary": "추가 금리인상 경계와 지수 상승 속 상대약세가 포지션 축소를 키웠을 가능성",
+          "impact": "부정"
         }
       ],
-      "source": "https://finance.yahoo.com/quote/MSFT/"
+      "source": "https://stockanalysis.com/stocks/msft/history/"
     },
     {
       "symbol": "TRMD",
       "name": "TORM",
-      "change": "$34.56 · +0.48% · 11/9 마감",
-      "stance": "보합권 상승 · 위험선호 회복에도 BCTI 하락 부담",
-      "reason": "TORM은 0.48% 상승했습니다. 미국 증시의 광범위한 위험선호 회복은 주가를 지지했지만, 이란 긴장 완화와 WTI 급락은 중동 우회운항·보험료 프리미엄을 낮췄습니다. 최신 BCTI는 2,572로 전 거래일보다 64포인트(-2.43%) 하락해 클린탱커 현물운임 신호도 약화됐습니다. 따라서 소폭 상승을 TORM 개별 계약 호재로 단정하기보다 시장 반등과 운임 약세가 상쇄된 결과로 해석했습니다.",
-      "analyzedAt": "2026-11-10T06:18:33+09:00",
+      "change": "$35.36 · +3.08% · 11/11 마감",
+      "stance": "상승 · BCTI 반등과 호르무즈 운항위험 프리미엄",
+      "reason": "TORM은 3.08% 상승했습니다. 최신 BCTI는 2,581로 전 거래일보다 6포인트(+0.23%) 올라 클린탱커 현물운임이 소폭 개선됐고, 호르무즈 공격·보험 위험도 탱커 프리미엄을 지지했습니다. 다만 COSCO의 16척 발주는 VLCC 원유선이며 2029~2030년 인도 예정이므로 TORM의 단기 클린탱커 운임 호재·악재로 직접 연결하지 않았습니다. 신규 TORM 개별 계약 재료는 확인되지 않았습니다.",
+      "analyzedAt": "2026-11-12T06:20:44+09:00",
       "valuation": {
-        "pe": "4.83배",
-        "pbr": "1.39배",
-        "eps": "$7.15",
-        "basis": "11/9 정규장 종가 $34.56 ÷ TTM EPS $7.15 · 최근 분기 BPS $24.91 기준",
-        "asOf": "2026-11-09",
-        "forwardPe": 3.15,
-        "forwardAsOf": "2026-11-09",
+        "pe": "4.99배",
+        "pbr": "1.44배",
+        "eps": "$7.09",
+        "basis": "11/11 정규장 종가 $35.36 ÷ TTM EPS $7.09 · 최근 분기 BPS $24.57 기준",
+        "asOf": "2026-11-11",
+        "forwardPe": 3.24,
+        "forwardAsOf": "2026-11-11",
         "forwardSource": "https://stockanalysis.com/stocks/trmd/statistics/"
       },
       "drivers": [
         {
-          "type": "시장 위험선호",
-          "summary": "미국 증시 전반의 낙폭 회복이 해운주에도 제한적으로 긍정적",
+          "type": "중동·운항위험",
+          "summary": "호르무즈 선박 공격과 보험·항로 정상화 지연 위험이 탱커 프리미엄을 지지",
           "impact": "긍정"
         },
         {
-          "type": "중동·원유",
-          "summary": "이란 재공격 가능성 완화와 WTI 급락으로 우회운항·보험료 위험 프리미엄 축소",
-          "impact": "부정"
+          "type": "선복 공급",
+          "summary": "COSCO의 16척 VLCC 발주는 장기 원유선 공급 신호지만 클린 제품선과 시장이 달라 직접 영향은 제한적",
+          "impact": "중립"
         },
         {
           "type": "기업 고유",
-          "summary": "당일 주가를 단독 설명할 신규 TORM 개별 계약 재료 미확인",
+          "summary": "당일 주가를 단독 설명할 신규 TORM 개별 계약·확정 재료 미확인",
           "impact": "중립"
         },
         {
           "type": "클린탱커 운임 지수",
-          "summary": "BCTI 2,572, 전 거래일 대비 -64p(-2.43%), 2026-11-09 기준. TORM 개별 계약이 아닌 글로벌 클린탱커 종합 현물지수",
-          "impact": "부정"
+          "summary": "BCTI 2,581, 전 거래일 대비 +6p(+0.23%), 2026-11-11 기준. TORM 개별 계약이 아닌 글로벌 클린탱커 종합 현물지수",
+          "impact": "소폭 긍정"
         }
       ],
-      "source": "https://finance.yahoo.com/quote/TRMD/"
+      "source": "https://stockanalysis.com/stocks/trmd/history/"
     },
     {
       "symbol": "RIG",
       "name": "Transocean",
-      "change": "$5.16 · -1.53% · 11/9 마감",
-      "stance": "약세 · 유가·공급위험 프리미엄 하락과 신규 계약 부재",
-      "reason": "Transocean은 1.53% 하락해 강한 미국 증시와 역행했습니다. 이란 재공격 가능성 완화와 WTI 급락이 원유 공급위험 프리미엄과 장기 시추 심리를 낮춘 영향이 더 컸을 가능성이 있습니다. 직전 분석 이후 Transocean 공식 뉴스와 Fleet Status Report에서 신규 계약·연장·옵션 행사는 확인되지 않았습니다. 따라서 기업 고유 악재 확정보다 유가 민감도와 에너지주 수급 영향으로 해석했습니다.",
-      "analyzedAt": "2026-11-10T06:18:33+09:00",
+      "change": "$5.30 · +2.32% · 11/11 마감",
+      "stance": "상승 · 유가·공급위험 반등, 신규 계약은 미확인",
+      "reason": "Transocean은 2.32% 상승했습니다. 이란 핵협상 불확실성과 호르무즈 운항위험으로 WTI가 0.57% 반등하면서 해양시추주의 원유 위험 프리미엄을 지지했습니다. 다만 중동 생산 차질은 축소되고 있어 장기 시추 수요 개선으로 단정하기 어렵습니다. 11월 2일 Fleet Status Report 이후 Transocean 공식 발표에서 신규 계약·연장·옵션 행사는 확인되지 않아, 주가 상승은 유가와 고베타 에너지 수급의 영향으로 해석했습니다.",
+      "analyzedAt": "2026-11-12T06:20:44+09:00",
       "valuation": {
-        "pe": "19.85배",
-        "pbr": "0.68배",
+        "pe": "20.38배",
+        "pbr": "0.70배",
         "eps": "$0.26",
-        "basis": "11/9 정규장 종가 $5.16 ÷ TTM EPS $0.26 · 최근 분기 BPS $7.57 기준",
-        "asOf": "2026-11-09",
-        "forwardPe": 21.11,
-        "forwardAsOf": "2026-11-09",
+        "basis": "11/11 정규장 종가 $5.30 ÷ TTM EPS $0.26 · 최근 분기 BPS $7.57 기준",
+        "asOf": "2026-11-11",
+        "forwardPe": 23.24,
+        "forwardAsOf": "2026-11-11",
         "forwardSource": "https://stockanalysis.com/stocks/rig/statistics/"
       },
       "drivers": [
         {
           "type": "원유·시추",
-          "summary": "WTI 급락과 중동 공급위험 완화가 해양시추 투자심리와 원유 위험 프리미엄에 부담",
-          "impact": "부정"
+          "summary": "WTI 반등과 호르무즈 공급위험이 해양시추 투자심리를 단기 지지",
+          "impact": "긍정"
         },
         {
-          "type": "시장 상대강도",
-          "summary": "S&P 500의 강한 반등과 달리 하락해 에너지·유가 민감도가 두드러짐",
+          "type": "상반된 공급 신호",
+          "summary": "중동 원유 생산 차질 축소는 장기 유가·시추 위험 프리미엄을 제한",
           "impact": "부정"
         },
         {
           "type": "수급·트레이딩",
-          "summary": "최근 급락 뒤에도 유가 하락으로 고베타 에너지주 매수 회복이 제한됐을 가능성",
-          "impact": "부정"
+          "summary": "최근 급락 뒤 에너지 고베타 종목의 낙폭 매수가 유입됐을 가능성",
+          "impact": "긍정"
         },
         {
           "type": "신규 계약",
-          "summary": "직전 분석 이후 Transocean 공식 발표와 2026-11-02 Fleet Status Report 이후 신규 계약·연장·옵션 행사 미확인",
+          "summary": "2026-11-02 Fleet Status Report 이후 Transocean 공식 발표에서 신규 계약·연장·옵션 행사 미확인",
           "impact": "중립"
         }
       ],
-      "source": "https://finance.yahoo.com/quote/RIG/"
+      "source": "https://stockanalysis.com/stocks/rig/history/"
     }
   ]
 }
